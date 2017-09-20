@@ -1,0 +1,14 @@
+# Compiled class file
+**/*.class
+
+# Log file
+**/*.log
+
+
+**/*.jar
+**/*.war
+
+**/target
+
+.idea
+*.iml
