@@ -18,10 +18,10 @@
     </parent>
 
     <modules>
-        <module>flight</module>
-        <module>hotel</module>
-        <module>car</module>
-        <module>business-travel</module>
+        <module>flights</module>
+        <module>hotels</module>
+        <module>cars</module>
+        <module>business-travels</module>
     </modules>
 
     <properties>
