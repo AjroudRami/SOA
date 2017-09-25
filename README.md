@@ -35,7 +35,7 @@ We consider here an ecosystem of services dedicated to support an employee when 
 - - - -
 ### Phase #1: Deploying services
 * Service development
-[ ] Creating a Flight Search System as a Document service;
-[ ] Creating a Hotels Search System as a Resource service;
-[ ] Creating a Car Rentals Search System as an RPC service;
-[ ] Creating a Business Travel System as a Document service;
+  - Creating a Flight Search System as a Document service;
+  - Creating a Hotels Search System as a Resource service;
+  - Creating a Car Rentals Search System as an RPC service;
+  - Creating a Business Travel System as a Document service;
