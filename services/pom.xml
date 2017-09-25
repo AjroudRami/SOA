@@ -21,7 +21,7 @@
         <module>flights</module>
         <module>hotels</module>
         <module>cars</module>
-        <module>business-travels </module>
+        <module>business-travels</module>
     </modules>
 
     <properties>
