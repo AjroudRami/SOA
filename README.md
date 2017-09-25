@@ -19,13 +19,13 @@ We consider here an ecosystem of services dedicated to support an employee when 
 * Jack is a software developper who oftens travel around europe to meet his clients. He always run on tight schedule. As Jack 
     * I want to receive a list of flights with given date and destination, so that I can book flights that suit my schedule
     * I want to receive a list of flights ordered by price, so that I can book flights within my budget
-    * I want to have the option of filtering direct flights so that i can be at my destination quicker 
+    * I want to have the option of filtering direct flights so that I can be at my destination quicker 
     * I want to have the option of filtering flights according to the travel time, so that I can optimize my travelling time 
 * Suzy is a supervisor of a clothing company. Once a month, she needs to visit the company's fabric suplier to check on supplies. Suzy doesn't owns a car and public transportation is not available. As Suzy
-    * I want to receive a list of car rental with a given place and duration, so that I can rent a car for a short duration and choose a car that is nearest to me 
+    * I want to receive a list of car rentals with a given place and duration, so that I can rent a car for a short duration and choose a car that is nearest to me 
 * Michael is a full time researcher. In order to gather information for his research, he needs to attend forums and meet other researcher in a different country. When travel, Michael prefer to stay in cheap hotels as he spend a lot of time outside. As Michael
-    * I want to receive a list of hotel with a given date and destination, so that I can book hotels that suits my schedule
-    * I want to sort the list of hotel according to price, so that I can book the cheapest hotel available
+    * I want to receive a list of hotels with a given date and destination, so that I can choose a room that suits my schedule
+    * I want to sort the list of hotels according to price, so that I can book the cheapest hotel available
 * Juliette, a sales representative, often travels to sell her company's products. To get a fully subsidised trip, she needs to send an email of an approve business travel to the HR department before being able to travel. As Juliette
     * I want to submit a business travel proposal to my manager to get an approval
     * I want to email an approved business travel, so that my trip will be subsidised by the company
