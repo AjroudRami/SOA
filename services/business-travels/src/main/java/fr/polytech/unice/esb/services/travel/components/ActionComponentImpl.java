@@ -3,7 +3,9 @@ package fr.polytech.unice.esb.services.travel.components;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.polytech.unice.esb.services.travel.actions.DocumentAction;
+import fr.polytech.unice.esb.services.travel.actions.list.ApproveAction;
 import fr.polytech.unice.esb.services.travel.actions.list.ListAction;
+import fr.polytech.unice.esb.services.travel.actions.list.SendAction;
 import fr.polytech.unice.esb.services.travel.actions.list.SubmitAction;
 import org.json.JSONObject;
 
@@ -24,6 +26,8 @@ public class ActionComponentImpl implements ActionComponent {
         actions = new HashMap<>();
         actions.put("submit", SubmitAction.class);
         actions.put("list", ListAction.class);
+        actions.put("approve", ApproveAction.class);
+        actions.put("send", SendAction.class);
         mapper = new ObjectMapper();
         // Allow unknown properties
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

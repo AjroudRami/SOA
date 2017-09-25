@@ -15,7 +15,7 @@ public class BusinessTravelComponentImpl implements BusinessTravelComponent {
     }
 
     @Override
-    public BusinessTravel create(BusinessTravel travel) {
+    public BusinessTravel put(BusinessTravel travel) {
         travel.setId(UUID.randomUUID().toString());
         travels.put(travel.getId(), travel);
         return travel;
@@ -24,5 +24,10 @@ public class BusinessTravelComponentImpl implements BusinessTravelComponent {
     @Override
     public List<BusinessTravel> list() {
         return new ArrayList<>(travels.values());
+    }
+
+    @Override
+    public Optional<BusinessTravel> get(BusinessTravel travel) {
+        return Optional.ofNullable(travels.get(travel.getId()));
     }
 }

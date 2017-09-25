@@ -24,7 +24,7 @@ public class SubmitAction implements DocumentAction<BusinessTravel, SubmissionRe
      */
     @Override
     public SubmissionResult execute(BusinessTravel document) {
-        BusinessTravel created = travels.create(document);
+        BusinessTravel created = travels.put(document);
         return new SubmissionResult(created.getId());
     }
 

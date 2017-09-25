@@ -8,6 +8,7 @@ import fr.polytech.unice.esb.services.travel.models.documents.SubmissionResult;
 
 import javax.ejb.EJB;
 import javax.enterprise.inject.Any;
+import java.util.stream.Collectors;
 
 /**
  * A submit action
@@ -19,13 +20,13 @@ public class ListAction implements DocumentAction<Void, BusinessTravels> {
     private BusinessTravelComponent travels;
 
     /**
-     * Executes a document submission
+     * List the different non-approved business travels
      * @param document
-     * @return the result of the submission
+     * @return the list of the business travels
      */
     @Override
     public BusinessTravels execute(Void document) {
-        return new BusinessTravels(travels.list());
+        return new BusinessTravels(travels.list().stream().filter(travel -> !travel.isValidated()).collect(Collectors.toList()));
     }
 
     @Override
