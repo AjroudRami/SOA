@@ -11,6 +11,7 @@ import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -18,6 +19,8 @@ import java.util.stream.Stream;
  * @author Antoine Aubé <aube.antoine@gmail.com>
  */
 public class HotelStorage {
+
+  private static final Random RANDOM = new Random();
 
   // TODO Bind to a true database.
   private static List<Hotel> contents = new ArrayList<>();
@@ -39,7 +42,7 @@ public class HotelStorage {
               // Removes the hotels by availability.
               // TODO Implement the hotel's availability.
               return request.getAvailability()
-                      .map(availability -> false)
+                      .map(availability -> RANDOM.nextBoolean())
                       .orElse(true);
 
             }).collect(Collectors.toList());
