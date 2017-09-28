@@ -1,4 +1,4 @@
-package flightservice;
+package fr.polytech.unice.esb.services.flights.models.documents;
 
 import org.joda.time.DateTime;
 import org.jongo.marshall.jackson.oid.MongoObjectId;
@@ -11,12 +11,14 @@ public class Flight {
     public static String KEY_TO = "to";
     public static String KEY_DEPARTURE = "departure";
     public static String KEY_ARRIVAL = "arrival";
+    public static String KEY_SEATCLASS = "seat_class";
 
     private int flightNo;
     private String from;
     private String to;
     private DateTime departure;
     private DateTime arrival;
+    private String seatClass;
 
     @MongoObjectId
     String _id;
@@ -29,8 +31,8 @@ public class Flight {
         this.to = data.getString(KEY_TO);
         this.departure = DateTime.parse(data.getString(KEY_DEPARTURE));
         this.arrival = DateTime.parse(data.getString(KEY_ARRIVAL));
+        this.seatClass = data.getString(KEY_SEATCLASS);
     }
-
 
     JSONObject toJson() {
         return new JSONObject()
@@ -38,7 +40,8 @@ public class Flight {
                 .put(KEY_FROM, from)
                 .put(KEY_TO, to)
                 .put(KEY_ARRIVAL, arrival.toString())
-                .put(KEY_DEPARTURE, departure.toString());
+                .put(KEY_DEPARTURE, departure.toString())
+                .put(KEY_SEATCLASS, seatClass);
     }
 
 }
