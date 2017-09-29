@@ -36,6 +36,8 @@ public class CarRentalLoader {
     static {
         ClassLoader classLoader = CarRentalLoader.class.getClassLoader();
         File carData = new File(classLoader.getResource("car-rental-data.csv").getFile());
+//        File carData = new File("/Volumes/Macintosh HD/Users/danialaswad/Documents/Polytech/Final year/SOA/Lab#1/polytech-soa/services/cars/src/main/resources/car-rental-data1.csv");
+
 
         try {
             CSVParser parser = CSVParser.parse(carData, Charset.defaultCharset(), CSVFormat.DEFAULT.withHeader());
@@ -45,7 +47,7 @@ public class CarRentalLoader {
                         item.get("Brand"),
                         item.get("Model"),
                         item.get("City"),
-                        Integer.parseInt((item.get("Rent Price")))
+                        Integer.parseInt((item.get("Price")))
                 );
 
                 build(car);
@@ -60,9 +62,10 @@ public class CarRentalLoader {
 
     public static List<Car> findCarRentals(CarRentalRequest carRentalRequest){
         List<Car> filteredCars = cars.stream()
-                .filter( car -> carRentalRequest.getPlace()
-                        .map(place -> place.equals(car.getPlace()))
-                        .orElse(true)).collect(Collectors.toList());
+                .filter(car -> {
+                    return carRentalRequest.getPlace().map(place -> place.equals(car.getPlace())).orElse(true);
+                }).collect(Collectors.toList());
+
 
         return filteredCars;
     }
