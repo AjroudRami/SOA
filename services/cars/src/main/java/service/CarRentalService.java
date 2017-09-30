@@ -11,10 +11,10 @@ import java.util.List;
 /**
  * Created by danial
  */
-@WebService(name = "CarRental")
+@WebService(name = "CarRental",
+        targetNamespace = "http://informatique.polytech.unice.fr/soa1/cookbook/")
 public interface CarRentalService {
 
-    @WebMethod(operationName = "GetCarRentals")
     @WebResult(name = "car_rentals")
     List<Car> getCarRentalList(
             @WebParam(name = "place") String place,

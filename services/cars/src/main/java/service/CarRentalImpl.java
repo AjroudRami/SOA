@@ -6,15 +6,17 @@ import util.CarRentalLoader;
 
 import javax.ejb.Stateless;
 import javax.jws.WebService;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by danial
  */
-@Stateless(name = "CarRentalService")
+
 @WebService(
-        portName = "CarRentalPort",
-        serviceName = "CarRentalService",
+        targetNamespace = "http://informatique.polytech.unice.fr/soa1/cookbook/",
+        portName = "ExternalCarRentalPort",
+        serviceName = "ExternalCarRentalService",
         endpointInterface = "service.CarRentalService")
 public class CarRentalImpl implements CarRentalService {
 
@@ -28,5 +30,8 @@ public class CarRentalImpl implements CarRentalService {
     private List<Car> buildResponse(CarRentalRequest carRentalRequest){
 
         return CarRentalLoader.findCarRentals(carRentalRequest);
+//        List<Car> cars = new ArrayList<>();
+//        cars.add(new Car("Nokia","3310", "Nice", 20));
+//        return cars;
     }
 }
