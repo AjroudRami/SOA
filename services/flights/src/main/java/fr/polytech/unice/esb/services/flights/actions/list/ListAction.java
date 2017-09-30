@@ -2,16 +2,19 @@ package fr.polytech.unice.esb.services.flights.actions.list;
 
 import fr.polytech.unice.esb.services.flights.actions.DocumentAction;
 import fr.polytech.unice.esb.services.flights.components.FlightComponent;
-import fr.polytech.unice.esb.services.flights.models.documents.FlightList;
+import fr.polytech.unice.esb.services.flights.models.documents.Flight;
+import fr.polytech.unice.esb.services.flights.models.requests.ListRequest;
+
 import javax.ejb.EJB;
 import javax.enterprise.inject.Any;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A submit action
  */
 @Any
-public class ListAction implements DocumentAction<Void, FlightList> {
+public class ListAction implements DocumentAction<ListRequest, List<Flight>> {
 
     @EJB
     private FlightComponent travels;
@@ -24,14 +27,13 @@ public class ListAction implements DocumentAction<Void, FlightList> {
      * @return the list of the business travels
      */
     @Override
-    public FlightList execute(Void document) {
-        //return new BusinessTravels(travels.list().stream().filter(travel -> !travel.isValidated()).collect(Collectors.toList()));
-        return new FlightList(new ArrayList<>());
+    public List<Flight> execute(ListRequest document) {
+        return new ArrayList<>();
     }
 
     @Override
-    public Class<Void> getInputType() {
-        return Void.class;
+    public Class<ListRequest> getInputType() {
+        return ListRequest.class;
     }
 
     @Override
