@@ -1,4 +1,7 @@
 package fr.polytech.unice.esb.services.flights.components;
 
-public class FlightComponentImpl {
+import javax.ejb.Singleton;
+
+@Singleton
+public class FlightComponentImpl implements FlightComponent {
 }

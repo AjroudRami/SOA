@@ -21,4 +21,11 @@ public interface DocumentAction<I,O> {
      * @return the input type
      */
     Class<I> getInputType();
+
+
+    /**
+     * @return the action name
+     */
+
+    String getActionName();
 }
