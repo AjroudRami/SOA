@@ -1,7 +1,5 @@
 package fr.polytech.unice.esb.services.flights.actions;
 
-import java.util.Map;
-
 /**
  * A document action
  * @param <I> input type

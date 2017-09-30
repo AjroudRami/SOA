@@ -1,7 +1,10 @@
 package fr.polytech.unice.esb.services.flights.components;
 
+
+import java.util.HashMap;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
 import fr.polytech.unice.esb.services.flights.actions.DocumentAction;
 import fr.polytech.unice.esb.services.flights.actions.list.ListAction;
 import fr.polytech.unice.esb.services.flights.utils.ClassLoaderHelper;
@@ -10,7 +13,6 @@ import org.json.JSONObject;
 import javax.ejb.Singleton;
 import javax.enterprise.inject.spi.CDI;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 

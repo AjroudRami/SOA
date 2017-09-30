@@ -16,7 +16,7 @@ public class ListAction implements DocumentAction<Void, FlightList> {
     @EJB
     private FlightComponent travels;
 
-    private static final String name = "List";
+    private static final String name = "list";
 
     /**
      * List the different non-approved business travels
