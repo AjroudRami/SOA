@@ -81,3 +81,69 @@ public class Registry {
     }
 }
 ```
+# API Documentation
+
+All request must be send to tcs-service-flights/flights/ using POST.
+The server accept JSON only. The request must contains an "event" field, available actions are:
+ 
+ ##Events
+ 
+ * list : list all the flights
+   * parameters:
+     * sortBy: not mandatory, a String that can be either "price" or "duration"
+     * filterBy: not mandatory, an Array of String with one or more keywords ("direct" only for now).
+ 
+ ##Example request:
+```json
+    {
+      "event":"list",
+      "orderBy": "price",
+      "filterBy":["direct"]
+    }
+``` 
+
+## Response
+
+The response is a json object composed of a field "flights" which is an array of flights.
+
+### Example Response
+
+```json
+{
+    "flights": [
+        {
+            "numberOfFlights": 1,
+            "seatClass": "cosy",
+            "price": 948.2164511421322,
+            "ticketNo": 2736,
+            "departure": 700,
+            "arrival": 1542,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York"
+        },
+        {
+            "numberOfFlights": 1,
+            "seatClass": "cosy",
+            "price": 991.886690803693,
+            "ticketNo": 5552,
+            "departure": 310,
+            "arrival": 1349,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York"
+        },
+        {
+            "numberOfFlights": 1,
+            "seatClass": "cosy",
+            "price": 1005.2455965992281,
+            "ticketNo": 3985,
+            "departure": 212,
+            "arrival": 1075,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York"
+        }
+    ]
+}
+```
