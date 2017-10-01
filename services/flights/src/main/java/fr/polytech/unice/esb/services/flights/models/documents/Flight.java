@@ -29,6 +29,18 @@ public class Flight {
 
     public Flight(){};
 
+    public Flight(int ticketNo, String from, String to, int departure, int arrival, String seatClass, double price,
+                  int numberOfFlights) {
+        this.ticketNo = ticketNo;
+        this.from = from;
+        this.to = to;
+        this.departure = departure;
+        this.arrival = arrival;
+        this.seatClass = seatClass;
+        this.price = price;
+        this.numberOfFlights = numberOfFlights;
+    }
+
     public Flight(JSONObject data) {
         this.ticketNo = data.getInt(KEY_TICKET_NO);
         this.from = data.getString(KEY_FROM);
@@ -69,4 +81,39 @@ public class Flight {
         }
     };
 
+    public int getTicketNo() {
+        return ticketNo;
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public int getDeparture() {
+        return departure;
+    }
+
+    public int getArrival() {
+        return arrival;
+    }
+
+    public String getSeatClass() {
+        return seatClass;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public int getNumberOfFlights() {
+        return numberOfFlights;
+    }
+
+    public String get_id() {
+        return _id;
+    }
 }

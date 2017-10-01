@@ -3,32 +3,36 @@ package fr.polytech.unice.esb.services.flights.actions.list;
 import fr.polytech.unice.esb.services.flights.actions.DocumentAction;
 import fr.polytech.unice.esb.services.flights.components.FlightComponent;
 import fr.polytech.unice.esb.services.flights.models.documents.Flight;
+import fr.polytech.unice.esb.services.flights.models.documents.FlightList;
 import fr.polytech.unice.esb.services.flights.models.requests.ListRequest;
 
 import javax.ejb.EJB;
 import javax.enterprise.inject.Any;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 /**
  * A submit action
  */
 @Any
-public class ListAction implements DocumentAction<ListRequest, List<Flight>> {
+public class ListAction implements DocumentAction<ListRequest, FlightList> {
 
     @EJB
-    private FlightComponent travels;
+    private FlightComponent flightComponent;
 
     private static final String name = "list";
 
     /**
-     * List the different non-approved business travels
      * @param document
-     * @return the list of the business travels
+     * @return the list of the filtered and sorted flights
      */
     @Override
-    public List<Flight> execute(ListRequest document) {
-        return new ArrayList<>();
+    public FlightList execute(ListRequest document) {
+        List<Flight> flights = flightComponent.getFlights();
+        flights = filter(document.filterBy, flights);
+        sort(document.orderBy, flights);
+        return new FlightList(flights);
     }
 
     @Override
@@ -39,5 +43,34 @@ public class ListAction implements DocumentAction<ListRequest, List<Flight>> {
     @Override
     public String getActionName(){
         return this.name;
+    }
+
+
+    private List<Flight> filter(String[] filters, List<Flight> flights) {
+        List<Flight> filteredFlights = new ArrayList<>();
+        if (flights == null || filters == null) {
+            return flights;
+        }
+        for(String filter : filters) {
+            if("direct".equals(filter)) {
+                for (Flight fl : flights) {
+                    if (fl.getNumberOfFlights() == 1) {
+                        filteredFlights.add(fl);
+                    }
+                }
+            }
+        }
+        return filteredFlights;
+    }
+
+    private void sort(String sortBy, List<Flight> flights){
+        if (flights == null || sortBy == null) {
+            return;
+        }
+        if("duration".equals(sortBy)) {
+            flights.sort(Flight.DURATION_COMPARATOR);
+        } else {
+            flights.sort(Flight.PRICE_COMPARATOR);
+        }
     }
 }
