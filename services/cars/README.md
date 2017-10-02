@@ -56,6 +56,6 @@ The interface is implemented in the [CarRentalImpl](https://github.com/scipio300
 
 ## Starting the service
 
-* Compiling: mvn clean package will create the file target/vta-cars-service.war
+* Compiling: mvn clean package will create the file target/tcs-cars-service.war
 * Running: mvn tomee:run will deploy the created war inside a TomEE+ server, available on localhost:8080
-* The WSDL interface is available at http://localhost:8080/vta-cars-service/ExternalCarRentalService?wsdl
+* The WSDL interface is available at http://localhost:8080/tcs-cars-service/ExternalCarRentalService?wsdl

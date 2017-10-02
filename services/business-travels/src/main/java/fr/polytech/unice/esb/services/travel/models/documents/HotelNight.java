@@ -5,14 +5,14 @@ package fr.polytech.unice.esb.services.travel.models.documents;
  */
 public class HotelNight {
 
-    private int date;
+    private long date;
     private String room;
 
-    public int getDate() {
+    public long getDate() {
         return date;
     }
 
-    public void setDate(int date) {
+    public void setDate(long date) {
         this.date = date;
     }
 
