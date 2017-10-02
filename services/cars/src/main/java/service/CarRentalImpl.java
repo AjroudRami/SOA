@@ -22,7 +22,9 @@ public class CarRentalImpl implements CarRentalService {
 
     @Override
     public List<Car> getCarRentalList(String place, int duration) {
-
+        if (place == null){
+            place = "";
+        }
         return buildResponse(new CarRentalRequest(place, duration));
     }
 
@@ -30,8 +32,5 @@ public class CarRentalImpl implements CarRentalService {
     private List<Car> buildResponse(CarRentalRequest carRentalRequest){
 
         return CarRentalLoader.findCarRentals(carRentalRequest);
-//        List<Car> cars = new ArrayList<>();
-//        cars.add(new Car("Nokia","3310", "Nice", 20));
-//        return cars;
     }
 }

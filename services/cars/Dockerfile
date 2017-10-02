@@ -3,6 +3,6 @@ MAINTAINER Danial Bin Ahmad (danial-aswad.bin-ahmad-fazlan@etu.unice.fr)
 
 WORKDIR /usr/local/tomee/
 
-COPY ./target/vta-cars-service.war ./webapps/.
+COPY ./target/tcs-cars-service.war ./webapps/.
 
 EXPOSE 8080

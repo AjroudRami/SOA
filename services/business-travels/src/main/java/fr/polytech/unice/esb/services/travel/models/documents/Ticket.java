@@ -9,7 +9,7 @@ public class Ticket {
     private String departureAirport;
     private String arrivalAirport;
     private long departureTimestamp;
-    private long arivalTimestamp;
+    private long arrivalTimestamp;
 
     public String getTicketNumber() {
         return ticketNumber;
@@ -43,11 +43,11 @@ public class Ticket {
         this.departureTimestamp = departureTimestamp;
     }
 
-    public long getArivalTimestamp() {
-        return arivalTimestamp;
+    public long getArrivalTimestamp() {
+        return arrivalTimestamp;
     }
 
-    public void setArivalTimestamp(long arivalTimestamp) {
-        this.arivalTimestamp = arivalTimestamp;
+    public void setArrivalTimestamp(long arrivalTimestamp) {
+        this.arrivalTimestamp = arrivalTimestamp;
     }
 }

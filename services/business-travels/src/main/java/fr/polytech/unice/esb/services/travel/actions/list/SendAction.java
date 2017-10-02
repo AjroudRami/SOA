@@ -3,6 +3,7 @@ package fr.polytech.unice.esb.services.travel.actions.list;
 import fr.polytech.unice.esb.services.travel.actions.DocumentAction;
 import fr.polytech.unice.esb.services.travel.components.BusinessTravelComponent;
 import fr.polytech.unice.esb.services.travel.components.NotificationComponent;
+import fr.polytech.unice.esb.services.travel.models.exceptions.BusinessTravelNotFound;
 import fr.polytech.unice.esb.services.travel.models.documents.BusinessTravel;
 import fr.polytech.unice.esb.services.travel.models.documents.BusinessTravelEmail;
 
@@ -28,10 +29,12 @@ public class SendAction implements DocumentAction<BusinessTravelEmail, Void> {
      * @return the business travel
      */
     @Override
-    public Void execute(BusinessTravelEmail document) {
+    public Void execute(BusinessTravelEmail document) throws BusinessTravelNotFound {
         Optional<BusinessTravel> travel = travels.get(document.getContent());
         if (travel.isPresent()) {
             notifications.send(document.getRecipient(), travel.get());
+        } else {
+            throw new BusinessTravelNotFound(document.getContent().getId());
         }
         return null;
     }

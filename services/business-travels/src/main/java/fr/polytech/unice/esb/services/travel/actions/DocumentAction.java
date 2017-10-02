@@ -1,5 +1,7 @@
 package fr.polytech.unice.esb.services.travel.actions;
 
+import fr.polytech.unice.esb.services.travel.models.exceptions.BusinessTravelNotFound;
+
 import java.util.Map;
 
 /**
@@ -14,7 +16,7 @@ public interface DocumentAction<I,O> {
      * @param document
      * @return
      */
-    O execute(I document);
+    O execute(I document) throws Exception;
 
     /**
      *
