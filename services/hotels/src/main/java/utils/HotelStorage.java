@@ -8,10 +8,7 @@ import org.apache.commons.csv.CSVParser;
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -20,7 +17,8 @@ import java.util.stream.Stream;
  */
 public class HotelStorage {
 
-  private static final Random RANDOM = new Random();
+  // Reference date for the comparison: 14. march 1995 at 6 PM.
+  private static final Date COMPARATOR_DATE = new Date(795200400);
 
   // TODO Bind to a true database.
   private static List<Hotel> contents = new ArrayList<>();
@@ -42,7 +40,7 @@ public class HotelStorage {
               // Removes the hotels by availability.
               // TODO Implement the hotel's availability.
               return request.getAvailability()
-                      .map(availability -> RANDOM.nextBoolean())
+                      .map(availability -> availability.after(COMPARATOR_DATE))
                       .orElse(true);
 
             }).collect(Collectors.toList());
