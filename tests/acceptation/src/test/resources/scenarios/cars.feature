@@ -5,12 +5,12 @@ Feature: Car Rental research
 
   Scenario: Research without filter
     Given a research for a car rental
-    When the research is sent
+    When the search is sent
     Then cars are suggested
 
   Scenario: Research by place
     Given a research for a car rental
-    And located in France
+    And at France
     When the research is sent
     Then cars are suggested
     And the cars are located in France

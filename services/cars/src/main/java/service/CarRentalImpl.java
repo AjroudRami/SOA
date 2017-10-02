@@ -14,7 +14,7 @@ import java.util.List;
  */
 
 @WebService(
-        targetNamespace = "http://informatique.polytech.unice.fr/soa1/cookbook/",
+        targetNamespace = "http://informatique.polytech.unice.fr/soa/",
         portName = "ExternalCarRentalPort",
         serviceName = "ExternalCarRentalService",
         endpointInterface = "service.CarRentalService")

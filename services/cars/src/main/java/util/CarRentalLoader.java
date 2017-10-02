@@ -10,17 +10,12 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
 /**
  * Created by danial
  */
 public class CarRentalLoader {
-
-
-    private static final Random RANDOM = new Random();
-
     /**
      * Temporary variable
      */
@@ -49,8 +44,9 @@ public class CarRentalLoader {
                 Car car = new Car(
                         item.get("Brand"),
                         item.get("Model"),
-                        item.get("City"),
-                        Integer.parseInt((item.get("Price")))
+                        item.get("Place"),
+                        Integer.parseInt((item.get("Price"))),
+                        Integer.parseInt((item.get("Availability")))
                 );
 
                 build(car);
@@ -84,7 +80,7 @@ public class CarRentalLoader {
         List<Car> filteredCars = new ArrayList<>();
 
         for (Car car: carList) {
-            if(RANDOM.nextBoolean()) filteredCars.add(car);
+            if(carRentalRequest.getDuration().orElse(0) < car.isAvailability()) filteredCars.add(car);
         }
 
         return filteredCars;
