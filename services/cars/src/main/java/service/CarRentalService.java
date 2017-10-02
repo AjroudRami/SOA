@@ -12,7 +12,7 @@ import java.util.List;
  * Created by danial
  */
 @WebService(name = "CarRental",
-        targetNamespace = "http://informatique.polytech.unice.fr/")
+        targetNamespace = "http://informatique.polytech.unice.fr/soa/")
 public interface CarRentalService {
 
     @WebResult(name = "car_rentals")
