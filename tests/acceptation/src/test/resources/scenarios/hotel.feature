@@ -28,3 +28,9 @@ Feature: Hotel research
     When the research is sent
     Then hotels are suggested
     And the prices are descendingly ordered
+
+  Scenario: Research at given date (after 14. march 1995)
+    Given a research for a hotel booking
+    And on the 12-02-1998
+    When the research is sent
+    Then hotels are suggested
