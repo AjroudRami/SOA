@@ -16,12 +16,13 @@ We consider here an ecosystem of services dedicated to support an employee when 
 - Send a summary of an approved business travel by email.
 
 ### Personas & Story
-* Jack is a software developper who oftens travel around europe to meet his clients. He always run on tight schedule. As Jack 
-    * I want to receive a list of flights with given date and destination, so that I can book flights that suit my schedule
+* Jack is a software developer who often travel around europe to meet his clients. He always run on tight schedule. As Jack 
+    * I want to receive a list of flights with given departure date, a destination and an arrival airport so that I can book flights that suit my schedule
     * I want to receive a list of flights ordered by price, so that I can book flights within my budget
-    * I want to have the option of filtering direct flights so that I can be at my destination quicker 
+    * I want to have the option of filtering direct flights only so that I don't spend time and effort in multiple plane changes
     * I want to have the option of filtering flights according to the travel time, so that I can optimize my travelling time 
-* Suzy is a supervisor of a clothing company. Once a month, she needs to visit the company's fabric suplier to check on supplies. Suzy doesn't owns a car and public transportation is not available. As Suzy
+    * I want to receive a list of flights ordered by duration, so that I can book flights within my time window
+* Suzy is a supervisor of a clothing company. Once a month, she needs to visit the company's fabric supplier to check on supplies. Suzy doesn't owns a car and public transportation is not available. As Suzy
     * I want to receive a list of car rentals with a given place and duration, so that I can rent a car for a short duration and choose a car that is nearest to me 
 * Michael is a full time researcher. In order to gather information for his research, he needs to attend forums and meet other researcher in a different country. When travel, Michael prefer to stay in cheap hotels as he spend a lot of time outside. As Michael
     * I want to receive a list of hotels with a given date and destination, so that I can choose a room that suits my schedule

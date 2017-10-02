@@ -6,7 +6,24 @@ public class ListRequest {
     public String orderBy;
     public String destination;
     public String departure;
+    public int departureTimeStamp;
+    public int arrivalTimeStamp;
 
+    public int getDepartureTimeStamp() {
+        return departureTimeStamp;
+    }
+
+    public void setDepartureTimeStamp(int departureTimeStamp) {
+        this.departureTimeStamp = departureTimeStamp;
+    }
+
+    public int getArrivalTimeStamp() {
+        return arrivalTimeStamp;
+    }
+
+    public void setArrivalTimeStamp(int arrivalTimeStamp) {
+        this.arrivalTimeStamp = arrivalTimeStamp;
+    }
 
     public String getDestination() {
         return destination;
