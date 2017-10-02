@@ -44,7 +44,7 @@ public class ActionComponentImpl implements ActionComponent {
     }
 
     @Override
-    public <I,O> Object execute(DocumentAction<I, O> documentAction, Map<String, Object> input) throws IOException {
+    public <I,O> Object execute(DocumentAction<I, O> documentAction, Map<String, Object> input) throws Exception {
         Class<I> clazz = (Class<I>) inputTypeOf(documentAction);
         I parsedInput = mapper.readValue(new JSONObject(input).toString(), clazz);
         return documentAction.execute(parsedInput);
