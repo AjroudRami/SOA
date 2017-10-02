@@ -51,6 +51,7 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
         if (flights == null || filters == null) {
             return flights;
         }
+        //TODO improve performances
         for(String filter : filters) {
             if("direct".equals(filter)) {
                 for (Flight fl : flights) {
@@ -58,6 +59,23 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
                         filteredFlights.add(fl);
                     }
                 }
+            }
+        }
+        return filteredFlights;
+    }
+
+    private List<Flight> filterflights(String destination, String departure, List<Flight> flights) {
+        List<Flight> filteredFlights = new ArrayList<>();
+        if (flights == null) {
+            return flights;
+        }
+        if (departure == null || destination == null) {
+            throw new RuntimeException("Missing fields, destination or departure");
+        }
+        //TODO improve performances
+        for(Flight flight : flights) {
+            if(flight.getFrom().equals(departure) && flight.getTo().equals(destination)) {
+                filteredFlights.add(flight);
             }
         }
         return filteredFlights;

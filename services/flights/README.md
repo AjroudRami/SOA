@@ -85,17 +85,19 @@ public class Registry {
 
 The service url is: tcs-service-flights/flights/
 
- ## Request
+## Request
  All request must be send  using the POST method.
  The server accept `JSON` only. The request must contains an `"event"` field, available actions are:
- ### Events
+### Events
  
  * `list` : list all the flights
    * parameters:
      * `sortBy`: not mandatory, a String that can be either "price" or "duration"
      * `filterBy`: not mandatory, an Array of String with one or more keywords ("direct" only for now).
+     * `destination`: mandatory, a String. The flight ticket's destination airport.
+     * `departure`: mandatory, a String, The flight ticket's departure airport.
  
- ### Example request:
+### Example request:
 ```json
     {
       "event":"list",
