@@ -17,6 +17,7 @@ public class CarStepDefinition {
     private int port = 8080;
 
     private String place;
+    private int duration;
 
     private List<Car> response;
 
@@ -27,9 +28,10 @@ public class CarStepDefinition {
         this.port = port;
     }
 
-    @Given("^a research for a car rental")
+    @Given("^a research for a car rental$")
     public void rentCar() {
         place = "";
+        duration = 0;
     }
 
     @Given("^at (.*)$")
@@ -37,11 +39,16 @@ public class CarStepDefinition {
         this.place = destination;
     }
 
+    @Given("^for a duration of ([0-9]+) days$")
+    public void specifyRentalDuration(int duration) {
+        this.duration = duration;
+    }
+
 
     @When("^the search is sent$")
     public void call_service() {
         CarRental carRental = getWS();
-        response = carRental.getCarRentalList(this.place, 0);
+        response = carRental.getCarRentalList(this.place, duration);
     }
 
     @Then("^cars are suggested$")
@@ -55,6 +62,11 @@ public class CarStepDefinition {
         for (Car car: response) {
             assertEquals(car.getPlace(), destination);
         }
+    }
+
+    @Then("^the cars suggested are exactly ([0-9]+)$")
+    public void carsAreCorrectlyLocated(int number) {
+        assertEquals(response.size(),number);
     }
 
 

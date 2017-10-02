@@ -15,3 +15,11 @@ Feature: Car Rental research
     Then cars are suggested
     And the cars are located in France
 
+  Scenario: Research by place and duration
+    Given a research for a car rental
+    And at Malaysia
+    And  for a duration of 3 days
+    When the search is sent
+    Then cars are suggested
+    And the cars are located in Malaysia
+    And the cars suggested are exactly 3
