@@ -1,32 +1,37 @@
 package fr.polytech.unice.esb.services.flights.components;
 
+
+import java.util.HashMap;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.polytech.unice.esb.services.travel.actions.DocumentAction;
-import fr.polytech.unice.esb.services.travel.actions.list.ListAction;
-import fr.polytech.unice.esb.services.travel.actions.list.SubmitAction;
+
+import fr.polytech.unice.esb.services.flights.actions.DocumentAction;
+import fr.polytech.unice.esb.services.flights.actions.list.ListAction;
+import fr.polytech.unice.esb.services.flights.utils.ClassLoaderHelper;
 import org.json.JSONObject;
 
 import javax.ejb.Singleton;
 import javax.enterprise.inject.spi.CDI;
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
 @Singleton
 public class ActionComponentImpl implements ActionComponent {
 
+    private static String actionPackageName = "fr.polytech.unice.esb.services.flights.actions.list";
     private Map<String, Class<? extends DocumentAction>> actions;
     private ObjectMapper mapper;
 
     public ActionComponentImpl() {
         actions = new HashMap<>();
-        actions.put("submit", SubmitAction.class);
         actions.put("list", ListAction.class);
         mapper = new ObjectMapper();
         // Allow unknown properties
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        mapper.configure(DeserializationFeature.ACCEPT_EMPTY_ARRAY_AS_NULL_OBJECT, true);
+        mapper.configure(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT, true);
+        mapper.configure(DeserializationFeature.USE_JAVA_ARRAY_FOR_JSON_ARRAY, true);
     }
 
     @Override
@@ -56,4 +61,17 @@ public class ActionComponentImpl implements ActionComponent {
     private <I, O> Class<?> inputTypeOf(DocumentAction<I, O> documentAction) {
         return documentAction.getInputType();
     }
+
+    private void loadAll() {
+        try {
+            Class[] classes = ClassLoaderHelper.getClasses(actionPackageName);
+            for (int i = 0; i < classes.length; i++) {
+                DocumentAction action = (DocumentAction)classes[i].newInstance();
+                actions.put(action.getActionName(), classes[i]);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -37,7 +37,6 @@ public class Registry {
     public Response process(Map<String, Object> input) {
         String event = (String) input.getOrDefault("event","");
         Optional<DocumentAction<?, ?>> action = actions.get(event);
-
         if (action.isPresent()) {
             try {
                 return responses.reponse(Response.Status.OK, actions.execute(action.get(), input));

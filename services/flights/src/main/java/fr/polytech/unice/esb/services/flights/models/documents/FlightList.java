@@ -3,14 +3,12 @@ package fr.polytech.unice.esb.services.flights.models.documents;
 import java.util.List;
 
 public class FlightList {
+    List<Flight> flights;
 
-    private List<Flight> flightList;
-
-    public FlightList(List<Flight> flights) {
-        this.flightList = flights;
+    public FlightList(List<Flight> flights){
+        this.flights = flights;
     }
-
-    public List<Flight> getFlightList() {
-        return flightList;
+    public List<Flight> getFlights() {
+        return flights;
     }
 }

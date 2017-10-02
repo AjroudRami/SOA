@@ -1,25 +1,17 @@
-package fr.polytech.unice.esb.services.flights.components;
+package fr.polytech.unice.esb.services.flights.models;
 
-import fr.polytech.unice.esb.services.flights.models.FlightLoader;
 import fr.polytech.unice.esb.services.flights.models.documents.Flight;
 
-import javax.ejb.Singleton;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-@Singleton
-public class FlightComponentImpl implements FlightComponent {
+public class FlightLoader {
 
     private List<Flight> flights;
 
-    public FlightComponentImpl() {
-        flights = load();
-    }
-
-    @Override
-    public List<Flight> getFlights() {
-        return flights;
+    public FlightLoader(){
+        flights = new ArrayList<>();
     }
 
     public List<Flight> load(){
@@ -38,5 +30,9 @@ public class FlightComponentImpl implements FlightComponent {
             flights.add(flight);
         }
         return flights;
+    }
+
+    public List<Flight> getFlights(){
+        return this.flights;
     }
 }

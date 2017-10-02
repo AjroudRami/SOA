@@ -31,10 +31,32 @@
             <artifactId>json</artifactId>
             <version>20170516</version>
         </dependency>
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>1.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-json</artifactId>
+            <version>1.8</version>
+        </dependency>
     </dependencies>
 
     <build>
         <finalName>tcs-service-flights</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.openejb.maven</groupId>
+                <artifactId>tomee-maven-plugin</artifactId>
+                <version>1.7.1</version>
+                <configuration>
+                    <tomeeVersion>1.7.1</tomeeVersion>
+                    <tomeeClassifier>plus</tomeeClassifier>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
 </project>

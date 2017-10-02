@@ -1,7 +1,5 @@
 package fr.polytech.unice.esb.services.flights.actions;
 
-import java.util.Map;
-
 /**
  * A document action
  * @param <I> input type
@@ -21,4 +19,11 @@ public interface DocumentAction<I,O> {
      * @return the input type
      */
     Class<I> getInputType();
+
+
+    /**
+     * @return the action name
+     */
+
+    String getActionName();
 }
