@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
  * Created by danial
  */
 public class CarRentalLoader {
-
     /**
      * Temporary variable
      */
@@ -36,7 +35,6 @@ public class CarRentalLoader {
     static {
         ClassLoader classLoader = CarRentalLoader.class.getClassLoader();
         File carData = new File(classLoader.getResource("car-rental-data.csv").getFile());
-//        File carData = new File("/Volumes/Macintosh HD/Users/danialaswad/Documents/Polytech/Final year/SOA/Lab#1/polytech-soa/services/cars/src/main/resources/car-rental-data1.csv");
 
 
         try {
@@ -46,8 +44,9 @@ public class CarRentalLoader {
                 Car car = new Car(
                         item.get("Brand"),
                         item.get("Model"),
-                        item.get("City"),
-                        Integer.parseInt((item.get("Price")))
+                        item.get("Place"),
+                        Integer.parseInt((item.get("Price"))),
+                        Integer.parseInt((item.get("Availability")))
                 );
 
                 build(car);
@@ -60,13 +59,35 @@ public class CarRentalLoader {
         }
     }
 
-    public static List<Car> findCarRentals(CarRentalRequest carRentalRequest){
-        List<Car> filteredCars = cars.stream()
+    private static List<Car> filterByPlace(List<Car> carList, CarRentalRequest carRentalRequest){
+        if (carRentalRequest.getPlace().map(String::isEmpty).orElse(true)){
+            return carList;
+        }
+
+        List<Car> filteredCars = carList.stream()
                 .filter(car -> {
                     return carRentalRequest.getPlace().map(place -> place.equals(car.getPlace())).orElse(true);
                 }).collect(Collectors.toList());
 
+        return filteredCars;
+    }
+
+    private static List<Car> filterByDuration(List<Car> carList, CarRentalRequest carRentalRequest) {
+        if (carRentalRequest.getDuration().map(duration -> duration == 0).orElse(true)){
+            return carList;
+        }
+
+        List<Car> filteredCars = new ArrayList<>();
+
+        for (Car car: carList) {
+            if(carRentalRequest.getDuration().orElse(0) < car.isAvailability()) filteredCars.add(car);
+        }
 
         return filteredCars;
+    }
+
+    public static List<Car> findCarRentals(CarRentalRequest carRentalRequest){
+
+        return filterByDuration(filterByPlace(cars,carRentalRequest),carRentalRequest);
     }
 }

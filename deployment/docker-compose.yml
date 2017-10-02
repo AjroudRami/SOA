@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  business-travels:
+    image: soa-team-1/business-travels
+    ports:
+      - "8000:8080"
+
+  cars:
+    image: soa-team-1/cars
+    ports:
+      - "8001:8080"
+
+  flights:
+    image: soa-team-1/flights
+    ports:
+      - "8002:8080"
+
+  hotels:
+    image: soa-team-1/hotels
+    ports:
+      - "8003:8080"

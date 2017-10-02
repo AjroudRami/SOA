@@ -1,1001 +1,1001 @@
-Brand,Model,City,Price
-GMC,Sierra 1500,Vouani,79
-Mitsubishi,Outlander,Sumeng,216
-Mercedes-Benz,E-Class,Tiarei,99
-Saab,9000,Liujia,77
-Pontiac,Firefly,Banjar Dauhpangkung,172
-Cadillac,Fleetwood,Al Fukhkhārī,23
-Buick,Reatta,Åtvidaberg,214
-Pontiac,Firebird,Chino,62
-Lexus,GS,Khalopyenichy,208
-Ford,Ranger,Pyhäntä,241
-Saab,900,Rafaela,69
-Chevrolet,Express,Batarasa,52
-Aston Martin,V8 Vantage,Sult,42
-Lincoln,Town Car,Lushan,189
-Dodge,Charger,Zamość,130
-Subaru,Leone,Lile,145
-Hyundai,HED-5,Bahe,19
-Audi,A4,Črenšovci,211
-Mazda,B-Series,Tovačov,87
-Dodge,Stratus,Cimo de Vila,169
-Lexus,HS,Triesenberg,92
-Mercedes-Benz,CL-Class,Shixiang,92
-Acura,NSX,Yelets,166
-Ford,Contour,Colonia Minga Porá,204
-Infiniti,J,Blagoveshchensk,236
-Mercedes-Benz,S-Class,Pensacola,15
-Toyota,Tacoma,Kokofata,223
-Mitsubishi,Tredia,Dallas,187
-Ford,Excursion,Wołomin,128
-BMW,X3,Lingsar,26
-Ford,Explorer Sport Trac,Nowa Sól,178
-Mazda,Miata MX-5,Limín Khersonísou,130
-Ford,ZX2,Iława,45
-Mercedes-Benz,SL-Class,San Marcos,238
-Ford,Fusion,Letlhakeng,178
-Maybach,62,Aimin,59
-Chrysler,PT Cruiser,Kalamáta,61
-Mazda,Mazda6,Linares,51
-Chrysler,PT Cruiser,Elverum,140
-Toyota,Corolla,Kavieng,165
-Volkswagen,Cabriolet,San Nicolás de los Arroyos,225
-Subaru,Legacy,Xinhuang,153
-Volkswagen,Touareg,Río Grande,118
-Toyota,Ipsum,Kallíthiron,57
-GMC,Savana 3500,Wilków,27
-Jeep,Cherokee,Wielbark,125
-Ford,Econoline E150,Ash Shuyūkh,62
-Hyundai,Elantra,Castañas,128
-Ford,F450,Tutul,159
-Mitsubishi,Lancer Evolution,Purworejo,227
-GMC,Sierra 2500,Tetovo,86
-Ford,Courier,Jinxiu,82
-Acura,NSX,Ilha de Moçambique,137
-Lexus,ES,Lanling,233
-Acura,SLX,Petropavlivka,134
-Toyota,T100,Jiudian,85
-Toyota,Ipsum,Slavkov u Brna,177
-Nissan,Frontier,Pavlogradka,120
-Lotus,Esprit,San Jacinto,173
-Mazda,B-Series,Cicurug,229
-Kia,Optima,Malaga,215
-Toyota,Camry Solara,Replot,248
-BMW,3 Series,Veiros,141
-Lotus,Evora,Simapu,83
-Volkswagen,GTI,Ripky,30
-Volkswagen,Jetta,Huangbei,20
-Volkswagen,Golf III,Nowy Sącz,201
-BMW,X5,Dłutów,135
-Mercedes-Benz,E-Class,Ngurensiti,182
-Chevrolet,Lumina,Antioquia,136
-Lexus,LX,Iturama,38
-Honda,Pilot,Livádion,124
-Mercedes-Benz,C-Class,Lushan,58
-Volkswagen,Jetta,Viana do Alentejo,138
-Saturn,L-Series,Sikur,25
-Volkswagen,Routan,Stockholm,95
-Toyota,Sequoia,Nila Dua,67
-Lexus,GS,Tambakmerak,183
-Smart,Fortwo,Luna,209
-Saturn,L-Series,Klagen,235
-Saturn,S-Series,Juyuan,178
-Bentley,Continental GTC,Ożarowice,85
-GMC,Suburban 2500,Roudnice nad Labem,93
-Chrysler,Prowler,Araçuaí,47
-Dodge,Ram Van 2500,Błonie,211
-Pontiac,LeMans,Nong Phai,48
-Mercedes-Benz,SLS-Class,Várzea,178
-Dodge,Caravan,Skotoússa,219
-Pontiac,Bonneville,Oklahoma City,148
-Audi,V8,Ghanzi,134
-Volkswagen,Golf,Yunfu,123
-Mazda,Mazda5,Valencia,192
-Chevrolet,Camaro,Salem,121
-Ford,Transit Connect,Samborondón,188
-Mercury,Sable,Dingcheng,97
-Mercedes-Benz,M-Class,Nanhe,63
-Subaru,Legacy,Curiapo,39
-Bentley,Continental GTC,Bagay,17
-Dodge,Nitro,Magdug,46
-Cadillac,DeVille,Tvarožná,28
-Pontiac,Fiero,Quebrada Canoa,79
-Volkswagen,Vanagon,Oullins,210
-Kia,Forte,Malahide,117
-Chevrolet,Suburban 1500,Houston,63
-GMC,2500 Club Coupe,Odintsovo,86
-Mazda,Mazda5,Fengyuan,155
-GMC,Envoy,Radiměř,247
-Hyundai,Veracruz,Biritiba Mirim,82
-Dodge,Ram 2500,Sherpur,121
-Chevrolet,Express 3500,Ubon Ratchathani,241
-Mercedes-Benz,CLK-Class,Ulster Spring,23
-Buick,LaCrosse,Suzaka,210
-Suzuki,Equator,Berlin,198
-Geo,Metro,Javhlant,85
-Ford,Laser,Xushan,215
-Maserati,228,Mętków,185
-Porsche,911,Burhānuddin,34
-Mercedes-Benz,G-Class,Władysławowo,111
-Pontiac,Firebird,Novo Hamburgo,106
-Buick,Skylark,Qinglin,203
-Mercedes-Benz,SL-Class,Prapen,234
-Dodge,D150,Boroko,93
-Aston Martin,DBS,Villa Bustos,128
-Mitsubishi,Montero Sport,Hudson Bay,54
-Cadillac,STS,Varnsdorf,116
-Porsche,928,Guocun,250
-Ford,Ranger,Dayushu,130
-Hyundai,Tucson,Podwilk,228
-Audi,S4,Hamilton,73
-Lexus,IS-F,Khorixas,117
-Toyota,Tacoma,Lenger,88
-Nissan,Pathfinder,Pailitas,153
-Mercedes-Benz,SL65 AMG,Lubei,210
-Saturn,VUE,Lipci,236
-Pontiac,Grand Prix,Būsh,95
-GMC,Savana 1500,La Jutosa,83
-Infiniti,I,Cabano,76
-Dodge,Caliber,Shanjiang,91
-BMW,5 Series,Bamban,143
-Chevrolet,Cobalt,Maiac,207
-Subaru,Outback,Rizal,177
-Acura,TL,Hanban,101
-Honda,CR-V,Tibati,129
-BMW,M3,Tullyallen,200
-Infiniti,G37,Nîmes,92
-Honda,Odyssey,Gilowice,233
-Ford,Explorer Sport Trac,Bongued,44
-Ford,Edge,Penza,159
-Pontiac,LeMans,Birsa,164
-Pontiac,Grand Am,Bantay,104
-Volkswagen,Golf,Zbarazh,39
-Chevrolet,Blazer,Baylo,135
-Ford,Econoline E250,Banag,18
-Volkswagen,GTI,Pasirbatang,222
-Hyundai,Sonata,Lyon,46
-Suzuki,Grand Vitara,Longvic,221
-Ford,Explorer,Xiangshan,95
-Mitsubishi,Lancer,Shanting,209
-Saturn,L-Series,Mahuta,191
-Toyota,4Runner,Xiyang,55
-Suzuki,Swift,Zagórze,95
-Ford,LTD Crown Victoria,Yanbei,187
-Pontiac,Sunbird,Bieliny,250
-Spyker,C8 Laviolette,Guayabo Dulce,45
-GMC,Yukon,Nangabere,211
-Honda,Civic,Gualeguay,197
-Toyota,Tacoma,Miguel Calmon,151
-Oldsmobile,88,Hengfan,141
-Audi,80,Kolomyagi,189
-Plymouth,Sundance,Henglishan,59
-Mitsubishi,Eclipse,Tigaherang,163
-Mitsubishi,Lancer Evolution,Karasgede,192
-Ford,Explorer,Langqi,208
-Chrysler,PT Cruiser,Tanjungpecinan Utara,224
-Hyundai,Veracruz,Galis,44
-Infiniti,Q,Tarīm,94
-Pontiac,Bonneville,Belköl,182
-Lincoln,Continental Mark VII,Kuantan,90
-Mitsubishi,Truck,Plagiári,248
-Mazda,MPV,Zhuji,194
-Lexus,RX,Wuyang,213
-Ford,Explorer,Chidian,40
-Cadillac,XLR,Souillac,106
-Ford,F350,Prévost,198
-BMW,M5,Žihle,165
-Lexus,GS,Zhaobaoshan,120
-GMC,Sonoma Club Coupe,Markog,87
-Subaru,Forester,Neftegorsk,223
-Subaru,Forester,Massy,43
-Lamborghini,Murciélago,Valença do Piauí,179
-Infiniti,G37,Działoszyce,218
-Chrysler,Town & Country,Ranisoba,202
-Ford,Escort,Casselman,120
-Nissan,Pathfinder,Pátmos,204
-MINI,Cooper,Santi Suk,150
-Mazda,Mazda6,Huangbizhuang,234
-Ford,Explorer Sport Trac,Shijing,63
-Dodge,Caravan,Huaqiao,245
-Mercedes-Benz,E-Class,Sonzacate,105
-Suzuki,SX4,Duhu,208
-Lincoln,MKS,Estela,188
-Buick,Park Avenue,Vaiusu,161
-Mitsubishi,Mirage,Turenki,187
-Mercedes-Benz,CLK-Class,Santa Rita,216
-Chevrolet,Corvette,Khuma,154
-Ford,Taurus,Luzern,118
-Dodge,Dakota Club,Stockholm,132
-GMC,3500 Club Coupe,Kinh Môn,194
-Mitsubishi,Galant,Abashiri,47
-Pontiac,Grand Am,Bakadagy,213
-Mercedes-Benz,C-Class,Margos,111
-Audi,Q7,Old Harbour Bay,147
-Mercedes-Benz,SL-Class,Hongkeli,72
-Buick,Park Avenue,Donglu,227
-Citroën,SM,Bayan,123
-Acura,CL,Dazhipo,179
-Subaru,Legacy,Springfield,232
-Chevrolet,Cobalt,Ševica,21
-Audi,A3,Purranque,202
-Hyundai,Elantra,Jiubao,82
-Toyota,Tundra,Wewoloe,118
-Isuzu,i-350,Havana,246
-Jeep,Wrangler,Kuçovë,146
-Toyota,Echo,Berlin,47
-Volkswagen,Passat,København,213
-Kia,Spectra,Pereira,21
-Acura,TSX,Blagoveshchenka,54
-Mercedes-Benz,GLK-Class,Francisco Sarabia,94
-Acura,Legend,Paraguarí,102
-Dodge,Caliber,Sanhe,171
-Ford,Aerostar,Dmytrivka,49
-Buick,Skyhawk,Castilla,124
-Nissan,Sentra,Ngaruawahia,73
-Volkswagen,Fox,Qiulu,141
-Buick,Riviera,Yagoua,116
-Subaru,B9 Tribeca,Zhengdonglu,30
-Hyundai,Elantra,Sinisian,186
-Mercedes-Benz,S-Class,Dayton,248
-Chevrolet,Suburban 2500,Bakung Utara,65
-Jaguar,XK Series,Hamburg,67
-Spyker,C8,Zaysan,169
-Ford,Aspire,Haghartsin,41
-Buick,Skylark,Baiheshan,125
-Nissan,Altima,Dongming Chengguanzhen,154
-Mitsubishi,Tredia,Baitu,23
-Chevrolet,G-Series G10,Vilar,136
-Lexus,GX,San José de Bocay,114
-Dodge,Charger,Trakai,180
-GMC,Sierra 2500,Xintang,20
-Mercedes-Benz,CL-Class,Juhaynah,166
-Lamborghini,Countach,Bicas,192
-Chevrolet,Monte Carlo,Yafan,222
-Isuzu,Ascender,Diébougou,117
-Porsche,Boxster,Demyansk,131
-Toyota,Previa,Sabae,61
-Pontiac,Solstice,Kakuda,135
-Cadillac,Escalade ESV,Platagata,206
-Hyundai,Tiburon,Phu Kradueng,58
-Buick,Regal,Venustiano Carranza,147
-Buick,Century,Kotlovka,167
-GMC,Yukon,Malasiqui,97
-Oldsmobile,Alero,Kadupinang,192
-Kia,Sephia,Iraray,48
-Mitsubishi,Chariot,Kotuń,180
-Mazda,Miata MX-5,Pag,40
-GMC,Sierra 3500,Liuxiang,234
-Chevrolet,Express 1500,Noginsk,65
-Dodge,Ram Van 3500,Dayangqi,138
-Bentley,Continental GTC,Dikirnis,247
-Chevrolet,Camaro,Venustiano Carranza,198
-Chevrolet,Express,Prakhon Chai,71
-Kia,Sorento,Bandar-e Māhshahr,248
-Chevrolet,Cobalt,Venilale,62
-Mitsubishi,Eclipse,Kantemirovka,159
-Suzuki,Esteem,Celeirós,106
-Ram,Dakota,Runjin,247
-Land Rover,LR3,Itatinga,233
-Chevrolet,G-Series G30,Colonia Elía,248
-Buick,Skylark,Udënisht,240
-Toyota,Avalon,Madang,193
-Ford,Tempo,Zimmi,182
-Buick,LaCrosse,Vetluga,65
-Mazda,MX-5,Hisai,149
-Porsche,Cayman,Pujijie,188
-Volvo,960,Tarrafal,189
-Volkswagen,Golf,Berkovitsa,48
-Mitsubishi,Challenger,Pakis,83
-Toyota,Highlander,Duyanggang,80
-GMC,Vandura 2500,Wololele A,133
-Dodge,Colt,Akure,131
-BMW,3 Series,Tais,172
-Jaguar,XK Series,Luoluopu,141
-Ford,LTD Crown Victoria,Stockholm,169
-Dodge,Ram 1500,Goianésia,49
-Toyota,Supra,Penha,43
-Infiniti,QX56,Changgang,119
-Lincoln,MKT,Saari,127
-Kia,Rio,Damai,153
-Chevrolet,Cobalt SS,Sampués,149
-Chrysler,PT Cruiser,Germiston,59
-Toyota,Venza,Wichita,81
-Hyundai,Accent,Moxi,130
-Honda,del Sol,Sibulan,64
-Audi,RS6,Khārān,154
-Chrysler,PT Cruiser,Haliut,136
-Mercedes-Benz,S-Class,Munduk,198
-Chevrolet,Corvette,Ajax,74
-Pontiac,Sunbird,São Francisco,33
-Hyundai,Entourage,Mardzad,110
-GMC,1500 Club Coupe,Mahébourg,122
-BMW,5 Series,Koz’modem’yansk,122
-Maserati,Spyder,Dobryanka,215
-Toyota,4Runner,North Saanich,176
-Ford,Fusion,Svyetlahorsk,116
-Lincoln,Navigator,Guintubhan,120
-Mercedes-Benz,SL65 AMG,Katoro,175
-Dodge,Ram Van 3500,Masipi West,150
-Porsche,914,Sanshilipu,24
-Mercury,Mountaineer,Cachoeiras de Macacu,203
-Pontiac,Firebird,Kaliska,15
-Ford,Contour,São Roque,196
-Volkswagen,R32,Shuangqiao,130
-BMW,3 Series,Penalva de Alva,229
-Mazda,MX-5,Pruszcz,54
-BMW,530,Kvasy,224
-Nissan,Maxima,Zheleznogorsk-Ilimskiy,82
-Ford,Mustang,Aasiaat,237
-Lamborghini,Gallardo,Kyela,184
-Mitsubishi,Truck,Suzano,240
-Chevrolet,Corvette,Krasnotur’insk,208
-Chevrolet,Astro,Arcos,70
-Buick,LeSabre,Batasan,21
-Ford,F250,Casma,96
-BMW,Z8,Benoy,133
-BMW,3 Series,Shuitou,154
-Chevrolet,Malibu,Néa Flogitá,136
-Audi,Allroad,Vicente Guerrero,28
-Volkswagen,Eurovan,Montpellier,126
-Nissan,Xterra,Araçoiaba da Serra,57
-Jeep,Wrangler,Szombathely,28
-Volkswagen,Golf,Tanzybey,29
-Infiniti,Q,Koz’modem’yansk,61
-Honda,Civic GX,Twardogóra,212
-Chrysler,300,Portelinha,169
-Mitsubishi,Lancer Evolution,Shouxihu,98
-Lexus,GS,Weekaka,32
-Buick,Century,Jamaica,64
-Pontiac,Grand Am,Bezhta,53
-Mitsubishi,Pajero,Fengshuling,158
-Chevrolet,Silverado 2500,Xumai,235
-Acura,NSX,Koudougou,175
-Chevrolet,1500,Beijiang,225
-Volkswagen,R32,Carrières-sur-Seine,189
-Volkswagen,Fox,Três Lagoas,93
-Ford,E150,Banraeaba Village,225
-Volvo,S60,Sundbyberg,206
-Hyundai,Sonata,Huji,176
-Volkswagen,Phaeton,Xinzhai,21
-GMC,Safari,Lyon,165
-Dodge,Ram 2500 Club,Belén,140
-Volkswagen,rio,Issoudun,233
-Infiniti,Q,Binlod,181
-Ford,Explorer Sport Trac,Yuzui,150
-BMW,325,Velyki Mezhyrichi,204
-Mercedes-Benz,C-Class,Zakroczym,150
-Honda,Accord,Paris 18,29
-Ford,F-Series Super Duty,Zolotkovo,153
-Ford,Ranger,Lipka,183
-Mercedes-Benz,SLS AMG,Bang Ban,45
-Audi,A4,Tupã,148
-Ford,Tempo,Dean,221
-Pontiac,Montana,Sinchao,123
-Mazda,B-Series,Montecarlo,54
-Ford,Galaxie,Limulan,112
-Ferrari,430 Scuderia,Fucheng,246
-Lexus,GS,San Jose,100
-Mazda,CX-7,Nanqi,100
-Honda,Pilot,Hotonj,55
-BMW,530,Rybinsk,76
-Chevrolet,Astro,Cangchang,116
-Volkswagen,Eos,Yuankeng,174
-GMC,Sierra 1500,Wenshang,91
-Lexus,RX Hybrid,Yirga ‘Alem,17
-Volkswagen,Golf,Tambo,62
-Lexus,RX Hybrid,Liski,35
-Mitsubishi,Outlander,Samut Songkhram,222
-Mazda,626,Vale Flores,101
-GMC,1500 Club Coupe,Kokemäki,211
-Mitsubishi,Galant,Gantang,244
-Lexus,SC,Santander,228
-Chevrolet,Suburban 1500,Ippy,174
-Dodge,Nitro,Rumenka,148
-Mitsubishi,Pajero,Wuqiao,141
-Dodge,Ram 2500,Caoxi,66
-Buick,LeSabre,Dopang,149
-Dodge,Neon,Rongxi,65
-Jaguar,XK Series,Rungis,58
-Nissan,NV2500,Sampacho,22
-BMW,8 Series,Essen,195
-Ford,Explorer,Castelões,143
-Aston Martin,V8 Vantage,Bīleh Savār,133
-Mazda,Mazdaspeed6,Mnichovo Hradiště,91
-Mazda,Protege,Los Dos Caminos,74
-Mercury,Cougar,Mora,163
-Toyota,TundraMax,Barra Cheia,240
-Suzuki,Sidekick,Longjumeau,64
-Mitsubishi,Lancer Evolution,Sanjiang,225
-Mazda,626,Mansôa,92
-Chevrolet,Silverado 3500,Knyszyn,35
-MINI,Cooper Countryman,Novozavidovskiy,57
-Mercedes-Benz,S-Class,Paris La Défense,236
-Chevrolet,Astro,Miguel Calmon,94
-Ford,Escort,Sorol,178
-Land Rover,Discovery,Kachia,123
-Dodge,Stratus,Talalora,166
-Honda,Prelude,Yangxi,138
-BMW,M3,Licupis,18
-Nissan,JUKE,Tuofeng,125
-Mercury,Tracer,Taphan Hin,48
-Pontiac,Trans Sport,Ayía Triás,140
-Dodge,Charger,Saint-Étienne,48
-Chevrolet,Corvette,Aleksandrovka,167
-Volkswagen,Rabbit,Sauce,246
-Mazda,Protege,Jermenovci,66
-Morgan,Aero 8,Huzhen,188
-Honda,CR-X,Zangkaxa,77
-Ford,F150,Petrovsk,173
-Ram,2500,Macaé,200
-Chevrolet,Blazer,Aḑ Ḑil‘,68
-Mazda,Mazda6,Dodola,76
-Land Rover,Freelander,Shihui,229
-Toyota,4Runner,Maclear,105
-Buick,Regal,Nanuque,196
-Lincoln,Navigator,Sahavato,132
-Suzuki,Swift,Markaz-e Ḩukūmat-e Darwēshān,169
-Isuzu,Amigo,Fryanovo,166
-Oldsmobile,Cutlass Supreme,Chisec,231
-Mazda,MX-5,Gaojiazhuang,143
-Mitsubishi,Montero,Koch'ang,132
-Audi,A4,Malusac,112
-Ford,F150,Āsmār,216
-Toyota,Matrix,Zheleznogorsk,250
-Lotus,Esprit,Mayskiy,177
-Chevrolet,TrailBlazer,Huicheng,134
-Hyundai,Veracruz,Paya Dapur,124
-Toyota,Avalon,Fuxing,239
-Buick,Century,Frei Paulo,64
-GMC,1500 Club Coupe,Novyy Karachay,43
-Chevrolet,Cavalier,Forestville,209
-Dodge,Ram 3500 Club,Rulong,189
-Toyota,Tercel,Punsu,161
-Volkswagen,GTI,Bollnäs,17
-Mazda,Mazda3,Tubalan,87
-Dodge,Caravan,Kohlu,144
-Honda,Pilot,Luoping,189
-Ford,Mustang,Taiping,15
-Toyota,RAV4,Pandaan,17
-Suzuki,Grand Vitara,Nang Rong,141
-Nissan,JUKE,Dabachang,132
-Eagle,Talon,Araruama,174
-Ford,Ranger,Baisha,24
-GMC,2500 Club Coupe,Kabulusan,26
-Kia,Sedona,Enniskerry,246
-Bentley,Azure T,Vale Mourão,86
-Bentley,Continental,Gubu,33
-Mercedes-Benz,E-Class,Longlou,199
-MINI,MINI,Taihe Chengguanzhen,169
-Lincoln,Continental,Dongchuan,233
-Infiniti,M,Utrecht,220
-Cadillac,XLR,Cabo de Vila,239
-Lamborghini,Murciélago,Alvalade,244
-Honda,Accord,Abóboda,142
-Volvo,XC90,Chimanimani,24
-Land Rover,Freelander,Owase,134
-Geo,Metro,Zhubei,26
-Cadillac,Seville,Yarīm,151
-Mazda,GLC,Rio Preto da Eva,58
-Ford,Club Wagon,Gaofeng,116
-Porsche,968,Ceuta,55
-GMC,Sonoma Club,Banana Village,248
-Subaru,Forester,Gustavsberg,96
-Nissan,Cube,Al Manāqil,199
-Nissan,Murano,Nanxiang,148
-Isuzu,Trooper,Narimanov,125
-Chevrolet,Astro,Guam Government House,19
-Rolls-Royce,Ghost,Arroio Grande,131
-Volvo,S60,Sidi Smaïl,27
-Aston Martin,V8 Vantage S,Montería,220
-Kia,Amanti,Lāmerd,191
-Ford,Thunderbird,Nagarakembang,81
-BMW,7 Series,Lumatil,122
-GMC,2500 Club Coupe,Jiyang,59
-Pontiac,Trans Sport,Kosmach,170
-Hummer,H1,Siaya,130
-Mitsubishi,Chariot,Kamenica,206
-Volkswagen,Eos,Il’ya,94
-Ford,Econoline E350,Sukarama,227
-BMW,7 Series,Oyam,116
-Mitsubishi,Montero Sport,Hecheng,228
-Ford,Ranger,Bantal,194
-GMC,Savana 1500,Xichang,238
-Subaru,Forester,Gongchang,139
-Jeep,Liberty,Duisburg,203
-Toyota,Yaris,Cravinhos,111
-Honda,CR-Z,Santo Domingo,218
-Ford,Escort,Legen,145
-Ford,Torino,Zelenchukskaya,149
-Cadillac,SRX,Tuntum,53
-Toyota,Tacoma,Bom Conselho,28
-Smart,Fortwo,Neringa,219
-Ford,Courier,Fada,43
-Ford,Escape,Kifrī,15
-Mazda,RX-8,Lengji,136
-Eagle,Premier,Daliuhao,162
-Chevrolet,Suburban 1500,San Antonio,31
-Honda,Accord,Bajos de Haina,104
-Pontiac,Grand Am,Barusuda,57
-Mazda,MPV,Gaotang,32
-Spyker,C8 Double 12 S,Santa Cruz,202
-Toyota,Corolla,Bogra,216
-Audi,80,Gununglajang,50
-Chevrolet,Metro,Heiheba,167
-Mazda,GLC,Krzemienica,162
-Honda,CR-V,Gozdnica,128
-Ford,Ranger,Mount Pearl,128
-BMW,3 Series,Salogon,233
-Chevrolet,Cavalier,Bururi,246
-Mitsubishi,Galant,Perfilovo,188
-Toyota,T100,Paico,114
-Dodge,Neon,Basco,20
-Dodge,Avenger,Zinat,101
-Volkswagen,Cabriolet,Gaya,60
-GMC,Rally Wagon G2500,Khairpur,117
-Mercedes-Benz,CLK-Class,Katsina-Ala,45
-Volkswagen,Golf,Vårby,20
-Chevrolet,Express 2500,Santa Rita do Passa Quatro,77
-GMC,Yukon Denali,Budapest,98
-Lexus,IS F,El Regalo,83
-Audi,A6,Benghazi,54
-Oldsmobile,Achieva,Köping,29
-Lincoln,Continental,Plei Kần,155
-Saturn,Ion,Ndano,153
-Volvo,XC70,Letlhakane,124
-Volkswagen,Passat,Vacoas,81
-Mazda,RX-7,Béboto,168
-Ford,Expedition EL,Middleton,205
-Subaru,Impreza,Gizałki,60
-Saturn,Ion,São Roque,31
-Ford,E250,Chernomorskiy,65
-Ford,Crown Victoria,Göteborg,156
-Buick,LaCrosse,Santo Domingo,245
-BMW,M5,Orlovskiy,156
-Toyota,Cressida,Pengilon,138
-Volkswagen,Tiguan,Goričan,104
-Buick,LeSabre,Bauan,118
-Land Rover,Range Rover,Armenta,118
-Toyota,MR2,Saño,50
-Toyota,Avalon,Kanie,183
-Land Rover,Discovery Series II,El Carmen de Bolívar,156
-Nissan,Sentra,Atafu Village,42
-Saab,900,Vigo,40
-Mercedes-Benz,SL-Class,Muzhou,245
-Honda,Odyssey,Hedong,183
-Mercury,Sable,Zea,133
-Audi,4000s Quattro,Zakupne,59
-Pontiac,Turbo Firefly,Rubio,214
-BMW,X5 M,Guojiaba,131
-Lamborghini,Gallardo,Nuwaybi‘a,197
-Volkswagen,Eos,Pantai,196
-Saab,9000,Tunggulsari,241
-Toyota,MR2,Habana del Este,71
-Subaru,Legacy,Xinqiaohe,181
-Pontiac,Gemini,Yunxi,58
-Audi,Allroad,Citeureup,202
-Audi,80,Montpellier,178
-Toyota,Corolla,Yijiang,28
-Lexus,GS,Pamoyanan,213
-GMC,Sonoma Club Coupe,Nagano-shi,148
-Toyota,Tercel,Santa Cecilia,63
-Bentley,Continental GTC,Mengeš,227
-Mercedes-Benz,CLK-Class,Debrecen,219
-Subaru,Legacy,Mandaguari,119
-Ford,F350,Piritiba,33
-Volvo,S40,Paamiut,76
-Porsche,968,San Sebastian,95
-Chevrolet,Express 3500,Vilca,228
-Toyota,Land Cruiser,Sumbergayam,85
-Pontiac,Firebird,Raszczyce,34
-Kia,Sedona,Banjar Tengahbelayu,157
-Porsche,Cayman,Lingion,214
-Lexus,IS,Yiyang,48
-Acura,CL,Faya-Largeau,21
-Ford,Mustang,Hengshui,218
-GMC,Yukon,Masoli,22
-BMW,5 Series,Darenzhuang,205
-Volkswagen,Cabriolet,Xihanling,46
-Ford,Focus,Lingcheng,153
-Chevrolet,Cavalier,Kurihashi,67
-Ford,Excursion,Venda Nova,50
-Mazda,Miata MX-5,Bryukhovetskaya,245
-Ford,Tempo,Sandovo,204
-Cadillac,STS,San Cosme y Damián,158
-Lamborghini,Reventón,Medeiros Neto,197
-Porsche,911,Wisła,247
-Chevrolet,Silverado 1500,Gandra,43
-Volkswagen,Corrado,Itajubá,121
-Ford,Explorer,Krahës,244
-Land Rover,Discovery,Ciawitali,250
-Volkswagen,Eurovan,Ayapel,84
-Lexus,GX,Néa Tríglia,178
-Kia,Sorento,Floresta,249
-Chevrolet,Camaro,Boguszów-Gorce,152
-Ford,Transit Connect,Gävle,31
-GMC,Canyon,Perniö,143
-Volkswagen,Passat,Chahe,44
-Honda,S2000,Dawang,223
-Ford,Probe,Shuikou,40
-Mitsubishi,Galant,Rislane,94
-Chevrolet,Prizm,Kuripan,188
-Dodge,Avenger,Polo,113
-Land Rover,Range Rover,Leye,59
-Acura,RSX,El Coco,177
-Audi,100,San Andres,217
-Saturn,S-Series,Lixi,233
-Acura,NSX,Ciego de Ávila,241
-GMC,Sierra,København,174
-Volkswagen,Quantum,Yangcun,236
-Cadillac,DeVille,Rāipur,64
-BMW,5 Series,Iwamizawa,51
-Mercury,Cougar,Pechersk,65
-Dodge,Ram Van B250,Dallas,207
-Mitsubishi,Mirage,Göteborg,62
-Audi,200,Kotabunan,77
-Jeep,Wrangler,Mosopa,114
-Dodge,Neon,Mafeteng,222
-Chevrolet,Vega,Sebadelhe,110
-Chevrolet,Caprice,Shitouhe,174
-Mercedes-Benz,M-Class,Shuangqiao,66
-Ford,E150,Nuevo Chamelecón,97
-Mercedes-Benz,SL-Class,Shuihu,249
-Mazda,CX-9,Ngarus,126
-Pontiac,Sunfire,Nandu,49
-Audi,Coupe Quattro,Miaotang,101
-Plymouth,Breeze,Baoziba,120
-Chevrolet,Express,Coxim,230
-Toyota,Celica,Kario,103
-Scion,xB,Portel,142
-GMC,Acadia,Semanding,189
-Ford,Excursion,Luzhou,93
-Land Rover,Range Rover,Jiuting,112
-Buick,Verano,Paris 17,162
-Suzuki,Swift,Semarang,88
-Maybach,62,Sheffield,184
-Lincoln,LS,Kesambilerenkrajan,67
-Nissan,Maxima,Quinjalca,59
-Jaguar,XJ Series,Songhe,126
-Mitsubishi,GTO,Citeguh,104
-Jeep,Wrangler,Barão de Cocais,133
-Dodge,Durango,Ximapo,161
-Ford,Th!nk,Aknoul,191
-Chevrolet,G-Series G10,Lukićevo,33
-Saturn,Relay,Donggang,31
-Land Rover,LR4,Guangming,45
-Mercury,Cougar,Karanganyar,20
-Toyota,Yaris,Luoqi,28
-Chevrolet,Corvette,Infantas,82
-Dodge,Caliber,Satinka,114
-Lincoln,Navigator,Shibushi,205
-Chrysler,Concorde,Sendangagung,107
-BMW,Z4,Yakutsk,41
-Buick,Skyhawk,Chuhuyiv,116
-GMC,Vandura 3500,Nusajaya,94
-Plymouth,Sundance,Chipyela,149
-Nissan,Titan,Loyew,208
-Buick,Enclave,Sertolovo,137
-Bentley,Continental,Nanxi,99
-Mercury,Villager,Puerto Santander,160
-Chevrolet,Express 2500,Dededo Village,49
-Ford,Explorer,Jiquinlaca,52
-Lamborghini,Gallardo,Rio de Janeiro,39
-Dodge,Caravan,Picassinos,71
-Audi,A6,Kungsbacka,68
-Kia,Sephia,Peixing,64
-Ford,E-Series,Oslo,32
-Pontiac,Aztek,Kadoma,134
-Isuzu,Rodeo Sport,Xianghu,76
-Mazda,MX-5,Touying,227
-Dodge,Ram Van 1500,Clifden,227
-BMW,X3,Güira de Melena,240
-Volkswagen,Jetta,Jinggongqiao,56
-Hyundai,Azera,Ulaanbaatar,203
-Volvo,XC70,Bitin,47
-Buick,Lucerne,Bugis,197
-Nissan,Armada,Bosanski Brod,39
-Volvo,S80,Vesoul,192
-Volkswagen,Golf,Carrefour,140
-Buick,Roadmaster,Zushi,198
-Volkswagen,New Beetle,Jinhaihu,42
-Ford,Festiva,Nanyang,165
-Chevrolet,Corvette,Wirral,73
-GMC,Sierra 3500,Dehī,28
-Saturn,L-Series,Algarvia,163
-Isuzu,Hombre,San Nicolas,179
-Toyota,TundraMax,Thorpe,141
-Mazda,323,Costeira do Pirajubae,135
-Lotus,Evora,Bakung,95
-Mitsubishi,Pajero,Mollebamba,193
-Audi,Q7,Cipinang,51
-Land Rover,Range Rover,Berezivka,120
-Hyundai,Sonata,Saint-Quentin,243
-Ford,Thunderbird,Paritjunus,54
-Chevrolet,Express 3500,Nuevo Amanecer,148
-Lexus,RX Hybrid,Fāraskūr,207
-Chrysler,Imperial,Trawniki,219
-Dodge,Ram Van 2500,Lindavista,33
-Mazda,Tribute,Ashton,210
-Jeep,Cherokee,Neyrīz,44
-Saab,9-2X,Saumur,105
-Pontiac,Firebird,Silva Jardim,29
-Infiniti,FX,Yinping,47
-Suzuki,Swift,Hamm,56
-GMC,Yukon,Kalibo (poblacion),226
-Mercedes-Benz,S-Class,Giade,124
-Ford,Taurus,Pameungpeuk,221
-Chrysler,Voyager,Panjakent,38
-Porsche,Panamera,Pondokunyur,114
-Maybach,57S,Fortaleza,213
-Ford,Econoline E350,‘Afula ‘Illit,172
-Scion,xA,António Enes,149
-Eagle,Talon,Atlanta,87
-Mazda,B-Series,Gémeos,54
-Dodge,Neon,Palmeira,110
-Audi,A3,Davila,176
-Cadillac,Fleetwood,Goubétto,155
-Honda,Element,Jardim,213
-Lexus,LS Hybrid,Los Algarrobos,52
-GMC,Savana 3500,Asheville,96
-Nissan,Leaf,Baffa,27
-Toyota,Celica,Rasony,73
-Pontiac,Bonneville,Chengdong,127
-Mercury,Lynx,Shanjiang,29
-Ford,Probe,Mionica,234
-Hyundai,Elantra,Ciénega,192
-Chevrolet,Blazer,Lazaro Cardenas,236
-Dodge,Caravan,Towa,205
-Hyundai,Azera,Zürich,30
-Ford,E250,Novyy Svit,93
-GMC,Envoy,Kantharalak,149
-BMW,X6,Avignon,196
-Mitsubishi,Eclipse,Ta Khmau,104
-Ford,F-Series,San Rafael,175
-Lexus,RX,Sousse,51
-Mercedes-Benz,SLK-Class,Puerto Varas,171
-Ford,Bronco,Grängesberg,78
-Spyker,C8,Pringgabaya,18
-Nissan,Pathfinder,Mora,226
-Chrysler,LeBaron,Golubac,234
-Mazda,MX-5,Jeremoabo,206
-Audi,A3,Altavista,16
-Dodge,Ram Van 3500,Baabda,149
-Land Rover,Range Rover Sport,Moscow,65
-Ford,Expedition,Miejska Górka,149
-Toyota,Sequoia,Tawa,83
-Lexus,LS,Singosari,225
-Dodge,Ram 1500,Smiřice,160
-Nissan,Murano,Soanindrariny,27
-Cadillac,Escalade ESV,Koronadal,41
-Dodge,Avenger,Kadubadak,206
-Dodge,Dakota,Phumĭ Véal Srê,21
-BMW,Z3,Ōmamachō-ōmama,167
-Nissan,Pathfinder,Bendungan,51
-Buick,Roadmaster,Sedayu,67
-Hummer,H3,Krasnoye,76
-GMC,Sierra 1500,Lae,44
-Hyundai,Veracruz,Bāqim as Sūq,122
-GMC,Envoy,Požarevac,115
-Mercury,Sable,Bradag,23
-Saturn,S-Series,Tanay,53
-Dodge,Intrepid,Itambé,243
-Dodge,Stratus,Bandeirantes,203
-Mazda,B-Series,Graneros,118
-Ford,EXP,Senlis,191
-Infiniti,J,Damatulan,23
-Nissan,Sentra,Sandakan,24
-Chrysler,Concorde,Hesi,57
-Dodge,Caravan,Potchefstroom,79
-GMC,Savana 2500,Vrilissia,15
-Toyota,Avalon,Telagasari,79
-Hummer,H1,Kalmar,37
-Chevrolet,Camaro,Nowosielce-Gniewosz,51
-Buick,Regal,Gjoa Haven,175
-Jeep,Cherokee,Gelemso,232
-GMC,Sierra,Cilangla,103
-Chevrolet,Suburban 2500,Radamata,166
-Mazda,Miata MX-5,Tohautu,219
-Ferrari,458 Italia,Tuchoměřice,211
-Ford,Bronco,Margahayukencana,175
-GMC,Savana,Sastöbe,100
-Lincoln,Town Car,Negara,17
-Toyota,MR2,New Haven,24
-Jeep,Wrangler,Banyubang,57
-Hyundai,Scoupe,Maredakalada,178
-Toyota,Prius c,Pantano do Sul,47
-Cadillac,Escalade ESV,T’ongch’ŏn-ŭp,95
-Volvo,S80,Neryungri,142
-Chevrolet,Suburban,Cazin,82
-Dodge,Avenger,Smokvica,16
-Ford,Mustang,Almirante Tamandaré,91
-Hyundai,Elantra,Sekartaji,116
-Dodge,Grand Caravan,Pancheng,158
-Ford,F150,Tysmenytsya,123
-Ford,E150,La Paz,30
-Chrysler,LeBaron,Wingham,188
-Pontiac,Vibe,Katipunan,218
-Geo,Prizm,Rousínov,18
-Subaru,Tribeca,Qingminghe,199
-Porsche,968,Siak Sri Indrapura,220
-Subaru,Baja,Tasböget,144
-Porsche,944,Currais,72
-Mitsubishi,Outlander,Cerro Azul,198
-Chevrolet,Camaro,Próti,175
-Hyundai,Sonata,Rancharia,249
-Toyota,4Runner,Heqian,213
-Lincoln,Town Car,Catujal Velho,135
-Nissan,Quest,Tha Bo,176
-Lamborghini,Murciélago LP640,Jamao al Norte,171
-Dodge,Ram 2500,Konstantinovo,240
-Suzuki,Esteem,Changtang,116
-Volvo,C30,Akunk’,126
-Austin,Mini Cooper,Suvorovskaya,82
-Ford,Explorer,Angoulême,204
-Pontiac,Grand Prix,Muaratiga,209
-Subaru,Leone,São Marcos,87
-Toyota,Sequoia,Wilczyce,89
-Toyota,Highlander,Lesogorsk,26
-Land Rover,Discovery,Masaya,118
-Dodge,Dakota,Nkurenkuru,181
-Ford,Expedition EL,Pleven,144
-Ford,Escort,Shuinan,232
-Ram,Dakota,Złotów,176
-Saab,9000,Suyang,133
-GMC,Yukon,Kuloy,243
-Pontiac,Vibe,Bulakbanjar,200
-Pontiac,Firefly,Arevashogh,71
-Chrysler,Concorde,Ćuprija,60
-Porsche,911,San Luis,117
-Renault,Alliance,Morcellemont Saint André,177
-Mitsubishi,Mirage,Bouarouss,141
-Infiniti,EX,Kvasiny,147
-Oldsmobile,Achieva,Wucheng,153
-Buick,Electra,Welisara,88
-Honda,Accord,Néa Karyá,106
-Mazda,RX-8,Loncoche,159
-Subaru,Forester,Igbo-Ukwu,17
-GMC,Safari,Bekasi,22
-Chevrolet,Traverse,Namwala,26
-Mercedes-Benz,CL-Class,Mykolayiv,123
-Jaguar,XK Series,Voskresensk,247
-Toyota,Sequoia,Daitou,84
-Cadillac,DeVille,El Retiro,140
-Dodge,Nitro,Vân Canh,219
-Ford,Bronco II,San José de los Remates,222
-Saturn,Relay,Pereleshino,210
-Mitsubishi,Precis,Huangcun,23
-Pontiac,Grand Am,Lakki Marwat,156
-Infiniti,QX,Semīrom,236
-Mercedes-Benz,Sprinter,Villa Nueva,110
-Mitsubishi,Endeavor,Morcolla,22
-GMC,Savana 3500,Stockholm,122
-Ford,Mustang,Novosemeykino,98
-Suzuki,SJ,Knoxville,42
-Acura,RDX,Slawharad,203
-Mazda,Mazda5,Liběšice,80
-Lexus,GX,Mikhaylovsk,146
-Chevrolet,Silverado 1500,Marttila,15
-Toyota,Echo,Obolo-Eke (1),153
-BMW,5 Series,Łagów,162
-Nissan,Pathfinder,Zilang,205
-Audi,R8,Afanas’yeva,163
-Chevrolet,Camaro,Chinú,146
-Hyundai,Genesis Coupe,Kołczygłowy,229
-BMW,M5,Belanting,65
-Nissan,Sentra,Baorixile,103
-Aston Martin,V8 Vantage S,San Cristóbal,116
-Toyota,Corolla,Cipadung,128
-Chevrolet,Suburban 2500,Porecatu,32
-Ford,Expedition,Mamer,30
-Ford,Galaxie,Pameče,89
-Oldsmobile,98,Morani,39
-Volkswagen,Vanagon,Isnos,111
-Maybach,57,Manta,70
-Ford,F-Series,Kivertsi,214
-Subaru,Forester,Rashaant,206
-Chevrolet,Silverado 3500,Huixian Chengguanzhen,219
-GMC,Safari,Río Pico,198
-Ford,Mustang,Xinjiezi,65
-Saab,9000,Sevilla,123
-Mitsubishi,Lancer Evolution,Jiancha,241
-Volkswagen,Fox,Richard-Toll,125
-Ford,E-350 Super Duty,Huanggexi,169
-Lamborghini,Countach,Stockholm,139
-Toyota,Paseo,Hofors,240
-Kia,Sedona,Gotemba,93
-Cadillac,Catera,Las Vegas,69
-BMW,X6,Mburukullu,165
-Lamborghini,Murciélago,Shikārpur,86
-Lincoln,Mark LT,Sukowidodo Barat,77
-Pontiac,Turbo Firefly,Mirecourt,215
-Porsche,Cayenne,Mondragon,216
-Nissan,Pathfinder,Vazante,21
-Acura,MDX,Xingbin,98
-Dodge,Ram 3500,Kafr ash Shaykh,57
-Subaru,Forester,Dongjian,236
-Citroën,SM,Xinqiaohe,156
-Ford,Ranger,Raub,17
-Honda,Prelude,Shiḩan as Suflá,84
-Chevrolet,Cavalier,Viña del Mar,32
-Daihatsu,Charade,Kamālia,48
-Toyota,Matrix,Yuelai,60
-Chevrolet,Impala SS,Saint-Cloud,168
-BMW,550,Palaran,170
-Infiniti,QX,Greenland,21
-Mitsubishi,Expo,Xiluodu,27
-Audi,S4,Famatina,220
-Austin,Mini Cooper,Huangshan,118
-Chevrolet,Avalanche,Chengfeng,190
-Land Rover,LR3,Makīnsk,41
-BMW,M Roadster,Santiago de Baney,173
-Volvo,S60,Pepayan,108
-Mitsubishi,Galant,Barberton,79
-Volkswagen,Golf,Gobernador Ingeniero Valentín Virasoro,114
-Mercedes-Benz,W123,Stąporków,221
-Mercedes-Benz,CL-Class,Longping,119
-Plymouth,Sundance,San Ramón,143
-Chevrolet,Suburban 2500,Shenkou,78
-Hyundai,Entourage,Henglian,239
-Mercedes-Benz,CL-Class,Huochezhan,37
-Cadillac,DeVille,Ketara,242
-GMC,Sierra 3500,Yên Lạc,249
-Dodge,Ram Van 2500,Bangbayang Kaler,73
-Lincoln,MKT,Kiyawa,164
-Ford,Bronco,Pitogo,196
-Ford,F350,Höllviken,220
-Ford,C-MAX Hybrid,Lamongan,139
-Dodge,Challenger,Yabēlo,72
-Kia,Sephia,Yunlu,214
-Pontiac,6000,Calingcing,145
-Toyota,Previa,Cabeças Verdes,157
-Hyundai,Elantra,Xiabuji,230
-Buick,Riviera,Tubod,221
-Jaguar,XJ Series,Zaïo,25
-Ford,F150,Bogi,210
-Lexus,CT,Pukkila,87
-Jeep,Grand Cherokee,Zaragoza,65
-Pontiac,G6,Yinkeng,240
-Mitsubishi,Mirage,Changlong,122
-Pontiac,Grand Am,Huitán,160
-Mazda,B-Series,Bukitkemuning,58
-Buick,Electra,Arbais,196
-Mercedes-Benz,GL-Class,Sorren Daya,33
-Mitsubishi,Outlander,Itapetininga,214
-Maserati,Biturbo,Markópoulo,117
-Mitsubishi,Lancer,Urukh,25
-Suzuki,XL-7,Kebonsari Kidul,136
-Tesla,Roadster,Visby,118
-Honda,Insight,Saskatoon,121
-Mazda,626,Non Sung,79
-Chevrolet,Express 2500,České Meziříčí,137
-Honda,Civic,Yŏnmu,193
-Scion,tC,Luboń,59
-Hyundai,Excel,Damai,180
-Toyota,Sequoia,Juren,235
-Plymouth,Grand Voyager,Villa Ascasubi,163
-Chevrolet,G-Series 1500,Ambanja,234
-Subaru,Impreza,Abū Mūsā,173
-Kia,Optima,Bourg-lès-Valence,124
-Rolls-Royce,Phantom,Kashira,195
-Mazda,Mazda5,Lakatoro,78
-Mercedes-Benz,W201,Sapang Buho,40
-Subaru,Forester,Linköping,120
-Cadillac,Eldorado,Saint-Joseph-de-Coleraine,159
-Lincoln,Aviator,Tougan,226
-Hyundai,Accent,Eixo,171
-Ford,Thunderbird,Tsu-shi,243
-Maserati,Coupe,Krasnokholm,203
-Chevrolet,Monte Carlo,Longhua,84
-Porsche,911,Zheleznovodsk,65
-Mazda,Millenia,Bralin,38
-Chevrolet,Impala,Fenkeng,178
-Toyota,4Runner,Lidong,105
-Toyota,MR2,Bastak,141
-Mercedes-Benz,R-Class,Thị Trấn Quế,99
-Lexus,GS,Jishi,138
-Volkswagen,CC,Al Nashmah,162
-Mazda,MX-5,Ledeunu,26
-Lotus,Esprit,Veřovice,47
-Lincoln,Town Car,Göteborg,198
-Mitsubishi,Montero Sport,Lumbangan,246
-Jaguar,S-Type,Lebedyn,90
-Acura,NSX,Martil,133
+Id,Brand,Model,Place,Price,Availability
+1,Plymouth,Acclaim,Nigeria,292,7
+2,BMW,745,Cuba,160,5
+3,Ford,Tempo,Indonesia,30,2
+4,Toyota,Tacoma,Colombia,66,9
+5,Holden,Monaro,China,256,9
+6,Buick,Century,China,120,6
+7,Subaru,Loyale,Iran,158,9
+8,Lexus,LS,Guatemala,278,2
+9,Chevrolet,Express 2500,Venezuela,41,10
+10,Mitsubishi,Chariot,Brazil,230,1
+11,Chevrolet,Suburban 1500,Norway,66,4
+12,Chevrolet,Silverado,Brazil,261,9
+13,BMW,M3,Brazil,260,8
+14,Honda,Fit,Russia,39,8
+15,Chevrolet,Cobalt,United States,97,9
+16,Chrysler,300M,Indonesia,104,5
+17,Lexus,HS,Indonesia,100,5
+18,Pontiac,Firebird,China,130,4
+19,Toyota,Highlander,China,167,1
+20,Lexus,GS,China,248,7
+21,Ford,Thunderbird,Gambia,19,6
+22,Nissan,Altima,China,230,4
+23,Dodge,Dakota,China,74,7
+24,Mercury,Monterey,Indonesia,131,2
+25,Bentley,Arnage,Czech Republic,31,9
+26,Nissan,240SX,China,114,1
+27,Volkswagen,Fox,Russia,67,7
+28,Bentley,Azure T,Brazil,253,6
+29,Chevrolet,Express 1500,Czech Republic,154,7
+30,Pontiac,Grand Prix,Brazil,3,1
+31,Volkswagen,Jetta,Brazil,99,9
+32,Cadillac,DTS,China,122,6
+33,Chevrolet,Colorado,Indonesia,183,7
+34,Mercury,Sable,Russia,33,8
+35,Volkswagen,Routan,Philippines,79,1
+36,Ford,Escape,Indonesia,235,2
+37,Audi,riolet,Indonesia,155,8
+38,BMW,530,Poland,60,9
+39,Ford,Festiva,China,133,3
+40,Bentley,Continental Flying Spur,China,137,1
+41,GMC,Yukon,Indonesia,137,8
+42,Lincoln,Continental Mark VII,Peru,145,8
+43,Volkswagen,Scirocco,Sweden,117,8
+44,BMW,M3,China,135,8
+45,Pontiac,Firebird,Malaysia,200,9
+46,Chevrolet,Impala,Canada,128,9
+47,Chevrolet,Colorado,Japan,89,1
+48,Audi,riolet,China,208,7
+49,Hyundai,Tiburon,United States,286,8
+50,Mercedes-Benz,SLS-Class,Philippines,300,5
+51,Mercedes-Benz,E-Class,Poland,30,4
+52,MINI,Cooper,France,34,2
+53,Mercury,Mountaineer,Poland,16,2
+54,Toyota,Corolla,Serbia,140,3
+55,Kia,Sportage,China,145,10
+56,Chrysler,300,China,158,5
+57,Kia,Carens,Burkina Faso,80,2
+58,Dodge,Ram 3500,China,182,10
+59,Nissan,Quest,Bhutan,174,9
+60,Honda,S2000,Cuba,102,1
+61,Lincoln,Zephyr,France,254,10
+62,Chevrolet,Express 1500,Philippines,91,9
+63,Audi,riolet,Sweden,175,9
+64,Mitsubishi,Galant,Afghanistan,109,6
+65,Suzuki,Swift,Libya,4,3
+66,Dodge,Caravan,Indonesia,233,5
+67,Saab,9-3,Philippines,242,5
+68,Lexus,GS,Bulgaria,111,1
+69,Ford,Taurus,Paraguay,292,8
+70,Toyota,RAV4,Russia,227,8
+71,GMC,Canyon,Japan,60,10
+72,Pontiac,Bonneville,China,70,8
+73,Buick,Regal,Cyprus,130,4
+74,Nissan,350Z,Indonesia,188,10
+75,Lexus,IS-F,United States,234,8
+76,Volkswagen,Jetta,Ireland,280,7
+77,Ford,E250,China,219,6
+78,Audi,R8,Afghanistan,73,7
+79,Scion,xA,Uzbekistan,235,8
+80,Audi,RS4,Nigeria,171,5
+81,Saab,9-3,Philippines,72,8
+82,Chevrolet,Express 2500,Mexico,147,10
+83,Chevrolet,Caprice,China,92,2
+84,Lexus,IS-F,China,58,2
+85,Mercury,Grand Marquis,Indonesia,101,9
+86,Dodge,Intrepid,Indonesia,46,5
+87,Buick,Skyhawk,Bhutan,216,8
+88,Volkswagen,GTI,Indonesia,141,7
+89,Ford,F350,China,90,6
+90,Honda,Civic,China,171,10
+91,Lexus,GS,China,282,7
+92,Ford,Ranger,Indonesia,167,2
+93,Acura,NSX,Canada,289,4
+94,Dodge,Avenger,Bulgaria,225,3
+95,Oldsmobile,Cutlass Supreme,Portugal,9,9
+96,Chevrolet,Beretta,China,212,7
+97,Chrysler,Concorde,Mexico,105,1
+98,Pontiac,Sunfire,Monaco,186,4
+99,Ford,Edge,Peru,222,4
+100,Ford,E-Series,Poland,210,10
+101,Subaru,Impreza,Morocco,18,10
+102,Isuzu,Rodeo,Colombia,286,9
+103,Hyundai,Sonata,China,259,3
+104,Mitsubishi,GTO,Tanzania,285,3
+105,Ford,Ranger,China,44,2
+106,Audi,S5,Russia,243,1
+107,Toyota,Avalon,Brazil,165,3
+108,GMC,Sierra 1500,Brazil,219,4
+109,Plymouth,Voyager,Bulgaria,60,4
+110,Honda,Accord,Kenya,252,3
+111,Ford,Explorer,Belarus,224,6
+112,Chevrolet,APV,Ukraine,73,4
+113,Mercedes-Benz,R-Class,Czech Republic,292,7
+114,Mercury,Capri,Indonesia,116,6
+115,Audi,A6,Brazil,27,1
+116,Bentley,Continental GTC,Ukraine,195,8
+117,Chevrolet,Astro,Afghanistan,103,3
+118,Infiniti,G,Venezuela,53,2
+119,Chevrolet,G-Series G10,Poland,152,10
+120,Subaru,Forester,Mozambique,200,1
+121,Pontiac,LeMans,Yemen,215,9
+122,Suzuki,Esteem,El Salvador,241,10
+123,Volkswagen,Golf,Iran,235,6
+124,Volkswagen,New Beetle,Egypt,1,4
+125,Infiniti,Q,Mexico,193,6
+126,Volkswagen,Golf,Sweden,56,7
+127,Mercury,Tracer,China,131,4
+128,Maserati,Spyder,Portugal,118,1
+129,Isuzu,Amigo,China,152,6
+130,Pontiac,Vibe,France,4,5
+131,Honda,Accord,China,32,4
+132,Mazda,MX-3,Indonesia,267,9
+133,Audi,RS6,Sri Lanka,198,6
+134,Oldsmobile,Bravada,Brazil,191,4
+135,GMC,Sierra 3500,Japan,239,9
+136,Cadillac,Eldorado,China,266,10
+137,Chevrolet,Corvette,Philippines,162,5
+138,Infiniti,G,China,298,5
+139,Lincoln,Navigator,China,205,8
+140,Lexus,GS,Philippines,126,6
+141,Kia,Sportage,France,55,5
+142,Cadillac,Escalade EXT,China,111,5
+143,Maybach,Landaulet,Palestinian Territory,240,5
+144,Chevrolet,Suburban,Poland,144,2
+145,Buick,Regal,Mali,40,2
+146,Cadillac,Escalade EXT,Ireland,115,5
+147,Nissan,Altima,Canada,40,7
+148,Mercury,Grand Marquis,Indonesia,284,9
+149,Ford,F-Series,Brazil,121,9
+150,Dodge,D150 Club,Bulgaria,156,3
+151,Plymouth,Prowler,Indonesia,275,2
+152,GMC,1500 Club Coupe,Argentina,78,5
+153,Chevrolet,Equinox,Canada,157,6
+154,Alfa Romeo,164,China,295,6
+155,Chevrolet,Astro,Czech Republic,222,5
+156,Hyundai,Sonata,China,36,9
+157,Lincoln,Navigator L,Ethiopia,134,9
+158,Hyundai,Tucson,Saint Vincent and the Grenadines,195,3
+159,Lexus,SC,Albania,173,5
+160,Maserati,228,China,93,9
+161,Saab,9-2X,China,21,5
+162,Toyota,Celica,Sweden,292,1
+163,Toyota,Sequoia,Brazil,140,5
+164,Acura,TSX,Russia,48,3
+165,Chevrolet,Camaro,Japan,187,10
+166,Nissan,Sentra,Nigeria,187,7
+167,Lotus,Evora,Myanmar,199,5
+168,Ford,Taurus,Indonesia,104,8
+169,Mercury,Cougar,Poland,263,8
+170,Lotus,Exige,China,151,2
+171,Toyota,RAV4,Yemen,221,8
+172,Cadillac,CTS,China,31,5
+173,Chevrolet,Impala SS,Chile,96,1
+174,Mercury,Grand Marquis,Japan,49,8
+175,Dodge,Ram Van 3500,Azerbaijan,127,5
+176,Toyota,Sienna,Poland,249,10
+177,Lexus,LS,Croatia,196,1
+178,Chevrolet,2500,Sweden,14,2
+179,Cadillac,XLR,Greece,185,8
+180,Cadillac,XLR,Philippines,190,4
+181,Volkswagen,Jetta,Indonesia,286,6
+182,Mazda,Mazdaspeed 3,Bulgaria,238,3
+183,Buick,Park Avenue,Mauritius,51,3
+184,Audi,A3,Russia,215,1
+185,Kia,Sephia,Germany,213,5
+186,Ford,F-Series,Indonesia,263,6
+187,Ford,F150,Armenia,155,2
+188,Ford,Bronco,Brazil,73,4
+189,Toyota,T100 Xtra,Russia,156,1
+190,Suzuki,Sidekick,Portugal,11,9
+191,Ford,Falcon,Israel,273,1
+192,Dodge,Ram 3500,Russia,239,3
+193,Mercedes-Benz,SLK-Class,Ukraine,84,10
+194,BMW,X5,France,60,5
+195,Ford,Probe,Nicaragua,213,2
+196,Cadillac,STS,Brazil,196,5
+197,Ford,E350,Central African Republic,59,2
+198,Oldsmobile,Cutlass Cruiser,Uzbekistan,105,8
+199,Mercedes-Benz,600SL,Russia,225,7
+200,Jeep,Liberty,Argentina,56,9
+201,Chrysler,Sebring,Bolivia,262,9
+202,Pontiac,Bonneville,Haiti,46,1
+203,Dodge,Ram 1500 Club,Tanzania,104,6
+204,Maserati,Spyder,Thailand,274,4
+205,Acura,TL,Brazil,153,7
+206,Mercedes-Benz,E-Class,China,29,3
+207,Kia,Sportage,Canada,5,6
+208,Ford,Taurus,Democratic Republic of the Congo,255,1
+209,Ford,ZX2,Democratic Republic of the Congo,294,6
+210,Lincoln,LS,Central African Republic,216,5
+211,Plymouth,Voyager,Japan,240,1
+212,Lexus,GS,Peru,285,5
+213,Suzuki,SJ,Russia,274,5
+214,Pontiac,Bonneville,Armenia,32,10
+215,Chevrolet,Malibu,Russia,166,9
+216,Dodge,Daytona,Russia,25,4
+217,Suzuki,SJ 410,Philippines,164,7
+218,Buick,Century,Peru,186,8
+219,Maserati,Spyder,Greece,95,2
+220,Pontiac,Bonneville,Iran,285,3
+221,Chevrolet,G-Series 2500,United States,22,7
+222,Honda,S2000,China,58,4
+223,Volvo,S80,Zimbabwe,176,2
+224,Nissan,Sentra,Tanzania,277,6
+225,GMC,Sierra 3500,Russia,141,2
+226,Dodge,Challenger,Philippines,188,7
+227,Pontiac,Torrent,Brazil,260,3
+228,Chevrolet,Camaro,Indonesia,8,7
+229,Honda,Accord,Indonesia,254,6
+230,Pontiac,Vibe,Ukraine,1,4
+231,Chevrolet,Astro,China,244,5
+232,Pontiac,Torrent,Finland,100,4
+233,Ford,Crown Victoria,Russia,153,1
+234,Infiniti,QX,France,194,10
+235,Nissan,Pathfinder,France,79,8
+236,Lotus,Esprit,Afghanistan,80,2
+237,Nissan,Armada,Sweden,241,6
+238,BMW,3 Series,Iran,285,4
+239,GMC,Vandura 1500,France,64,4
+240,Ford,Escort ZX2,Indonesia,45,7
+241,Toyota,Prius,Russia,282,2
+242,Mercedes-Benz,C-Class,France,121,6
+243,Toyota,Avalon,Armenia,167,2
+244,Toyota,RAV4,Russia,100,6
+245,Audi,S8,Portugal,189,3
+246,Volkswagen,Jetta,Canada,196,6
+247,Suzuki,SX4,Indonesia,291,1
+248,Porsche,Panamera,Russia,93,9
+249,GMC,Savana 3500,China,68,1
+250,Mitsubishi,Pajero,China,103,7
+251,Chevrolet,Metro,United States,227,10
+252,Lexus,GX,Pakistan,63,3
+253,Pontiac,Grand Prix,China,163,5
+254,Oldsmobile,Cutlass Supreme,Russia,238,7
+255,Audi,A6,Germany,207,10
+256,Maybach,62,Germany,143,6
+257,Toyota,Venza,Ukraine,61,8
+258,Hyundai,Azera,Japan,121,5
+259,Buick,Rainier,Finland,213,3
+260,Mercury,Villager,Indonesia,292,7
+261,Honda,del Sol,Indonesia,233,3
+262,Mitsubishi,Expo,Indonesia,31,5
+263,GMC,Yukon,Brazil,53,7
+264,Isuzu,Hombre Space,Mexico,169,2
+265,Nissan,350Z,China,242,7
+266,Cadillac,XLR-V,France,296,6
+267,Oldsmobile,Bravada,Philippines,16,6
+268,Honda,Odyssey,Yemen,180,8
+269,Porsche,Panamera,Brazil,94,5
+270,Mitsubishi,Eclipse,China,43,9
+271,Honda,Accord,France,63,2
+272,Nissan,Pathfinder,Indonesia,97,3
+273,Plymouth,Grand Voyager,Philippines,161,7
+274,GMC,Savana,United States,179,7
+275,Chevrolet,Cobalt,Mozambique,111,5
+276,Buick,Electra,Portugal,141,10
+277,Lincoln,Continental,Mexico,2,1
+278,Infiniti,M,Czech Republic,213,3
+279,BMW,8 Series,Dominican Republic,2,8
+280,Hyundai,Sonata,Philippines,178,2
+281,Lexus,RX Hybrid,Philippines,120,7
+282,GMC,Sierra 1500,Greece,102,8
+283,Mercedes-Benz,Sprinter 3500,China,299,2
+284,Saturn,S-Series,Bulgaria,173,4
+285,Dodge,Ram Van 2500,Egypt,161,4
+286,Audi,riolet,Honduras,81,9
+287,Lincoln,Town Car,Indonesia,16,1
+288,Jeep,Liberty,Brazil,13,8
+289,Honda,Pilot,Brazil,156,2
+290,Audi,Allroad,Poland,253,2
+291,Cadillac,Escalade,China,94,4
+292,Toyota,Tacoma,Myanmar,140,7
+293,Saab,900,Japan,104,8
+294,Chevrolet,Traverse,Sweden,14,6
+295,Subaru,Legacy,China,17,7
+296,Oldsmobile,Intrigue,China,206,5
+297,Ford,F350,China,4,5
+298,Mitsubishi,Tredia,China,210,1
+299,Audi,Q7,China,154,2
+300,Infiniti,M,France,245,9
+301,Toyota,Sienna,Nigeria,110,9
+302,GMC,Savana 1500,Sweden,284,2
+303,Mitsubishi,Pajero,China,50,10
+304,Ford,F-Series,Brazil,170,4
+305,Hyundai,Sonata,Indonesia,5,3
+306,Toyota,Paseo,Sweden,151,10
+307,Toyota,Land Cruiser,Nicaragua,192,9
+308,Lexus,GS,Russia,228,5
+309,BMW,530,Thailand,10,10
+310,Acura,NSX,Malaysia,205,2
+311,Chevrolet,Express 2500,Tanzania,17,8
+312,Isuzu,Ascender,China,105,3
+313,Kia,Spectra5,Ireland,229,8
+314,Chevrolet,Corvette,China,73,6
+315,Volvo,S40,China,177,3
+316,Scion,tC,France,112,7
+317,Subaru,Forester,Mexico,271,5
+318,BMW,M3,China,165,5
+319,Jeep,Liberty,Portugal,237,6
+320,Mercedes-Benz,SL-Class,Malaysia,60,3
+321,Hummer,H1,Sweden,261,5
+322,Chevrolet,Express 3500,China,60,5
+323,Cadillac,SRX,Russia,202,2
+324,Mitsubishi,Challenger,Indonesia,44,1
+325,Mitsubishi,Chariot,Poland,59,8
+326,GMC,Acadia,China,158,8
+327,Buick,Riviera,Comoros,105,1
+328,Saturn,Aura,Armenia,81,10
+329,Mazda,Mazdaspeed 3,Sweden,114,6
+330,Toyota,Avalon,Ukraine,52,6
+331,Volvo,S40,Philippines,37,7
+332,Volvo,960,Indonesia,36,6
+333,Lincoln,MKZ,Nepal,287,6
+334,Nissan,Altima,Russia,155,9
+335,Mercedes-Benz,M-Class,Slovenia,219,5
+336,Ford,Econoline E350,Bosnia and Herzegovina,278,6
+337,Pontiac,LeMans,Russia,300,7
+338,Mercury,Marquis,Nigeria,259,8
+339,Chevrolet,Silverado 2500,Poland,22,1
+340,Mazda,Tribute,Malaysia,20,7
+341,Ford,F-Series,Vietnam,62,5
+342,Oldsmobile,Aurora,Indonesia,243,6
+343,BMW,7 Series,French Polynesia,186,10
+344,Ford,Taurus,Poland,46,3
+345,Audi,A6,China,43,5
+346,Audi,RS 4,Indonesia,117,8
+347,Nissan,Pathfinder,China,298,6
+348,Ford,Transit Connect,Costa Rica,146,2
+349,BMW,6 Series,Spain,171,10
+350,Mercury,Tracer,Mexico,127,3
+351,Ford,Taurus X,Brazil,52,2
+352,Toyota,Camry,Jordan,47,6
+353,Mercury,Cougar,Kazakhstan,277,10
+354,Chevrolet,1500,South Africa,84,2
+355,Isuzu,i-350,China,51,3
+356,BMW,M,Poland,167,3
+357,Cadillac,CTS,Russia,229,4
+358,Nissan,200SX,Argentina,197,5
+359,Mazda,B-Series,Brazil,223,8
+360,Infiniti,Q,China,268,9
+361,Acura,RSX,China,21,5
+362,Volkswagen,GTI,China,182,3
+363,BMW,7 Series,Ukraine,147,8
+364,Pontiac,Grand Am,Iran,28,4
+365,Chevrolet,Camaro,Greece,61,6
+366,Acura,Integra,Cameroon,129,2
+367,Aptera,Typ-1,France,7,2
+368,Toyota,Celica,Kazakhstan,55,3
+369,Acura,RDX,Portugal,192,3
+370,Chevrolet,Corsica,Israel,218,1
+371,Land Rover,LR3,Russia,5,8
+372,Smart,Fortwo,Sweden,101,10
+373,Ford,Crown Victoria,United States,99,2
+374,BMW,X3,Paraguay,236,7
+375,Hyundai,Tiburon,Venezuela,200,1
+376,Plymouth,Grand Voyager,China,84,4
+377,Mazda,Mazdaspeed 3,Philippines,269,2
+378,Cadillac,DeVille,Indonesia,173,1
+379,Mitsubishi,Montero Sport,Sweden,37,7
+380,Pontiac,Grand Prix,Russia,270,2
+381,Pontiac,Firefly,Indonesia,244,7
+382,Ford,Bronco,Peru,8,10
+383,MG,MGB,Philippines,146,8
+384,GMC,Jimmy,Ecuador,99,10
+385,Chrysler,Town & Country,China,80,10
+386,GMC,Yukon,Indonesia,177,7
+387,Honda,CR-V,Philippines,245,10
+388,Mitsubishi,3000GT,Botswana,300,8
+389,BMW,M5,China,77,4
+390,Audi,A6,Belarus,177,1
+391,Dodge,Dakota,Afghanistan,159,6
+392,Chevrolet,Tahoe,Philippines,245,6
+393,Porsche,Panamera,Yemen,161,4
+394,Hummer,H1,Peru,79,2
+395,GMC,Vandura 3500,Belarus,202,10
+396,Porsche,911,Poland,273,9
+397,Buick,Riviera,China,12,7
+398,Volkswagen,Cabriolet,Philippines,173,6
+399,Jaguar,XK,Costa Rica,300,7
+400,Volkswagen,Passat,China,210,1
+401,BMW,530,Indonesia,147,10
+402,Ford,Thunderbird,Poland,151,10
+403,Lotus,Esprit,Cyprus,221,9
+404,Isuzu,Rodeo,Indonesia,276,8
+405,Infiniti,IPL G,Panama,113,5
+406,Toyota,Tacoma,Russia,253,9
+407,GMC,Sierra,Thailand,111,5
+408,Mercedes-Benz,CLK-Class,China,81,8
+409,Mercedes-Benz,M-Class,Indonesia,190,3
+410,Chevrolet,Blazer,Bulgaria,290,1
+411,Chevrolet,Impala,Brazil,195,2
+412,Chevrolet,Camaro,United States,291,10
+413,GMC,1500,Philippines,124,7
+414,Kia,Sedona,United States,201,1
+415,Oldsmobile,Cutlass Supreme,Australia,136,6
+416,Jeep,Grand Cherokee,Portugal,271,5
+417,GMC,Jimmy,Portugal,183,1
+418,Ford,E-Series,Lebanon,125,1
+419,Oldsmobile,Aurora,Poland,161,6
+420,Toyota,Camry,Nigeria,28,8
+421,Chrysler,Cirrus,Colombia,202,9
+422,Lexus,SC,Japan,217,1
+423,Lincoln,Continental,Palestinian Territory,191,10
+424,Dodge,Grand Caravan,Madagascar,249,7
+425,Ford,F250,Tajikistan,79,4
+426,Volkswagen,rio,Czech Republic,103,2
+427,Volkswagen,Passat,Canada,230,9
+428,Mazda,Mazdaspeed6,Ukraine,69,1
+429,Honda,Ridgeline,Indonesia,48,10
+430,Saab,900,Poland,160,2
+431,Ford,E-Series,France,4,8
+432,Ford,Country,Yemen,208,3
+433,Toyota,Camry,China,173,2
+434,BMW,5 Series,Kazakhstan,252,7
+435,Mercedes-Benz,S-Class,Colombia,174,2
+436,Volkswagen,GTI,Indonesia,14,1
+437,Buick,Roadmaster,Poland,189,2
+438,Ford,Freestyle,Sweden,106,10
+439,Volkswagen,GTI,Cameroon,78,7
+440,Mercury,Cougar,Argentina,290,10
+441,Mazda,Mazda3,Russia,159,10
+442,Mercury,Cougar,Cuba,122,2
+443,Volkswagen,Passat,Portugal,220,9
+444,Audi,Cabriolet,Japan,298,1
+445,Nissan,Maxima,Canada,272,4
+446,Toyota,Echo,Nepal,254,8
+447,Mercedes-Benz,M-Class,Georgia,115,1
+448,Chevrolet,Camaro,Lebanon,43,3
+449,Mazda,Miata MX-5,France,60,1
+450,Mazda,B-Series,China,247,8
+451,Acura,TL,Pakistan,143,2
+452,Pontiac,Bonneville,China,43,4
+453,Chevrolet,Impala,Albania,153,9
+454,Mazda,MPV,Guatemala,17,7
+455,Mitsubishi,Eclipse,Thailand,108,5
+456,Ford,Tempo,France,146,4
+457,Volkswagen,Fox,Guadeloupe,234,3
+458,Plymouth,Acclaim,Indonesia,299,5
+459,Ford,Tempo,Tunisia,281,10
+460,Dodge,Ram 2500,Indonesia,288,9
+461,Cadillac,Seville,Philippines,175,3
+462,GMC,2500 Club Coupe,Philippines,295,1
+463,Saab,9-7X,Indonesia,8,7
+464,Nissan,Sentra,China,162,10
+465,Toyota,Corolla,Indonesia,65,10
+466,Pontiac,Grand Prix,Uzbekistan,267,2
+467,Toyota,Paseo,Indonesia,36,10
+468,Mitsubishi,Tundra,Pakistan,76,8
+469,Jeep,Grand Cherokee,Indonesia,234,9
+470,Ford,Mustang,Colombia,254,5
+471,Mazda,B-Series,Greece,42,3
+472,Mercury,Mariner,Lithuania,20,2
+473,Lotus,Esprit,Guatemala,134,4
+474,Volvo,S80,Burkina Faso,266,1
+475,Mazda,RX-8,Russia,161,1
+476,Plymouth,Neon,Indonesia,109,5
+477,Isuzu,Stylus,Peru,193,10
+478,Chevrolet,Equinox,Philippines,56,2
+479,Studebaker,Avanti,Peru,177,2
+480,Mitsubishi,Endeavor,Thailand,56,1
+481,Lexus,HS,Indonesia,255,1
+482,Audi,Quattro,United States,167,7
+483,Maybach,62,Portugal,122,9
+484,Saab,9-5,China,135,3
+485,Mitsubishi,Diamante,Indonesia,125,1
+486,Kia,Carens,Ukraine,78,5
+487,Lincoln,Navigator,Indonesia,186,10
+488,Jeep,Grand Cherokee,Indonesia,147,8
+489,Pontiac,Grand Prix,Liberia,111,1
+490,Dodge,D350,Indonesia,300,7
+491,Cadillac,SRX,China,273,2
+492,Mercedes-Benz,CLK-Class,Brazil,187,8
+493,GMC,Savana 3500,Russia,114,9
+494,Suzuki,XL-7,United States,148,9
+495,Ford,Thunderbird,China,32,7
+496,Mazda,Miata MX-5,Philippines,134,1
+497,Saab,9000,Indonesia,139,5
+498,Volkswagen,Jetta,Sweden,58,3
+499,Subaru,Impreza,China,190,7
+500,Chevrolet,Silverado 2500,Russia,189,6
+501,Maybach,Landaulet,Peru,242,2
+502,Dodge,Dakota,Argentina,240,3
+503,Buick,Electra,China,120,9
+504,Ford,Edge,Philippines,127,3
+505,Dodge,Ram 3500,Bangladesh,122,9
+506,Audi,A6,Greece,81,10
+507,Subaru,Outback Sport,France,196,2
+508,Mercedes-Benz,GLK-Class,Serbia,247,10
+509,Mercury,Capri,Vietnam,295,6
+510,Chevrolet,Corvette,Tanzania,280,5
+511,Lexus,GS,Peru,48,10
+512,BMW,530,Canada,7,1
+513,Ford,Crown Victoria,China,34,4
+514,Toyota,RAV4,Philippines,261,1
+515,Mercedes-Benz,E-Class,Philippines,138,5
+516,Lincoln,Navigator L,Peru,232,1
+517,Toyota,Land Cruiser,Malawi,131,1
+518,Mercedes-Benz,500SEL,United Kingdom,221,10
+519,Buick,Century,Portugal,99,6
+520,Mitsubishi,Pajero,United States,128,3
+521,BMW,M5,Honduras,36,3
+522,Studebaker,Avanti,Panama,7,4
+523,GMC,Vandura 1500,China,89,3
+524,Porsche,Cayman,China,95,2
+525,Jaguar,X-Type,Indonesia,175,10
+526,Nissan,Xterra,Philippines,76,1
+527,Mazda,B-Series,Estonia,16,1
+528,Lexus,SC,New Zealand,274,4
+529,Chevrolet,Silverado 2500,Bosnia and Herzegovina,100,2
+530,Chevrolet,Silverado 1500,China,123,7
+531,Acura,RSX,Vietnam,266,5
+532,Kia,Spectra,Brazil,78,2
+533,Morgan,Aero 8,China,101,6
+534,Acura,CL,Indonesia,173,7
+535,Toyota,Venza,Sweden,188,5
+536,Ford,Econoline E250,Indonesia,176,2
+537,Lincoln,Continental,Tanzania,226,4
+538,Jeep,Cherokee,Japan,258,5
+539,Hummer,H2,China,47,7
+540,Lamborghini,Murciélago,Kenya,105,7
+541,Mitsubishi,Montero Sport,Poland,93,7
+542,Buick,LeSabre,Philippines,286,4
+543,Ferrari,F430,Sweden,282,9
+544,Audi,5000CS Quattro,Portugal,262,9
+545,Pontiac,Turbo Firefly,Uzbekistan,159,1
+546,MINI,Cooper,Brazil,270,5
+547,Ford,Explorer,Indonesia,219,2
+548,Lexus,IS-F,Japan,16,8
+549,Daewoo,Nubira,Poland,59,8
+550,Kia,Sedona,Brazil,79,3
+551,Mercury,Capri,Honduras,276,7
+552,Suzuki,Esteem,China,130,1
+553,Hummer,H1,Canada,12,8
+554,Infiniti,G35,Portugal,295,8
+555,Mercedes-Benz,GL-Class,Sweden,34,6
+556,Chevrolet,Corvette,Jamaica,36,8
+557,Toyota,Sequoia,Mexico,43,9
+558,Chevrolet,Blazer,Greece,11,3
+559,Toyota,Tercel,Finland,116,7
+560,Chrysler,LHS,Brazil,5,7
+561,Audi,S6,Brazil,32,1
+562,Toyota,Avalon,Philippines,149,4
+563,Lincoln,Town Car,Poland,189,8
+564,Hyundai,Tucson,Sweden,160,2
+565,Chevrolet,Suburban 2500,Czech Republic,6,6
+566,Acura,RSX,Indonesia,170,8
+567,Saab,9-3,Indonesia,106,8
+568,Audi,A7,Argentina,293,3
+569,Infiniti,QX56,Ukraine,133,6
+570,Chevrolet,Express 1500,Japan,5,2
+571,Jaguar,XJ,Brazil,48,6
+572,Mercedes-Benz,W201,Mozambique,113,8
+573,Honda,Accord,Indonesia,1,1
+574,Mercedes-Benz,S-Class,China,124,10
+575,Mitsubishi,Chariot,Russia,146,7
+576,Volvo,S80,Croatia,154,2
+577,Chevrolet,Astro,Vietnam,109,1
+578,Land Rover,Range Rover Sport,Czech Republic,85,10
+579,BMW,5 Series,Russia,244,6
+580,Pontiac,Grand Prix,Tanzania,111,4
+581,Oldsmobile,Ciera,China,184,5
+582,Lamborghini,Murciélago,China,270,8
+583,Chevrolet,Caprice Classic,Mexico,121,9
+584,Buick,Riviera,Yemen,288,8
+585,Suzuki,Swift,Indonesia,57,4
+586,Mitsubishi,Truck,China,68,1
+587,Suzuki,Swift,Ukraine,170,9
+588,Chevrolet,Cavalier,Portugal,86,3
+589,Honda,Accord,Thailand,3,2
+590,Audi,5000S,Brazil,4,6
+591,Nissan,Pathfinder,China,191,4
+592,Honda,Odyssey,Iran,268,2
+593,Volvo,S80,Indonesia,63,10
+594,Hummer,H1,Russia,19,8
+595,GMC,1500 Club Coupe,Philippines,77,5
+596,Oldsmobile,Silhouette,Central African Republic,246,8
+597,Honda,Odyssey,Thailand,286,1
+598,Suzuki,Esteem,Greece,22,4
+599,Saab,9000,Laos,217,8
+600,Eagle,Summit,Sweden,152,7
+601,Mazda,Familia,Portugal,248,5
+602,Chevrolet,Sportvan G30,Thailand,137,10
+603,Land Rover,Range Rover,Germany,238,2
+604,Ford,Taurus,France,141,3
+605,Ford,Mustang,Bangladesh,223,7
+606,Dodge,Ram Van 2500,Armenia,300,8
+607,MINI,Cooper,Indonesia,37,9
+608,Suzuki,Swift,United States,59,4
+609,BMW,M3,Peru,52,5
+610,Porsche,Boxster,Greece,59,10
+611,Saab,9-5,Pakistan,249,3
+612,Ford,E150,Poland,57,10
+613,GMC,3500 Club Coupe,Serbia,189,3
+614,Jeep,Commander,China,241,3
+615,Nissan,Sentra,Poland,146,9
+616,Saab,9-3,China,63,10
+617,Toyota,Matrix,Bulgaria,207,7
+618,Acura,Legend,Bulgaria,25,6
+619,Dodge,Grand Caravan,Vietnam,239,9
+620,Subaru,Forester,China,191,10
+621,Mercury,Cougar,Argentina,138,1
+622,Mitsubishi,Lancer,Russia,49,8
+623,Mercury,Mountaineer,China,282,8
+624,Audi,A3,France,127,8
+625,Kia,Spectra,South Africa,171,7
+626,Hummer,H1,Indonesia,288,4
+627,Ford,E-350 Super Duty Van,Italy,49,7
+628,Chevrolet,Express 2500,Greece,254,1
+629,Toyota,Previa,Benin,192,9
+630,Volkswagen,Cabriolet,China,128,9
+631,Toyota,Highlander,France,283,3
+632,Chrysler,300,Philippines,155,3
+633,Audi,riolet,Portugal,19,6
+634,Mazda,CX-7,Indonesia,49,5
+635,Saturn,L-Series,Indonesia,100,2
+636,Ford,Explorer Sport Trac,Vietnam,298,9
+637,Dodge,Ram Van 2500,Ukraine,80,4
+638,Toyota,Land Cruiser,Tuvalu,102,2
+639,GMC,Acadia,Croatia,19,5
+640,Mazda,Miata MX-5,China,123,3
+641,Mazda,Mazda6,Philippines,187,2
+642,Hyundai,Genesis,Colombia,278,1
+643,Audi,R8,Portugal,212,10
+644,Chevrolet,Astro,Indonesia,245,5
+645,Dodge,Dakota,Azerbaijan,12,6
+646,Dodge,Ram 3500,Brazil,155,6
+647,Hyundai,Genesis Coupe,Portugal,32,10
+648,Chevrolet,Sportvan G30,Russia,82,8
+649,Hyundai,Equus,Philippines,300,1
+650,Volkswagen,Passat,China,171,8
+651,Audi,S8,Albania,110,2
+652,Ford,F350,Brazil,266,5
+653,Ferrari,599 GTB Fiorano,Indonesia,40,8
+654,Mercedes-Benz,R-Class,Sweden,113,8
+655,Acura,CL,China,269,4
+656,Jeep,Grand Cherokee,Moldova,185,1
+657,Dodge,Dakota,Indonesia,277,2
+658,Hyundai,Elantra,Poland,178,10
+659,Subaru,Forester,Philippines,125,7
+660,Mazda,RX-7,China,146,2
+661,Volvo,S40,Sweden,86,6
+662,Dodge,Dakota,China,89,5
+663,Ford,Escort,Greece,62,3
+664,Cadillac,Escalade,Colombia,186,8
+665,Oldsmobile,Alero,Philippines,292,3
+666,Chevrolet,Volt,Vietnam,236,1
+667,Honda,Civic,Paraguay,186,5
+668,Toyota,Celica,Portugal,231,2
+669,Ford,F250,Indonesia,284,2
+670,Chevrolet,Sportvan G30,Portugal,277,8
+671,Ram,Dakota,Ukraine,108,2
+672,Dodge,Dakota,Philippines,183,9
+673,Ram,2500,Malaysia,9,2
+674,Toyota,Celica,Indonesia,25,7
+675,BMW,X3,China,262,4
+676,Volkswagen,Jetta,Philippines,70,9
+677,Dodge,Ram 3500 Club,Indonesia,9,4
+678,Ford,Ranger,China,15,1
+679,Ford,E-Series,Argentina,229,2
+680,Ford,F150,Indonesia,122,7
+681,Porsche,944,Canada,11,1
+682,Mazda,323,Australia,247,4
+683,Nissan,Sentra,Bulgaria,217,5
+684,Dodge,Aries,Croatia,136,2
+685,Dodge,Journey,Mauritius,296,10
+686,Nissan,Xterra,France,216,2
+687,Volvo,V70,Canada,83,7
+688,Infiniti,FX,Norway,103,5
+689,Audi,A8,Guatemala,268,5
+690,Chevrolet,Impala,France,214,5
+691,Honda,Civic,Japan,118,2
+692,Fiat,Nuova 500,Morocco,113,5
+693,Chrysler,Sebring,Afghanistan,115,2
+694,Buick,Skyhawk,Azerbaijan,237,6
+695,GMC,Envoy XL,Finland,168,1
+696,Mitsubishi,Expo,China,161,8
+697,Subaru,XT,Philippines,218,2
+698,Acura,RL,Indonesia,121,2
+699,Toyota,Tacoma Xtra,Sweden,105,7
+700,Dodge,Ram Van B150,Saudi Arabia,89,4
+701,GMC,Savana 1500,Indonesia,233,9
+702,BMW,X5 M,Ukraine,98,4
+703,Dodge,Ram 1500 Club,Afghanistan,189,5
+704,Lexus,GX,Philippines,37,7
+705,Ford,Laser,Sweden,72,3
+706,Lincoln,Town Car,Cuba,219,8
+707,Ford,F-Series Super Duty,Paraguay,106,8
+708,Volkswagen,Passat,China,276,2
+709,Saturn,Outlook,Indonesia,206,10
+710,GMC,1500 Club Coupe,France,118,3
+711,Ford,F150,Estonia,109,2
+712,Chevrolet,Corsica,Poland,129,6
+713,Isuzu,VehiCROSS,China,180,3
+714,Mitsubishi,Pajero,Indonesia,262,10
+715,BMW,Z3,Ivory Coast,142,7
+716,Ford,Explorer,China,95,2
+717,Nissan,Frontier,Philippines,131,1
+718,Chevrolet,Suburban 1500,Greece,10,3
+719,Nissan,Xterra,Czech Republic,146,2
+720,Dodge,Journey,Norway,27,10
+721,Toyota,Corolla,Philippines,73,9
+722,Volkswagen,Touareg,China,149,2
+723,Ford,E-350 Super Duty Van,Philippines,281,2
+724,Chevrolet,Cavalier,Sweden,117,10
+725,Oldsmobile,Achieva,Sweden,188,10
+726,Lexus,LX,Russia,79,2
+727,Hyundai,Azera,Peru,280,9
+728,Ford,F-Series,Poland,238,4
+729,Infiniti,G25,China,124,5
+730,Lincoln,Continental,Palestinian Territory,78,10
+731,Lexus,GS,China,269,2
+732,Acura,RDX,Paraguay,238,10
+733,Subaru,XT,Greece,283,2
+734,Toyota,Prius Plug-in,Russia,156,9
+735,Infiniti,FX,Angola,131,7
+736,Jaguar,S-Type,Pakistan,192,4
+737,Cadillac,Escalade ESV,Argentina,247,1
+738,Buick,Somerset,China,174,3
+739,Renault,Alliance,Bulgaria,266,6
+740,Chevrolet,Express 1500,China,194,4
+741,Ferrari,F430,China,184,10
+742,Mercedes-Benz,SL-Class,Vietnam,69,1
+743,Chrysler,PT Cruiser,Russia,229,10
+744,Ford,Thunderbird,United Arab Emirates,59,1
+745,Mitsubishi,Galant,Norway,117,2
+746,Porsche,911,United States,30,9
+747,Audi,A3,Greece,27,10
+748,Dodge,Dakota Club,Finland,248,8
+749,Ford,LTD Crown Victoria,Indonesia,179,6
+750,Mitsubishi,Galant,Indonesia,6,5
+751,Suzuki,Equator,Kenya,153,1
+752,Subaru,Brat,Indonesia,62,6
+753,BMW,Z3,Poland,204,6
+754,Nissan,Maxima,Poland,78,6
+755,Pontiac,Firebird,Thailand,29,10
+756,Pontiac,GTO,Russia,42,3
+757,Toyota,Celica,China,134,4
+758,Audi,A4,United States,174,6
+759,Ford,Expedition,Indonesia,124,1
+760,Porsche,928,Portugal,22,10
+761,Subaru,Legacy,New Caledonia,240,4
+762,Subaru,Legacy,Ukraine,106,9
+763,Porsche,Boxster,China,262,7
+764,Pontiac,Grand Prix,China,283,3
+765,Chevrolet,Aveo,Poland,238,9
+766,Nissan,350Z,Brazil,42,7
+767,Toyota,Camry,Spain,172,10
+768,Audi,S4,Poland,194,1
+769,GMC,Suburban 2500,Brazil,154,1
+770,Lexus,LS,Turkey,300,8
+771,Buick,Lucerne,France,47,4
+772,Scion,tC,China,39,6
+773,Mitsubishi,GTO,Ukraine,26,2
+774,GMC,Vandura G3500,Russia,171,9
+775,Volvo,C70,Brazil,74,5
+776,Maybach,57,Dominican Republic,244,9
+777,Volkswagen,Jetta,Solomon Islands,212,5
+778,Plymouth,Colt,Ukraine,266,4
+779,Panoz,Esperante,China,47,3
+780,Mazda,323,Colombia,121,9
+781,Toyota,Highlander,Indonesia,101,4
+782,BMW,1 Series,Ethiopia,110,7
+783,Ford,E150,Portugal,224,6
+784,Pontiac,Firebird,United States,106,3
+785,GMC,Savana 1500,Indonesia,175,1
+786,Acura,CL,Portugal,175,8
+787,Mercury,Tracer,China,209,9
+788,Mitsubishi,Galant,Russia,292,1
+789,Volvo,S60,Peru,24,3
+790,Suzuki,Swift,Kyrgyzstan,233,6
+791,Volkswagen,Tiguan,Canada,99,9
+792,Isuzu,Rodeo,Tanzania,115,6
+793,Chevrolet,G-Series G10,France,238,10
+794,Mercury,Mountaineer,Russia,246,9
+795,Plymouth,Voyager,Pakistan,132,6
+796,Pontiac,Gemini,Chile,155,2
+797,Ford,Bronco II,Paraguay,175,4
+798,Subaru,Justy,Norway,147,1
+799,Volvo,C70,China,119,3
+800,Ford,Thunderbird,Russia,17,3
+801,Ford,E-Series,Spain,126,9
+802,Chevrolet,Monte Carlo,China,83,7
+803,Oldsmobile,Alero,Greece,150,4
+804,Dodge,Ramcharger,Bolivia,47,6
+805,Pontiac,Parisienne,Gambia,64,1
+806,Subaru,Outback,China,260,1
+807,Porsche,Cayenne,Philippines,86,10
+808,Jeep,Cherokee,Mongolia,11,5
+809,Toyota,Echo,Togo,258,4
+810,Acura,TL,China,188,1
+811,BMW,M3,Russia,185,3
+812,Honda,Odyssey,Morocco,5,2
+813,Lincoln,MKS,China,44,10
+814,Acura,TL,Costa Rica,37,10
+815,Subaru,Legacy,Malaysia,293,6
+816,Ford,Laser,Philippines,57,9
+817,Suzuki,Grand Vitara,Poland,20,7
+818,Volkswagen,Eos,Indonesia,41,9
+819,Dodge,Charger,Canada,262,8
+820,Acura,NSX,Lebanon,14,5
+821,Ford,Tempo,China,19,5
+822,Toyota,Cressida,Iran,29,5
+823,Isuzu,VehiCROSS,United States,194,9
+824,Pontiac,Fiero,Ukraine,232,2
+825,Ford,Bronco,Iran,74,3
+826,Acura,RL,Philippines,97,9
+827,Pontiac,Solstice,Ukraine,161,1
+828,Mercury,Capri,Argentina,131,10
+829,Mitsubishi,Montero,Nigeria,115,9
+830,Dodge,Avenger,Russia,240,4
+831,Honda,Civic,Macedonia,279,6
+832,Acura,TL,China,71,8
+833,Toyota,Matrix,Portugal,116,8
+834,Chevrolet,Corvette,Czech Republic,36,1
+835,Cadillac,Escalade EXT,Japan,190,8
+836,Ford,Bronco,Portugal,120,6
+837,Mercedes-Benz,R-Class,Colombia,81,1
+838,Audi,S8,China,38,1
+839,Lexus,IS,China,36,8
+840,Dodge,Dakota,Brazil,118,6
+841,Buick,Terraza,Portugal,223,9
+842,Mazda,MX-5,France,151,9
+843,BMW,X3,Indonesia,208,5
+844,Jaguar,XJ Series,China,21,4
+845,Buick,LeSabre,Albania,194,4
+846,Pontiac,Torrent,China,38,7
+847,Audi,A8,China,22,10
+848,Mitsubishi,Pajero,Portugal,59,4
+849,Suzuki,Swift,Bulgaria,180,9
+850,Mercedes-Benz,M-Class,Philippines,121,2
+851,MINI,Cooper,Portugal,2,10
+852,Nissan,Maxima,China,9,5
+853,Mercury,Monterey,United States,244,2
+854,Pontiac,Solstice,Indonesia,68,3
+855,GMC,Savana 3500,Poland,169,6
+856,Ford,E250,Philippines,90,8
+857,Saturn,L-Series,Brazil,140,8
+858,GMC,Savana 2500,France,247,2
+859,Toyota,Land Cruiser,Brazil,158,5
+860,Mercedes-Benz,400SE,Indonesia,288,3
+861,Audi,A4,Kazakhstan,159,2
+862,Jeep,Wrangler,China,122,9
+863,Chevrolet,Express 3500,China,190,7
+864,Audi,A8,Peru,152,3
+865,Cadillac,Eldorado,Indonesia,151,6
+866,Volkswagen,Golf,China,171,9
+867,Buick,Century,South Korea,231,6
+868,Volkswagen,Passat,Russia,181,8
+869,Chrysler,300M,China,295,8
+870,Nissan,Sentra,Ecuador,222,10
+871,Chevrolet,Corsica,China,28,2
+872,Nissan,Pathfinder,China,224,10
+873,Mazda,RX-7,Indonesia,206,5
+874,Honda,CR-V,Philippines,174,1
+875,BMW,X3,Luxembourg,188,4
+876,Honda,CR-V,China,114,10
+877,Toyota,Cressida,Brazil,145,8
+878,Volkswagen,CC,France,150,10
+879,Dodge,Ram Van 1500,Democratic Republic of the Congo,236,3
+880,Ford,Ranger,China,249,1
+881,Chevrolet,Caprice,China,230,6
+882,Toyota,Matrix,China,272,4
+883,Porsche,911,Greece,219,9
+884,Nissan,240SX,Mongolia,51,6
+885,Audi,A3,United States,62,1
+886,Ford,Ranger,Poland,61,3
+887,GMC,Savana 1500,Japan,186,3
+888,Mazda,MX-6,China,167,8
+889,Chevrolet,Express 1500,Portugal,119,6
+890,Mercury,Mariner,Venezuela,191,3
+891,Chevrolet,Silverado,China,174,9
+892,Volkswagen,GTI,Brazil,206,10
+893,Mercedes-Benz,R-Class,"Bonaire, Saint Eustatius and Saba ",184,10
+894,Oldsmobile,Alero,China,56,1
+895,Citroën,CX,China,96,8
+896,Subaru,Outback,Indonesia,97,10
+897,Lincoln,Navigator,China,103,8
+898,Suzuki,Forenza,China,72,6
+899,Chevrolet,Corvette,Palestinian Territory,295,1
+900,Chevrolet,Cobalt,China,246,3
+901,Ford,Econoline E150,Philippines,5,1
+902,Cadillac,CTS,Indonesia,240,2
+903,Mazda,B-Series Plus,Philippines,296,7
+904,Lincoln,Mark VIII,Japan,226,7
+905,Chevrolet,Camaro,Sweden,165,9
+906,Saturn,Outlook,Greece,275,6
+907,Pontiac,GTO,China,70,10
+908,Ram,1500,France,120,2
+909,Jeep,Cherokee,Japan,48,8
+910,Ford,Explorer,Indonesia,287,8
+911,Suzuki,Aerio,Brazil,72,6
+912,Jaguar,XK Series,Philippines,91,2
+913,Chevrolet,Corvette,Senegal,25,1
+914,GMC,Savana,Indonesia,75,6
+915,Nissan,240SX,Jordan,97,1
+916,Dodge,Neon,China,158,7
+917,Mitsubishi,Lancer Evolution,Brazil,55,5
+918,Lincoln,LS,Mexico,72,6
+919,Dodge,Caravan,Macedonia,84,7
+920,Pontiac,Grand Am,Uganda,80,7
+921,Dodge,Dakota,China,139,3
+922,Ford,F250,Philippines,279,8
+923,Jaguar,XK Series,Indonesia,67,10
+924,Toyota,Camry,Vietnam,8,8
+925,Ford,Ranger,Indonesia,136,5
+926,Mercedes-Benz,C-Class,United States,153,6
+927,Oldsmobile,Aurora,Indonesia,178,4
+928,Oldsmobile,Ciera,Armenia,62,7
+929,Chevrolet,Suburban 2500,Indonesia,243,10
+930,Lincoln,MKZ,Serbia,204,10
+931,GMC,Savana 3500,Sweden,298,10
+932,Bentley,Arnage,France,103,5
+933,Audi,A5,Russia,236,6
+934,Mercury,Mountaineer,Russia,40,10
+935,Ford,F-250 Super Duty,Saudi Arabia,144,3
+936,Ford,LTD Crown Victoria,Panama,141,1
+937,Nissan,Pathfinder,Russia,32,10
+938,Acura,RSX,Indonesia,249,10
+939,Jaguar,S-Type,Brazil,3,6
+940,Mercedes-Benz,C-Class,China,235,4
+941,BMW,3 Series,Indonesia,153,7
+942,Dodge,Intrepid,Brazil,132,4
+943,GMC,2500 Club Coupe,Philippines,184,4
+944,Volkswagen,Rabbit,United Arab Emirates,205,7
+945,Toyota,Sequoia,South Korea,87,8
+946,Lincoln,MKS,South Korea,199,7
+947,Ford,F250,Russia,9,2
+948,BMW,M5,Brazil,109,6
+949,Cadillac,Eldorado,United States,146,8
+950,Nissan,Frontier,Philippines,278,4
+951,Oldsmobile,Bravada,China,168,7
+952,Dodge,Grand Caravan,Myanmar,22,4
+953,Lincoln,Zephyr,Ukraine,154,9
+954,Toyota,4Runner,Ukraine,295,9
+955,Ford,Probe,Estonia,230,8
+956,Scion,tC,Argentina,99,4
+957,Bentley,Continental GTC,China,280,5
+958,Mercury,Grand Marquis,United States,27,1
+959,Volkswagen,Eurovan,Switzerland,287,8
+960,Lincoln,Continental,Mauritania,15,7
+961,Subaru,Baja,Malaysia,241,1
+962,Honda,Prelude,United States,164,5
+963,BMW,M5,Thailand,160,6
+964,Mercedes-Benz,CLS-Class,Canada,149,3
+965,Suzuki,Vitara,China,126,7
+966,Chrysler,Concorde,South Africa,300,5
+967,Kia,Rondo,Peru,97,1
+968,Dodge,Neon,Tunisia,10,9
+969,Saab,900,Portugal,56,2
+970,Subaru,Leone,Portugal,245,2
+971,Toyota,4Runner,Indonesia,272,7
+972,Lincoln,Town Car,Kazakhstan,111,5
+973,Dodge,Dakota,Venezuela,40,10
+974,Dodge,Stratus,Indonesia,211,6
+975,Toyota,Matrix,Venezuela,100,5
+976,Lamborghini,Gallardo,Brazil,71,2
+977,Geo,Metro,Sweden,219,2
+978,Oldsmobile,Aurora,China,202,3
+979,Volkswagen,Cabriolet,Indonesia,2,3
+980,Hyundai,Accent,Indonesia,235,2
+981,Bentley,Continental GTC,Ukraine,287,2
+982,Volvo,960,China,94,3
+983,Mercedes-Benz,E-Class,Indonesia,84,8
+984,Volkswagen,Passat,Philippines,165,9
+985,Dodge,Stealth,Sweden,189,6
+986,Subaru,Forester,Mongolia,236,9
+987,Acura,RDX,France,221,2
+988,Chevrolet,Silverado 3500,Uruguay,173,3
+989,Toyota,Celica,Indonesia,299,3
+990,Audi,A4,China,35,9
+991,Saab,9-7X,Sweden,262,8
+992,Volkswagen,Passat,Republic of the Congo,226,1
+993,Mercedes-Benz,S-Class,Poland,153,1
+994,Mitsubishi,Starion,Poland,169,9
+995,Buick,Rainier,Indonesia,265,3
+996,Mitsubishi,Montero Sport,China,52,8
+997,Volkswagen,Cabriolet,China,14,3
+998,Audi,A4,Indonesia,268,6
+999,Audi,5000CS,Sweden,187,3
+1000,BMW,X3,Philippines,29,8
