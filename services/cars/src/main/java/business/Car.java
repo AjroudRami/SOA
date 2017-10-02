@@ -9,12 +9,14 @@ public class Car {
     private String model;
     private String place;
     private int rentPricePerDay;
+    private int availability;
 
-    public Car(String brand, String model, String place, int rentPricePerDay) {
+    public Car(String brand, String model, String place, int rentPricePerDay, int availability) {
         this.brand = brand;
         this.model = model;
         this.place = place;
         this.rentPricePerDay = rentPricePerDay;
+        this.availability = availability;
     }
 
     public String getBrand() {
@@ -47,5 +49,13 @@ public class Car {
 
     public void setRentPricePerDay(int rentPricePerDay) {
         this.rentPricePerDay = rentPricePerDay;
+    }
+
+    public int isAvailability() {
+        return availability;
+    }
+
+    public void setAvailability(int availability) {
+        this.availability = availability;
     }
 }
