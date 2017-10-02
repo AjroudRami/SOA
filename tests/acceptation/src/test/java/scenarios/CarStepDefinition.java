@@ -34,7 +34,6 @@ public class CarStepDefinition {
 
     @Given("^at (.*)$")
     public void specifyRentalplace(String destination) {
-        System.out.println(destination);
         this.place = destination;
     }
 
@@ -43,7 +42,6 @@ public class CarStepDefinition {
     public void call_service() {
         CarRental carRental = getWS();
         response = carRental.getCarRentalList(this.place, 0);
-
     }
 
     @Then("^cars are suggested$")

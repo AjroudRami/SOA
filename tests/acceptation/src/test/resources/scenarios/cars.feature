@@ -11,7 +11,7 @@ Feature: Car Rental research
   Scenario: Research by place
     Given a research for a car rental
     And at France
-    When the research is sent
+    When the search is sent
     Then cars are suggested
     And the cars are located in France
 
