@@ -2,7 +2,7 @@ Feature: Flight research
   Background:
     Given a flights service deployed on localhost:8080
 
-  Scenario: Research without filter
+  Scenario: Simple research
     Given a research for a flight booking
     And with a departure airport located in Nice
     And with an arrival airport located in Paris
@@ -10,23 +10,43 @@ Feature: Flight research
     When the research is sent
     Then flights are suggested
 
-  Scenario: Research by destination
-    Given a research for a hotel booking
-    And located in Liudu
+  Scenario: Research ordered by prices
+    Given a research for a flight booking
+    And with a departure airport located in Nice
+    And with an arrival airport located in Paris
+    And with a departure date 12345
+    And with ordering by prices
     When the research is sent
     Then hotels are suggested
-    And the hotels are located in Liudu
+    And the flights are order by prices
 
-  Scenario: Research with ascending price ordering
-    Given a research for a hotel booking
-    And with prices ascendingly ordered
+  Scenario: Research ordered by duration
+    Given a research for a flight booking
+    And with a departure airport located in Nice
+    And with an arrival airport located in Paris
+    And with a departure date 12345
+    And with ordering by duration
     When the research is sent
     Then hotels are suggested
-    And the prices are ascendingly ordered
+    And the flights are order by duration
 
-  Scenario: Research with descending price ordering
-    Given a research for a hotel booking
-    And with prices descendingly ordered
+  Scenario: Research filtered by direct flights only
+    Given a research for a flight booking
+    And with a departure airport located in Nice
+    And with an arrival airport located in Paris
+    And with a departure date 12345
+    And with filter direct
     When the research is sent
     Then hotels are suggested
-    And the prices are descendingly ordered
+    And the flights are filtered : direct
+
+  Scenario: Research filtered by max duration
+    Given a research for a flight booking
+    And with a departure airport located in Nice
+    And with an arrival airport located in Paris
+    And with a departure date 12345
+    And with filter max_duration
+    And with filter arg 1000
+    When the research is sent
+    Then hotels are suggested
+    And the flights are filtered : max_duration 1000
