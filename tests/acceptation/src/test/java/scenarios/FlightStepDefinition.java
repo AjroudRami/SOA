@@ -9,6 +9,8 @@ import org.json.JSONObject;
 
 import javax.ws.rs.core.MediaType;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
@@ -17,8 +19,29 @@ public class FlightStepDefinition {
     private static final String ROOM_COST_FIELD = "roomCost";
 
     private static class ServiceRequest {
+        private static class Filter{
+            private String name;
+            private String value;
+            public Filter(String name, String value) {
+                this.name = name;
+                this.value = value;
+            }
+        }
         private String destination;
-        private String priceOrdering;
+        private String departure;
+        private int depTimestamp;
+        private Filter[] filters;
+        private String ordering;
+
+        public ServiceRequest(){
+            filters = new Filter[0];
+        }
+
+        public void AddFilter(Filter filter){
+            Filter[] newFilters = Arrays.copyOf(filters, filters.length + 1);
+            newFilters[newFilters.length - 1] = filter;
+            this.filters = newFilters;
+        }
     }
 
     private String host = "localhost";
@@ -27,80 +50,51 @@ public class FlightStepDefinition {
     private ServiceRequest requestDetail;
     private JSONArray answer;
 
-    @Given("^a hotel service deployed on (.*):(\\d+)$")
+    @Given("^a flights service deployed on (.*):(\\d+)$")
     public void setupAddress(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    @Given("^a research for a hotel booking$")
-    public void bookHotel() {
+    @Given("^a research for a flight booking$")
+    public void bookflight(){
         requestDetail = new ServiceRequest();
     }
 
-    @Given("^located in (.*)$")
-    public void specifyDestination(String destination) {
-        requestDetail.destination = destination;
+    @Given("^a departure airport located in (.*)$")
+    public void departureAirport(String airportName) {
+        requestDetail.departure = airportName;
     }
 
-    @Given("^with prices (ascendingly|descendingly) ordered$")
-    public void specifyPriceOrdering(String ordering) {
-        if ("ascendingly".equals(ordering)) {
-            requestDetail.priceOrdering = "asc";
-        } else {
-            requestDetail.priceOrdering = "desc";
-        }
+    @Given("^an arrival airport located in (.*)$")
+    public void arrivalAirport(String arrivalAirport) {
+        requestDetail.destination = arrivalAirport;
     }
 
-    @When("^the research is sent$")
-    public void the_research_is_sent() {
-        sendRequest();
+    @Given("^a departure date (\\d+)")
+    public void departureDate(int date) {
+        requestDetail.depTimestamp = date;
     }
 
-    @Then("^hotels are suggested$")
-    public void hotelsAreSuggested() {
-        assertFalse(answer.length() == 0);
+    @Given("^ordering by (price|duration)")
+    public void orderingBy(String ordering) {
+        requestDetail.ordering = ordering;
     }
 
-    @Then("^the prices are (ascendingly|descendingly) ordered$")
-    public void pricesAreCorrectlyOrdered(String ordering) {
-        if ("ascendingly".equals(ordering)) {
-            int previousPrice = answer.getJSONObject(0).getInt(ROOM_COST_FIELD);
-            for (int i = 1; i < answer.length(); i++) {
-                int currentPrice = answer.getJSONObject(i).getInt(ROOM_COST_FIELD);
-                assertFalse(currentPrice < previousPrice);
-                previousPrice = currentPrice;
-            }
-        } else {
-            int previousPrice = answer.getJSONObject(0).getInt(ROOM_COST_FIELD);
-            for (int i = 1; i < answer.length(); i++) {
-                int currentPrice = answer.getJSONObject(i).getInt(ROOM_COST_FIELD);
-                assertFalse(currentPrice > previousPrice);
-                previousPrice = currentPrice;
-            }
-        }
+    @Given("^a simple filter (.*)$")
+    public void addSimpleFilter(String filter){
+        ServiceRequest.Filter fl = new ServiceRequest.Filter(filter, "");
+        requestDetail.AddFilter(fl);
     }
 
-    @Then("^the hotels are located in (.*)$")
-    public void hotelsAreCorrectlyLocated(String destination) {
-        for (int i = 0; i < answer.length(); i++) {
-            JSONObject jsonHotel = answer.getJSONObject(i);
-
-            assertEquals(destination, jsonHotel.getString("city"));
-        }
+    @Given("^a filter (.*) with value (.*)$ ")
+    public void addFilter(String filterName, String filterValue) {
+        ServiceRequest.Filter fl = new ServiceRequest.Filter(filterName, filterValue);
+        requestDetail.AddFilter(fl);
     }
 
     private String getUrl() {
         String url = "http://" + host + ":" + port + "/tcs-hotel-service/hotels?";
-
-        if (requestDetail.destination != null) {
-            url += "destination=" + requestDetail.destination + "&";
-        }
-
-        if (requestDetail.priceOrdering != null) {
-            url += "price_ordering=" + requestDetail.priceOrdering + "&";
-        }
-
         return url;
     }
 
