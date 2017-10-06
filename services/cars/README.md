@@ -59,3 +59,42 @@ The interface is implemented in the [CarRentalImpl](https://github.com/scipio300
 * Compiling: mvn clean package will create the file target/tcs-cars-service.war
 * Running: mvn tomee:run will deploy the created war inside a TomEE+ server, available on localhost:8080
 * The WSDL interface is available at http://localhost:8080/tcs-cars-service/ExternalCarRentalService?wsdl
+
+### Request example
+
+```xml
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:soa="http://informatique.polytech.unice.fr/soa/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <soa:getCarRentalList>
+         <place>France</place> <-- Place of rental -->
+         <duration>2</duration> <-- Duration of rental in days -->
+      </soa:getCarRentalList>
+   </soapenv:Body>
+</soapenv:Envelope>
+```
+
+### Response example
+
+```xml
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <ns2:getCarRentalListResponse xmlns:ns2="http://informatique.polytech.unice.fr/soa/">
+         <car_rentals>
+            <availability>2</availability>
+            <brand>MINI</brand>
+            <model>Cooper</model>
+            <place>France</place>
+            <rentPricePerDay>34</rentPricePerDay>
+         </car_rentals>
+         <car_rentals>
+            <availability>10</availability>
+            <brand>Lincoln</brand>
+            <model>Zephyr</model>
+            <place>France</place>
+            <rentPricePerDay>254</rentPricePerDay>
+         </car_rentals>
+      </ns2:getCarRentalListResponse>
+    </soap:Body>
+ </soap:Envelope>
+```

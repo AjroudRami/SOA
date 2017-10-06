@@ -11,6 +11,14 @@ public class Car {
     private int rentPricePerDay;
     private int availability;
 
+    public Car(){
+        this.brand = "";
+        this.model = "";
+        this.place = "";
+        this.rentPricePerDay = 0;
+        this.availability = 0;
+    }
+
     public Car(String brand, String model, String place, int rentPricePerDay, int availability) {
         this.brand = brand;
         this.model = model;

@@ -59,6 +59,10 @@ public class CarRentalLoader {
         }
     }
 
+    /*
+      Data Loader methods
+     */
+
     private static List<Car> filterByPlace(List<Car> carList, CarRentalRequest carRentalRequest){
         if (carRentalRequest.getPlace().map(String::isEmpty).orElse(true)){
             return carList;
@@ -86,6 +90,11 @@ public class CarRentalLoader {
         return filteredCars;
     }
 
+    /**
+     * Method to retrieve all car rental that suits the given argument
+     * @param carRentalRequest
+     * @return a list of car object
+     */
     public static List<Car> findCarRentals(CarRentalRequest carRentalRequest){
 
         return filterByDuration(filterByPlace(cars,carRentalRequest),carRentalRequest);

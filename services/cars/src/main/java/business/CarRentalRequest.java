@@ -13,10 +13,18 @@ public class CarRentalRequest {
         this.duration = duration;
     }
 
+    /**
+     * place is put in a collection of Optional type to ease filtering
+     * @return
+     */
     public Optional<String> getPlace(){
         return Optional.ofNullable(place);
     }
 
+    /**
+     * duration is put in a collection of Optional type to ease filtering
+     * @return
+     */
     public Optional<Integer> getDuration(){
         return Optional.of(duration);
     }
