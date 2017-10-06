@@ -67,8 +67,8 @@ The interface is implemented in the [CarRentalImpl](https://github.com/scipio300
    <soapenv:Header/>
    <soapenv:Body>
       <soa:getCarRentalList>
-         <place>France</place> <-- Place of rental -->
-         <duration>2</duration> <-- Duration of rental in days -->
+         <place>France</place> <!-- Place of rental -->
+         <duration>2</duration> <!-- Duration of rental in days -->
       </soa:getCarRentalList>
    </soapenv:Body>
 </soapenv:Envelope>
