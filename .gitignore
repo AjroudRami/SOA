@@ -12,3 +12,6 @@
 
 .idea
 *.iml
+
+tests/acceptation/src/main/java/*
+services/cars/src/test/
