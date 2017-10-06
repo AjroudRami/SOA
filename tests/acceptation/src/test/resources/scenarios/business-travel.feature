@@ -1,7 +1,7 @@
 Feature: Business Travel
 
   Background:
-    Given a business travel service deployed on localhost:8080
+    Given a business travel service deployed on localhost:8000
 
   Scenario: Register a business travel and validate it
     Given a new business travel

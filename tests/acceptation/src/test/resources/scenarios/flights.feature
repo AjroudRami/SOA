@@ -1,6 +1,6 @@
 Feature: Flight research
   Background:
-    Given a flights service deployed on localhost:8080
+    Given a flights service deployed on localhost:8002
 
   Scenario: Simple research
     Given a research for a flight booking

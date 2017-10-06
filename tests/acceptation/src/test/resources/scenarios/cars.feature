@@ -1,7 +1,7 @@
 Feature: Car Rental research
 
   Background:
-    Given a cars service deployed on localhost:8080
+    Given a cars service deployed on localhost:8001
 
   Scenario: Research without filter
     Given a research for a car rental

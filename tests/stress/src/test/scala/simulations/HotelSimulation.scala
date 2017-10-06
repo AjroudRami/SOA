@@ -11,7 +11,7 @@ class HotelSimulation extends Simulation {
 
   val httpConf =
     http
-      .baseURL("http://localhost:8080/tcs-hotel-service/")
+      .baseURL("http://localhost:8003/tcs-hotel-service/")
       .acceptHeader("application/json")
       .header("Content-Type", "application/json")
 

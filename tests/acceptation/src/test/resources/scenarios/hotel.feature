@@ -1,7 +1,7 @@
 Feature: Hotel research
 
   Background:
-    Given a hotel service deployed on localhost:8080
+    Given a hotel service deployed on localhost:8003
 
   Scenario: Research without filter
     Given a research for a hotel booking
