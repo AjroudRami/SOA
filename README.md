@@ -40,3 +40,15 @@ We consider here an ecosystem of services dedicated to support an employee when 
   - Creating a Hotels Search System as a Resource service;
   - Creating a Car Rentals Search System as an RPC service;
   - Creating a Business Travel System as a Document service;
+* Service testing
+    - Acceptance test using scenario
+* Service deployment
+    - Deploy service using containers
+    - Making a single system from the composed containers
+    
+# Service description
+- - - - 
+* [Flight service](https://github.com/scipio3000/polytech-soa/tree/master/services/flights)
+* [Hotel service](https://github.com/scipio3000/polytech-soa/tree/master/services/hotels)
+* [Car rental service](https://github.com/scipio3000/polytech-soa/tree/master/services/cars)
+* [Business travel service](https://github.com/scipio3000/polytech-soa/tree/master/services/business-travels)
