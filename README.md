@@ -1,5 +1,4 @@
 # Polytech SOA
-- - - -
 Authors : 
   - AJROUD Rami
   - AUBE Antoine
@@ -7,3 +6,4 @@ Authors :
   - JUNGBLUTH Günther
 
 # Case Study: The Virtual Travel Agency
+- - - -
