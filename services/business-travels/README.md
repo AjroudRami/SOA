@@ -32,7 +32,7 @@ The docker image can be built from the Dockerfile file.
 
 ## Developing the project
 This project is divided into 3 main packages.
-The Registry class is the entry point (`/tcs-service-business-travels/registry/`).
+The Registry class is the entry point (`/tcs-service-business-travels/registry`).
 
 The actions package contains the different actions that can be executed on documents
 
