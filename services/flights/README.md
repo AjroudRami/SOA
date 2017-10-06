@@ -83,17 +83,21 @@ public class Registry {
 ```
 # API Documentation
 
-All request must be send to tcs-service-flights/flights/ using POST.
-The server accept JSON only. The request must contains an "event" field, available actions are:
+The service url is: tcs-service-flights/flights/
+
+## Request
+ All request must be send  using the POST method.
+ The server accept `JSON` only. The request must contains an `"event"` field, available actions are:
+### Events
  
- ##Events
- 
- * list : list all the flights
+ * `list` : list all the flights
    * parameters:
-     * sortBy: not mandatory, a String that can be either "price" or "duration"
-     * filterBy: not mandatory, an Array of String with one or more keywords ("direct" only for now).
+     * `sortBy`: not mandatory, a String that can be either "price" or "duration"
+     * `filterBy`: not mandatory, an Array of String with one or more keywords ("direct" only for now).
+     * `destination`: mandatory, a String. The flight ticket's destination airport.
+     * `departure`: mandatory, a String, The flight ticket's departure airport.
  
- ##Example request:
+### Example request:
 ```json
     {
       "event":"list",
@@ -104,7 +108,7 @@ The server accept JSON only. The request must contains an "event" field, availab
 
 ## Response
 
-The response is a json object composed of a field "flights" which is an array of flights.
+The response is a json object composed of a field `"flights"` which is an array of flights.
 
 ### Example Response
 

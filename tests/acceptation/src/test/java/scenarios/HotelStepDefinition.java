@@ -18,6 +18,7 @@ public class HotelStepDefinition {
     private static class ServiceRequest {
         private String destination;
         private String priceOrdering;
+        private String date;
     }
 
     private String host = "host";
@@ -40,6 +41,11 @@ public class HotelStepDefinition {
     @Given("^located in (.*)$")
     public void specifyDestination(String destination) {
         requestDetail.destination = destination;
+    }
+
+    @Given("^on the (.*)$")
+    public void specifyDate(String date) {
+        requestDetail.date = date;
     }
 
     @Given("^with prices (ascendingly|descendingly) ordered$")
@@ -98,6 +104,10 @@ public class HotelStepDefinition {
 
         if (requestDetail.priceOrdering != null) {
             url += "price_ordering=" + requestDetail.priceOrdering + "&";
+        }
+
+        if (requestDetail.date != null) {
+            url += "date=" + requestDetail.date;
         }
 
         return url;

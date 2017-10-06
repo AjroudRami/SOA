@@ -10,7 +10,6 @@ import javax.ejb.EJB;
 import javax.enterprise.inject.Any;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * A submit action
@@ -30,7 +29,9 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
     @Override
     public FlightList execute(ListRequest document) {
         List<Flight> flights = flightComponent.getFlights();
-        flights = filter(document.filterBy, flights);
+        flights = userFilter(document.filterBy, flights);
+        flights = filterflights(document.departureTimeStamp, document.arrivalTimeStamp,
+                document.departure, document.destination, flights);
         sort(document.orderBy, flights);
         return new FlightList(flights);
     }
@@ -46,17 +47,40 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
     }
 
 
-    private List<Flight> filter(String[] filters, List<Flight> flights) {
+    private List<Flight> userFilter(String[] filters, List<Flight> flights) {
         List<Flight> filteredFlights = new ArrayList<>();
         if (flights == null || filters == null) {
             return flights;
         }
+        //TODO improve performances
         for(String filter : filters) {
             if("direct".equals(filter)) {
                 for (Flight fl : flights) {
                     if (fl.getNumberOfFlights() == 1) {
                         filteredFlights.add(fl);
                     }
+                }
+            }
+        }
+        return filteredFlights;
+    }
+
+    private List<Flight> filterflights(int depTS, int arrTS, String destination, String departure, List<Flight> flights) {
+        List<Flight> filteredFlights = new ArrayList<>();
+        if (flights == null) {
+            return flights;
+        }
+        if (departure == null || destination == null) {
+            throw new RuntimeException("Missing fields, destination or departure");
+        }
+        if (depTS == 0 || arrTS == 0) {
+            throw new RuntimeException("Missing or Invalid fields: departureTimeStamp, arrivalTimeStamp");
+        }
+        //TODO improve performances
+        for(Flight flight : flights) {
+            if(flight.getFrom().equals(departure) && flight.getTo().equals(destination)) {
+                if(flight.getDeparture() == depTS && flight.getArrival() == arrTS) {
+                    filteredFlights.add(flight);
                 }
             }
         }
