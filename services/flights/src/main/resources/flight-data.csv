@@ -1,0 +1,1001 @@
+﻿Ticket_no,Number_of_flights,From,To,Departure,Arrival,Seat_class,Price
+66,1,Paris,New-York,0710171030,0710171730,Green,1188.39
+49,1,Paris,New-York,0710171130,0710171630,Aquamarine,1662.0
+91,1,Paris,New-York,0710170930,0710171530,Orange,1449.74
+20,1,Paris,New-York,0710171530,0710172030,Maroon,537.02
+81,1,Paris,New-York,0710170930,0710171530,Purple,1554.62
+76,1,Paris,New-York,0710171730,0710172230,Orange,1326.6
+67,3,Paris,New-York,0710170930,0810170930,Goldenrod,1452.63
+91,4,Paris,New-York,0710170930,0810170930,Indigo,1411.11
+65,3,Paris,New-York,0710171830,0810170930,Blue,670.78
+56,2,Paris,New-York,0710170930,0810171030,Indigo,1624.58
+54,4,Paris,New-York,0710170930,0810170900,Teal,1417.89
+70,2,Paris,New-York,0810170930,0810170930,Pink,982.12
+6,4,Paris,New-York,0810170930,0810170730,Teal,1863.78
+8,2,Paris,New-York,0810170930,0810170830,Aquamarine,684.62
+24,4,Paris,New-York,0810170930,0810170530,Mauv,1531.57
+1,2,Paris,New-York,0810170930,0810170930,Pink,518.55
+74,2,Bhātpāra Abhaynagar,Tangkolo,898,221,Pink,662.57
+23,1,Sidzina,Brotas,5345,2424,Goldenrod,893.84
+74,2,Bollnäs,Netrakona,6364,4438,Blue,1655.85
+61,3,Jiangqiao,Soubré,1354,353,Teal,1906.96
+13,2,Pemberton,Fengdian,4192,3685,Red,1002.03
+88,4,Velyka Bahachka,Zheshart,9120,884,Pink,1522.6
+86,2,Legaspi,Diré,2091,5965,Indigo,1105.19
+12,3,Gondang,Rudka,5409,2039,Fuscia,1196.43
+61,3,Tenja,Geser,316,6255,Aquamarine,1662.36
+47,4,Santo Antônio do Amparo,Jin’e,1452,2122,Maroon,692.33
+33,4,Grzmiąca,Huaribamba,387,8724,Blue,1297.23
+69,2,Karak City,Chynadiyovo,5665,8755,Purple,1227.66
+26,2,Qingshui,Julun,4376,5277,Green,992.41
+81,2,Puerto Barrios,Boissy-Saint-Léger,7739,1152,Orange,537.14
+77,4,Loja,Resplendor,8136,7547,Khaki,1895.73
+87,1,Tlutup,Fovissste,9864,4589,Goldenrod,1730.99
+1,4,Rizal,Soe,2428,5405,Fuscia,480.6
+62,3,Daitou,Santo Niño,3182,912,Violet,1229.86
+93,3,Yamoto,Meiyao,6834,8766,Orange,1049.08
+11,2,Pacar,Wawer,7494,1626,Blue,677.72
+82,4,Nevinnomyssk,Dinggou,2754,8151,Pink,1979.14
+10,4,Llanera,Oekuu,8319,6684,Pink,830.57
+58,1,Rude,Mersam,3466,8524,Fuscia,630.98
+90,2,Zalesnoye,Bilajer,3718,3215,Puce,529.78
+57,1,Sigaboy,Mādabā,1823,3647,Turquoise,1259.49
+39,3,La Paz,Weiyanggong,1671,9988,Crimson,1698.28
+93,2,Lishu,Florence,1723,4816,Yellow,1570.54
+26,4,Orléans,Guadalupe,6995,2050,Yellow,1720.95
+61,2,Duantan,Catumbela,715,5470,Indigo,1827.64
+90,3,Kukuluk,Lambayong,5207,5944,Crimson,1706.92
+36,4,Marco de Canaveses,Pelem,862,9580,Puce,1488.33
+73,4,Dulles,Jaboticabal,5876,6372,Puce,877.25
+75,2,Almaty,Calubcub Dos,7242,1495,Yellow,515.05
+13,2,Dayeuhluhur,Jackson,8518,8400,Khaki,1604.47
+71,2,Orlovskiy,Donja Brela,7793,1055,Puce,1633.33
+7,2,Stylída,Al ‘Aqabah,96,3512,Pink,1286.1
+100,4,Norak,Kamo,7535,5064,Goldenrod,1009.24
+58,2,Sungsang,Innisfil,5735,694,Aquamarine,1753.46
+20,1,Taurage,Taurisma,327,530,Blue,1543.56
+3,3,Houston,Mzimba,7150,2796,Crimson,1590.69
+28,2,Dori,Tarnowiec,1066,738,Goldenrod,778.92
+54,3,Tanjungampalu,Mehona,8599,8183,Red,1390.89
+49,3,Quzhou,Rzewnie,5646,2404,Goldenrod,823.22
+48,1,Draguignan,Shangcun,3521,8530,Blue,1274.75
+44,2,Sirinhaém,Leuburi,3273,8557,Crimson,687.28
+87,3,Shiraoi,Xike,6126,5812,Orange,960.1
+41,3,Melati,Nijmegen,7324,2098,Mauv,1280.44
+5,4,Perez,Koslan,6648,1976,Mauv,1539.14
+20,4,Hegarsari,Paipu,8497,4572,Red,1229.17
+88,1,Osypenko,Langpas,1003,4248,Indigo,452.34
+73,4,Järfälla,Paris 08,2005,3543,Purple,1536.12
+84,1,Kamuli,Khurriānwāla,3180,6706,Orange,656.29
+1,4,Nanqiao,Kiaranonggeng,5749,2303,Turquoise,1185.15
+26,2,San Rafael,Dagar,1421,6321,Red,1877.11
+76,2,Gonghe,Faranah,1270,9804,Turquoise,441.19
+24,2,Arkalyk,Émponas,8742,9160,Maroon,1377.41
+19,2,Toumodi,Changhua,2372,4465,Red,1554.32
+28,3,Cascais,Chattanooga,4419,7874,Indigo,1021.1
+56,3,Pestovo,Thap Khlo,7580,4184,Aquamarine,1855.19
+70,1,Atimonan,Bouctouche,6257,1554,Red,1335.75
+73,3,Peña Blanca,Macaíba,1379,6161,Yellow,1665.77
+1,1,Meedhoo,Marinha,8699,8067,Pink,1105.85
+40,2,Al Ghandūrah,Cancas,6619,2493,Fuscia,1628.06
+75,3,Gobernador Ingeniero Valentín Virasoro,Kloangrotat,4687,9288,Mauv,1805.55
+53,1,Gualán,San Carlos de Bariloche,222,1241,Indigo,1213.64
+43,2,Tomislavgrad,Toyama-shi,4853,7666,Khaki,1147.39
+8,1,Baitang,Charlotte,4701,8391,Mauv,1869.69
+42,1,Kukawa,Nāgarpur,8609,4242,Khaki,718.69
+1,2,Nyíregyháza,Châteauroux,6691,3772,Blue,528.63
+15,1,Baltimore,Xibu,3914,2234,Violet,807.75
+88,3,Lebowakgomo,Miskolc,126,7491,Orange,1677.83
+15,1,Gandu,Perelyub,680,4584,Turquoise,1927.55
+84,4,Khorostkiv,Kebonan,7172,7804,Turquoise,685.21
+23,4,Châteauroux,La Cruz,5351,4287,Blue,887.96
+32,1,Intendente Alvear,Huyu,5857,4052,Red,1533.13
+95,1,‘Alīābād-e Katūl,Burgkirchen,9120,5024,Mauv,703.58
+17,1,Del Monte,Jiufeng,4635,6063,Orange,1319.49
+6,3,Dzyarzhynsk,Galis Dua,9802,4365,Goldenrod,1703.7
+62,2,Lunéville,Hässelby,9164,7117,Crimson,977.89
+27,3,Balaoang,Carnot,1969,8793,Aquamarine,734.79
+52,2,Dhuusamarreeb,Zlynka,6438,6111,Violet,834.25
+46,4,Maych’ew,Lincha,7817,4639,Turquoise,1130.08
+95,3,Pogorzyce,Pančevo,9954,2077,Mauv,1526.23
+99,3,Zhongchuan,Mikhaylovka,73,6705,Puce,1272.9
+19,1,Pasirgaru,Oliveiras,8695,4561,Fuscia,1018.92
+18,4,Naqadeh,Gwandu,7681,9939,Yellow,1850.74
+33,2,Staryy Oskol,Pointe-Noire,4667,8267,Violet,501.09
+64,1,Igurusi,Yongchuan,5092,9592,Turquoise,1484.58
+48,1,Estância Velha,Iwamizawa,2969,2035,Mauv,776.68
+13,3,Dunleer,Makiv,2046,6208,Turquoise,1989.27
+12,4,Tadotsu,Maroantsetra,6994,1510,Teal,1378.55
+71,3,Banjar Kubu,San Francisco,9134,9042,Blue,1262.22
+59,3,Pardelhas,Xiongji,2670,5509,Violet,1611.26
+43,3,Siqiao,Wangshi,9348,3401,Purple,1733.4
+49,2,Leribe,Yangzi,5796,4675,Green,1852.06
+42,4,Lincheng,Lyuban’,2539,9929,Violet,1167.65
+55,4,Bor,São João de Caparica,9587,8168,Puce,1646.4
+53,2,Sidomulyo,Hongguang,278,5713,Turquoise,1640.09
+66,4,Livadiya,Bosanski Brod,5747,1367,Aquamarine,1798.11
+61,4,Kotabaru,Dongguan,8291,3157,Purple,964.65
+43,2,Evansville,Tukan,1684,7063,Indigo,1553.61
+40,3,Dusun Desa Bunter,Cascais,6104,3923,Green,990.28
+36,4,Qiaodi,Demuk,5501,2662,Blue,1141.87
+30,4,Luzhai,Banjaranyar,9163,7347,Khaki,1378.89
+78,4,Siteía,Wushi,4347,6082,Aquamarine,1808.78
+32,2,Uticyacu,Boychinovtsi,3783,2680,Blue,1664.14
+49,2,Dobrzeń Wielki,Sukolilo,2464,8181,Pink,482.35
+43,4,Zambujeira,Xin’an,2034,5050,Green,1189.95
+22,2,Yangkou,Dhangarhi,3660,5171,Puce,1515.08
+10,4,Gunungputri,Montrouge,1633,6758,Khaki,1834.09
+23,3,Tashang,Saint-Jean-de-Monts,6316,4261,Crimson,1035.23
+41,3,Caraguatatuba,Limboto,5499,5069,Khaki,776.64
+73,1,Krasnoarmiys’k,Pasolapida,4731,7734,Red,1119.73
+86,1,Norakert,Lusong,4135,8911,Turquoise,1366.29
+6,4,Guzhen,Jiuzhai,2626,3750,Orange,1273.33
+100,2,Pavlovskaya,Pailitas,2245,3477,Goldenrod,1097.89
+93,2,Lipci,Valerianovsk,2696,6224,Blue,1364.15
+98,1,Kranuan,Hiratsuka,8138,7527,Aquamarine,1796.51
+67,4,Yanhe,Rancagadog,5945,4929,Aquamarine,833.47
+78,2,Qinshi,Khairpur,1172,4097,Puce,1020.1
+13,1,Şafāshahr,Newlands,4399,1997,Fuscia,1149.21
+87,4,Guohe,Simapu,482,4871,Aquamarine,617.2
+7,4,Kuching,Pakel,8052,5497,Green,1713.1
+50,1,Shizi,Kademangan,8616,2567,Fuscia,1619.91
+78,3,Tokyo,Fovissste,6888,7068,Violet,1569.74
+18,4,Ailigandí,Lipka,7461,1199,Puce,696.36
+86,4,Aozai,Angoram,2999,9652,Goldenrod,1624.47
+18,1,Xiaochi,Pesnica pri Mariboru,3238,6229,Purple,1251.39
+89,3,Kuanping,Tekeli,4683,6047,Puce,1348.09
+35,1,Conchamarca,Nowogard,7965,4346,Maroon,856.6
+26,4,Lincheng,San Sebastian,6190,5107,Crimson,735.81
+69,1,Ostrožská Nová Ves,Bambuí,5473,9042,Red,1808.04
+39,3,Gengzhuang,Yangsa,257,5916,Crimson,1644.17
+15,1,Gastoúni,Loei,5558,4931,Yellow,1770.15
+5,1,Xiaoguai,Nanjie,8921,8395,Pink,1748.76
+51,3,Gigant,Lindian,8766,7740,Goldenrod,1570.37
+70,4,Flórina,Santiago de Chuco,1448,5556,Goldenrod,1774.37
+38,4,Passo Fundo,Quezalguaque,5422,3613,Indigo,1583.37
+47,4,Dianshui,Tokushima-shi,1967,6378,Yellow,1477.09
+33,4,Paris 01,Huangshan,3093,8433,Red,535.01
+31,2,Santa Rosa,Linxia Chengguanzhen,752,7489,Red,1386.72
+32,2,Duanjia,Sangiang,5147,2390,Khaki,987.42
+8,2,Xiaochengzi,La Charité-sur-Loire,9402,5254,Yellow,880.83
+48,4,Donskoye,Lysá nad Labem,535,8288,Blue,1351.17
+94,1,Huilong,Kebon,3841,6931,Puce,1515.77
+52,3,Baoji,Hobonio,1031,4972,Indigo,1304.4
+68,3,Lis,Qingfeng,7110,6230,Yellow,707.47
+20,1,Wlingi,Reutov,9031,7498,Blue,1486.65
+21,1,Sokarame,Pshada,2848,4411,Aquamarine,895.53
+10,2,Zhukovo,Uzlovaya,2766,7715,Red,1714.18
+41,4,Krapyak Kidul,Gingsir,9590,2673,Indigo,882.34
+61,2,Indianapolis,Zaindainxoi,4475,2588,Puce,1576.82
+74,1,Mafeng,La Unión,3818,7057,Turquoise,679.16
+22,4,Funaishikawa,Xingfu,6475,9113,Pink,455.73
+57,1,Tampere,Chugay,1464,9880,Aquamarine,1518.02
+48,4,San Miguel de Cauri,San Francisco,3557,4993,Puce,1349.01
+15,3,Zhongshangang,Montpellier,2126,3461,Fuscia,1427.48
+95,1,Si Somdet,Cirahab,7554,4250,Aquamarine,1712.13
+46,1,Granada,Ninh Hòa,6518,2409,Crimson,1061.81
+1,2,Helsingborg,Maji,9108,2789,Fuscia,770.44
+33,1,Miskindzha,Xinzhuang,663,5233,Puce,470.3
+93,2,East End,Changnyeong,1904,6267,Pink,1457.79
+78,2,Kroczyce,Ridder,148,629,Crimson,1773.15
+12,3,Pumai,Kende,8298,141,Red,548.59
+75,2,Prengtale,Xinzhou,5954,4970,Orange,909.89
+35,1,Nakanojōmachi,Strömsnäsbruk,6430,3339,Mauv,716.59
+64,4,Ban Talat Bueng,Al Jawādīyah,9287,4917,Purple,846.29
+17,4,Urayasu,Skaudvilė,34,3381,Puce,829.52
+66,2,Ajaccio,Bāglung,9544,9538,Maroon,1370.92
+25,4,Novi Karlovci,Yiyang,4601,4747,Aquamarine,1863.83
+29,1,Hengduo,La Libertad,9926,7754,Green,1900.21
+52,1,San Andros,San Juan,7512,9307,Pink,1902.24
+65,2,Guzhen,Changxing,425,1979,Goldenrod,1864.51
+13,3,Seputih,Prantaan,1498,7225,Maroon,961.54
+59,2,Älvängen,Caozhen,2081,8226,Pink,840.36
+7,1,Camperdown,Asenovgrad,8410,1402,Purple,1685.12
+76,3,Gjinkar,Ketampak,2588,5262,Crimson,1328.93
+51,3,Kurume,Ḩammām Wāşil,1108,2664,Pink,774.09
+15,3,Pasarnangka,Jocotán,4929,4148,Maroon,934.59
+85,2,Zahvizdya,Nossebro,4712,4876,Pink,1611.93
+88,1,Ya‘bad,Yashao,720,8548,Puce,1522.55
+55,1,Venda Nova,Watubura,6259,9091,Khaki,1341.37
+48,3,Tamianglayang,Dailekh,9429,4007,Orange,654.76
+86,4,Auch,Banbalah,7876,294,Puce,1563.5
+4,3,Macieira de Rates,Sampir,1493,8872,Violet,861.04
+98,4,Minanga Norte,Hangu,2945,351,Puce,447.74
+100,1,Quimper,Borlänge,4509,9594,Goldenrod,1331.98
+97,2,Hoima,Sabadell,6170,843,Maroon,457.14
+40,4,Osh,Tanlad,1914,4685,Mauv,1076.36
+4,3,Chicago,Hōjō,6037,2724,Teal,921.48
+21,1,Kashihara-shi,Changfeng,7461,5771,Aquamarine,1121.56
+9,3,Nangang,Port Saint Lucie,6156,6041,Teal,1629.78
+29,4,Ainaro,Bordeaux,7542,720,Goldenrod,1802.88
+83,3,Nantes,Shah Alam,7248,6439,Pink,1796.83
+97,2,Nsanje,Lisičani,8725,3873,Maroon,1466.77
+90,2,Fukui-shi,Saxin,9147,8603,Orange,1540.59
+91,2,Reshetylivka,Wanmu,3809,4689,Yellow,1271.14
+75,4,Sobhādero,Pinheiro Machado,489,7996,Mauv,1193.38
+86,4,Lenart v Slov. Goricah,Légua,5598,1749,Mauv,490.34
+2,4,Shymkent,Pont-Rouge,8801,2067,Yellow,1398.07
+75,1,Rosice,Chapecó,3287,6438,Khaki,1520.04
+33,1,Al Jafr,Takahashi,8526,3337,Purple,635.9
+9,4,Fatualam,Kopang Satu,1532,3731,Fuscia,517.42
+100,4,Kuçovë,Araucária,7390,1238,Goldenrod,1064.49
+16,2,Stockholm,Kiten,4811,3669,Turquoise,541.36
+56,3,Houzhai,Le Kremlin-Bicêtre,3099,376,Goldenrod,1933.99
+31,2,Los Dos Caminos,Bang Len,3613,3913,Fuscia,1817.07
+67,1,Nemours,Fontana,2489,5951,Violet,1145.0
+87,1,Entre Rios,Kamienna Góra,841,2667,Purple,503.48
+67,4,Caigongzhuang,Lorient,5304,8522,Green,1583.32
+78,4,Souto,Yunfu,1398,6819,Mauv,1703.36
+77,3,Ibaiti,Burgas,6809,3232,Purple,1122.21
+68,1,Göteborg,Semey,4275,8551,Violet,1633.43
+2,1,Järfälla,Chalcos,806,7002,Fuscia,480.78
+24,4,Lopez Jaena,Sleman,7902,8265,Pink,1948.69
+2,1,Ocucaje,Icheon-si,3446,9641,Red,787.6
+12,3,Tanūmah,Humpolec,5363,5308,Violet,724.8
+92,3,Jasień,Lameira,6958,9851,Aquamarine,804.61
+22,3,Torre de Moncorvo,San Antonio de los Cobres,4467,3209,Violet,644.76
+35,3,Stockholm,Tapera,7182,407,Pink,1544.0
+95,4,Coutances,Weepangali,2946,3466,Teal,541.32
+4,4,Jiutai,Vannes,5667,1046,Mauv,605.57
+69,3,Trinidad,Uurainen,794,1487,Indigo,567.59
+22,3,Melissochóri,Pedregal,8768,3245,Maroon,1851.63
+91,1,Schirmeck,Ban Bang Kadi Pathum Thani,9270,2016,Red,1381.38
+14,2,San Antonio,Hongcao,9643,548,Indigo,1995.88
+16,3,Chicago,Guadalupe,8476,3337,Khaki,1272.53
+14,3,Huangzhuang,Ciawi,3775,2224,Violet,604.88
+1,2,Pouso Alegre,Villaguay,4398,4328,Violet,1259.68
+61,2,Banjarwaru,Niort,4940,1928,Pink,496.02
+48,1,Taungoo,Mueang Nonthaburi,469,1845,Crimson,1712.42
+42,1,Fort-de-France,Nizwá,2588,4544,Red,783.86
+93,2,Modot,Bechlín,8314,6985,Puce,1946.18
+16,3,Fuxin,Paris 15,8703,1641,Goldenrod,1664.44
+45,1,Guyangan,Mistrató,8156,4672,Goldenrod,1360.64
+93,4,Leshan,Mugi,3560,1718,Blue,650.79
+29,2,Iguape,Tangxi,5060,2895,Red,456.8
+29,4,Miguel Calmon,Jingmen,188,2915,Orange,812.24
+27,3,Kyzyldzhar,Thị Trấn Mường Lát,5570,2678,Fuscia,1681.9
+91,2,Kaskinen,La Maná,5161,129,Pink,510.58
+39,3,Kąty Wrocławskie,Richmond,801,9029,Puce,1183.84
+85,4,Castlerea,Boa Esperança,6263,3462,Aquamarine,1532.17
+14,4,Shevchenkove,Houston,4265,4111,Khaki,957.07
+100,3,Xuelu,Tugusirna,6282,8727,Fuscia,1866.15
+99,4,Zhaojia,Qingshui,8928,4194,Khaki,1138.88
+13,4,Phong Điền,Cái Nhum,2991,978,Purple,1315.8
+80,1,Non Narai,Lavrica,5979,4259,Green,1382.5
+10,4,Höllviken,Mutengene,3059,1409,Aquamarine,1515.5
+83,1,Ban Ko Lan,Devitsa,4766,7228,Yellow,642.83
+88,2,Iwakura,Liupai,1198,7266,Crimson,461.76
+74,4,Cesson-Sévigné,Eastern Suburbs Mc,6093,5257,Puce,1853.71
+47,2,Klau,Sundbyberg,4442,4689,Aquamarine,526.35
+52,2,Zhaoyuan,Butajīra,5276,3046,Blue,879.28
+79,4,Nantes,Liugong,9016,8402,Yellow,1854.12
+61,4,Canjulao,Mbuji-Mayi,1635,4530,Red,1360.74
+76,4,Srono,Ciudad Nueva,5051,6387,Purple,581.0
+91,1,Gucun,Dabao’anzhen,6973,9077,Indigo,1100.49
+33,1,Puan Selatan,North Vancouver,9992,4671,Blue,1933.51
+60,4,Maqiu,Novobiryusinskiy,9614,8273,Goldenrod,1006.87
+36,1,Besuk Selatan,San José de Colinas,3244,3296,Khaki,1938.64
+72,3,Zhili,Gaozhou,3353,5184,Fuscia,1814.46
+83,3,Cibangun Tengah,Meylan,9785,1691,Fuscia,1324.94
+40,3,Pisaras,Tonggakjati,2054,9544,Goldenrod,1334.16
+79,3,Concepción de La Vega,Belisario Dominguez,2093,1607,Violet,559.92
+83,2,Bang Kruai,Corinto,8824,2371,Green,960.51
+44,2,Kungshamn,Capim Grosso,21,2126,Puce,657.21
+79,1,Bhalwāl,Adare,2730,9314,Turquoise,1965.94
+92,3,Bromma,Osieck,8391,5703,Fuscia,1098.99
+83,2,Motge,Aguada de Pasajeros,7593,2223,Violet,678.94
+48,3,Villa Florida,Sakurai,2898,4564,Puce,736.84
+72,3,Bagikkedok Lauk,Qinghu,101,6803,Blue,1069.44
+9,2,Triesenberg,Tabor,3757,5555,Aquamarine,1296.86
+67,4,Mambalan,Sebulu,8850,8555,Pink,928.15
+41,4,Nardaran,Kanganpur,8957,560,Maroon,1622.75
+26,2,Owczarnia,’Unābah,6652,9789,Yellow,816.97
+82,4,Albion,Arevik,4081,7345,Turquoise,1475.5
+56,2,Cankova,San Vicente de Bique,937,7710,Khaki,513.28
+83,2,Omīdcheh,Zangbawa,8231,3465,Fuscia,1758.09
+68,1,Jinping,Fontainebleau,3825,159,Aquamarine,1537.13
+2,2,Doroslovo,Cergy-Pontoise,6453,5351,Mauv,1753.03
+22,3,Yanji,Palaiochóri,3777,1648,Crimson,1727.61
+13,3,Gimo,Lisboa,4555,4037,Aquamarine,1939.6
+91,1,Kalidawe,Canmang,6888,6425,Puce,1898.94
+31,3,Kiernozia,Dahe,6802,5865,Turquoise,1138.74
+38,1,Čelopek,Tanahwurung,5971,3255,Mauv,683.61
+9,2,Joutseno,Mont-de-Marsan,7703,4078,Puce,812.57
+94,4,Santo Domingo Oeste,Cicurug,3917,8191,Pink,1794.68
+65,4,Lixiqiao,Józefów,2595,4624,Indigo,765.98
+95,4,Guantánamo,Shchelkovo,578,8096,Violet,933.9
+78,3,Selnica,Korçë,359,9151,Blue,1445.14
+53,4,Huilong,Haparanda,5097,6781,Green,823.29
+99,3,Francistown,Cincinnati,4841,2259,Fuscia,1413.91
+58,4,Tanggeung Kolot,Nanaimo,8842,8333,Khaki,756.48
+13,1,Aliuroba,Telukpakedai,1098,5582,Puce,1929.72
+71,3,Mirimire,Balayan,631,7100,Indigo,587.97
+50,3,Sabang,Sundsvall,4738,101,Blue,1409.81
+50,2,Södertälje,Bharatpur,8479,4129,Turquoise,613.8
+69,3,Babak,Besançon,234,7453,Indigo,1055.97
+61,1,Milwaukee,Mairana,158,3720,Green,605.43
+47,3,Peliyagoda,Gamay,3664,6277,Green,1732.21
+29,4,Hobscheid,Berlin,2540,3305,Goldenrod,589.22
+16,4,Santo Tomas,Novikovo,7901,4255,Fuscia,435.92
+93,3,Lens,Monte de Fralães,5380,1495,Aquamarine,1780.42
+55,1,Patulul,Kalembutillu,6383,8609,Violet,1160.36
+27,3,Itabirito,Jalālpur,5428,1606,Fuscia,880.77
+24,1,Rust’avi,Skarbimierz Osiedle,3612,6842,Khaki,735.89
+83,4,Al Mazra‘ah ash Sharqīyah,Jinlong,3874,515,Indigo,1538.93
+57,2,Pimentel,Lorino,5543,2241,Maroon,1244.89
+74,1,Troparëvo,Bau,6509,7441,Goldenrod,1783.28
+100,1,Kuala Lumpur,Khotynets,862,6131,Green,1385.93
+82,1,Al Ḩammāmāt,Portão,2699,9319,Blue,591.81
+48,3,Anadia,Fontanka,6645,7094,Green,478.74
+7,1,Kitapak,Melrose,921,4253,Pink,1318.7
+36,3,Souziqiu,Tingping,7123,4766,Yellow,1652.4
+100,2,Pindangan Centro,Hanjia,7688,4921,Puce,792.2
+12,2,Al ‘Ayzarīyah,Tiang,3483,2864,Goldenrod,1946.5
+100,4,Jamaica,Thanatpin,4277,3786,Crimson,695.51
+13,1,Maliang,Cruz del Eje,7696,4794,Teal,542.35
+88,1,Bugarama,Campos Sales,6074,4775,Goldenrod,1998.87
+60,3,Paranho,Malandag,2835,697,Pink,1705.08
+53,4,Xijiang,Kapiri Mposhi,2603,8382,Crimson,1520.24
+87,1,Luksuhin,Abovyan,8349,1897,Indigo,1444.05
+67,4,Melfort,Aksarka,3166,5534,Indigo,1502.07
+67,4,Coari,Sukhobezvodnoye,1352,2727,Aquamarine,1562.89
+37,3,Lapuan,Mindupok,8328,9251,Turquoise,1482.16
+88,4,Ḩawsh ‘Īsá,Notre-Dame-de-l'Île-Perrot,2576,8004,Fuscia,1881.94
+28,2,Kumbo,Limbuhan,7418,1458,Yellow,1906.84
+41,2,Dame-Marie,San Pedro Ayampuc,1049,6529,Indigo,1644.49
+18,2,Nova Olímpia,Sargodha,135,4477,Crimson,1321.44
+87,2,Saltpond,Shiree,8538,2067,Yellow,980.62
+81,4,Agrínio,Manzurka,3770,2311,Goldenrod,989.79
+22,4,Cieplice Śląskie Zdrój,Dumlan,9684,4607,Aquamarine,729.43
+88,2,Bebae,Gaide,4497,878,Purple,717.66
+24,4,Stockholm,Akouda,7534,3185,Teal,792.36
+55,1,Zamoskvorech’ye,Metsavan,4981,2921,Blue,1439.16
+5,1,Tulyushka,Estrada,4180,1416,Blue,1180.46
+59,2,Tieba,Wanju,5335,916,Khaki,1069.86
+25,3,Jiulongshan,Huntington,142,6586,Khaki,511.66
+66,1,Gorey,Napalitan,5350,9637,Goldenrod,1459.6
+87,3,Mandi Bahāuddīn,Yamparáez,9993,1802,Fuscia,1021.26
+17,3,Lloqan,Messíni,5777,7091,Puce,562.72
+38,2,Haicheng,Xiangfu,9983,6176,Teal,685.25
+1,2,Kýthnos,Amphawa,511,5957,Turquoise,1893.72
+5,4,Taoyuan,Wilfrido Loor Moreira,9298,815,Indigo,1965.86
+27,3,Nove-Misto,Zhaojia,2272,1128,Indigo,858.28
+91,1,Cayara,Bato,5978,6696,Aquamarine,1559.94
+94,4,Luoyang,Kyjov,3311,8394,Yellow,990.4
+61,1,Bandarlampung,Jahāniān Shāh,3545,4889,Fuscia,1191.36
+42,4,Zebrzydowice,Okcheon,5184,2868,Fuscia,1767.63
+91,1,Orikum,Zhangzhishan,6378,962,Aquamarine,1180.66
+69,3,Chengjiang,Vratsa,1993,2216,Orange,916.68
+93,4,Lieqiao,Kaskinen,1773,6084,Pink,1886.33
+91,1,Wang Thonglang,Cojata,8851,2399,Green,1560.92
+10,2,Cibinong,Harstad,5670,9570,Yellow,1519.51
+15,1,Mrgavan,Dukuhmencek Lor,1221,8759,Orange,1523.5
+88,1,Madamba,Oslo,1588,4041,Pink,901.46
+4,4,Ore,Petrolina de Goiás,8820,3580,Crimson,1570.08
+63,4,Afántou,Žlutava,9878,42,Crimson,1145.06
+11,1,Gechuan,Manticao,1234,7434,Maroon,1598.83
+2,3,Shatian,Bukovany,9537,3625,Orange,1796.42
+54,1,Nova Olímpia,Shahrud,9927,2420,Orange,1271.28
+92,1,Kuanping,Seres,7478,5351,Blue,1930.67
+76,2,Nakuru,Bürenhayrhan,5354,3305,Green,1793.85
+53,4,Fylí,La Tuque,7686,4899,Indigo,1902.61
+49,3,Makubetsu,Linchen,3228,6467,Turquoise,1398.06
+38,1,Stockholm,Mashan,8527,6211,Pink,1466.21
+84,3,Ramat Yishay,Güira de Melena,1955,5303,Aquamarine,792.87
+92,3,Fort Worth,Tourcoing,5243,3617,Red,1997.2
+34,4,Guicheng,Cabra Figa,9944,5427,Turquoise,1962.12
+53,2,Goyty,Cilated,1620,1173,Maroon,1246.04
+68,1,Caramanta,Thành Phố Thái Bình,3231,690,Fuscia,1227.48
+2,4,Budapest,Jichang,1625,1712,Crimson,1669.72
+78,2,Vetluzhskiy,Hutou,5826,559,Aquamarine,1671.61
+14,3,Ma’an,Patquía,7345,4664,Turquoise,1944.56
+18,4,Malabar,Río Ceballos,81,6438,Aquamarine,1998.68
+87,2,Karavan,Dean,1963,2340,Aquamarine,919.88
+6,2,Paynjuwayn,Rayside-Balfour,164,2630,Orange,1215.92
+22,2,Niny,Blantyre,7647,6441,Goldenrod,1062.98
+9,3,Tangal,Diavatós,2920,1554,Violet,1550.69
+99,1,Wuhao,Thomastown,4966,9145,Maroon,1456.24
+45,4,Fangzheng,Changuillo,2027,9040,Blue,793.04
+21,1,Novaya Usman’,Modimolle,1813,6171,Khaki,1177.15
+71,2,Yokkaichi,El Limon,4622,977,Teal,1611.05
+34,3,Babat,Culianin,8694,7533,Fuscia,1175.15
+74,4,Gorelki,Shiqiao,8522,8964,Red,1824.17
+93,4,Nakhon Si Thammarat,A-da-Gorda,9659,4840,Blue,997.78
+21,1,Shimodate,Huangqiao,7692,2081,Green,1052.83
+42,4,Dianbu,Panikian,2593,3900,Crimson,1317.07
+29,4,Patemon,Sanli,7922,9611,Fuscia,918.96
+21,4,Beaune,Phumĭ Véal Srê,4390,3010,Green,1509.13
+37,2,Cotia,Gävle,6754,7825,Fuscia,691.63
+20,4,Boston,Purwasari,9707,4404,Violet,1893.56
+61,3,Velká nad Veličkou,Bum Bum,7760,2419,Teal,642.19
+74,2,Sindangsari,Pomabamba,2859,9882,Violet,1631.47
+64,3,Xiajiashan,Khorugh,506,8774,Maroon,1608.8
+69,3,Energeticheskiy,As Suqaylibīyah,5351,1507,Purple,1867.62
+74,1,Stockholm,Palla,4368,5235,Mauv,1831.4
+21,1,Rumbek,Feijó,440,3564,Violet,593.68
+6,4,Tuanjie,Kalatongke,6204,9108,Orange,1873.3
+35,1,Uvira,Bicas,6998,6607,Mauv,1037.98
+67,4,Shiree,Conception Bay South,6421,2171,Goldenrod,807.69
+72,3,Buracan,Ngou,8834,9859,Indigo,963.73
+55,4,Kokkini Trimithia,Dhangarhi,127,2860,Aquamarine,1658.87
+62,1,Zouérat,Bradag,8683,256,Orange,890.05
+43,2,Kulun,Ussel,395,4926,Teal,1061.42
+45,1,Västanfjärd,New Pandanon,5534,2824,Khaki,1423.31
+49,2,Thị Trấn Thọ Xuân,‘Aşīrah al Qiblīyah,1923,6758,Turquoise,433.8
+57,2,Kirtipur,Lau,5319,4092,Violet,1171.1
+30,2,Miami,Zhuxing Chaoxianzu,5449,9936,Indigo,1838.63
+83,3,Luoshe,Ash Shawātī,1623,5814,Orange,1476.04
+24,3,Bonanza,Breia,3559,2445,Fuscia,1314.56
+59,3,Spitak,N'Djamena,6776,4341,Indigo,909.52
+29,3,Jabal os Saraj,Parengan,2117,1643,Teal,1278.84
+44,2,Kaiyuan,Harper,7054,1269,Khaki,562.07
+16,4,Huangfang,Karanglo,6704,9883,Indigo,1454.59
+5,3,Alta Gracia,Shentang,7553,5986,Pink,896.45
+100,2,Tempursari Wetan,Morales,8686,5781,Teal,1060.24
+29,4,Chengjiao,Shicong,9294,6522,Crimson,1136.25
+23,1,Montijo,Mawa,6663,8461,Blue,699.35
+71,2,Taoling,Zamość,9801,2372,Mauv,1099.25
+10,3,Mijiang,Wenci,795,4493,Orange,1434.13
+63,4,Nashville,Mońki,2280,5554,Pink,1920.36
+45,3,Prupuh,Boje,5889,6630,Khaki,1540.16
+8,4,Novyye Kuz’minki,Calvário,941,2508,Teal,1193.58
+63,3,Dioknisi,Jam,3165,4651,Fuscia,987.22
+67,1,Gjegjan,Radzanów,4142,7052,Violet,1732.39
+91,3,Tongjing,Ban Chalong,3369,2735,Fuscia,1349.46
+85,2,Itaqui,Nefta,9118,8006,Purple,580.12
+83,2,Banjar Banyuning Barat,Vasylkiv,7090,7887,Aquamarine,500.69
+37,1,Ourovéni,Agra,5150,4311,Green,1811.86
+52,2,San Pedro Sacatepéquez,Tor,6899,4807,Pink,1022.17
+9,4,Parabcan,Shangyi,4462,6127,Green,893.01
+38,1,Gizo,Nyangao,8836,135,Purple,1709.87
+39,3,Yamkino,Ea T’ling,774,650,Goldenrod,787.12
+10,4,Suodenniemi,Hutou,1918,7872,Green,673.2
+19,4,Dembéni,Gąsocin,7182,1341,Teal,1355.48
+19,1,Bulo,Jiefangyan,7974,4748,Pink,1950.33
+41,3,Timeng,Topdac,5893,1460,Khaki,1896.6
+95,3,Muang Sam Sip,Cartí Suitupo,2080,8855,Red,878.03
+18,1,Puhechang,Baraçais,3765,4102,Pink,1017.25
+29,4,Ciepielów,Nyagan,8009,5281,Green,928.89
+21,3,Plovdiv,Almere Haven,5918,633,Red,1765.84
+44,1,Sakai-nakajima,Akropong,6484,9216,Aquamarine,1938.81
+8,1,Mollas,Hamilton,1986,7279,Blue,432.76
+53,2,Pringgabaya,Cagnes-sur-Mer,2009,5552,Fuscia,1895.67
+75,1,Taixi,Chocos,5899,2703,Fuscia,989.21
+77,2,Fengtang,São Luís de Montes Belos,2934,7973,Crimson,1540.12
+100,1,Gif-sur-Yvette,Asyūţ,9314,2131,Indigo,1241.6
+27,2,Lembongan Kawan,West End,5185,4608,Indigo,522.34
+78,2,Luebo,Trzebiatów,4769,9557,Maroon,1412.8
+58,4,Jönköping,Karangsari,4442,9539,Purple,491.39
+88,4,Itami,Tonggu,7768,7430,Yellow,1117.16
+13,1,Homagama,Carbajales,2736,6278,Maroon,1938.74
+99,2,Cogtong,Kralice na Hané,9293,8222,Pink,939.88
+47,4,Esigodini,Lusacan,7269,6175,Green,1129.04
+2,2,Gálvez,Lyaskelya,6090,4527,Puce,1037.96
+91,1,Qala i Naw,Vyshneve,1590,7251,Puce,1482.11
+61,4,Baloc,Panao,5817,154,Green,1258.46
+78,4,Stoczek Łukowski,Hinthada,5425,8354,Khaki,1661.52
+18,2,Krajan Tanjungrejo,Valday,4850,563,Turquoise,625.79
+77,4,Kabin Buri,Rivera,7876,3432,Maroon,718.38
+3,4,Xiangjia,Chechen-Aul,6825,6130,Khaki,985.75
+86,1,Xindeng,Loo,6375,1097,Indigo,1146.79
+98,3,Timon,Przemków,1834,4698,Blue,1242.74
+98,3,Mirsk,Shahrak,490,8161,Blue,1236.11
+60,1,Fulong,Quzhou,3886,3367,Khaki,968.51
+57,4,Liangdong,Dagu,7851,9498,Puce,1137.77
+29,2,Abucay,Sulkava,3888,2339,Violet,1456.38
+84,3,Jiazhuyuan,Miribel,5066,8275,Crimson,1876.66
+19,4,Ubaitaba,Cabagan,9456,1498,Orange,1307.05
+38,1,Kobeřice,Wintzenheim,4848,2466,Goldenrod,599.12
+37,1,Maglaj,Kulia Village,6256,9975,Green,477.02
+91,4,Kula,Hejiayan,9957,8526,Red,1175.81
+24,4,Sélestat,Cerinza,3301,3996,Teal,1068.23
+29,1,Acarigua,Lela,9957,338,Mauv,1788.42
+27,3,Shagonar,Bradashesh,2110,939,Pink,576.92
+51,4,Apaga,Sobral da Abelheira,2365,3882,Crimson,1799.13
+24,2,Xibu,Staryy Krym,7034,8575,Turquoise,647.98
+81,1,Santa Adélia,San Ramón,1264,6978,Crimson,1030.1
+11,2,Jalatrang,Karanganyar,8842,5727,Puce,535.43
+46,1,Midland,Jincheng,7198,5704,Khaki,1882.93
+65,1,Bocana de Paiwas,Voznesenskoye,8513,5821,Orange,1942.7
+91,4,San Luis del Palmar,Suyang,4481,5690,Red,814.46
+59,1,Mendoza,Paraíba do Sul,3583,8159,Turquoise,646.25
+79,2,Timba Lauk,Les Sables-d'Olonne,9608,9874,Pink,1513.01
+97,2,Omišalj,Ajuda,8712,6599,Teal,1504.98
+33,1,Oenpeotnai,Pliska,236,1033,Teal,1581.16
+36,3,Vidzy,Washington,8404,1688,Mauv,1532.31
+45,3,Anqing,Tala,7656,4251,Maroon,1519.27
+74,1,Kropachëvo,Zhongpai,9243,156,Violet,1747.39
+80,3,Oliveira,Pataypampa,945,6636,Purple,1557.47
+45,4,Beni Khiar,Almafuerte,1625,5607,Orange,500.44
+28,3,Kedungbulu,Kemlya,6300,6827,Mauv,671.27
+97,1,Corrego Grande,Imbituba,3762,2171,Violet,1432.46
+87,1,San Luis del Palmar,Khanabad,4743,6921,Mauv,1596.75
+15,2,Malapaubhara,Bernay,5221,944,Blue,1940.86
+49,2,Malanday,Muslyumovo,4636,247,Mauv,783.57
+80,2,Riangderi,Oslo,7845,5465,Goldenrod,1277.09
+20,1,Springfield,Karabanovo,8711,223,Pink,424.61
+10,4,San José,Nangkapayung,5152,8217,Khaki,512.34
+36,1,Mojimán,Curpahuasi,6754,6592,Yellow,1623.65
+45,4,Khānpur,Anao,596,3343,Aquamarine,1959.92
+53,4,Dargaz,Fatukanutu,7244,5411,Maroon,1472.93
+81,4,Karlskrona,Outing,9066,4365,Yellow,1835.14
+98,1,Depapre,Nový Hrozenkov,4476,4889,Goldenrod,1217.49
+66,3,Ciechanowiec,Gaojian,8947,3664,Blue,620.04
+46,2,Catriel,Quinta,8357,2370,Purple,1816.27
+93,1,Njivice,Munde,4295,6029,Puce,518.54
+94,4,Leloboko,Tiandiba,6012,4023,Blue,768.19
+9,3,Youkaichi,Kramat,9462,503,Khaki,1765.57
+98,4,Barguzin,Gayamdesa,8344,7294,Pink,1358.31
+24,2,Požarevac,Boticas,8854,3934,Purple,787.37
+5,4,Bethlehem,Skövde,7366,2167,Fuscia,460.86
+1,4,Aghavnadzor,Piran,1745,3299,Blue,665.47
+62,3,Täby,Mandala,9838,4698,Mauv,1561.4
+96,4,Karabash,Kertasari,8710,162,Aquamarine,1408.71
+23,2,Guanli,Caldas das Taipas,2379,5628,Fuscia,1323.37
+4,1,Nizhnyaya Salda,Parnamirim,7742,4348,Orange,836.48
+77,1,Zhuhu,Leworook,3658,1934,Aquamarine,487.02
+95,4,Bayanan,Uspenskoye,8085,4417,Maroon,1684.75
+75,4,Tshikapa,Acton Vale,5969,8982,Pink,1378.09
+74,2,Linamon,Jawornik,5495,6700,Puce,1046.73
+11,2,Mlonggo,Irshava,5238,6129,Teal,1615.38
+45,3,Göteborg,Yihe,9510,8325,Violet,567.95
+91,2,Las Parejas,Narsingdi,933,7492,Red,1829.12
+3,2,Pop Shahri,Ortega,9023,2439,Purple,1903.17
+85,2,Henghe,Jinjiang,1039,5781,Yellow,1344.15
+57,3,Tembilahan,Waitun,8360,9225,Pink,1361.23
+19,1,Negombo,Bode Sadu,1100,9958,Goldenrod,634.36
+95,3,San Pedro,Sepanjang,10000,8016,Fuscia,1431.88
+27,2,Lyaskovets,Chengqiao,8630,622,Purple,734.97
+18,1,Żebbuġ,Phanat Nikhom,2028,2008,Purple,654.2
+78,4,Baranowo,Chorkówka,1770,6561,Teal,1128.04
+48,4,Matayumtayum,Zarszyn,8899,8175,Pink,497.03
+39,4,Kansas City,Zouma,4806,9511,Mauv,1486.29
+97,3,Phu Khiao,Lipiany,9832,382,Blue,765.51
+12,1,Skrzyszów,Zhigong,7289,3577,Aquamarine,1183.45
+20,4,Saint-Germain-en-Laye,Ganjiangtou,7167,1391,Puce,1069.34
+3,1,Merdeka,Yakimovo,5598,9729,Violet,1671.81
+76,3,Chengguan,Nggesa,9375,8883,Violet,1497.36
+45,3,Obas,Kamyanyuki,9708,7665,Yellow,1954.05
+83,3,Vychegodskiy,Sandovo,7238,755,Red,1741.25
+31,1,Banjar Parekan,Nanshan,2702,7589,Khaki,627.06
+32,4,Hongkou,Wāling,6912,4264,Red,1131.07
+76,3,Seka,Rio de Moinhos,7570,6942,Aquamarine,543.25
+34,3,South Tangerang,Babat,8669,8590,Goldenrod,1951.87
+55,4,Geshan,San Juan Nepomuceno,8152,5538,Goldenrod,1846.94
+76,3,Samal,Pionerskiy,6717,707,Crimson,1723.83
+9,4,Cheongju-si,Polos,2036,6853,Goldenrod,1487.8
+14,1,Boyuibe,Xingang,2417,9479,Purple,1095.56
+41,2,Ayia Napa,Novovorontsovka,7799,3335,Turquoise,1040.32
+79,1,Baoshi,Carabamba,4561,1632,Yellow,1396.54
+76,3,São Paulo de Olivença,Yasnogorsk,4092,8216,Puce,1417.5
+17,4,Dimiao,Los Fresnos,5493,6299,Khaki,1041.69
+10,3,Cikole,Cimo de Vila,3785,9568,Fuscia,1344.83
+84,1,Huangbayi,Shawnee Mission,1337,8181,Turquoise,561.7
+37,2,Pasarkolot,Viçosa do Ceará,419,4856,Orange,1572.31
+53,2,Yihe,Choszczno,8711,8013,Mauv,1257.41
+24,2,Mabilog,San Simon,7583,6730,Purple,573.64
+51,1,Stará Huť,Paris 06,9792,9385,Pink,1388.82
+88,3,Choisy-le-Roi,Sernovodsk,9133,1482,Mauv,1595.08
+25,4,Kamenné Žehrovice,Vilarinho da Castanheira,752,8168,Teal,955.99
+84,4,Sosnówka,Obuasi,3244,6689,Orange,1702.7
+32,4,Dijon,Luoshan,787,5995,Violet,1604.01
+55,3,Łanięta,Simpang,9178,1062,Teal,1536.13
+19,2,Bāniyās,Singasari,2672,5456,Blue,1345.31
+5,1,Naples,Sanjiazi,1135,7459,Violet,873.27
+56,3,Hengjie,Aoyang,9413,1156,Purple,586.24
+89,2,Kolmården,Wan’an,9698,870,Green,892.9
+46,1,Wakuya,San Pedro del Paraná,5170,8505,Teal,694.83
+48,3,Barcelona,Yanwan,9330,3974,Orange,629.98
+2,2,Uritsk,Slovenske Konjice,7934,2967,Puce,1075.99
+12,3,Tiassalé,Sumberejo,5556,8144,Puce,939.51
+33,2,Baraçais,Baucau,4564,9633,Khaki,1665.69
+82,2,Simpang Ulim,Moulay Abdallah,1549,4486,Turquoise,1496.03
+34,2,Drummondville,Lanlacuni Bajo,9308,5077,Orange,1523.69
+12,1,Sarilhos Grandes,Hulutao,1155,1119,Goldenrod,1759.79
+16,1,Zhoukou,Visby,7334,1806,Aquamarine,455.66
+22,2,Vänersborg,Skellefteå,4232,8406,Maroon,576.75
+47,4,Germiston,Esperanza,5688,9104,Pink,638.99
+13,4,Uppsala,Lentisqueira,1194,1014,Aquamarine,659.75
+3,2,Saint-Jean-de-Monts,Laizhou,9445,1967,Purple,1283.41
+62,3,Quinta,Maru,5216,2889,Green,1346.9
+37,3,Ban Talat Nua,Savonranta,4260,2927,Crimson,551.63
+90,2,Concordia,Petrovo-Dal’neye,8163,897,Orange,1993.9
+76,3,Ban Phai,Donomulyo,766,2458,Orange,1320.24
+8,4,Xuedian,Sidareja,6777,8069,Crimson,1514.73
+25,4,Veracruz,Mansa,7189,9533,Goldenrod,1733.9
+22,3,Maoqitun,Sredno Konjare,6028,1740,Khaki,1467.1
+77,2,Boavista,Loreto,5736,9702,Puce,442.26
+84,4,Grytviken,Staritsa,9149,8632,Red,1403.79
+95,4,Hāsilpur,Rio de Mouro,6385,4951,Goldenrod,960.61
+85,2,Mulhouse,Emiliano Zapata,8158,392,Yellow,1111.16
+93,1,Brandýs nad Labem-Stará Boleslav,Briey,8316,6288,Orange,906.9
+75,2,Sumbergedong,Karatsu,4948,45,Fuscia,1992.35
+20,4,Drakino,Bombon,9174,7408,Green,1523.34
+60,2,Jāwā,Mramani,9279,9888,Puce,530.38
+5,4,Ukmerge,Alta Gracia,1795,1759,Turquoise,1412.82
+87,3,Xia Zanggor,Loma Bonita,5300,3886,Blue,615.89
+39,3,Iksan,Taoyuan,759,9939,Teal,805.9
+46,4,Hermanus,Paris La Défense,2573,7820,Maroon,1024.45
+93,2,MacArthur,Castlebridge,9755,7137,Indigo,636.66
+23,2,Jieshou,Aubenas,3283,4029,Pink,1853.72
+16,2,El Fahs,Arhust,5326,9947,Violet,578.91
+91,4,San Miguel Ixtahuacán,Ylöjärvi,1291,9500,Blue,472.94
+70,4,Smolenskoye,Mtsensk,8489,4744,Turquoise,429.17
+8,4,Curug,Canguaretama,6410,6242,Khaki,1888.8
+97,2,Tabuating,Xunhe,2242,1451,Maroon,1654.26
+19,3,Horodyshche,Rajhrad,9323,3708,Goldenrod,1217.85
+97,3,Taunan,Póvoa de Penela,8538,572,Fuscia,1424.58
+1,2,Świlcza,Hradec Králové,9628,8008,Orange,1643.04
+5,4,Tallahassee,Zipárion,7362,2722,Maroon,1860.21
+51,3,Montilla,Naryn,1108,7056,Goldenrod,774.67
+86,4,La Jutosa,Tomaszów Lubelski,1732,758,Turquoise,1961.67
+33,1,Gò Dầu,Matiao,4445,709,Khaki,1013.85
+33,2,Shakhty,Nankang,2316,2734,Violet,1935.68
+73,4,Saripin,Nîmes,8117,5311,Goldenrod,1656.19
+1,3,Jingdang,Ust’-Isha,2919,5315,Purple,1718.32
+71,2,Cawayan,Blumbang,7108,7815,Blue,1452.8
+13,2,Tiyuguan,Kebonbencoy,551,1861,Puce,900.9
+91,4,Ostrówek,Hengjing,4890,4082,Purple,1123.73
+76,2,Pule,Yinkeng,3077,1681,Turquoise,1849.28
+72,2,Suqiaoxiang,Zudun,1571,9655,Mauv,1869.6
+95,3,Masindi Port,Ringinrejo,7100,215,Blue,1857.98
+87,2,El Tránsito,Punaauia,8880,6983,Pink,1935.08
+20,4,Sarrebourg,Jiuzhou,5341,2779,Puce,848.67
+47,3,Cipicung,Onsala,4144,3510,Mauv,1296.92
+60,4,Kostarea Satu,Huangduobu,1705,6536,Blue,1893.92
+60,2,Bururi,Teeli,9230,5475,Blue,1490.36
+1,2,Kameoka,Göteborg,4443,8993,Mauv,649.4
+87,2,Marka,Avesta,5753,9966,Maroon,1498.89
+32,1,Shigu,Umeå,3890,2729,Yellow,1725.93
+98,1,Donskoy,Rujewa,3636,1375,Fuscia,1514.21
+100,2,Shangjing,Caotan,5771,4591,Mauv,877.17
+86,3,Zoumaling,Gumalang,1237,4116,Pink,1542.47
+99,4,Ekerö,Tierp,1089,5943,Teal,649.25
+78,2,Iguatu,Mělník,7163,8144,Mauv,1785.9
+16,4,Krasnoshchekovo,Zhongying,6147,9756,Yellow,590.61
+60,1,Luoyang,Alice,9424,9991,Teal,522.44
+59,4,Sungai Raya,Hisings Kärra,7277,8495,Crimson,1163.09
+68,2,Beringin,Yichun,6338,1725,Yellow,579.28
+62,2,Siderejo,Medicine Hat,5774,7149,Maroon,1068.31
+19,4,Shiziling,Tugu,376,9381,Violet,468.03
+57,2,Ath,Lasehao,2421,2663,Violet,1605.13
+95,2,Lunyuk Ode,Soito,4403,5553,Fuscia,792.84
+92,3,Hamada,Bergville,1837,7880,Violet,1549.27
+39,4,Megáli Khóra,Mossoró,3416,5529,Mauv,816.64
+69,1,Jasień,Komsomolets,8297,5154,Mauv,693.21
+10,4,Helixi,Jēkabpils,5709,6438,Crimson,680.72
+11,1,Duang,Cikadu,231,3624,Green,1095.82
+17,3,Sousse,San Lorenzo,3239,4063,Aquamarine,1242.39
+18,4,Quảng Ngãi,Vales,2346,154,Turquoise,725.6
+50,2,Campoverde,Oświęcim,8912,8588,Turquoise,1396.76
+6,3,Oslo,Hat Yai,8899,3248,Fuscia,464.78
+16,3,Kalmar,Črenšovci,4270,2503,Orange,443.81
+37,4,Kudanding,‘Ibwayn,4552,7969,Green,1718.63
+96,3,Ampelákia,Sułkowice,1619,1475,Pink,1468.41
+84,2,Balong,Horní Cerekev,3446,9005,Maroon,1783.69
+52,2,Sukasirna,Thạnh Mỹ,7392,9503,Khaki,1170.8
+81,2,Agrela,Anshun,4833,2523,Aquamarine,1540.1
+39,1,Putrajaya,Buka,3225,2430,Orange,641.48
+97,1,Roskoshnyy,Pajagan,1662,8434,Aquamarine,1725.64
+71,1,Pingxiang,Mekarsari,6784,4466,Teal,1579.58
+91,3,Tournavista,Qiankeng,893,1054,Goldenrod,602.6
+100,4,Karangpocok,Anávra,3118,9150,Puce,1472.37
+1,2,Longotea,Canelas,2516,753,Fuscia,1292.72
+5,2,Asahi,Congonhas,7653,2174,Blue,1811.46
+33,3,Thị Trấn Kim Tân,Wolomoni,6499,9293,Indigo,523.27
+52,3,Danyang,Shijie,3941,9894,Green,1094.99
+77,1,Semambung,Longfeng,842,9926,Indigo,542.93
+12,4,Labuan,Santa Ana,7808,3090,Mauv,1159.31
+24,3,Anjirserapat,Bettendorf,9308,3925,Turquoise,1922.33
+33,3,Tangyu,Madīnat Sittah Uktūbar,5947,8201,Blue,612.01
+91,1,Nomhon,Merritt,9309,1850,Crimson,830.06
+34,3,Baicun,Shiki,3649,2007,Teal,804.51
+48,2,Banaba,Gakovo,7475,2459,Goldenrod,1694.68
+4,1,Prado Siongco,Haiyangsuo,1140,1820,Blue,1685.67
+78,1,Besançon,Beoga,1651,4983,Maroon,1059.96
+71,2,Tabou,Paris 03,2318,7696,Purple,918.05
+65,2,Podhum,Peñaflor,2622,9286,Red,1818.2
+5,3,Lunec,Fomento,9643,4811,Fuscia,1265.55
+80,2,Khawrah,Vidual,3718,751,Maroon,878.72
+76,4,Ōarai,Wangjiachang,1915,2968,Fuscia,964.96
+17,2,Cipancur,Mingora,8043,306,Fuscia,1722.73
+41,4,Leuwidamar,Pedreira,6535,547,Mauv,907.56
+83,1,Aguitu,Nancheng,1814,7518,Purple,547.77
+91,4,Tarrafal,Woro,1311,6266,Orange,1553.0
+30,2,Krasnotur’insk,Kut Chap,3883,5698,Aquamarine,1506.51
+51,4,Leipsoí,Yungaisi,7429,3159,Yellow,1231.07
+63,4,Verkhnyaya Belka,Alingsås,6659,7574,Orange,1516.17
+42,2,Gaoxiang,Sainte-Geneviève-des-Bois,5592,1597,Purple,754.56
+53,1,Eustaquio Lopez,El Caño,5797,5265,Teal,745.01
+76,1,Bayang,Panjir,8013,6475,Turquoise,1125.22
+84,1,Rzozów,Alhambra,9026,2872,Crimson,1563.63
+25,1,Maria Cristina,Aiánteio,6814,8727,Violet,630.64
+10,4,Blokdesa Situgede,Vallentuna,5380,1890,Blue,668.59
+87,3,Jurak Lao’,Gugark’,4039,2334,Puce,491.01
+70,1,San Pedro,Ordzhonikidzevskaya,3264,7698,Teal,535.68
+64,3,Telêmaco Borba,Bergen,9672,133,Green,1977.06
+82,1,Toyota,Wangchang,290,1321,Puce,1317.02
+29,2,Castlebellingham,Nhà Bàng,3048,3253,Teal,449.24
+74,1,Maple Plain,Eha Amufu,5582,1543,Maroon,1719.1
+71,4,Balice,Mojoroto,3172,2726,Teal,998.73
+15,3,Dasol,Hatton,1365,5209,Goldenrod,482.19
+60,1,Soroca,Ticllos,4574,2154,Mauv,1632.41
+40,4,Xuanma,Chervyen’,618,8438,Orange,885.49
+92,1,Yuscarán,Karangtengah Lor,549,2898,Yellow,1692.9
+47,4,Shijia,West End,1993,9978,Teal,1927.17
+87,1,Täby,Baoyou,7943,6518,Blue,1286.15
+6,4,Yingshouyingzi,Daba,7882,3678,Khaki,912.43
+89,3,Boudinar,Domaradz,1306,4942,Pink,1927.0
+47,1,Huixian Chengguanzhen,Luena,3156,6959,Puce,1605.63
+26,2,Changxingbao,Qinhe,114,2747,Teal,1390.54
+19,2,Tieba,Horton,1836,7427,Khaki,848.13
+99,4,Kuala Lumpur,Caromatan,915,6926,Indigo,778.35
+66,4,Xinying,Tullich,5566,9169,Turquoise,1380.57
+28,3,Ntungamo,Kungälv,2397,3689,Puce,1662.07
+63,1,Laka,Masaki-chō,1844,6851,Red,1223.2
+46,1,Bar-le-Duc,Standerton,3801,4460,Crimson,734.47
+81,2,Bruzual,Keroka,3480,8657,Pink,736.89
+52,1,Sinuknipan,Lafayette,9072,2749,Crimson,1292.81
+49,3,Limatambo,Yokotemachi,4954,8785,Fuscia,1567.67
+58,2,Luchingu,Šumperk,6353,9903,Indigo,1368.88
+26,3,Presidencia Roque Sáenz Peña,Paraíba do Sul,9225,5033,Goldenrod,1041.14
+35,2,Rokycany,Subulussalam,6467,3972,Indigo,975.36
+20,3,Sam Phran,Viradouro,5143,7522,Aquamarine,720.8
+53,3,Yelets,Mauloo,3276,419,Puce,1394.99
+68,3,Dayuan,Kolpny,8381,525,Violet,1561.0
+11,3,Kungsbacka,Gornje Moštre,8896,3953,Puce,892.26
+1,4,Buenavista,Lintan Chengguanzhen,3829,7767,Orange,506.21
+53,1,Ménaka,Phon Phisai,6314,9933,Khaki,1639.73
+55,1,Hŭngju-dong,Ballisodare,2561,3520,Fuscia,748.7
+73,3,Diepsloot,Tejar,2014,8954,Indigo,910.63
+38,4,Freiburg im Breisgau,Karangpao,9388,3383,Yellow,1955.6
+24,3,Dosso,Daoxu,8726,9788,Green,1748.42
+8,4,Suhopolje,Santa Cruz,1995,9468,Green,921.73
+27,4,Jiekeng,Darenzhuang,3385,7955,Turquoise,515.83
+56,1,Saint Petersburg,Néa Vrasná,6419,7526,Teal,948.4
+6,4,Drohobych,Bashtanka,8711,5328,Orange,1526.68
+57,1,Duy Xuyên,Felege Neway,8243,1967,Violet,640.22
+86,3,Guandian,Liushi,6256,9608,Green,776.0
+5,2,Calomboyan,Borgo Maggiore,1546,4254,Turquoise,974.39
+70,4,Norzagaray,Gaozhai,3216,8270,Green,1145.3
+40,1,San Bernardino,Pajić Polje,4310,4784,Violet,1812.11
+69,1,Nýdek,Fengmu,1968,1114,Green,1377.75
+42,4,Santana do Ipanema,Žďár nad Sázavou Druhy,9324,9136,Red,1517.18
+49,4,Chunmuying,El Peñol,3624,3777,Green,791.21
+57,2,Радишани,Huangsha,5483,8014,Khaki,553.96
+20,3,West Jerusalem,Mugumu,1771,7824,Khaki,949.77
+14,4,Campos Sales,Muzambinho,37,1149,Fuscia,589.9
+76,1,Chiara,Dashiju,4791,127,Yellow,1566.63
+82,2,Zhuping,Zhugentan,5230,7513,Pink,1232.12
+94,4,San Clemente,Baixo Guandu,4171,3892,Red,862.33
+13,3,Balkanabat,Pinhal da Marquesa,8375,552,Red,493.17
+60,4,Koygorodok,Eydhafushi,2917,5710,Crimson,1446.08
+68,2,Cajamarca,Denton,1159,8471,Indigo,459.79
+97,1,Ludvika,Sampao,2383,7599,Aquamarine,1716.58
+40,1,Saltsjö-Boo,Takahashi,4300,97,Crimson,999.96
+28,4,Zolotyy Potik,Shangping,5435,3640,Orange,1207.07
+24,1,Raškovice,Petroúpolis,9919,6562,Fuscia,716.39
+37,3,Bagahanlad,Angers,2629,1493,Maroon,1219.78
+34,4,Pantalowice,Svitlovods’k,3149,7087,Puce,1023.3
+8,2,Puno,Haumeni,6721,3576,Puce,1435.77
+10,1,Chandra,Santo Tomas,5902,1894,Crimson,1934.5
+55,1,Krajan Pundungsari,Santiago De Compostela,7440,3850,Turquoise,1365.17
+72,1,Kratié,Libertad,4514,7649,Teal,1984.89
+10,1,Strasbourg,Camindangan,1381,4972,Aquamarine,601.42
+66,3,Kingsport,Garbów,8755,5760,Khaki,1599.48
+51,4,Pawa,San Jacinto,7137,7514,Red,769.38
+35,4,Veliki Preslav,Miyoshi,245,6841,Yellow,680.18
+87,4,Dupnitsa,Sannois,5036,6091,Orange,1227.97
+75,3,Makiyivka,Miryang,7725,4799,Orange,1623.08
+4,4,Janaka,Lozova,8600,2437,Khaki,1778.29
+79,4,Yaguarón,Gatesville,9776,8357,Red,1007.4
+55,4,Kan’onjichō,Ulaandel,9871,3662,Blue,1983.95
+32,3,Neryungri,Niushou,7059,4558,Violet,1183.72
+25,4,Drajak,Sitrah,6105,7686,Teal,851.94
+51,2,Byahoml’,Qiucun,4976,5643,Turquoise,1751.6
+13,4,Itaquyry,Weetombo,1764,2897,Red,590.87
+78,3,Janagdong,Shitan,8821,6098,Khaki,1874.46
+16,2,Lysogorskaya,Paris 12,545,3781,Aquamarine,1885.72
+12,2,Gemo,Sotouboua,3427,5541,Maroon,1956.63
+49,1,Mendes,Wuxihe,6299,8565,Fuscia,1781.45
+61,2,Xuefeng,Klavdiyevo-Tarasove,7764,6863,Purple,1139.48
+92,1,Karditsomagoúla,Changlu,7018,6402,Goldenrod,1520.61
+45,4,Örbyhus,Lingkou,3092,4549,Goldenrod,1753.55
+24,3,Skeldon,San José El Ídolo,1343,8267,Purple,766.56
+22,1,Kalamáta,Artemisa,1282,6197,Green,1522.76
+7,3,Point Pedro,Liufang,9254,9351,Purple,943.4
+54,3,Qal‘eh-ye Khvājeh,Keruguya,8463,6865,Crimson,1425.99
+19,3,Santana do Ipanema,Budayuan,1815,8131,Turquoise,1137.27
+3,4,Reshetylivka,Dukuhturi,7129,9874,Blue,1337.99
+22,1,Maintirano,Fuji,8036,6971,Crimson,1267.37
+53,4,Nihommatsu,Cabugao,4910,1521,Goldenrod,1636.46
+82,3,Gludug,Póvoa,1527,6402,Red,1960.58
+3,4,Wenling,Ágios Geórgios,9920,2855,Indigo,1581.4
+16,3,Rivera,Joševa,3552,2896,Turquoise,1325.8
+33,1,Chai Nat,Jindong,9956,4445,Green,651.23
+21,3,Marevo,Ndom,8398,6722,Mauv,1816.91
+74,4,Xiaoying,Pinheiro,4824,2305,Fuscia,725.05
+97,4,Puerto Madryn,Nozdrzec,2618,3699,Teal,1833.97
+86,4,Lagoa,Obubra,691,4502,Khaki,567.58
+58,3,Huatanshan,Mayqayyng,2890,6159,Orange,1763.13
+4,2,Urkarakh,Mohammedia,7644,8206,Orange,510.58
+51,3,Shangtuhai,Águas de Lindóia,9781,7230,Pink,1112.85
+70,3,Xinfu,Enschede,8676,2914,Blue,1838.76
+91,1,Sanlian,Verba,316,8900,Fuscia,478.75
+47,4,Realeza,Angoulême,1143,1392,Crimson,554.98
+58,3,Lazdijai,Dimitrovgrad,2953,1234,Red,1867.44
+16,3,Taocun,Mladá Boleslav,9165,5431,Crimson,605.51
+27,1,Yuanquan,Nam Khun,8344,7751,Teal,1330.78
+58,2,Kasli,Temandangjero,2311,1907,Violet,1509.8
+55,1,Leninskiy,Gabú,2478,2150,Khaki,1408.59
+70,1,Yaroslavl,Vin’kivtsi,8309,9631,Red,1420.11
+46,1,Kongjiang,Saint-Eustache,4979,5641,Puce,1244.03
+55,2,Zduńska Wola,Lhoknga,6132,6180,Aquamarine,1524.43
+36,3,Fuxin,Xialiao,3043,8439,Aquamarine,1129.72
+2,4,Fukagawa,Miasskoye,3006,1810,Fuscia,1479.65
+36,4,Kebonjaya,Mislīyah,1013,4368,Orange,523.8
+63,1,Bungalaleng,Venado Tuerto,481,2075,Yellow,1648.58
+8,3,Sémbé,Valmiera,539,4918,Violet,1182.26
+13,3,Yangshan,Maoping,2156,8421,Violet,1534.08
+46,2,Lagnieu,Fatikchari,7926,85,Aquamarine,966.67
+42,1,Imishli,Forécariah,1973,9285,Pink,1574.81
+10,1,Mulyoagung,Um Jar Al Gharbiyya,7020,6481,Khaki,1020.02
+65,2,Pianbai,Lyon,3612,900,Indigo,1760.17
+7,2,Magdeburg,Erie,5646,4507,Yellow,1649.52
+59,4,Verkhniy Dashkesan,Daliuhang,8300,4796,Turquoise,1512.15
+68,3,Cikadu,General Enrique Mosconi,7174,9807,Orange,785.33
+63,3,Zougang,Kimito,3866,9290,Khaki,996.46
+27,1,Bitanjuan,Araguari,9769,8846,Khaki,1876.46
+43,3,Longcang,Jintao,149,5721,Puce,604.58
+1,4,Strömsund,El Hermel,5031,7338,Puce,484.79
+63,1,Jasionów,Mogadishu,3114,238,Mauv,1649.12
+56,4,Alukama,General Luna,9932,6187,Purple,1668.48
+95,4,Yumbe,Yezhou,3699,1851,Maroon,993.7
+76,3,Limoges,Makadi Bay,1120,8908,Purple,1132.92
+52,4,Zhosaly,Perelhal,3076,9343,Crimson,1804.82
+19,4,Caratinga,Winnipeg,1499,965,Pink,1689.19
+33,1,Insrom,Colorado Springs,4089,8531,Red,890.1
+66,4,Shuanggang,Sombor,8320,3650,Aquamarine,1711.21
+80,3,Bazhu,Guazhou,429,8802,Aquamarine,1724.79
+70,2,Kafr Baţnā,Kusak,9701,5967,Purple,1707.47
+49,2,Roseau,Īlām,6548,7039,Green,1585.19
+18,1,Bodega,Shuanghe,6589,9743,Aquamarine,1143.21
+67,3,Połomia,Chybie,4675,7706,Maroon,1665.76
+50,3,Zhdanov,Frydek,2033,7631,Khaki,1235.62
+16,2,Lensk,Fangxian,784,7818,Orange,562.71
+45,1,Sigiriya,Sanhe,6238,117,Fuscia,441.2
+99,2,Bang Ban,Al Finţās,5523,9796,Turquoise,1260.65
+43,2,Shuitou,Dalmatovo,6824,4715,Pink,1480.95
+59,1,Bendilwungu Lor,Vergara,5959,7262,Turquoise,1323.98
+61,2,Aborlan,Mekarsari,8587,7043,Goldenrod,1250.49
+10,2,Batatais,Brok,7565,4740,Blue,1210.31
+99,2,Conceição do Coité,Rungkang,8397,3298,Puce,1820.09
+73,4,Onsala,Jistebnice,4604,4763,Red,1613.08
+93,3,Kosiv,Panagyurishte,5680,8721,Aquamarine,867.63
+79,3,Ust’-Uda,Piteå,3131,9877,Red,1980.31
+12,3,Melaka,Arapiraca,8127,295,Maroon,1036.58
+31,2,Manukau City,Newton,8062,3446,Fuscia,1334.67
+97,1,Kama,Goranboy,6381,7319,Mauv,590.53
+44,2,Malim,Gaotai,8698,9773,Turquoise,1916.69
+20,4,Yangjiang,Nyurba,4574,6929,Pink,725.26
+5,3,Pacatuba,Japerejo,8348,4508,Red,941.62
+61,3,Luleå,Qukou,8838,4758,Turquoise,1005.12
+21,1,San Carlos,Kolodeznyy,2260,2256,Green,1947.36
+47,2,Žleby,Beisijiazi,8567,6686,Fuscia,1027.26
+91,4,Columbus,Panalingaan,1647,5390,Goldenrod,1567.22
+57,1,Thị Trấn Phú Mỹ,Lyantonde,47,5726,Green,1037.42
+61,2,Lefengzhen,Longmen,7882,3979,Blue,1988.01
+77,4,Xialaxiu,Bruxelles,1258,7748,Khaki,1787.77
+27,1,Hāgere Hiywet,Danville,4898,1205,Crimson,707.61
+82,4,Goyang-si,Baroy,7589,4672,Aquamarine,1142.2
+87,2,Briceni,Keboncau,713,325,Indigo,1135.4
+26,3,Nazran’,Wingham,681,3662,Blue,1388.46
+66,4,Su-ngai Kolok,Semënov,520,5159,Turquoise,1544.53
+12,2,Zhubei,Kuala Lumpur,4603,1983,Orange,1751.05
+96,2,Bolesławiec,Lae,2260,874,Red,1990.68
+66,1,Benito Juarez,Santa Fe,9939,8099,Mauv,1257.1
+16,2,Venëv,Papetoai,6113,6428,Yellow,1791.79
+47,2,Zürich,‘Aqrah,9105,8735,Khaki,915.36
+41,2,Parnamirim,Xuanzhou,6265,2667,Maroon,1358.95
+73,3,Flen,Carcassonne,3152,5802,Purple,1244.45
+76,2,Dongtou,Gangtun,3015,3681,Orange,1214.15
+91,1,Täby,Borovlyany,9467,6705,Turquoise,1517.34
+39,1,San Rafael,Ábidos,9677,370,Green,1725.41
+27,4,La Palma,Jiangtun,3804,6865,Indigo,1932.58
+87,3,Opatov,Bejucal,9949,5466,Green,1824.18
+3,3,Decatur,Nyima,9258,1722,Puce,1596.06
+9,4,Kaolack,Skuodas,7081,8905,Violet,1417.46
+58,3,Shatian,Kŭrdzhali,8405,3356,Orange,1875.3
+85,4,Guangfu,Benavila,7333,9245,Pink,1642.15
+81,4,Cawayan,João Câmara,9514,2523,Crimson,1057.51
+45,1,Longhua,San Roque,8493,6871,Maroon,713.25
+13,2,Asker,Nikolina Gora,1497,6245,Crimson,599.52
+9,3,Tres Isletas,Richmond,1173,6198,Mauv,1593.59
+45,1,Majiadu,Taytayan,7352,8844,Indigo,772.61
+23,1,Bull Savanna,Gaowu,5423,9622,Puce,499.82
+59,4,Burgau,Papër,4306,7009,Purple,852.02
+35,1,Liushi,Albania,2129,4734,Orange,1635.02
+33,1,Ishim,Cho-airong,6259,7346,Pink,920.25
+30,2,Fayzabad,Xiaoshun,4711,7533,Purple,1211.46
+82,4,München,Ganlin,4362,5809,Pink,1928.5
+61,2,Ortega,Akhmīm,488,2381,Red,736.78
+49,1,Tyshkivka,Tiemen,5590,7422,Mauv,629.24
+17,1,Baoxing,Gasan,4538,4235,Purple,1461.6
+16,2,Hejia,Nikinci,6881,9262,Indigo,1549.43
+100,3,Sadkowice,Lameiras,4010,7167,Khaki,1272.68
+50,1,Tongole,Santos Dumont,9863,1559,Indigo,1703.57
+77,3,Šenčur,Mariestad,1888,7072,Pink,594.03
+63,1,Kuivaniemi,Kukur,1079,8520,Blue,1877.97
+50,3,Madura,Pangushan,9238,2844,Fuscia,756.57
+62,2,Kozhanka,An Nāşirīyah,5224,3935,Goldenrod,1518.28
+77,2,Qui Nhon,Pombal,6381,1137,Khaki,944.92
+65,1,Palguyod,Tiouli,9221,441,Purple,1350.2
+98,1,Luowan,Shebekino,4677,872,Maroon,1182.56
+11,2,Lunao,Baohe,8006,6175,Orange,1893.75
+20,1,Ise,Ntoke,8330,5505,Turquoise,1195.95
+69,4,Az Zarqā,San Antonio,7108,9248,Mauv,1989.55
+88,1,Estrela,Heishan,9251,3907,Turquoise,641.58
+85,1,Tit Mellil,Qinghaihu,8047,9897,Orange,1125.75
+61,4,Wólka Pełkińska,Kristianstad,261,3393,Fuscia,536.62
+62,2,Staroshcherbinovskaya,Kesamben,946,7377,Aquamarine,1737.86
+4,3,Tartagal,Baoyou,1513,1151,Orange,1833.28
+36,4,Zhongba,Krajan Siki,8365,9154,Orange,648.92
+83,1,Jiulonggang,Darkovice,3915,7111,Crimson,1060.32
+62,2,Brezovica,Barreiros,9791,7927,Orange,1910.12
+62,3,Zhoutian,Cipunglu,7496,3082,Maroon,492.41
+80,3,Bautista,Maputi,7331,7154,Pink,879.66
+73,3,Jinzhuang,Kumberg,6859,3337,Green,1684.89
+62,3,Olympia,Jidd Ḩafş,5330,9985,Crimson,1124.3
+47,4,Neochóri,Wiskitki,9551,3320,Goldenrod,756.53
+72,4,Potongan,Azaruja,5539,4646,Purple,816.65
+25,3,Chincha Baja,Tanlad,18,9448,Khaki,1257.57
+6,4,Francisco Morato,Batakte,8084,4885,Orange,1445.53
+2,1,Kaingiwa,Sławoborze,1397,1726,Pink,633.41
+18,1,São Miguel da Carreira,Ḩuwwārah,3613,6221,Red,1932.58
+67,1,Nianba,Magadan,9765,57,Orange,903.77
+95,3,Ouyang,Gabaldon,8943,4835,Orange,649.14
+35,1,Banjar Kajanan,Västra Frölunda,3126,9580,Crimson,921.1
+9,3,Limeira,Karbinci,674,4334,Teal,617.97
+73,4,Tubod,Bucay,8257,5836,Violet,1396.09
+89,1,Chyżne,San Roque,7382,3353,Maroon,1727.61
+3,3,Shenzhengqiao,Chirpan,3177,3438,Green,1190.03
+88,4,Năm Căn,Toulouse,3678,7173,Yellow,1315.31
+77,1,Konary,Mirões,3818,4900,Teal,1288.22
+50,3,Kusŏng,Guta,911,4135,Fuscia,1671.98
+4,2,Machang,Kilkenny,7616,9922,Blue,1501.15
+27,1,Papetoai,Málaga,5721,7496,Red,1219.71
+30,4,Pizhanka,Los Frentones,3323,4732,Crimson,1069.72
+89,2,Skhodnya,Phanom Phrai,1749,4705,Fuscia,638.83
+93,4,Ketang,Dalovice,7139,7603,Aquamarine,1273.84
+49,2,Istaravshan,Falköping,8410,9464,Teal,475.92
+76,2,Nanding,Capela,594,881,Fuscia,1509.73
+70,4,Daleszyce,Anna Regina,4416,5437,Fuscia,609.84
+81,4,Auxerre,Niños Heroes,6396,4884,Red,1526.35
+70,3,Kamojimachō-jōgejima,Masaguisi,6039,4449,Orange,1657.17
+47,2,Chã,Primorskiy,7823,9887,Yellow,1426.47
+62,1,Machalí,Sundsvall,9685,1231,Khaki,1501.97
+91,3,Радишани,Lorient,9351,2984,Khaki,1127.4
+69,3,Zdolbuniv,Apeldoorn,5948,8029,Teal,470.04
+61,1,Oruro,Kakuda,31,7497,Aquamarine,658.56
+24,4,Tabia,Zliv,2167,3196,Khaki,1387.49
+6,4,Kotauneng,Langtad,823,1925,Orange,573.11
+89,4,Giraldo,Funchal,9858,2907,Violet,1107.59
+55,2,Wurno,Jajaway,4022,5062,Violet,1147.87
+68,1,Poja,Beopwon,5399,2146,Green,626.9
+15,2,Campaka,Blagoevgrad,5645,3655,Green,1865.15
+33,3,Bromölla,Hexing,3547,4681,Indigo,668.22
+4,2,Bandung,Lamía,309,1947,Indigo,1710.32
+78,3,Juupajoki,Koška,5785,4591,Fuscia,709.39
+16,1,Nizui,Adamantina,4577,7633,Violet,425.02
+51,3,Bajia,Rezovac,6356,3070,Orange,997.76
+87,2,Topeka,Medveđa,2897,3952,Teal,1855.46
+18,2,Murcia,Daping,5971,2076,Goldenrod,1319.51
+21,1,Železný Brod,Lebak,5959,8235,Violet,1964.6
+43,2,Tandou,Jiḩānah,8074,8265,Green,1671.22
+95,1,Lao Suea Kok,Kolodeznyy,8926,915,Goldenrod,957.68
+14,1,Södertälje,Vacha,3839,5814,Crimson,1698.24
+67,1,Savanna-la-Mar,Usquil,7198,1930,Goldenrod,680.56
+89,4,Kovdor,Núi Đối,676,7259,Pink,1507.35
+58,2,Zaragoza,Krmelín,3971,3222,Green,572.32
+72,2,Baishi,Pando,8383,5234,Violet,1041.01
+34,4,Shizi,High Point,4528,1083,Purple,557.73

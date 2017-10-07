@@ -1,38 +1,65 @@
 package fr.polytech.unice.esb.services.flights.models;
 
 import fr.polytech.unice.esb.services.flights.models.documents.Flight;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVParser;
 
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class FlightLoader {
 
-    private List<Flight> flights;
+    /**
+     * Temporary variable
+     */
+    private static List<Flight> flights = new ArrayList<>();
 
-    public FlightLoader(){
-        flights = new ArrayList<>();
+    /**
+     * temporary method to fill the Flight list
+     * @param Flight
+     */
+    private static void build(Flight Flight){
+        flights.add(Flight);
     }
 
-    public List<Flight> load(){
-        List<Flight> flights = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            Random random = new Random();
-            int departure = random.nextInt(1000);
-            int arrival = random.nextInt(1000) + 1000;
-            int ticketNo = random.nextInt(10000);
-            int numberOfFlights = random.nextInt(3) + 1;
-            String from = "Paris";
-            String to = "New-York";
-            String seatClass = "cosy";
-            double price = random.nextDouble() * 400.0f + 800;
-            Flight flight = new Flight(ticketNo, from, to, departure, arrival, seatClass, price, numberOfFlights);
-            flights.add(flight);
+    /**
+     * temporary implemented to retrieve data from csv file
+     */
+    static {
+        ClassLoader classLoader = FlightLoader.class.getClassLoader();
+        File FlightData = new File(classLoader.getResource("flight-data.csv").getFile());
+
+        try {
+            CSVParser parser = CSVParser.parse(FlightData, Charset.defaultCharset(), CSVFormat.DEFAULT.withHeader());
+
+            parser.forEach(item -> {
+                Flight Flight = new Flight(
+                        Integer.parseInt(item.get(0)),
+                        item.get(2),
+                        item.get(3),
+                        Integer.parseInt(item.get(4)),
+                        Integer.parseInt(item.get(5)),
+                        item.get(6),
+                        Double.parseDouble(item.get(7)),
+                        Integer.parseInt(item.get(1))
+                );
+
+                build(Flight);
+            });
+
+            parser.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return flights;
     }
 
-    public List<Flight> getFlights(){
-        return this.flights;
+    public static List<Flight> getFlights(){
+        return flights;
     }
 }

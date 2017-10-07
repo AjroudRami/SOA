@@ -2,7 +2,7 @@ package fr.polytech.unice.esb.services.flights.models.requests;
 
 public class ListRequest {
 
-    public String[] filterBy;
+    public Filter[] filterBy;
     public String orderBy;
     public String destination;
     public String departure;
@@ -12,6 +12,7 @@ public class ListRequest {
     public int getDepartureTimeStamp() {
         return departureTimeStamp;
     }
+
 
     public void setDepartureTimeStamp(int departureTimeStamp) {
         this.departureTimeStamp = departureTimeStamp;
@@ -42,18 +43,18 @@ public class ListRequest {
     }
 
 
-    public String[] getFilterBy() {
+    public Filter[] getFilterBy() {
         return filterBy;
     }
 
-    public ListRequest(String[] filterBy, String orderBy, String destination, String departure) {
+    public ListRequest(Filter[] filterBy, String orderBy, String destination, String departure) {
         this.filterBy = filterBy;
         this.orderBy = orderBy;
         this.destination = destination;
         this.departure = departure;
     }
 
-    public void setFilterBy(String[] filterBy) {
+    public void setFilterBy(Filter[] filterBy) {
         this.filterBy = filterBy;
     }
 
