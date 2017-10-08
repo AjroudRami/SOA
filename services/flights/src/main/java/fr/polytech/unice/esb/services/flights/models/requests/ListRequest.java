@@ -1,5 +1,7 @@
 package fr.polytech.unice.esb.services.flights.models.requests;
 
+import java.util.Arrays;
+
 public class ListRequest {
 
     public Filter[] filterBy;
@@ -67,4 +69,32 @@ public class ListRequest {
     }
 
     public ListRequest(){};
+
+    @Override
+    public String toString(){
+        String res = "";
+        res += "Departure : " + departure;
+        res += "\n";
+        res += "Destination : " + destination;
+        res += "\n";
+        res += "DepartureTS : " + departureTimeStamp;
+        res += "\n";
+        res += "orderBy : " + orderBy;
+        res += "\n";
+        if(filterBy != null) {
+            res += "Filters :";
+            res += "\n";
+            for (int i = 0; i < filterBy.length; i++) {
+                String name = filterBy[i].getName();
+                res += "name : " + name;
+                res += "\n";
+                if (filterBy[i].getArgs() != null) {
+                    String args = Arrays.toString(filterBy[i].getArgs());
+                    res += "args : " + args;
+                }
+                res += "\n";
+            }
+        }
+        return res;
+    }
 }

@@ -34,7 +34,13 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
         flights = filterflights(document.departureTimeStamp,
                 document.departure, document.destination, flights);
         sort(document.orderBy, flights);
-        return new FlightList(flights);
+        FlightList response = new FlightList(flights);
+        System.out.println("Request received : ");
+        System.out.println(document);
+        System.out.println("Send response : ");
+        System.out.println(response);
+        System.out.println("End of response");
+        return response;
     }
 
     @Override
@@ -52,21 +58,27 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
         if (filters == null || filters.length == 0) {
             return flights;
         }
-        List<Flight> filteredFlights = new ArrayList<>();
         if (flights == null || filters == null) {
             return flights;
         }
         //TODO improve performances
         for(Filter filter : filters) {
-            if("direct".equals(filter.getName())) {
-                for (Flight fl : flights) {
-                    if (fl.getNumberOfFlights() == 1) {
-                        filteredFlights.add(fl);
-                    }
-                }
+            if ("direct".equals(filter.getName())) {
+                flights.removeIf(fl -> (fl.getNumberOfFlights() != 1));
+            }
+            if ("max_duration".equals(filter.getName()) && testFilterArgs(filter, 1)) {
+                flights.removeIf(fl -> (fl.getDuration() > Integer.parseInt(filter.getArgs()[0])));
             }
         }
-        return filteredFlights;
+        return flights;
+    }
+
+    private boolean testFilterArgs(Filter filter, int nbOfArgs){
+        if (nbOfArgs == 0) {
+            return true;
+        } else {
+            return filter.getArgs() != null && filter.getArgs().length == nbOfArgs;
+        }
     }
 
     private List<Flight> filterflights(int depTS, String destination, String departure, List<Flight> flights) {
