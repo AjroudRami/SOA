@@ -1,11 +1,11 @@
 # ESB-SOA
-Authors : 
+Auteurs : 
   - AJROUD Rami
   - AUBE Antoine
   - BIN AHMAD Danial
   - JUNGBLUTH Günther
 
-# Case Study: The Virtual Travel Agency
+# Etude de cas: The Virtual Travel Agency
 
 
 ## Découpage
