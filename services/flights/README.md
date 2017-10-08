@@ -95,7 +95,7 @@ The service url is: tcs-service-flights/flights/
      * `departure`: mandatory, a String. The departure airport
      * `destination`: mandatory, a String. The destination airport.
      * `departureTimeStamp`: mandatory, time when the user wants to go represented by an integer.
-     * `sortBy`: not mandatory, a String that can be either "price" or "duration"
+     * `orderBy`: not mandatory, a String that can be either "price" or "duration"
      * `filterBy`: not mandatory, an Array of Filter objects.
         `Filter`:
         * Structure: A filter is composed by:
