@@ -92,61 +92,125 @@ The service url is: tcs-service-flights/flights/
  
  * `list` : list all the flights
    * parameters:
+     * `departure`: mandatory, a String. The departure airport
+     * `destination`: mandatory, a String. The destination airport.
+     * `departureTimeStamp`: mandatory, time when the user wants to go represented by an integer.
      * `sortBy`: not mandatory, a String that can be either "price" or "duration"
-     * `filterBy`: not mandatory, an Array of String with one or more keywords ("direct" only for now).
-     * `destination`: mandatory, a String. The flight ticket's destination airport.
-     * `departure`: mandatory, a String, The flight ticket's departure airport.
- 
-### Example request:
+     * `filterBy`: not mandatory, an Array of Filter objects.
+        `Filter`:
+        * Structure: A filter is composed by:
+            * `name` : a String representing the filter name
+            * `args` : an array of String representing the argument of the filter
+        * Available filters are:
+            * `price` : args is not mandatory
+            * `max_duration` : args is an array containing one String value representing an integer. This is integer is the max duration.
+      
+### Example requests:
 ```json
-    {
-      "event":"list",
-      "orderBy": "price",
-      "filterBy":["direct"]
-    }
+ {
+   "event":"list",
+   "destination":"Paris",
+   "departure":"New-York",
+   "departureTimeStamp":710171030
+ }
 ``` 
+
+```json
+{
+  "event":"list",
+  "destination":"Paris",
+  "departure":"New-York",
+  "departureTimeStamp":710171030,
+  
+  "filterBy":[
+               {
+                "name":"max_duration", 
+                "args":["1000"]
+                }
+             ]
+}
+```
 
 ## Response
 
 The response is a json object composed of a field `"flights"` which is an array of flights.
 
-### Example Response
+### Example Response (the second example request's response)
 
 ```json
 {
     "flights": [
         {
+            "departure": 710171030,
             "numberOfFlights": 1,
-            "seatClass": "cosy",
-            "price": 948.2164511421322,
-            "ticketNo": 2736,
-            "departure": 700,
-            "arrival": 1542,
+            "ticketNo": 66,
+            "arrival": 710171730,
+            "seatClass": "Green",
+            "price": 1188.39,
             "_id": null,
             "from": "Paris",
-            "to": "New-York"
+            "to": "New-York",
+            "duration": 700
         },
         {
+            "departure": 710171130,
             "numberOfFlights": 1,
-            "seatClass": "cosy",
-            "price": 991.886690803693,
-            "ticketNo": 5552,
-            "departure": 310,
-            "arrival": 1349,
+            "ticketNo": 49,
+            "arrival": 710171630,
+            "seatClass": "Aquamarine",
+            "price": 1662,
             "_id": null,
             "from": "Paris",
-            "to": "New-York"
+            "to": "New-York",
+            "duration": 500
         },
         {
+            "departure": 710170930,
             "numberOfFlights": 1,
-            "seatClass": "cosy",
-            "price": 1005.2455965992281,
-            "ticketNo": 3985,
-            "departure": 212,
-            "arrival": 1075,
+            "ticketNo": 91,
+            "arrival": 710171530,
+            "seatClass": "Orange",
+            "price": 1449.74,
             "_id": null,
             "from": "Paris",
-            "to": "New-York"
+            "to": "New-York",
+            "duration": 600
+        },
+        {
+            "departure": 710171530,
+            "numberOfFlights": 1,
+            "ticketNo": 20,
+            "arrival": 710172030,
+            "seatClass": "Maroon",
+            "price": 537.02,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York",
+            "duration": 500
+        },
+        {
+            "departure": 710170930,
+            "numberOfFlights": 1,
+            "ticketNo": 81,
+            "arrival": 710171530,
+            "seatClass": "Purple",
+            "price": 1554.62,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York",
+            "duration": 600
+        },
+        {
+            "departure": 710171730,
+            "numberOfFlights": 1,
+            "ticketNo": 76,
+            "arrival": 710172230,
+            "seatClass": "Orange",
+            "price": 1326.6,
+            "_id": null,
+            "from": "Paris",
+            "to": "New-York",
+            "duration": 500
         }
     ]
 }
