@@ -34,6 +34,41 @@ The docker image can be built from the Dockerfile file.
 The service end point is `/tcs-service-business-travels/registry`.
 This endpoint contains 4 different actions (POST).
 
+### Submit
+The `submit` action is used to create a new business travel. 
+Here is an example of a request:
+```json
+{
+	"event": "submit",
+	"tickets": [
+		{
+			"ticketNumber": "123",
+			"departureAirport": "NCE",
+			"departureTimestamp": 123,
+			"arrivalAirport": "AMS",
+			"arrivalTimestamp": 1234
+		}
+	],
+	"nights": [
+		{
+			"hotelId": "AMS-123",
+			"nights": [
+				{
+					"date": 13456,
+					"room": "BIG"
+				}
+			]
+		}
+	]
+}
+```
+And its possible output:
+```json
+{
+    "submissionId": "54ec80fe-afab-45d9-8f76-c66d46c38981"
+}
+```
+
 ### List
 The `list` action lists the different non-approved business travels.
 Here is an example of a request:
@@ -71,41 +106,6 @@ And one of its possible outputs:
             ]
         }
     ]
-}
-```
-
-### Submit
-The `submit` action is used to create a new business travel. 
-Here is an example of a request:
-```json
-{
-	"event": "submit",
-	"tickets": [
-		{
-			"ticketNumber": "123",
-			"departureAirport": "NCE",
-			"departureTimestamp": 123,
-			"arrivalAirport": "AMS",
-			"arrivalTimestamp": 1234
-		}
-	],
-	"nights": [
-		{
-			"hotelId": "AMS-123",
-			"nights": [
-				{
-					"date": 13456,
-					"room": "BIG"
-				}
-			]
-		}
-	]
-}
-```
-And its possible output:
-```json
-{
-    "submissionId": "54ec80fe-afab-45d9-8f76-c66d46c38981"
 }
 ```
 
