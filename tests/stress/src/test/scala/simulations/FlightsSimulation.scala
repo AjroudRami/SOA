@@ -12,7 +12,7 @@ class FlightsSimulation extends Simulation {
 
   val httpConf =
     http
-      .baseURL("http://localhost:8002/tcs-service-flights/flights/")
+      .baseURL("http://localhost:8002/tcs-service-flights/")
       .acceptHeader("application/json")
       .header("Content-Type", "application/json")
 
@@ -22,7 +22,7 @@ class FlightsSimulation extends Simulation {
       {
         exec(
           http("getting flights from Paris to New-York on the 0710171030")
-            .post("registry")
+            .post("flights")
             .body(
               StringBody("""{"event":"list", "destination":"Paris", "departure":"New-York", "departureTimeStamp":0710171030}""")
             )
