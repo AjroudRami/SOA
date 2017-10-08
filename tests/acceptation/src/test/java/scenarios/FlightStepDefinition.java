@@ -2,19 +2,18 @@ package scenarios;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.media.jfxmedia.logging.Logger;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import gherkin.deps.com.google.gson.Gson;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.junit.Assert;
+import request.Filter;
+import request.ServiceRequest;
 
 import javax.ws.rs.core.MediaType;
-
-import java.util.Arrays;
-import java.util.logging.Level;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -22,34 +21,6 @@ import static org.junit.Assert.assertFalse;
 public class FlightStepDefinition {
 
     private static final String ROOM_COST_FIELD = "roomCost";
-
-    private static class ServiceRequest {
-
-        private static class Filter{
-            private String name;
-            private String value;
-
-            public Filter(String name, String value) {
-                this.name = name;
-                this.value = value;
-            }
-        }
-        private String destination;
-        private String departure;
-        private int depTimestamp;
-        private Filter[] filters;
-        private String ordering;
-
-        public ServiceRequest(){
-            filters = new Filter[0];
-        }
-
-        public void AddFilter(Filter filter){
-            Filter[] newFilters = Arrays.copyOf(filters, filters.length + 1);
-            newFilters[newFilters.length - 1] = filter;
-            this.filters = newFilters;
-        }
-    }
 
     private String host = "localhost";
     private int port = 8080;
@@ -66,37 +37,39 @@ public class FlightStepDefinition {
     @Given("^a research for a flight booking$")
     public void bookflight(){
         requestDetail = new ServiceRequest();
+        requestDetail.setEvent("list");
     }
 
     @Given("^a departure airport located in (.*)$")
     public void departureAirport(String airportName) {
-        requestDetail.departure = airportName;
+        requestDetail.setDeparture(airportName);
     }
 
     @Given("^an arrival airport located in (.*)$")
     public void arrivalAirport(String arrivalAirport) {
-        requestDetail.destination = arrivalAirport;
+        requestDetail.setDestination(arrivalAirport);
     }
 
     @Given("^a departure date (\\d+)$")
     public void departureDate(int date) {
-        requestDetail.depTimestamp = date;
+        requestDetail.setDepartureTimeStamp(date);
     }
 
-    @Given("^ordering by (price|duration)$")
+    @Given("^ordering by ([a-zA-Z]*)")
     public void orderingBy(String ordering) {
-        requestDetail.ordering = ordering;
+        requestDetail.setOrderBy(ordering);
     }
 
     @Given("^a simple filter (.*)$")
     public void addSimpleFilter(String filter){
-        ServiceRequest.Filter fl = new ServiceRequest.Filter(filter, "");
+        Filter fl = new Filter(filter, new String[]{});
         requestDetail.AddFilter(fl);
     }
 
     @Given("^a filter ([a-zA-Z]+(?:_[a-zA-Z]+)*) with value ([a-zA-Z0-9]*)$")
     public void addFilter(String filterName, String filterValue) {
-        ServiceRequest.Filter fl = new ServiceRequest.Filter(filterName, filterValue);
+        String[] args = new String[]{filterValue};
+        Filter fl = new Filter(filterName, args);
         requestDetail.AddFilter(fl);
     }
 
@@ -112,12 +85,13 @@ public class FlightStepDefinition {
 
     @Then("^the flights are filtered : ([a-zA-Z]+(?:_[a-zA-Z]+)*) ([a-zA-Z0-9]*)$")
     public void theFlightsAreFiltered(String filterName, String filterValue) {
+        System.out.println("filter value: " + filterValue);
         if (answer.length() == 0) {
             return;
         }
         if ("direct".equals(filterName)){
             for(int i = 0; i < answer.length(); i ++) {
-                int nbOfFlights = answer.getJSONObject(i).getInt("number_of_flights");
+                int nbOfFlights = answer.getJSONObject(i).getInt("numberOfFlights");
                 Assert.assertEquals(1, nbOfFlights);
             }
         } else if ("max_duration".equals(filterName)) {
@@ -172,17 +146,17 @@ public class FlightStepDefinition {
         String url = getUrl();
 
         ObjectMapper mapper = new ObjectMapper();
-
+        Gson gson = new Gson();
         //Object to JSON in String
-        String jsonInString = mapper.writeValueAsString(requestDetail);
+        String jsonInString = gson.toJson(requestDetail);
 
         String body = (String) WebClient.create(url)
                 .accept(MediaType.APPLICATION_JSON_TYPE)
                 .header("Content-Type", MediaType.APPLICATION_JSON)
                 .post(jsonInString)
                 .readEntity(String.class);
-        Logger.logMsg(Logger.INFO, jsonInString);
 
-        answer = new JSONArray(body);
+        System.out.println(body);
+        answer = new JSONObject(body).getJSONArray("flights");
     }
 }
