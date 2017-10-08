@@ -1,4 +1,2 @@
 #!/bin/sh
-cd deployment
-docker-compose up
-cd ..
+docker-compose up -d
