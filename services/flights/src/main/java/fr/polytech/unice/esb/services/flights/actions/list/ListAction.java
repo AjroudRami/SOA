@@ -35,11 +35,12 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
                 document.departure, document.destination, flights);
         sort(document.orderBy, flights);
         FlightList response = new FlightList(flights);
-        System.out.println("Request received : ");
+        /**System.out.println("Request received : ");
         System.out.println(document);
         System.out.println("Send response : ");
         System.out.println(response);
         System.out.println("End of response");
+         **/
         return response;
     }
 
