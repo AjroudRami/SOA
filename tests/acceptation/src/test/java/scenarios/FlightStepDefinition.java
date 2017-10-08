@@ -164,7 +164,7 @@ public class FlightStepDefinition {
 
 
     private String getUrl() {
-        String url = "http://" + host + ":" + port + "/tcs-hotel-service/hotels?";
+        String url = "http://" + host + ":" + port + "/tcs-service-flights/flights/";
         return url;
     }
 
