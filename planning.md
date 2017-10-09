@@ -1,5 +1,4 @@
 # Planning TELEGRA(m)
-- - - -
 Voici le planning de l’intégration des différents services de `Business Travel Agency`.
 
 Ce planning est découpé en 5 semaines.
