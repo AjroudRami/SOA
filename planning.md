@@ -7,6 +7,7 @@ Ce planning est découpé en 5 semaines.
 
 ### Semaine 1
 Constitution du planning et découverte de la stack technologique Apache ServiceMix.
+
 Découverte des [services](https://github.com/scipio3000/polytech-soa/blob/master/third_parties.md) des autres groupes (3, 5, 8).
 
 ### Semaine 2
