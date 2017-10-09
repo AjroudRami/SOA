@@ -6,7 +6,8 @@ Ce planning est découpé en 5 semaines.
 ## Planning semaine par semaine
 
 ### Semaine 1
-Constitution du planning et découverte de la stack technologique Apache ServiceMix
+Constitution du planning et découverte de la stack technologique Apache ServiceMix.
+Découverte des [services](https://github.com/scipio3000/polytech-soa/blob/master/third_parties.md) des autres groupes (3, 5, 8).
 
 ### Semaine 2
 En tant qu’employé je veux trouver le vol le moins cher afin de valider mon voyage financièrement.
