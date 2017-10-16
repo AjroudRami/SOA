@@ -33,4 +33,10 @@ public class Endpoints {
     public static final String DEATH_POOL = "activemq:global:dead";
     public static final String BAD_CITIZEN = "activemq:badCitizens";
 
+    // Internal service
+    public static final String FLIGHT_INTERNAL_SERVICE = "";
+
+    // External partners
+    public static final String FLIGHT_EXTERNAL_SERVICE = "";
+
 }
