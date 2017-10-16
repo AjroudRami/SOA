@@ -59,4 +59,4 @@ Nous avons choisis ce paradigme car la notion de “préférence du voyageur” 
 
 Planning for integrating different services : [planning](https://github.com/scipio3000/polytech-soa/blob/master/planning.md)
 
-Third parties repository links: [Third parties](https://github.com/scipio3000/polytech-soa/tree/master/third_parties.md)
+Third parties repository links: [Third parties](https://github.com/scipio3000/polytech-soa/blob/master/external-services/third_parties.md)
