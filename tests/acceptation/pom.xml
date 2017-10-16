@@ -11,6 +11,8 @@
 
     <artifactId>acceptation</artifactId>
 
+    <name>ESB :: Acceptation</name>
+
     <properties>
         <cxf.version>3.1.10</cxf.version>
         <cucumber.version>1.2.5</cucumber.version>
