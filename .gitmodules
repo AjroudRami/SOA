@@ -1,0 +1,9 @@
+[submodule "team-3"]
+	path = external-services/team-3
+	url = git@github.com:Eroyas/ESB-SOA.git
+[submodule "team-5"]
+	path = external-services/team-5
+	url = git@github.com:iliasnaamane/microservices-uns.git
+[submodule "team-8"]
+	path = external-services/team-8
+	url = git@github.com:HCScorp/soa.git

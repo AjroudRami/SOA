@@ -116,4 +116,22 @@ public class Flight {
     public String get_id() {
         return _id;
     }
+
+    public int getDuration(){
+        return this.arrival - this.departure;
+    }
+
+    @Override
+    public String toString(){
+        String res = "[";
+        res += "Ticket No : " + ticketNo + " , ";
+        res += "From : " + from + " , ";
+        res += "To : " + to + " , ";
+        res += "DepTS : " + departure + " , ";
+        res += "ArrTS : " + arrival + " , ";
+        res += "Seat class : " + seatClass + " , ";
+        res += "Price : " + price + " , ";
+        res += "NB of flights : " + numberOfFlights + " , ";
+        return res;
+    }
 }

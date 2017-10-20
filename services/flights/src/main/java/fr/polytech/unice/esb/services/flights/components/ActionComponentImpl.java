@@ -25,7 +25,7 @@ public class ActionComponentImpl implements ActionComponent {
 
     public ActionComponentImpl() {
         actions = new HashMap<>();
-        actions.put("list", ListAction.class);
+        loadAll();
         mapper = new ObjectMapper();
         // Allow unknown properties
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);

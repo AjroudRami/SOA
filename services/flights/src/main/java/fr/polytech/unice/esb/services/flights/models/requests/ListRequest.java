@@ -1,8 +1,10 @@
 package fr.polytech.unice.esb.services.flights.models.requests;
 
+import java.util.Arrays;
+
 public class ListRequest {
 
-    public String[] filterBy;
+    public Filter[] filterBy;
     public String orderBy;
     public String destination;
     public String departure;
@@ -12,6 +14,7 @@ public class ListRequest {
     public int getDepartureTimeStamp() {
         return departureTimeStamp;
     }
+
 
     public void setDepartureTimeStamp(int departureTimeStamp) {
         this.departureTimeStamp = departureTimeStamp;
@@ -42,18 +45,18 @@ public class ListRequest {
     }
 
 
-    public String[] getFilterBy() {
+    public Filter[] getFilterBy() {
         return filterBy;
     }
 
-    public ListRequest(String[] filterBy, String orderBy, String destination, String departure) {
+    public ListRequest(Filter[] filterBy, String orderBy, String destination, String departure) {
         this.filterBy = filterBy;
         this.orderBy = orderBy;
         this.destination = destination;
         this.departure = departure;
     }
 
-    public void setFilterBy(String[] filterBy) {
+    public void setFilterBy(Filter[] filterBy) {
         this.filterBy = filterBy;
     }
 
@@ -66,4 +69,32 @@ public class ListRequest {
     }
 
     public ListRequest(){};
+
+    @Override
+    public String toString(){
+        String res = "";
+        res += "Departure : " + departure;
+        res += "\n";
+        res += "Destination : " + destination;
+        res += "\n";
+        res += "DepartureTS : " + departureTimeStamp;
+        res += "\n";
+        res += "orderBy : " + orderBy;
+        res += "\n";
+        if(filterBy != null) {
+            res += "Filters :";
+            res += "\n";
+            for (int i = 0; i < filterBy.length; i++) {
+                String name = filterBy[i].getName();
+                res += "name : " + name;
+                res += "\n";
+                if (filterBy[i].getArgs() != null) {
+                    String args = Arrays.toString(filterBy[i].getArgs());
+                    res += "args : " + args;
+                }
+                res += "\n";
+            }
+        }
+        return res;
+    }
 }

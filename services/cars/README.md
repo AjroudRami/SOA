@@ -38,7 +38,7 @@ The service declares 1 operation in the [CarRentalService](https://github.com/sc
 
 ```java
 @WebService(name = "CarRental",
-        targetNamespace = "http://informatique.polytech.unice.fr/soa1/cookbook/")
+        targetNamespace = "http://informatique.polytech.unice.fr/soa/")
 public interface CarRentalService {
 
     @WebResult(name = "car_rentals")
@@ -67,8 +67,8 @@ The interface is implemented in the [CarRentalImpl](https://github.com/scipio300
    <soapenv:Header/>
    <soapenv:Body>
       <soa:getCarRentalList>
-         <place>France</place> <-- Place of rental -->
-         <duration>2</duration> <-- Duration of rental in days -->
+         <place>France</place> <!-- Place of rental -->
+         <duration>2</duration> <!-- Duration of rental in days -->
       </soa:getCarRentalList>
    </soapenv:Body>
 </soapenv:Envelope>

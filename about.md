@@ -42,6 +42,7 @@ We consider here an ecosystem of services dedicated to support an employee when 
   - Creating a Business Travel System as a Document service;
 * Service testing
     - Acceptance test using scenario
+    - Stress testing
 * Service deployment
     - Deploy service using containers
     - Making a single system from the composed containers
