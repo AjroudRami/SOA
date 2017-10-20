@@ -21,3 +21,8 @@ services:
     image: soa-team-1/hotels
     ports:
       - "8003:8080"
+
+  cheapest-flight:
+    image: soa-team-1/cheapest-flight
+    port:
+      - "8004:8080"
