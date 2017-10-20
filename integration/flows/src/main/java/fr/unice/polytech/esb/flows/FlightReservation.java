@@ -1,10 +1,12 @@
 package fr.unice.polytech.esb.flows;
 
 import fr.unice.polytech.esb.flows.data.FlightInformation;
+import fr.unice.polytech.esb.flows.data.Person;
 import fr.unice.polytech.esb.flows.utils.FlightReservationHelper;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.GroupedExchangeAggregationStrategy;
 
 import javax.xml.transform.Source;
@@ -22,42 +24,31 @@ public class FlightReservation extends RouteBuilder {
     @Override
     public void configure() throws Exception {
 
-
-        /**
-         * Read message from input and multicast the message
-         */
-        from(INPUT_FLIGHT_SEARCH)
-                .routeId("calling-flight-reservations")
-                .routeDescription("Send requests to Flight Reservation Services")
-
-                .setProperty("req-uuid", simple("${body}"))
-                .setBody(simple("${exchangedProperty[flight-info]}"))
-
-                // Sends message to different endpoints with GroupedExchangeAggregationStrategy()
-                // The strategy will allow the aggregator to wait for all reply
-                .multicast(new GroupedExchangeAggregationStrategy())
-                    .parallelProcessing()
-                    .executorService(WORKERS)
-                    .timeout(1000)
-                    // Forwards to service and wait for responses
-                    .to(DIRECT_INTERNAL_FLIGHT_SERVICE,DIRECT_EXTERNAL_FLIGHT_SERVICE)
-                    .end()
-                // Process flight price
-                // TODO
-                .process("");
-
         /**
          * Directs message to INTERNAL SERVICE
          */
         from(DIRECT_INTERNAL_FLIGHT_SERVICE)
-            .routeId("call-internal-flight-reservation-service")
-            .routeDescription("Call the internal flight reservation service")
-            // process the message
-            // TODO
-            .inOut(INTERNAL_FLIGHT_SERVICE)
-            // process the return message
-            // TODO
-            .process("");
+                .routeId("call-internal-flight-reservation-service")
+                .routeDescription("Call the internal flight reservation service")
+                // process the message
+                // TODO
+                .setProperty("flight-reserveation", simple("${body}"))
+                .log("Creating retrieval request for citizen #${exchangeProperty[flight-reservation]}")
+
+                .setHeader(Exchange.HTTP_METHOD, constant("POST"))
+                .setHeader("Content-Type", constant("application/json"))
+                .setHeader("Accept", constant("application/json"))
+                .process((Exchange exchange) -> {
+                    String request = "{\n" +
+                            "  \"event\": \"list\",\n"+
+                            "}";
+                    exchange.getIn().setBody(request);
+                })
+
+                .inOut(INTERNAL_FLIGHT_SERVICE)
+                // process the return message
+                // TODO
+                .unmarshal().json(JsonLibrary.Jackson, FlightInformation.class);
 
 
 
