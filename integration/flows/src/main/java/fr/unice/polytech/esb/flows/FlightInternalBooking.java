@@ -17,14 +17,14 @@ import java.util.concurrent.Executors;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class FlightReservation extends RouteBuilder {
+public class FlightInternalBooking extends RouteBuilder {
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
     @Override
     public void configure() throws Exception {
 
-        /**
+        /*
          * Directs message to INTERNAL SERVICE
          */
         from(DIRECT_INTERNAL_FLIGHT_SERVICE)
@@ -32,7 +32,7 @@ public class FlightReservation extends RouteBuilder {
                 .routeDescription("Call the internal flight reservation service")
                 // process the message
                 // TODO
-                .setProperty("flight-reserveation", simple("${body}"))
+                .setProperty("flight-reservation", simple("${body}"))
                 .log("Creating retrieval request for citizen #${exchangeProperty[flight-reservation]}")
 
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
@@ -49,34 +49,8 @@ public class FlightReservation extends RouteBuilder {
                 // process the return message
                 // TODO
                 .unmarshal().json(JsonLibrary.Jackson, FlightInformation.class);
-
-
-
-        /**
-         * Directs message to EXTERNAL SERVICE
-         */
-        from(DIRECT_EXTERNAL_FLIGHT_SERVICE)
-            .routeId("call-external-flight-reservation-service")
-            .routeDescription("Call the external flight reservation service")
-            // process the message
-                .bean(FlightReservationHelper.class, "simpleReservation(${body}, ${exchangeProperty[req-uuid]})")
-                .inOut(EXTERNAL_FLIGHT_SERVICE)
-            // process the return message
-            .process(result2FlightInformation);
-
-
-
     }
 
-    private static Processor result2FlightInformation = (Exchange exc) -> {
-        XPath xpath = XPathFactory.newInstance().newXPath();
-        Source response = (Source) exc.getIn().getBody();
-        FlightInformation result = new FlightInformation(exc.getProperty("flight-info",FlightInformation.class));
-        result.setDate(xpath.evaluate("//date/text()", response));
-        result.setEndingAirport(xpath.evaluate("//endingAirport/text()", response));
-        result.setStartingAirport(xpath.evaluate("//startingAirport/text()", response));
-        result.setPrice(Float.parseFloat(xpath.evaluate("//price/text()", response)));
-        exc.getIn().setBody(result);
-    };
+
 }
 
