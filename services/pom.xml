@@ -22,6 +22,7 @@
         <module>hotels</module>
         <module>cars</module>
         <module>business-travels</module>
+        <module>travel-report</module>
     </modules>
 
     <properties>
