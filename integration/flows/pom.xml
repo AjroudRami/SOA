@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>fr.unice.polytech.esb.integration</groupId>
     <artifactId>flows</artifactId>
-    <version>1.0</version>
     <packaging>bundle</packaging>
+    <version>1.0</version>
     <name>ESB :: Integration :: Technical Flows</name>
-
 
     <parent>
         <groupId>fr.unice.polytech.esb</groupId>
@@ -50,7 +49,26 @@
             <version>2.9.1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.7.0</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.20.1</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
