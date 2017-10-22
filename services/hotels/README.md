@@ -16,7 +16,7 @@ There is one route: ```GET /hotels```.
 
 One can give several query argument:
 * ```destination``` the name of the hotel's city.
-* ```date``` the date of the booking in the form ```DD-MM-YYYY```.
+* ```departureTimestamp``` the departureTimestamp of the booking in the form ```DD-MM-YYYY```.
 * ```price_ordering``` the order of the prices: ```asc``` or ```desc```.
 
 The answer is a JSON array which items have fields:

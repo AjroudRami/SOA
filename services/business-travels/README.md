@@ -54,7 +54,7 @@ Here is an example of a request:
 			"hotelId": "AMS-123",
 			"nights": [
 				{
-					"date": 13456,
+					"departureTimestamp": 13456,
 					"room": "BIG"
 				}
 			]
@@ -87,7 +87,7 @@ And one of its possible outputs:
                 {
                     "nights": [
                         {
-                            "date": 13456,
+                            "departureTimestamp": 13456,
                             "room": "BIG"
                         }
                     ],

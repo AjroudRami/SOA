@@ -1,24 +1,26 @@
 package fr.unice.polytech.esb.flows.flights.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 
 public class FlightInformation implements Serializable {
 
-    private String date;
-    private String endingAirport;
-    private float price;
-    private String startingAirport;
+    @JsonProperty("departure") private long departureTimestamp;
+    @JsonProperty private float price;
+    @JsonProperty("from") private String startingAirport;
+    @JsonProperty("to") private String endingAirport;
 
-    public FlightInformation(String date, String endingAirport,
+    public FlightInformation(long departureTimestamp, String endingAirport,
                              float price, String startingAirport) {
-        this.date = date;
+        this.departureTimestamp = departureTimestamp;
         this.endingAirport = endingAirport;
         this.price = price;
         this.startingAirport = startingAirport;
     }
 
     public FlightInformation(FlightInformation origin){
-        this.date = origin.date;
+        this.departureTimestamp = origin.departureTimestamp;
         this.endingAirport = origin.endingAirport;
         this.price = origin.price;
         this.startingAirport = origin.startingAirport;
@@ -27,12 +29,12 @@ public class FlightInformation implements Serializable {
     public FlightInformation() {
     }
 
-    public String getDate() {
-        return date;
+    public long getDepartureTimestamp() {
+        return departureTimestamp;
     }
 
-    public void setDate(String value) {
-        this.date = value;
+    public void setDepartureTimestamp(long value) {
+        this.departureTimestamp = value;
     }
 
     public String getEndingAirport() {
@@ -60,31 +62,9 @@ public class FlightInformation implements Serializable {
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof FlightInformation)) return false;
-
-        FlightInformation that = (FlightInformation) o;
-
-        if (Float.compare(that.getPrice(), getPrice()) != 0) return false;
-        if (!getDate().equals(that.getDate())) return false;
-        if (!getEndingAirport().equals(that.getEndingAirport())) return false;
-        return getStartingAirport().equals(that.getStartingAirport());
-    }
-
-    @Override
-    public int hashCode() {
-        int result = getDate().hashCode();
-        result = 31 * result + getEndingAirport().hashCode();
-        result = 31 * result + (getPrice() != +0.0f ? Float.floatToIntBits(getPrice()) : 0);
-        result = 31 * result + getStartingAirport().hashCode();
-        return result;
-    }
-
-    @Override
     public String toString() {
         return "FlightInformation{" +
-                "date='" + date + '\'' +
+                "departureTimestamp='" + departureTimestamp + '\'' +
                 ", endingAirport='" + endingAirport + '\'' +
                 ", price=" + price +
                 ", startingAirport='" + startingAirport + '\'' +

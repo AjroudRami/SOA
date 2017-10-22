@@ -17,7 +17,7 @@ public class FlightReservationHelper {
         builder.append("    <soapenv:Body>\n");
         builder.append("        <soa:simpleReservation>\n");
         builder.append("            <id>"+ uuid +"/id>\n");
-        builder.append("            <departureTime>" + flight.getDate() + "</departureTime>\n");
+        builder.append("            <departureTime>" + flight.getDepartureTimestamp() + "</departureTime>\n");
         builder.append("            <originCountry>" + flight.getStartingAirport() + "</originCountry>\n");
         builder.append("            <destinationCountry>" + flight.getEndingAirport() + "</destinationCountry>\n");
         builder.append("        </soa:simpleReservation>\n");

@@ -9,15 +9,15 @@ Authors :
 # Case Study: The Virtual Travel Agency
 - - - -
 We consider here an ecosystem of services dedicated to support an employee when travelling for business purpose. The services must support the following features:
-- Propose alternative flights for a given destination and a given date, ordered by price and based on travellers preferences (e.g., only direct flight, given max travel time);
-- Propose alternatives hotels for a given destination and a given date, ordered by prices;
+- Propose alternative flights for a given destination and a given departureTimestamp, ordered by price and based on travellers preferences (e.g., only direct flight, given max travel time);
+- Propose alternatives hotels for a given destination and a given departureTimestamp, ordered by prices;
 - Propose alternative car rentals at a given place and for a given duration;
 - Submit a business travel (a description of the different tickets and/or hotel nights to buy) to a manager, and wait for approval;
 - Send a summary of an approved business travel by email.
 
 ### Personas & Story
 * Jack is a software developer who often travel around europe to meet his clients. He always run on tight schedule. As Jack 
-    * I want to receive a list of flights with given departure date, a destination and an arrival airport so that I can book flights that suit my schedule
+    * I want to receive a list of flights with given departure departureTimestamp, a destination and an arrival airport so that I can book flights that suit my schedule
     * I want to receive a list of flights ordered by price, so that I can book flights within my budget
     * I want to have the option of filtering direct flights only so that I don't spend time and effort in multiple plane changes
     * I want to have the option of filtering flights according to the travel time, so that I can optimize my travelling time 
@@ -25,7 +25,7 @@ We consider here an ecosystem of services dedicated to support an employee when 
 * Suzy is a supervisor of a clothing company. Once a month, she needs to visit the company's fabric supplier to check on supplies. Suzy doesn't owns a car and public transportation is not available. As Suzy
     * I want to receive a list of car rentals with a given place and duration, so that I can rent a car for a short duration and choose a car that is nearest to me 
 * Michael is a full time researcher. In order to gather information for his research, he needs to attend forums and meet other researcher in a different country. When travel, Michael prefer to stay in cheap hotels as he spend a lot of time outside. As Michael
-    * I want to receive a list of hotels with a given date and destination, so that I can choose a room that suits my schedule
+    * I want to receive a list of hotels with a given departureTimestamp and destination, so that I can choose a room that suits my schedule
     * I want to sort the list of hotels according to price, so that I can book the cheapest hotel available
 * Juliette, a sales representative, often travels to sell her company's products. To get a fully subsidised trip, she needs to send an email of an approve business travel to the HR department before being able to travel. As Juliette
     * I want to submit a business travel proposal to my manager to get an approval
