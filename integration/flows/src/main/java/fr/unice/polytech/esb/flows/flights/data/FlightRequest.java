@@ -1,12 +1,14 @@
 package fr.unice.polytech.esb.flows.flights.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.io.Serializable;
 
 public class FlightRequest implements Serializable {
 
-    private String from;
-    private String to;
-    private Long departure;
+    @JsonProperty private String from;
+    @JsonProperty private String to;
+    @JsonProperty private Long departure;
 
     public FlightRequest(String from, String to, Long departure) {
         this.from = from;

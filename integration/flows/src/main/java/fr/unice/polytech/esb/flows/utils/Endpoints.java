@@ -2,7 +2,7 @@ package fr.unice.polytech.esb.flows.utils;
 
 public class Endpoints {
 
-    // Provided routes.
+    // Servlet endpoints.
     public static final String SEARCH_CHEAPEST_FLIGHT = "servlet://bus-cheapest-flight";
 
     // Direct inner endpoints.

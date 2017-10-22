@@ -22,6 +22,11 @@ import java.util.List;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_FLIGHTS_ENDPOINT;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
 
+/**
+ * Route for getting a list of flights from the external service (Team #3).
+ *
+ * It is assumed that the body is a FlightRequest.
+ */
 public class CheapestFlightExternal extends RouteBuilder {
 
     @Override
