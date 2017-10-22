@@ -1,9 +1,11 @@
 package fr.unice.polytech.esb.flows.flights;
 
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
+import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jackson.JacksonDataFormat;
+import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
 import java.util.List;
@@ -26,7 +28,7 @@ public class CheapestFlight extends RouteBuilder {
                 .log("Generating a flight booking process")
 
                 // Parse the body content from JSON string to FlightRequest.
-                .unmarshal(new JacksonDataFormat())
+                .unmarshal().json(JsonLibrary.Jackson, FlightRequest.class)
 
                 // Send the request to all services.
                 // With the custom aggregation strategy, the incoming flights
