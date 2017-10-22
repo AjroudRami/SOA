@@ -19,7 +19,7 @@ public class CheapestFlightService {
             = okhttp3.MediaType.parse("application/json; charset=utf-8");
     private OkHttpClient client = new OkHttpClient();
 
-    private String busEndpointURL = "";
+    private String busEndpointURL = "http://localhost:80/bus-cheapest-flight";
 
 
     @POST
@@ -34,6 +34,7 @@ public class CheapestFlightService {
             Flight result = gson.fromJson(response, Flight.class);
             return result;
         } catch (IOException e) {
+            e.printStackTrace();
             return null;
         }
     }
