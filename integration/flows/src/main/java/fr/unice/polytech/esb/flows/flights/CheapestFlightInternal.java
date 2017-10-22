@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
+import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 
@@ -16,8 +17,7 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLI
 /**
  * Route for getting a list of flights from the internal service (Team #1).
  *
- * When entering the route, the properties "from", "to" and "departureTimestamp" are
- * supposed to be already set up.
+ * It is assumed that the body is a FlightRequest.
  */
 public class CheapestFlightInternal extends RouteBuilder {
 
@@ -29,24 +29,14 @@ public class CheapestFlightInternal extends RouteBuilder {
                 .routeDescription("Get booking results from the internal flight service")
 
                 // Log the current action.
-                .log("Make a research in the INTERNAL flight service with parameters: [ " +
-                        "from: ${exchangeProperty[from]}; " +
-                        "to: ${exchangeProperty[to]}; " +
-                        "departure: ${exchangeProperty[departureTimestamp]} " +
-                        "]")
+                .log("Make a research in the INTERNAL flights service.")
 
                 // Prepare the POST request to a document service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
-                .process(exchange -> {
-                    String request = makeBody(
-                            exchange.getProperty("from", String.class),
-                            exchange.getProperty("to", String.class),
-                            exchange.getProperty("departureTimeStamp", Long.class));
-
-                    exchange.getIn().setBody(request);
-                })
+                .process(exchange -> exchange.getIn()
+                        .setBody(makeBody(exchange.getIn().getBody(FlightRequest.class))))
 
                 // Send the request to the internal service.
                 .inOut(INTERNAL_FLIGHTS_ENDPOINT)
@@ -72,12 +62,10 @@ public class CheapestFlightInternal extends RouteBuilder {
 
     /**
      * Prepares the body for the internal service request.
-     * @param from The departure airport.
-     * @param to The destination airport.
-     * @param departureTimestamp The date of departure.
+     * @param flightRequest The flight request which is translated.
      * @return A JSON object string.
      */
-    private static String makeBody(String from, String to, long departureTimestamp) {
+    private static String makeBody(FlightRequest flightRequest) {
         return String.format(
                 "{" +
                 "event: list," +
@@ -85,8 +73,7 @@ public class CheapestFlightInternal extends RouteBuilder {
                 "destination: \"%s\"," +
                 "departureTimestamp: %d" +
                 "}",
-                from, to, departureTimestamp);
+                flightRequest.getFrom(), flightRequest.getTo(), flightRequest.getDeparture());
     }
-
 }
 
