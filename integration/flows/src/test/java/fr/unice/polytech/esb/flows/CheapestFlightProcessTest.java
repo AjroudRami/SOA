@@ -1,6 +1,5 @@
 package fr.unice.polytech.esb.flows;
 
-import fr.unice.polytech.esb.flows.data.Person;
 import fr.unice.polytech.esb.flows.flights.CheapestFlightProcess;
 import fr.unice.polytech.esb.flows.utils.Endpoints;
 import org.apache.camel.builder.RouteBuilder;
@@ -21,6 +20,9 @@ public class CheapestFlightProcessTest extends CamelTestSupport {
         assertNotNull(context.hasEndpoint(Endpoints.SEARCH_CHEAPEST_FLIGHT));
         assertNotNull(context.hasEndpoint(Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE));
         assertNotNull(context.hasEndpoint(Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE));
+        /**assertNotNull(context.hasEndpoint(Endpoints.INTERNAL_FLIGHTS_ENDPOINT));
+        assertNotNull(context.hasEndpoint(Endpoints.EXTERNAL_FLIGHTS_ENDPOINT));
+        **/
 
         // Configuring expectations on the mocked endpoint
         String mock_internal = "mock://" + Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE;
@@ -29,18 +31,27 @@ public class CheapestFlightProcessTest extends CamelTestSupport {
         assertNotNull(context.hasEndpoint(mock_internal));
         assertNotNull(context.hasEndpoint(mock_external));
 
-        /**getMockEndpoint(mock).expectedMessageCount(1);
-        getMockEndpoint(mock).expectedHeaderReceived("Content-Type", "application/json");
-        getMockEndpoint(mock).expectedHeaderReceived("Accept", "application/json");
-        getMockEndpoint(mock).expectedHeaderReceived("CamelHttpMethod", "POST");
+        getMockEndpoint(mock_internal).expectedMessageCount(1);
+        getMockEndpoint(mock_internal).expectedHeaderReceived("Content-Type", "application/json");
+        getMockEndpoint(mock_internal).expectedHeaderReceived("Accept", "application/json");
+        getMockEndpoint(mock_internal).expectedHeaderReceived("CamelHttpMethod", "POST");
+
+        String depAirport = "Paris";
+        String arrivalAirport = "New-York";
+        long depDate = 1235423;
+
+        String jsonRequest = "{ \"from\": \"" + depAirport + "\"," +
+                "\"to\":\"" + arrivalAirport + "\"," +
+                "\"departure\":" + depDate + "}";
 
         // Sending Johm for registration
-        template.sendBody(Endpoints.REGISTER_A_CITIZEN, john);
-
-        getMockEndpoint(mock).assertIsSatisfied();
+        template.sendBody(Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE, jsonRequest);
+        template.sendBody(Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE, "");
+        getMockEndpoint(mock_internal).assertIsSatisfied();
+        /**
 
         // As the assertions are now satisfied, one can access to the contents of the exchanges
-        String request = getMockEndpoint(mock).getReceivedExchanges().get(0).getIn().getBody(String.class);
+        String request = getMockEndpoint(mock_internal).getReceivedExchanges().get(0).getIn().getBody(String.class);
 
         String expected = "{\n" +
                 "  \"event\": \"REGISTER\",\n" +

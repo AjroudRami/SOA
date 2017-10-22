@@ -27,8 +27,8 @@ public class CheapestFlightService {
     public Flight getCheapestFlight(@QueryParam("departureDate") long depDate,
                                     @QueryParam("departureAirport") String depAirport,
                                     @QueryParam("arrivalAirport") String arrivalAirport){
-        String jsonRequest = "{ \"from\":" + depAirport + "," +
-                "\"to\":" + arrivalAirport + "," +
+        String jsonRequest = "{ \"from\": \"" + depAirport + "\"," +
+                "\"to\":\"" + arrivalAirport + "\"," +
                 "\"departure\":" + depDate + "}";
         try {
             String response = post(busEndpointURL, jsonRequest);
