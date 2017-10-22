@@ -19,7 +19,7 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLI
  * When entering the route, the properties "from", "to" and "departure" are
  * supposed to be already set up.
  */
-public class FlightInternalBooking extends RouteBuilder {
+public class CheapestFlightInternal extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {

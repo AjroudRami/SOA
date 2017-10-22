@@ -38,7 +38,7 @@ public class Endpoints {
      */
 
     // Service input
-    public static final String INPUT_FLIGHT_SEARCH = "";
+    public static final String SEARCH_CHEAPEST_FLIGHT = "";
 
     // Direct endpoints (flow modularity without a message queue overhead)
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";

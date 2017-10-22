@@ -6,23 +6,16 @@ import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.soap.MessageFactory;
-import javax.xml.soap.MimeHeaders;
-import javax.xml.soap.SOAPException;
-import javax.xml.soap.SOAPMessage;
 import javax.xml.transform.Source;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
-
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_FLIGHTS_ENDPOINT;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
 
-public class FlightExternalBooking extends RouteBuilder {
+public class CheapestFlightExternal extends RouteBuilder {
     
     @Override
     public void configure() throws Exception {

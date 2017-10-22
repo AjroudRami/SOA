@@ -1,6 +1,6 @@
 package fr.unice.polytech.esb.flows;
 
-import fr.unice.polytech.esb.flows.flights.FlightBookingProcess;
+import fr.unice.polytech.esb.flows.flights.CheapestFlightProcess;
 import fr.unice.polytech.esb.flows.utils.Endpoints;
 import org.apache.camel.builder.RouteBuilder;
 
@@ -11,7 +11,7 @@ public class BookFlightTest extends ActiveMQTest {
     }
 
     @Override protected RouteBuilder createRouteBuilder() throws Exception {
-        return new FlightBookingProcess();
+        return new CheapestFlightProcess();
     }
 
 }
