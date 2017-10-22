@@ -24,10 +24,12 @@ public class CheapestFlightService {
 
     @POST
     @Produces(MediaType.APPLICATION_JSON)
-    public Flight getCheapestFlight(@QueryParam("departureDate") int depDate,
+    public Flight getCheapestFlight(@QueryParam("departureDate") long depDate,
                                     @QueryParam("departureAirport") String depAirport,
                                     @QueryParam("arrivalAirport") String arrivalAirport){
-        String jsonRequest = "";
+        String jsonRequest = "{ \"from\":" + depAirport + "," +
+                "\"to\":" + arrivalAirport + "," +
+                "\"departure\":" + depDate + "}";
         try {
             String response = post(busEndpointURL, jsonRequest);
             Gson gson = new Gson();
