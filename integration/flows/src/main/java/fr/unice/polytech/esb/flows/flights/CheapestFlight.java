@@ -58,7 +58,11 @@ public class CheapestFlight extends RouteBuilder {
                         // Write the flight into the body.
                         exchange.getIn().setBody(cheapestFlight);
                     }
-                });
+                })
+                
+                // Marshal the body into a json array.
+                .setHeader("Content-Type", constant("application/json"))
+                .marshal().json(JsonLibrary.Jackson);
     }
 
     private class JoinFlightInformationsAggregationStrategy implements AggregationStrategy {
