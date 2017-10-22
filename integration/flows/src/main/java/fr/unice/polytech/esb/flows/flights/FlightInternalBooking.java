@@ -4,16 +4,14 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
-import fr.unice.polytech.esb.flows.data.FlightInformation;
+import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.dataformat.JsonLibrary;
 
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.INTERNAL_FLIGHTS_ENDPOINT;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE;
 
 /**
  * Route for getting a list of flights from the internal service (Team #1).
@@ -37,7 +35,7 @@ public class FlightInternalBooking extends RouteBuilder {
                         "departure: ${exchangeProperty[departureTimestamp]} " +
                         "]")
 
-                // Going to send a POST request to a document service.
+                // Prepare the POST request to a document service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))

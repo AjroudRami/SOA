@@ -1,10 +1,9 @@
 package fr.unice.polytech.esb.flows.utils;
 
-import fr.unice.polytech.esb.flows.data.FlightInformation;
+import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
-import java.text.SimpleDateFormat;
 
 public class FlightReservationHelper {
 

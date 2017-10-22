@@ -1,5 +1,4 @@
-package fr.unice.polytech.esb.flows.data;
-
+package fr.unice.polytech.esb.flows.flights.data;
 
 import java.io.Serializable;
 

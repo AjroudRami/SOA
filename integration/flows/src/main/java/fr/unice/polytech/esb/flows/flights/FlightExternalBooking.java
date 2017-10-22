@@ -1,6 +1,6 @@
 package fr.unice.polytech.esb.flows.flights;
 
-import fr.unice.polytech.esb.flows.data.FlightInformation;
+import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 import fr.unice.polytech.esb.flows.utils.FlightReservationHelper;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
