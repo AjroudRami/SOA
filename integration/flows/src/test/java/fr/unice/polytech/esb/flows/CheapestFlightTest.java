@@ -1,18 +1,17 @@
 package fr.unice.polytech.esb.flows;
 
-import fr.unice.polytech.esb.flows.data.Person;
-import fr.unice.polytech.esb.flows.flights.CheapestFlightProcess;
+import fr.unice.polytech.esb.flows.flights.CheapestFlight;
 import fr.unice.polytech.esb.flows.utils.Endpoints;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
 
-public class CheapestFlightProcessTest extends CamelTestSupport {
+public class CheapestFlightTest extends CamelTestSupport {
 
     @Override public String isMockEndpointsAndSkip() { return Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE
             + "|" + Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE; }
 
-    @Override protected RouteBuilder createRouteBuilder() throws Exception { return new CheapestFlightProcess(); }
+    @Override protected RouteBuilder createRouteBuilder() throws Exception { return new CheapestFlight(); }
 
     @Test
     public void testFlightResearch() throws Exception {

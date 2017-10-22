@@ -59,7 +59,7 @@ public class CheapestFlight extends RouteBuilder {
                         exchange.getIn().setBody(cheapestFlight);
                     }
                 })
-                
+
                 // Marshal the body into a json array.
                 .setHeader("Content-Type", constant("application/json"))
                 .marshal().json(JsonLibrary.Jackson);
