@@ -16,7 +16,7 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLI
 /**
  * Route for getting a list of flights from the internal service (Team #1).
  *
- * When entering the route, the properties "from", "to" and "departure" are
+ * When entering the route, the properties "from", "to" and "departureTimestamp" are
  * supposed to be already set up.
  */
 public class CheapestFlightInternal extends RouteBuilder {
