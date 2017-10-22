@@ -24,8 +24,6 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLI
 
 public class CheapestFlightExternal extends RouteBuilder {
 
-    private static String DEFAULT_USER = "DEFAULT";
-    
     @Override
     public void configure() throws Exception {
         from(SEARCH_IN_EXTERNAL_FLIGHT_SERVICE)
@@ -109,6 +107,7 @@ public class CheapestFlightExternal extends RouteBuilder {
         String originCountry = flightRequest.getFrom();
         String destinationCountry = flightRequest.getTo();
 
+        String DEFAULT_USER = "DEFAULT";
         return String.format(
                 "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:flig=\"http://informatique.polytech.unice.fr/soa1/team/3/flightres/\">\n" +
                 "   <soapenv:Header/>\n" +
