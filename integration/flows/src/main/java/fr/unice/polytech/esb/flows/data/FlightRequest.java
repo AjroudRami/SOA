@@ -1,0 +1,40 @@
+package fr.unice.polytech.esb.flows.data;
+
+import java.io.Serializable;
+
+public class FlightRequest implements Serializable {
+
+    private String from;
+    private String to;
+    private Long departure;
+
+    public FlightRequest(String from, String to, Long departure) {
+        this.from = from;
+        this.to = to;
+        this.departure = departure;
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public Long getDeparture() {
+        return departure;
+    }
+
+    public void setDeparture(Long departure) {
+        this.departure = departure;
+    }
+}

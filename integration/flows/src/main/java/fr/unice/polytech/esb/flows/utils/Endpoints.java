@@ -41,16 +41,13 @@ public class Endpoints {
     public static final String INPUT_FLIGHT_SEARCH = "";
 
     // Direct endpoints (flow modularity without a message queue overhead)
-    public static final String DIRECT_INTERNAL_FLIGHT_SERVICE = "direct:internal-flight-service";
-    public static final String DIRECT_EXTERNAL_FLIGHT_SERVICE = "direct:external-flight-service";
+    public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";
+    public static final String SEARCH_IN_EXTERNAL_FLIGHT_SERVICE = "direct:external-flight-service";
 
     public static final String COMPUTE_FLIGHT_PRICE = "direct:compute-flight-price";
 
-
-    // Internal service
-    public static final String INTERNAL_FLIGHT_SERVICE = "";
-
-    // External partners
-    public static final String EXTERNAL_FLIGHT_SERVICE = "";
+    // External partners.
+    public static final String INTERNAL_FLIGHTS_ENDPOINT = "http:telegram-registry:8080/tcs-service-flights/flights/";
+    public static final String EXTERNAL_FLIGHTS_ENDPOINT = "";
 
 }

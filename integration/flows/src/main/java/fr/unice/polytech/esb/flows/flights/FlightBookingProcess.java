@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows;
+package fr.unice.polytech.esb.flows.flights;
 
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.processor.aggregate.GroupedExchangeAggregationStrategy;
@@ -6,8 +6,8 @@ import org.apache.camel.processor.aggregate.GroupedExchangeAggregationStrategy;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.DIRECT_EXTERNAL_FLIGHT_SERVICE;
-import static fr.unice.polytech.esb.flows.utils.Endpoints.DIRECT_INTERNAL_FLIGHT_SERVICE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLIGHTS_SERVICE;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.INPUT_FLIGHT_SEARCH;
 
 public class FlightBookingProcess extends RouteBuilder {
@@ -26,6 +26,11 @@ public class FlightBookingProcess extends RouteBuilder {
 
                 .log("Generating a flight booking process")
 
+                // TODO: Set the real values.
+                .setProperty("from", simple("Paris"))
+                .setProperty("to", simple("Lyon"))
+                .setProperty("departureTimestamp", simple("123", Long.class))
+
                 // Sends message to different endpoints with GroupedExchangeAggregationStrategy()
                 // The strategy will allow the aggregator to wait for all reply
                 .multicast(new GroupedExchangeAggregationStrategy())
@@ -33,8 +38,8 @@ public class FlightBookingProcess extends RouteBuilder {
                     .executorService(WORKERS)
                     .timeout(1000)
                 // Forwards to service and wait for responses
-                .inOut( DIRECT_INTERNAL_FLIGHT_SERVICE,
-                        DIRECT_EXTERNAL_FLIGHT_SERVICE)
+                .inOut(SEARCH_IN_INTERNAL_FLIGHTS_SERVICE,
+                        SEARCH_IN_EXTERNAL_FLIGHT_SERVICE)
                 .end()
                 // Process flight price
                 // TODO

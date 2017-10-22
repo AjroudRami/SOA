@@ -3,14 +3,15 @@ package fr.unice.polytech.esb.flows.data;
 
 import java.io.Serializable;
 
-public class FlightInformation implements Serializable{
+public class FlightInformation implements Serializable {
 
     private String date;
     private String endingAirport;
     private float price;
     private String startingAirport;
 
-    public FlightInformation(String date, String endingAirport, float price, String startingAirport) {
+    public FlightInformation(String date, String endingAirport,
+                             float price, String startingAirport) {
         this.date = date;
         this.endingAirport = endingAirport;
         this.price = price;

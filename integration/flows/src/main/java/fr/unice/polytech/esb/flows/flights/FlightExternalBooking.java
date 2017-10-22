@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows;
+package fr.unice.polytech.esb.flows.flights;
 
 import fr.unice.polytech.esb.flows.data.FlightInformation;
 import fr.unice.polytech.esb.flows.utils.FlightReservationHelper;
@@ -10,19 +10,19 @@ import javax.xml.transform.Source;
 import javax.xml.xpath.XPath;
 import javax.xml.xpath.XPathFactory;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.DIRECT_EXTERNAL_FLIGHT_SERVICE;
-import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_FLIGHT_SERVICE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_FLIGHTS_ENDPOINT;
 
 public class FlightExternalBooking extends RouteBuilder {
     
     @Override
     public void configure() throws Exception {
-        from(DIRECT_EXTERNAL_FLIGHT_SERVICE)
+        from(SEARCH_IN_EXTERNAL_FLIGHT_SERVICE)
                 .routeId("call-external-flight-reservation-service")
                 .routeDescription("Call the external flight reservation service")
                 // process the message
                 .bean(FlightReservationHelper.class, "simpleReservation(${body}, ${exchangeProperty[req-uuid]})")
-                .inOut(EXTERNAL_FLIGHT_SERVICE)
+                .inOut(EXTERNAL_FLIGHTS_ENDPOINT)
                 // process the return message
                 .process(result2FlightInformation);
 
