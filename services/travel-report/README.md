@@ -35,20 +35,21 @@ The service end point is `/tcs-service-travel-report/report/`.
 This endpoint currently contains 3 different actions (POST).
 
 ### Create
-The `create` action is used to create a new travel report. 
+The `create` action is used to create a new travel report. It is compulsory
+to give the employee's id during the creation of a travel report.
 Here is an example of a request:
 ```json
 {
 	"event": "create",
-	"start":"2017-10-20",
-	"finish":"2017-10-30" // optional
+	"employee_id":"rober_1992"
 }
 ```
 And its possible output:
 ```json
 {
     "id": "46136d28-c079-4c92-a335-1a199eb10fe6",
-    "start": 1514246400000,
+	"employee_id":"rober_1992",
+    "start": null,
     "status": "INPROGRESS",
     "finish": null,
     "expenses": null,
@@ -71,7 +72,8 @@ And one of its possible outputs:
     "travels": [
         {
             "id": "bddadae4-4a9a-4dbe-8a22-3c222503304e",
-            "start": 1513900800000,
+	        "employee_id":"rober_1992",
+            "start": null,
             "status": "INPROGRESS",
             "finish": null,
             "expenses": null,
@@ -80,6 +82,7 @@ And one of its possible outputs:
         },
         {
             "id": "500d094c-0917-4e27-a79c-5d371e8b59b3",
+            "employee_id":"john_doe", 
             "start": 1514332800000,
             "status": "INPROGRESS",
             "finish": null,
@@ -97,13 +100,14 @@ Here is an example of a request:
 ```json
 {
 	"event": "validate",
-	"id": "54ec80fe-afab-45d9-8f76-c66d46c38981""
+	"id": "54ec80fe-afab-45d9-8f76-c66d46c38981"
 }
 ```
 And its possible outputs:
 ```json
 {
     "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+    "employee_id":"john_doe", 
     "start": 1513987200000,
     "status": "ACCEPTED",
     "finish": null,
