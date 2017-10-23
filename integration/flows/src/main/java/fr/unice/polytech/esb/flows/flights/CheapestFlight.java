@@ -3,11 +3,13 @@ package fr.unice.polytech.esb.flows.flights;
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
+import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.jackson.JacksonDataFormat;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -20,6 +22,15 @@ public class CheapestFlight extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+        rest("/cheapest-flight/")
+                .post("/search").to(SEARCH_CHEAPEST_FLIGHT);
+
+        onException(ExchangeTimedOutException.class)
+                .handled(true)
+                .to(DEAD_PARTNER)
+                // If the service does not respond, fill the body with an empty list.
+                .process(exchange -> exchange.getIn().setBody(new ArrayList<FlightInformation>()));
+
         // Process to find the cheapest flight.
         from(SEARCH_CHEAPEST_FLIGHT)
                 .routeId("search-the-cheapest-flight")
