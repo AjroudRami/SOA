@@ -3,7 +3,7 @@ package fr.unice.polytech.esb.flows.utils;
 public class Endpoints {
 
     // Servlet endpoints.
-    public static final String SEARCH_CHEAPEST_FLIGHT = "servlet://bus-cheapest-flight";
+    public static final String SEARCH_CHEAPEST_FLIGHT = "activemq:bus-cheapest-flight";
 
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";

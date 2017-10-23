@@ -20,6 +20,9 @@ public class CheapestFlight extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+        restConfiguration().component("servlet");
+        rest("/cheapest-flights/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_FLIGHT);
+
         // Process to find the cheapest flight.
         from(SEARCH_CHEAPEST_FLIGHT)
                 .routeId("search-the-cheapest-flight")
@@ -46,7 +49,7 @@ public class CheapestFlight extends RouteBuilder {
                     List<FlightInformation> flights = (List<FlightInformation>) exchange.getIn().getBody(List.class);
 
                     if (flights.isEmpty()) {
-                        // TODO: Do something is the list is empty.
+                        // TODO: Do something if the list is empty.
                         exchange.getIn().setBody("{}");
                     } else {
                         // Sort by the price.

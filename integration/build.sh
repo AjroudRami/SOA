@@ -6,5 +6,5 @@ cd ..
 
 echo kindly building soa-team-1/esb-bus
 mvn clean
-mvn package
+mvn package -DskipTests
 docker build -t soa-team-1/esb-bus-flow .

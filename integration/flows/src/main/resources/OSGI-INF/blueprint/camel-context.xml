@@ -40,4 +40,20 @@
         <property name="password" value="karaf" />
     </bean>
 
+    <!--
+       ******************************************************************
+       * To setup camel servlet with OSGi HttpService for REST services *
+       ******************************************************************
+   -->
+    <reference id="httpService" interface="org.osgi.service.http.HttpService"/>
+
+    <bean class="org.apache.camel.component.servlet.osgi.OsgiServletRegisterer"
+          init-method="register"
+          destroy-method="unregister">
+        <property name="alias" value="/tars"/>
+        <property name="httpService" ref="httpService"/>
+        <property name="servlet" ref="camelServlet"/>
+    </bean>
+
+    <bean id="camelServlet" class="org.apache.camel.component.servlet.CamelHttpTransportServlet"/>
 </blueprint>

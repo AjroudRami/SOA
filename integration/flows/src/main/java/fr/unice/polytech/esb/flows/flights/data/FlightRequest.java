@@ -16,6 +16,10 @@ public class FlightRequest implements Serializable {
         this.departure = departure;
     }
 
+    public FlightRequest() {
+        super();
+    }
+
     public String getFrom() {
         return from;
     }
