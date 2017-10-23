@@ -1,9 +1,11 @@
 package fr.unice.polytech.esb.flows.flights;
 
 import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
@@ -21,6 +23,8 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_FLI
  */
 public class CheapestFlightInternal extends RouteBuilder {
 
+    private static ObjectMapper mapper = new ObjectMapper();
+
     @Override
     public void configure() throws Exception {
         from(SEARCH_IN_INTERNAL_FLIGHTS_SERVICE)
@@ -32,6 +36,7 @@ public class CheapestFlightInternal extends RouteBuilder {
                 .log("Make a research in the INTERNAL flights service.")
 
                 // Prepare the POST request to a document service.
+                .removeHeaders("*")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
@@ -44,6 +49,7 @@ public class CheapestFlightInternal extends RouteBuilder {
                 // Process the returned value.
                 .process(exchange -> {
                     ObjectMapper objectMapper = new ObjectMapper();
+                    objectMapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
                     JsonNode flightsNode = objectMapper
                             .readTree(exchange.getIn().getBody(String.class))
@@ -66,14 +72,12 @@ public class CheapestFlightInternal extends RouteBuilder {
      * @return A JSON object string.
      */
     private static String makeBody(FlightRequest flightRequest) {
-        return String.format(
-                "{" +
-                "event: list," +
-                "departure: \"%s\"," +
-                "destination: \"%s\"," +
-                "departureTimestamp: %d" +
-                "}",
-                flightRequest.getFrom(), flightRequest.getTo(), flightRequest.getDeparture());
+        ObjectNode json = mapper.createObjectNode();
+        json.put("event", "list");
+        json.put("departure", flightRequest.getFrom());
+        json.put("departureTimeStamp", flightRequest.getDeparture());
+        json.put("destination", flightRequest.getTo());
+        return json.toString();
     }
 }
 

@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  flow:
+    image: soa-team-1/esb-bus-flow
+    ports:
+      - "8181:8181"
+    links:
+      - internal-flights:internal-flights
+    stdin_open: true
+    tty: true
+
+  internal-flights:
+    image: soa-team-1/flights
