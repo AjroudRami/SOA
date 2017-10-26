@@ -4,6 +4,7 @@ public class Endpoints {
 
     // Servlet endpoints.
     public static final String SEARCH_CHEAPEST_FLIGHT = "activemq:bus-cheapest-flight";
+    public static final String SEARCH_CHEAPEST_CAR = "activemq:bus-cheapest-car";
 
     // Error handling.
     public static final String DEATH_POOL = "activemq:global:dead";
