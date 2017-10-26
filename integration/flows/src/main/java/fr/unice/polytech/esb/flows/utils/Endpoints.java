@@ -3,6 +3,8 @@ package fr.unice.polytech.esb.flows.utils;
 public class Endpoints {
 
     // Servlet endpoints.
+    public static final String SEARCH_CHEAPEST_FLIGHT = "activemq:bus-cheapest-flight";
+    public static final String SEARCH_CHEAPEST_CAR = "activemq:bus-cheapest-car";
     public static final String SEARCH_CHEAPEST_FLIGHT = "servlet://bus-cheapest-flight";
 
     // Error handling.
