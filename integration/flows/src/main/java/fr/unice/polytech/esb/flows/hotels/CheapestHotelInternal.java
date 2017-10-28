@@ -6,6 +6,7 @@ public class CheapestHotelInternal extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
+        //from(SEARCH_IN_INTERNAL_HOTELS_SERVICE)
 
     }
 }

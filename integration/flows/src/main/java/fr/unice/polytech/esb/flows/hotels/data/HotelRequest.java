@@ -1,43 +1,33 @@
 package fr.unice.polytech.esb.flows.hotels.data;
 
-import java.util.Date;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HotelRequest {
 
-    private String place;
-    private Date from;
-    private Date to;
+    @JsonProperty private String destination;
+    @JsonProperty private long timestamp;
 
     public HotelRequest() {
     }
 
-    public HotelRequest(String place, Date from, Date to) {
-        this.place = place;
-        this.from = from;
-        this.to = to;
+    public HotelRequest(String destination, long timestamp) {
+        this.destination = destination;
+        this.timestamp = timestamp;
     }
 
-    public String getPlace() {
-        return place;
+    public String getDestination() {
+        return destination;
     }
 
-    public void setPlace(String place) {
-        this.place = place;
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
-    public Date getFrom() {
-        return from;
+    public long getTimestamp() {
+        return timestamp;
     }
 
-    public void setFrom(Date from) {
-        this.from = from;
-    }
-
-    public Date getTo() {
-        return to;
-    }
-
-    public void setTo(Date to) {
-        this.to = to;
+    public void setTimestamp(long timestamp) {
+        this.timestamp = timestamp;
     }
 }

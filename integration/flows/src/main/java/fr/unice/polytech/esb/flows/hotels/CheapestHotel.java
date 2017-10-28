@@ -1,7 +1,7 @@
 package fr.unice.polytech.esb.flows.hotels;
 
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
-import fr.unice.polytech.esb.flows.hotels.data.HotelInfo;
+import fr.unice.polytech.esb.flows.hotels.data.HotelInformation;
 import fr.unice.polytech.esb.flows.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangeTimedOutException;
@@ -55,7 +55,7 @@ public class CheapestHotel extends RouteBuilder{
 
                 // Read the whole list and keep the cheapest offer.
                 .process(exchange -> {
-                    List<HotelInfo> hotels = (List<HotelInfo>) exchange.getIn().getBody(List.class);
+                    List<HotelInformation> hotels = (List<HotelInformation>) exchange.getIn().getBody(List.class);
 
                     if (hotels.isEmpty()) {
                         // TODO: Do something if the list is empty.
@@ -65,7 +65,7 @@ public class CheapestHotel extends RouteBuilder{
                         hotels.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));
 
                         // Keep the cheapest flight.
-                        HotelInfo cheapestHotel = hotels.get(0);
+                        HotelInformation cheapestHotel = hotels.get(0);
 
                         // Write the flight into the body.
                         exchange.getIn().setBody(cheapestHotel);

@@ -1,17 +1,15 @@
 package fr.unice.polytech.esb.flows.hotels.data;
 
-import java.util.Date;
-
-public class HotelInfo {
+public class HotelInformation {
 
     private String place;
     private String name;
-    private int price;
+    private float price;
 
-    public HotelInfo() {
+    public HotelInformation() {
     }
 
-    public HotelInfo(String place, String name, int price) {
+    public HotelInformation(String place, String name, float price) {
         this.place = place;
         this.name = name;
         this.price = price;
@@ -33,11 +31,11 @@ public class HotelInfo {
         this.name = name;
     }
 
-    public int getPrice() {
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 }
