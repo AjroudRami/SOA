@@ -5,7 +5,6 @@ import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.component.jackson.JacksonDataFormat;
 import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
@@ -45,7 +44,7 @@ public class CheapestFlight extends RouteBuilder {
                 // With the custom aggregation strategy, the incoming flights
                 // information lists will be merged.
                 // All requests are awaited thanks to "parallelProcessing".
-                .multicast(new JoinFlightInformationsAggregationStrategy())
+                .multicast(new JoinFlightsAggregationStrategy())
                     .parallelProcessing(true)
                     .executorService(WORKERS)
                     .timeout(1000)
@@ -76,7 +75,7 @@ public class CheapestFlight extends RouteBuilder {
                 .marshal().json(JsonLibrary.Jackson);
     }
 
-    private class JoinFlightInformationsAggregationStrategy implements AggregationStrategy {
+    private class JoinFlightsAggregationStrategy implements AggregationStrategy {
 
         @Override
         public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {
