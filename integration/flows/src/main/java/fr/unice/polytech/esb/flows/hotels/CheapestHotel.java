@@ -1,7 +1,8 @@
-package fr.unice.polytech.esb.flows.flights;
+package fr.unice.polytech.esb.flows.hotels;
 
 import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
-import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
+import fr.unice.polytech.esb.flows.hotels.data.HotelInfo;
+import fr.unice.polytech.esb.flows.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
@@ -15,7 +16,7 @@ import java.util.concurrent.Executors;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class CheapestFlight extends RouteBuilder {
+public class CheapestHotel extends RouteBuilder{
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
@@ -23,7 +24,7 @@ public class CheapestFlight extends RouteBuilder {
     public void configure() throws Exception {
 
         restConfiguration().component("servlet");
-        rest("/cheapest-flights/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_FLIGHT);
+        rest("/cheapest-flights/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_HOTEL);
 
         onException(ExchangeTimedOutException.class)
                 .handled(true)
@@ -32,42 +33,42 @@ public class CheapestFlight extends RouteBuilder {
                 .process(exchange -> exchange.getIn().setBody(new ArrayList<FlightInformation>()));
 
         // Process to find the cheapest flight.
-        from(SEARCH_CHEAPEST_FLIGHT)
-                .routeId("search-the-cheapest-flight")
-                .routeDescription("Provides the most interesting flight given the user request")
+        from(SEARCH_CHEAPEST_HOTEL)
+                .routeId("search-the-cheapest-hotel")
+                .routeDescription("Provides the most interesting hotel given the user request")
 
-                .log("Generating a flight booking process")
+                .log("Generating a hotel booking process")
 
                 // Parse the body content from JSON string to FlightRequest.
-                .unmarshal().json(JsonLibrary.Jackson, FlightRequest.class)
+                .unmarshal().json(JsonLibrary.Jackson, HotelRequest.class)
 
                 // Send the request to all services.
-                // With the custom aggregation strategy, the incoming flights
+                // With the custom aggregation strategy, the incoming hotels
                 // information lists will be merged.
                 // All requests are awaited thanks to "parallelProcessing".
-                .multicast(new JoinFlightsAggregationStrategy())
-                    .parallelProcessing(true)
-                    .executorService(WORKERS)
-                    .timeout(1000)
-                    .to(SEARCH_IN_INTERNAL_FLIGHTS_SERVICE, SEARCH_IN_EXTERNAL_FLIGHT_SERVICE)
-                    .end()
+                .multicast(new JoinHotelInfoAggregationStrategy())
+                .parallelProcessing(true)
+                .executorService(WORKERS)
+                .timeout(1000)
+                .to(SEARCH_IN_INTERNAL_HOTELS_SERVICE, SEARCH_IN_EXTERNAL_HOTELS_SERVICE)
+                .end()
 
                 // Read the whole list and keep the cheapest offer.
                 .process(exchange -> {
-                    List<FlightInformation> flights = (List<FlightInformation>) exchange.getIn().getBody(List.class);
+                    List<HotelInfo> hotels = (List<HotelInfo>) exchange.getIn().getBody(List.class);
 
-                    if (flights.isEmpty()) {
+                    if (hotels.isEmpty()) {
                         // TODO: Do something if the list is empty.
                         exchange.getIn().setBody("{}");
                     } else {
                         // Sort by the price.
-                        flights.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));
+                        hotels.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));
 
                         // Keep the cheapest flight.
-                        FlightInformation cheapestFlight = flights.get(0);
+                        HotelInfo cheapestHotel = hotels.get(0);
 
                         // Write the flight into the body.
-                        exchange.getIn().setBody(cheapestFlight);
+                        exchange.getIn().setBody(cheapestHotel);
                     }
                 })
 
@@ -76,7 +77,7 @@ public class CheapestFlight extends RouteBuilder {
                 .marshal().json(JsonLibrary.Jackson);
     }
 
-    private class JoinFlightsAggregationStrategy implements AggregationStrategy {
+    private class JoinHotelInfoAggregationStrategy implements AggregationStrategy {
 
         @Override
         public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {

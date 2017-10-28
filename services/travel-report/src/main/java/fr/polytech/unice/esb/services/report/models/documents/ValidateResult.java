@@ -6,13 +6,13 @@ public class ValidateResult implements Serializable {
 
     private String id;
 
-    private String employee_id;
+    private String businessTravelId;
 
     private TravelReportStatus status;
 
     public ValidateResult(TravelReport travelReport){
         this.id = travelReport.getId();
-        this.employee_id = travelReport.getEmployee_id();
+        this.businessTravelId = travelReport.getBusinessTravelId();
         this.status = travelReport.getStatus();
     }
 
@@ -24,12 +24,12 @@ public class ValidateResult implements Serializable {
         this.id = id;
     }
 
-    public String getEmployee_id() {
-        return employee_id;
+    public String getBusinessTravelId() {
+        return businessTravelId;
     }
 
-    public void setEmployee_id(String employee_id) {
-        this.employee_id = employee_id;
+    public void setBusinessTravelId(String employee_id) {
+        this.businessTravelId = employee_id;
     }
 
     public TravelReportStatus getStatus() {

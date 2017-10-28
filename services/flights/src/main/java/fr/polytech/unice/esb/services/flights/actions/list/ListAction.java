@@ -91,7 +91,7 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
             throw new RuntimeException("Missing fields, destination or departure");
         }
         if (depTS == 0) {
-            throw new RuntimeException("Missing or Invalid fields: departureTimeStamp, arrivalTimeStamp");
+            throw new RuntimeException("Missing or Invalid fields: departureTimeStamp");
         }
         //TODO improve performances
         for(Flight flight : flights) {

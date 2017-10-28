@@ -7,7 +7,7 @@ import java.util.List;
 public class TravelReport implements Serializable{
 
     private String id;
-    private String employee_id;
+    private String businessTravelId;
     private Date start;
     private Date finish;
     private List<Expense> expenses;
@@ -67,15 +67,15 @@ public class TravelReport implements Serializable{
         return status;
     }
 
-    public String getEmployee_id() {
-        return employee_id;
-    }
-
-    public void setEmployee_id(String employee_id) {
-        this.employee_id = employee_id;
-    }
-
     public void setStatus(TravelReportStatus status) {
         this.status = status;
+    }
+
+    public String getBusinessTravelId() {
+        return businessTravelId;
+    }
+
+    public void setBusinessTravelId(String businessTravelId) {
+        this.businessTravelId = businessTravelId;
     }
 }
