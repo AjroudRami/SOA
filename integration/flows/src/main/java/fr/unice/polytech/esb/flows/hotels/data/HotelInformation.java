@@ -1,9 +1,14 @@
 package fr.unice.polytech.esb.flows.hotels.data;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class HotelInformation {
 
+    @JsonProperty("city")
     private String place;
+    @JsonProperty
     private String name;
+    @JsonProperty("roomCost")
     private float price;
 
     public HotelInformation() {

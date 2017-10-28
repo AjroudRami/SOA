@@ -45,7 +45,7 @@ public class CheapestHotelExternal extends RouteBuilder {
                 // Send the request to the external service.
                 .inOut(EXTERNAL_HOTELS_ENDPOINT)
 
-                // Parse the SOAP response into a list of flights and
+                // Parse the SOAP response into a list of hotels and
                 // put it as the body.
                 .process(translateFromResponse);
     }
