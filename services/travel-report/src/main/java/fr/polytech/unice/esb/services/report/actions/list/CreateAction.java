@@ -21,7 +21,7 @@ public class CreateAction implements DocumentAction<TravelReport, TravelReport> 
 
         document.setId(UUID.randomUUID().toString());
         document.setStatus(TravelReportStatus.INPROGRESS);
-        if(document.getEmployee_id().isEmpty()){
+        if(document.getBusinessTravelId().isEmpty()){
             throw new TravelReportCreationException();
         }
         return travels.put(document);
