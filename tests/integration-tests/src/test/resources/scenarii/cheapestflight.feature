@@ -1,6 +1,6 @@
 Feature: Cheapest flight research
   Background:
-    Given a cheapest flight service deployed on localhost:8005
+    Given a cheapest flight service deployed on localhost:8181
 
   Scenario: Simple research
     Given a research for a flight booking

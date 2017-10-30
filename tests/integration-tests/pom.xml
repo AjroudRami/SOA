@@ -21,11 +21,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>fr.unice.polytech.esb</groupId>
-            <artifactId>acceptation</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber.version}</version>
