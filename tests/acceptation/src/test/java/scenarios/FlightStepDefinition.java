@@ -12,15 +12,10 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import request.Filter;
 import request.ServiceRequest;
-
 import javax.ws.rs.core.MediaType;
-
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
 public class FlightStepDefinition {
-
-    private static final String ROOM_COST_FIELD = "roomCost";
 
     private String host = "localhost";
     private int port = 8080;
