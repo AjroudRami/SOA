@@ -14,9 +14,11 @@ public class Endpoints {
     public static final String DEAD_PARTNER = "activemq:deadPartners";
 
     // Business / Travel report
-    public static final String APPROVE_BUSINESS_TRAVEL = "servlet:approve-business-travel";
-    public static final String BUSINESS_APPROVAL_QUEUE = "activemq:businessApproval";
-    public static final String TRAVEL_REPORT_CREATE_QUEUE = "activemq:travelReportCreate";
+    public static final String APPROVE_BUSINESS_TRAVEL = "activemq:approve-business-travel";
+    public static final String CREATE_BUSINESS_TRAVEL = "activemq:create-business-travel";
+    public static final String APPROVE_TRAVEL_REPORT = "activemq:approve-travel-report";
+
+    public static final String TRAVEL_REPORT_CREATION = "activemq:travel-report-creation";
 
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";

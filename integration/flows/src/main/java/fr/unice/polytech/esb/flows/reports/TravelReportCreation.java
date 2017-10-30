@@ -2,21 +2,21 @@ package fr.unice.polytech.esb.flows.reports;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fr.unice.polytech.esb.flows.reports.data.ApproveTravel;
+import fr.unice.polytech.esb.flows.reports.data.BusinessTravel;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_CREATE_QUEUE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_CREATION;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_ENDPOINT;
 
-public class ReportCreation extends RouteBuilder {
+public class TravelReportCreation extends RouteBuilder {
 
     private static ObjectMapper mapper = new ObjectMapper();
 
     @Override
     public void configure() throws Exception {
         // Travel Report Creation
-        from(TRAVEL_REPORT_CREATE_QUEUE)
+        from(TRAVEL_REPORT_CREATION)
                 .routeId("call-internal-travel-report-service")
                 .routeDescription("Call the internal travel report service")
 
@@ -29,7 +29,7 @@ public class ReportCreation extends RouteBuilder {
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
                 .process(exchange -> exchange.getIn()
-                        .setBody(makeBody(exchange.getIn().getBody(ApproveTravel.class))))
+                        .setBody(makeBody(exchange.getIn().getBody(BusinessTravel.class))))
 
                 // Send the request to the internal service.
                 .to(TRAVEL_REPORT_ENDPOINT);
@@ -37,13 +37,13 @@ public class ReportCreation extends RouteBuilder {
 
     /**
      * Prepares the body for the internal service request.
-     * @param approveTravel approval request
+     * @param businessTravel approval request
      * @return A JSON object string.
      */
-    private static String makeBody(ApproveTravel approveTravel) {
+    private static String makeBody(BusinessTravel businessTravel) {
         ObjectNode json = mapper.createObjectNode();
         json.put("event", "create");
-        json.put("businessTravelId", approveTravel.getId());
+        json.put("businessTravelId", businessTravel.getId());
         return json.toString();
     }
 }
