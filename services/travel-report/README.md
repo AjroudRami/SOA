@@ -41,14 +41,14 @@ Here is an example of a request:
 ```json
 {
 	"event": "create",
-	"employee_id":"rober_1992"
+	"employee_id":"robert_1992"
 }
 ```
 And its possible output:
 ```json
 {
     "id": "46136d28-c079-4c92-a335-1a199eb10fe6",
-	"employee_id":"rober_1992",
+	"employee_id":"robert_1992",
     "start": null,
     "status": "INPROGRESS",
     "finish": null,
@@ -72,7 +72,7 @@ And one of its possible outputs:
     "travels": [
         {
             "id": "bddadae4-4a9a-4dbe-8a22-3c222503304e",
-	        "employee_id":"rober_1992",
+	        "employee_id":"robert_1992",
             "start": null,
             "status": "INPROGRESS",
             "finish": null,
@@ -94,6 +94,72 @@ And one of its possible outputs:
 }
 ```
 
+## Expenses
+The `expenses` action adds expenses to the travel report.
+Here is an example of a request:
+```json
+{
+	"event":"expenses",
+	"businessTravelId":"john_doe",
+    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+	"expenses":[
+	    {
+            "date":"2017-12-25",
+            "amount":230,
+            "description":"2 nights at Negresco"
+	    }]
+}
+```
+And its possible outputs:
+```json
+{
+    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+    "employee_id":"john_doe", 
+    "start": 1513987200000,
+    "status": "INPROGRESS",
+    "finish": null,
+    "expenses":[
+    	    {
+                "date":"2017-12-25",
+                "amount":230,
+                "description":"2 nights at Negresco"
+    	    }],
+    "totalAmount": 230,
+    "explaination": null
+}
+```
+This requests returns an empty 200 OK response upon success.
+
+
+### END
+The `end` action marks a travel report as finish.
+Here is an example of a request:
+```json
+{
+	"event": "end",
+	"id": "54ec80fe-afab-45d9-8f76-c66d46c38981"
+}
+```
+And its possible outputs:
+```json
+{
+    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+    "employee_id":"john_doe", 
+    "start": 1513987200000,
+    "status": "FINISH",
+    "finish": 1513987200000,
+    "expenses":[
+    	    {
+                "date":"2017-12-25",
+                "amount":230,
+                "description":"2 nights at Negresco"
+    	    }],
+    "totalAmount": 230,
+    "explaination": null
+}
+```
+This requests returns an empty 200 OK response upon success.
+
 ### Validate
 The `validate` action marks a travel report as accepted.
 Here is an example of a request:
@@ -110,11 +176,17 @@ And its possible outputs:
     "employee_id":"john_doe", 
     "start": 1513987200000,
     "status": "ACCEPTED",
-    "finish": null,
-    "expenses": null,
-    "totalAmount": 0,
-    "explaination": null
+   "finish": 1513987200000,
+       "expenses":[
+       	    {
+                   "date":"2017-12-25",
+                   "amount":230,
+                   "description":"2 nights at Negresco"
+       	    }],
+       "totalAmount": 230,
+       "explaination": null
 }
 ```
 This requests returns an empty 200 OK response upon success.
+
 

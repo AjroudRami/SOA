@@ -3,9 +3,7 @@ package fr.polytech.unice.esb.services.report.components;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import fr.polytech.unice.esb.services.report.actions.DocumentAction;
-import fr.polytech.unice.esb.services.report.actions.list.CreateAction;
-import fr.polytech.unice.esb.services.report.actions.list.ListAction;
-import fr.polytech.unice.esb.services.report.actions.list.ValidateAction;
+import fr.polytech.unice.esb.services.report.actions.list.*;
 import org.json.JSONObject;
 
 import javax.ejb.Singleton;
@@ -27,6 +25,8 @@ public class ActionComponentImpl implements ActionComponent {
         actions.put("create", CreateAction.class);
         actions.put("list", ListAction.class);
         actions.put("validate", ValidateAction.class);
+        actions.put("end", EndAction.class);
+        actions.put("expenses", AddExpenses.class);
 
         mapper = new ObjectMapper();
         // Allow unknown properties
