@@ -17,6 +17,7 @@ public class Endpoints {
     public static final String APPROVE_BUSINESS_TRAVEL = "activemq:approve-business-travel";
     public static final String CREATE_BUSINESS_TRAVEL = "activemq:create-business-travel";
     public static final String APPROVE_TRAVEL_REPORT = "activemq:approve-travel-report";
+    public static final String TRAVEL_REPORT_EXPENSE = "activemq:travel-report-expense";
 
     public static final String TRAVEL_REPORT_CREATION = "activemq:travel-report-creation";
 
@@ -32,8 +33,8 @@ public class Endpoints {
     public static final String INTERNAL_FLIGHTS_ENDPOINT = "http://localhost:8080/tcs-service-flights/flights/";
     public static final String EXTERNAL_FLIGHTS_ENDPOINT = "http://localhost:8081/tta-service-rpc/FlightBookingService";
 
-    public static final String INTERNAL_HOTELS_ENDPOINT = "";
-    public static final String EXTERNAL_HOTELS_ENDPOINT = "";
+    public static final String INTERNAL_HOTELS_ENDPOINT = "http://internal-hotels:8080/TODO";
+    public static final String EXTERNAL_HOTELS_ENDPOINT = "http://external-hotels:8080/TODO";
 
     public static final String TRAVEL_REPORT_ENDPOINT = "http://travel-report:8080/tcs-service-travel-report/report/";
     public static final String BUSINESS_TRAVEL_ENDPOINT = "http://business-travels:8080/tcs-service-business-travels/registry/";

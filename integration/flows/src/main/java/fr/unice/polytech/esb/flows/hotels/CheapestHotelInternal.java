@@ -23,7 +23,7 @@ public class CheapestHotelInternal extends RouteBuilder {
     public void configure() throws Exception {
         from(SEARCH_IN_INTERNAL_HOTELS_SERVICE)
                 // Route description.
-                .routeId("call-external-hotel-reservation-service")
+                .routeId("call-internal-hotel-reservation-service")
                 .routeDescription("Call the external hotel reservation service")
 
                 // Log the current action.
