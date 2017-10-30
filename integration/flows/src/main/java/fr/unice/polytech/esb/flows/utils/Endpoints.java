@@ -32,9 +32,9 @@ public class Endpoints {
     public static final String INTERNAL_FLIGHTS_ENDPOINT = "http://localhost:8080/tcs-service-flights/flights/";
     public static final String EXTERNAL_FLIGHTS_ENDPOINT = "http://localhost:8081/tta-service-rpc/FlightBookingService";
 
-    public static final String INTERNAL_HOTELS_ENDPOINT = ""; // TODO: Fill endpoint.
-    public static final String EXTERNAL_HOTELS_ENDPOINT = ""; // TODO: Fill endpoint.
+    public static final String INTERNAL_HOTELS_ENDPOINT = "";
+    public static final String EXTERNAL_HOTELS_ENDPOINT = "";
 
-    public static final String TRAVEL_REPORT_ENDPOINT = "http://localhost:8005/tcs-service-travel-report/report/";
-    public static final String BUSINESS_TRAVEL_ENDPOINT = "http://localhost:8000/tcs-service-business-travels/registry/";
+    public static final String TRAVEL_REPORT_ENDPOINT = "http://travel-report:8080/tcs-service-travel-report/report/";
+    public static final String BUSINESS_TRAVEL_ENDPOINT = "http://business-travels:8080/tcs-service-business-travels/registry/";
 }
