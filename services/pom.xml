@@ -21,10 +21,8 @@
         <module>flights</module>
         <module>hotels</module>
         <module>cars</module>
-        <module>cheapest-flight</module>
         <module>business-travels</module>
         <module>travel-report</module>
-        <module>cheapest-car</module>
     </modules>
 
     <properties>
