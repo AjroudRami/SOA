@@ -7,9 +7,17 @@ services:
     ports:
       - "8181:8181"
     links:
-      - internal-flights:internal-flights
+      - internal-flights
+      - business-travels
+      - travel-report
     stdin_open: true
     tty: true
 
   internal-flights:
     image: soa-team-1/flights
+
+  business-travels:
+    image: soa-team-1/business-travels
+
+  travel-report:
+    image: soa-team-1/travel-report
