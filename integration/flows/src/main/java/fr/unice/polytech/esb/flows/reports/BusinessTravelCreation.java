@@ -3,6 +3,7 @@ package fr.unice.polytech.esb.flows.reports;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import fr.unice.polytech.esb.flows.reports.data.ApproveTravel;
 import fr.unice.polytech.esb.flows.reports.data.BusinessTravel;
 import org.apache.camel.Exchange;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class BusinessCreation extends RouteBuilder{
+public class BusinessTravelCreation extends RouteBuilder{
 
 
     private static ObjectMapper mapper = new ObjectMapper();
