@@ -19,7 +19,7 @@ public class BusinessTravelApproval extends RouteBuilder{
     @Override
     public void configure() throws Exception {
         restConfiguration().component("servlet");
-        rest("/approve-business-travel/").post("/search").type(Object.class).to(APPROVE_BUSINESS_TRAVEL);
+        rest("/business-travel/").post("/approve").type(Object.class).to(APPROVE_BUSINESS_TRAVEL);
 
         onException(ExchangeTimedOutException.class)
                 .handled(true)
@@ -34,16 +34,16 @@ public class BusinessTravelApproval extends RouteBuilder{
 
                 .log("Generating a business approval process")
 
-                // Parse the body content from JSON string to ApproveTravel.
-                .unmarshal().json(JsonLibrary.Jackson, BusinessTravel.class)
-
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
-                .process(exchange -> exchange.getIn()
-                        .setBody(makeBody(exchange.getIn().getBody(BusinessTravel.class))))
+                .process(exchange -> {
+                    ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
+                    node.put("event","approve");
+                    exchange.getIn().setBody(node.toString());
+                })
 
                 // Send the request to the internal service.
                 .inOut(BUSINESS_TRAVEL_ENDPOINT)
@@ -53,16 +53,5 @@ public class BusinessTravelApproval extends RouteBuilder{
                         .to(TRAVEL_REPORT_CREATION);
     }
 
-    /**
-     * Prepares the body for the internal service request.
-     * @param businessTravel approval request
-     * @return A JSON object string.
-     */
-    private static String makeBody(BusinessTravel businessTravel) {
-        ObjectNode json = mapper.createObjectNode();
-        json.put("event", "approve");
-        json.put("id", businessTravel.getId());
-        return json.toString();
-    }
 
 }
