@@ -41,14 +41,14 @@ Here is an example of a request:
 ```json
 {
 	"event": "create",
-	"employee_id":"robert_1992"
+	"businessTravelId":"robert_1992"
 }
 ```
 And its possible output:
 ```json
 {
     "id": "46136d28-c079-4c92-a335-1a199eb10fe6",
-	"employee_id":"robert_1992",
+    "businessTravelId":"robert_1992",
     "start": null,
     "status": "INPROGRESS",
     "finish": null,
@@ -72,7 +72,7 @@ And one of its possible outputs:
     "travels": [
         {
             "id": "bddadae4-4a9a-4dbe-8a22-3c222503304e",
-	        "employee_id":"robert_1992",
+	    "businessTravelId":"robert_1992",
             "start": null,
             "status": "INPROGRESS",
             "finish": null,
@@ -82,7 +82,7 @@ And one of its possible outputs:
         },
         {
             "id": "500d094c-0917-4e27-a79c-5d371e8b59b3",
-            "employee_id":"john_doe", 
+            "businessTravelId":"john_doe", 
             "start": 1514332800000,
             "status": "INPROGRESS",
             "finish": null,
@@ -101,7 +101,7 @@ Here is an example of a request:
 {
 	"event":"expenses",
 	"businessTravelId":"john_doe",
-    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+    	"id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
 	"expenses":[
 	    {
             "date":"2017-12-25",
@@ -114,7 +114,7 @@ And its possible outputs:
 ```json
 {
     "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
-    "employee_id":"john_doe", 
+    "businessTravelId":"john_doe", 
     "start": 1513987200000,
     "status": "INPROGRESS",
     "finish": null,
@@ -144,7 +144,7 @@ And its possible outputs:
 ```json
 {
     "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
-    "employee_id":"john_doe", 
+    "businessTravelId":"john_doe", 
     "start": 1513987200000,
     "status": "FINISH",
     "finish": 1513987200000,
@@ -173,7 +173,7 @@ And its possible outputs:
 ```json
 {
     "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
-    "employee_id":"john_doe", 
+    "businessTravelId":"john_doe", 
     "start": 1513987200000,
     "status": "ACCEPTED",
    "finish": 1513987200000,
