@@ -3,7 +3,7 @@ cd services
 echo Building services
 
 # Declaring our dependencies
-dependencies=(business-travels cars flights hotels cheapest-flight travel-report)
+dependencies=(business-travels cars flights hotels travel-report)
 
 for dependency in "${dependencies[@]}"
 do

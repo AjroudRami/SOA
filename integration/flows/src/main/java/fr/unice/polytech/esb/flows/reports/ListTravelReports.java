@@ -4,24 +4,34 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import fr.unice.polytech.esb.flows.reports.data.BusinessTravel;
 import org.apache.camel.Exchange;
+import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_CREATION;
-import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_ENDPOINT;
+import java.util.ArrayList;
 
-public class TravelReportCreation extends RouteBuilder {
+import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
+
+public class ListTravelReports extends RouteBuilder {
 
     private static ObjectMapper mapper = new ObjectMapper();
 
     @Override
     public void configure() throws Exception {
-        // Travel Report Creation
-        from(TRAVEL_REPORT_CREATION)
-                .routeId("call-internal-travel-report-service")
-                .routeDescription("Call the internal travel report service")
+        restConfiguration().component("servlet");
+        rest("/travel-report/").post("/list").type(Object.class).to(LIST_TRAVEL_REPORT);
 
-                // Log the current action.
-                .log("Create a travel report.")
+        onException(ExchangeTimedOutException.class)
+                .handled(true)
+                .to(DEATH_POOL)
+                // If the service does not respond, fill the body with an empty list.
+                .process(exchange -> exchange.getIn().setBody(new ArrayList<BusinessTravel>()));
+
+        // Process to approve business travel.
+        from(LIST_TRAVEL_REPORT)
+                .routeId("list-travel-report")
+                .routeDescription("List travel report")
+
+                .log("Generating a travel query")
 
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
@@ -30,11 +40,10 @@ public class TravelReportCreation extends RouteBuilder {
                 .setHeader("Accept", constant("application/json"))
                 .process(exchange -> {
                     ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
-                    node.put("event","create");
-                    String businessTravelId = node.get("id").asText();
-                    node.put("businessTravelId",businessTravelId);
+                    node.put("event","list");
                     exchange.getIn().setBody(node.toString());
                 })
+
                 // Send the request to the internal service.
                 .to(TRAVEL_REPORT_ENDPOINT);
     }

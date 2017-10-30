@@ -21,7 +21,7 @@ public class TravelReportApproval extends RouteBuilder{
     @Override
     public void configure() throws Exception {
         restConfiguration().component("servlet");
-        rest("/approve-travel-report/").post("/search").type(Object.class).to(APPROVE_TRAVEL_REPORT);
+        rest("/travel-report/").post("/approve").type(Object.class).to(APPROVE_TRAVEL_REPORT);
 
         onException(ExchangeTimedOutException.class)
                 .handled(true)
@@ -36,25 +36,19 @@ public class TravelReportApproval extends RouteBuilder{
 
                 .log("Generating a travel approval process")
 
-                // Parse the body content from JSON string to ApproveTravel.
-                .unmarshal().json(JsonLibrary.Jackson, ApproveTravel.class)
-
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
-                .process(exchange -> exchange.getIn()
-                        .setBody(makeBody(exchange.getIn().getBody(ApproveTravel.class))))
+                .process(exchange -> {
+                    ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
+                    node.put("event","validate");
+                    exchange.getIn().setBody(node.toString());
+                })
 
                 // Send the request to the internal service.
                 .to(TRAVEL_REPORT_ENDPOINT);
     }
 
-    private static String makeBody(ApproveTravel approveTravel) {
-        ObjectNode json = mapper.createObjectNode();
-        json.put("event", "validate");
-        json.put("id", approveTravel.getId());
-        return json.toString();
-    }
 }

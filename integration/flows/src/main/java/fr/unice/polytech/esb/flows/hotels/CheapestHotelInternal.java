@@ -19,8 +19,26 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_HOT
 
 public class CheapestHotelInternal extends RouteBuilder {
 
+    private class ServiceUrl {
+        private String current;
+
+        public ServiceUrl(String baseUrl) {
+            current = baseUrl + "?";
+        }
+
+        public void addQueryParameter(String parameter, String value) {
+            current += parameter + "=" + value + "&";
+        }
+
+        public String getUrl() {
+            return current;
+        }
+    }
+
     @Override
     public void configure() throws Exception {
+        ServiceUrl url = new ServiceUrl(INTERNAL_HOTELS_ENDPOINT);
+
         from(SEARCH_IN_INTERNAL_HOTELS_SERVICE)
                 // Route description.
                 .routeId("call-internal-hotel-reservation-service")
@@ -33,13 +51,8 @@ public class CheapestHotelInternal extends RouteBuilder {
                 .process(exchange -> {
                     HotelRequest request = exchange.getIn().getBody(HotelRequest.class);
 
-                    // Query parameters of the GET request.
-                    String queryParameters = String.format(
-                            "?destination=%s&date=%s",
-                            request.getDestination(),
-                            new SimpleDateFormat("dd-MM-yyyy").format(new Date(request.getTimestamp())));
-
-                    exchange.setProperty("queryParameters", queryParameters);
+                    url.addQueryParameter("destination", request.getDestination());
+                    url.addQueryParameter("date", new SimpleDateFormat("dd-MM-yyyy").format(new Date(request.getTimestamp())));
                 })
 
                 // Prepare the POST request to a RPC service.
@@ -49,10 +62,7 @@ public class CheapestHotelInternal extends RouteBuilder {
                 .setBody(simple(""))
 
                 // Send the request to the external service.
-                .inOut(INTERNAL_HOTELS_ENDPOINT + "${exchangeProperty[queryParameters]}")
-
-                // Remove the query parameters from the exchange properties.
-                .removeProperty("queryParameters")
+                .inOut(url.getUrl())
 
                 // Parse the JSON response into a list of hotels and
                 // put it as the body.
