@@ -24,7 +24,7 @@ public class CheapestHotel extends RouteBuilder{
     public void configure() throws Exception {
 
         restConfiguration().component("servlet");
-        rest("/cheapest-flights/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_HOTEL);
+        rest("/cheapest-hotels/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_HOTEL);
 
         onException(ExchangeTimedOutException.class)
                 .handled(true)

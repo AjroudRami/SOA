@@ -22,11 +22,6 @@ services:
     ports:
       - "8003:8080"
 
-  cheapest-flight:
-    image: soa-team-1/cheapest-flight
-    ports:
-      - "8004:8080"
-
   travel-report:
     image: soa-team-1/travel-report
     ports:
