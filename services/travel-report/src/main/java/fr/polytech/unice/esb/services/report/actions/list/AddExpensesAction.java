@@ -9,7 +9,7 @@ import javax.ejb.EJB;
 import java.util.List;
 import java.util.Optional;
 
-public class AddExpenses implements DocumentAction<TravelReport, TravelReport> {
+public class AddExpensesAction implements DocumentAction<TravelReport, TravelReport> {
 
     @EJB
     private TravelReportComponent travels;
