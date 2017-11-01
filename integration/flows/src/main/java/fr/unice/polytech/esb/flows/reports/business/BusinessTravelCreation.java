@@ -1,9 +1,7 @@
-package fr.unice.polytech.esb.flows.reports;
+package fr.unice.polytech.esb.flows.reports.business;
 
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fr.unice.polytech.esb.flows.reports.data.ApproveTravel;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
@@ -24,7 +22,7 @@ public class BusinessTravelCreation extends RouteBuilder{
                 .handled(true)
                 .to(DEATH_POOL)
                 // If the service does not respond, fill the body with an empty list.
-                .process(exchange -> exchange.getIn().setBody(new ArrayList<ApproveTravel>()));
+                .process(exchange -> exchange.getIn().setBody(new ArrayList<String>()));
 
         // Process to approve business travel.
         from(CREATE_BUSINESS_TRAVEL)

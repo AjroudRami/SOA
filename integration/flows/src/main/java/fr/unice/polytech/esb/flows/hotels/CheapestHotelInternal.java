@@ -42,10 +42,10 @@ public class CheapestHotelInternal extends RouteBuilder {
         from(SEARCH_IN_INTERNAL_HOTELS_SERVICE)
                 // Route description.
                 .routeId("call-internal-hotel-reservation-service")
-                .routeDescription("Call the external hotel reservation service")
+                .routeDescription("Call the internal hotel reservation service")
 
                 // Log the current action.
-                .log("Make a research in the EXTERNAL hotels service.")
+                .log("Make a research in the INTERNAL hotels service.")
 
                 // Prepare the query parameters in the exchange properties.
                 .process(exchange -> {

@@ -20,13 +20,14 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
         Optional<TravelReport> travelOpt = travels.get(document);
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
-            travel.setStatus(TravelReportStatus.FINISH);
-            travel.setFinish(new Date());
-            travels.put(travel);
-            return travel;
-        } else {
-            return null;
+            if (travel.getStatus() == TravelReportStatus.INPROGRESS) {
+                travel.setStatus(TravelReportStatus.FINISH);
+                travel.setFinish(new Date());
+                travels.put(travel);
+                return travel;
+            }
         }
+        return null;
     }
 
     @Override

@@ -22,12 +22,13 @@ public class ValidateAction implements DocumentAction<TravelReport, ValidateResu
         Optional<TravelReport> travelOpt = travels.get(document);
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
-            travel.setStatus(TravelReportStatus.ACCEPTED);
-            travels.put(travel);
-            return new ValidateResult(travel);
-        } else {
-            return null;
+            if (travel.getStatus() == TravelReportStatus.REJECTED) {
+                travel.setStatus(TravelReportStatus.ACCEPTED);
+                travels.put(travel);
+                return new ValidateResult(travel);
+            }
         }
+        return null;
     }
 
     @Override

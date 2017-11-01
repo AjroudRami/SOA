@@ -1,27 +1,36 @@
-package fr.unice.polytech.esb.flows.reports;
+package fr.unice.polytech.esb.flows.reports.travel;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fr.unice.polytech.esb.flows.reports.data.BusinessTravel;
 import org.apache.camel.Exchange;
+import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
 
-import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_CREATION;
-import static fr.unice.polytech.esb.flows.utils.Endpoints.TRAVEL_REPORT_ENDPOINT;
+import java.util.ArrayList;
 
-public class TravelReportCreation extends RouteBuilder {
+import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
+
+public class TravelReportEnd extends RouteBuilder{
 
     private static ObjectMapper mapper = new ObjectMapper();
 
     @Override
     public void configure() throws Exception {
-        // Travel Report Creation
+            restConfiguration().component("servlet");
+            rest("/travel-report/").post("/end").type(Object.class).to(TRAVEL_REPORT_EXPENSE);
+
+            onException(ExchangeTimedOutException.class)
+                    .handled(true)
+                    .to(DEATH_POOL)
+                    // If the service does not respond, fill the body with an empty list.
+                    .process(exchange -> exchange.getIn().setBody(new ArrayList<String>()));
+        // End travel report
         from(TRAVEL_REPORT_CREATION)
-                .routeId("call-internal-travel-report-service")
-                .routeDescription("Call the internal travel report service")
+                .routeId("travel-report-end")
+                .routeDescription("End the travel")
 
                 // Log the current action.
-                .log("Create a travel report.")
+                .log("Ending a travel report.")
 
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
@@ -30,9 +39,7 @@ public class TravelReportCreation extends RouteBuilder {
                 .setHeader("Accept", constant("application/json"))
                 .process(exchange -> {
                     ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
-                    node.put("event","create");
-                    String businessTravelId = node.get("id").asText();
-                    node.put("businessTravelId",businessTravelId);
+                    node.put("event","end");
                     exchange.getIn().setBody(node.toString());
                 })
                 // Send the request to the internal service.
