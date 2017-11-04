@@ -8,17 +8,15 @@ public class CarInformation {
     @JsonProperty private String model;
     @JsonProperty private String place;
     @JsonProperty private double price;
-    @JsonProperty("plate-number") private String plateNumber;
 
     public CarInformation() {
     }
 
-    public CarInformation(String brand, String model, String place, double price, String plateNumber) {
+    public CarInformation(String brand, String model, String place, double price) {
         this.brand = brand;
         this.model = model;
         this.place = place;
         this.price = price;
-        this.plateNumber = plateNumber;
     }
 
     public String getBrand() {
@@ -51,13 +49,5 @@ public class CarInformation {
 
     public void setPrice(double price) {
         this.price = price;
-    }
-
-    public String getPlateNumber() {
-        return plateNumber;
-    }
-
-    public void getPlateNumber(String plateNumber) {
-        this.plateNumber = plateNumber;
     }
 }

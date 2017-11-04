@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;
 
 public class CarRequest {
+
     @JsonProperty private String place;
     @JsonProperty private Date from;
     @JsonProperty private Date to;
