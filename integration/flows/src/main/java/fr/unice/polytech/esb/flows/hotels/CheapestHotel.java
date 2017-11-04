@@ -1,6 +1,5 @@
 package fr.unice.polytech.esb.flows.hotels;
 
-import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
 import fr.unice.polytech.esb.flows.hotels.data.HotelInformation;
 import fr.unice.polytech.esb.flows.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
@@ -30,7 +29,7 @@ public class CheapestHotel extends RouteBuilder{
                 .handled(true)
                 .to(DEAD_PARTNER)
                 // If the service does not respond, fill the body with an empty list.
-                .process(exchange -> exchange.getIn().setBody(new ArrayList<FlightInformation>()));
+                .process(exchange -> exchange.getIn().setBody(new ArrayList<HotelInformation>()));
 
         // Process to find the cheapest flight.
         from(SEARCH_CHEAPEST_HOTEL)
