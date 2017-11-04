@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class CheapestHotel extends RouteBuilder{
+public class CheapestHotel extends RouteBuilder {
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
@@ -38,7 +38,7 @@ public class CheapestHotel extends RouteBuilder{
 
                 .log("Generating a hotel booking process")
 
-                // Parse the body content from JSON string to FlightRequest.
+                // Parse the body content from JSON string to HotelRequest.
                 .unmarshal().json(JsonLibrary.Jackson, HotelRequest.class)
 
                 // Send the request to all services.
@@ -63,10 +63,10 @@ public class CheapestHotel extends RouteBuilder{
                         // Sort by the price.
                         hotels.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));
 
-                        // Keep the cheapest flight.
+                        // Keep the cheapest hotel.
                         HotelInformation cheapestHotel = hotels.get(0);
 
-                        // Write the flight into the body.
+                        // Write the hotel into the body.
                         exchange.getIn().setBody(cheapestHotel);
                     }
                 })
