@@ -6,9 +6,9 @@ import java.util.Date;
 
 public class CarRequest {
 
-    @JsonProperty private String place;
-    @JsonProperty private Date from;
-    @JsonProperty private Date to;
+    @JsonProperty("city") private String place;
+    @JsonProperty("dateFrom") private Date from;
+    @JsonProperty("dateTo") private Date to;
 
     public CarRequest() {
         super();
