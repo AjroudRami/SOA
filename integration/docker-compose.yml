@@ -8,6 +8,8 @@ services:
       - "8181:8181"
     links:
       - internal-flights
+      - internal-cars
+      - internal-hotels
       - business-travels
       - travel-report
     stdin_open: true
@@ -16,8 +18,15 @@ services:
   internal-flights:
     image: soa-team-1/flights
 
+  internal-cars:
+    image: soa-team-1/cars
+
+  internal-hotels:
+    image: soa-team-1/hotels
+
   business-travels:
     image: soa-team-1/business-travels
 
   travel-report:
     image: soa-team-1/travel-report
+
