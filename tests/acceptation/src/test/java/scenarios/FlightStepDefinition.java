@@ -12,6 +12,7 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import javax.ws.rs.core.MediaType;
 import static org.junit.Assert.assertFalse;
+import java.util.Arrays;
 
 public class FlightStepDefinition {
 
