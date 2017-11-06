@@ -17,8 +17,9 @@ public class CheapestFlightStepDefinition {
 
     private final Logger LOGGER = Logger.getLogger(this.getClass().getSimpleName());
     private String host = "localhost";
-    private int port = 8080;
-    private String requestName;
+    private int port = 8181;
+    private String endpointUrl = "/tars/cheapest-flights/"
+    private String requestName = "search"
     private FlightRequest request;
 
     private JSONArray answer;
@@ -62,7 +63,6 @@ public class CheapestFlightStepDefinition {
 
     @Given("^a research for a flight booking$")
     public void bookflight(){
-        this.requestName = "search/";
         this.request = new FlightRequest();
     }
 
@@ -91,7 +91,7 @@ public class CheapestFlightStepDefinition {
     }
 
     private String getUrl() {
-        String url = "http://" + host + ":" + port + "/bus-cheapest-flight/" + requestName;
+        String url = "http://" + host + ":" + port + endpointUrl + requestName;
         return url;
     }
 
