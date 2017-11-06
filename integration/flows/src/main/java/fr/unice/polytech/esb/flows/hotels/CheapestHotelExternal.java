@@ -38,7 +38,6 @@ public class CheapestHotelExternal extends RouteBuilder {
                 // Prepare the POST request to a RPC service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
-                .setHeader("Accept", constant("application/json"))
                 .process(exchange -> exchange.getIn()
                         .setBody(makeRequestBody(exchange.getIn().getBody(HotelRequest.class))))
 
@@ -59,10 +58,11 @@ public class CheapestHotelExternal extends RouteBuilder {
         Document document = builder.parse(new InputSource(new StringReader(exchange.getIn().getBody(String.class))));
 
         NodeList xmlHotels = document.getElementsByTagName("recherche_hotel");
-
-        for (int i = 0; i < xmlHotels.getLength(); i++) {
-            // TODO: Make this step better (other way to parse XML?).
-            hotelsInformation.add(fromNode(xmlHotels.item(i)));
+        if (xmlHotels != null) {
+            for (int i = 0; i < xmlHotels.getLength(); i++) {
+                // TODO: Make this step better (other way to parse XML?).
+                hotelsInformation.add(fromNode(xmlHotels.item(i)));
+            }
         }
 
         exchange.getIn().setBody(hotelsInformation);

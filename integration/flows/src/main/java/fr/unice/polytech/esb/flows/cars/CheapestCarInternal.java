@@ -39,7 +39,6 @@ public class CheapestCarInternal extends RouteBuilder {
                 // Prepare the POST request to a RPC service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
-                .setHeader("Accept", constant("application/json"))
                 .process(exchange -> exchange.getIn()
                         .setBody(makeRequestBody(exchange.getIn().getBody(CarRequest.class))))
 
@@ -60,10 +59,11 @@ public class CheapestCarInternal extends RouteBuilder {
         Document document = builder.parse(new InputSource(new StringReader(exchange.getIn().getBody(String.class))));
 
         NodeList xmlCars = document.getElementsByTagName("ns2:getCarRentalListResponse");
-
-        for (int i = 0; i < xmlCars.getLength(); i++) {
-            // TODO: Make this step better (other way to parse XML?).
-            carsInformation.add(fromNode(xmlCars.item(i)));
+        if (xmlCars != null) {
+            for (int i = 0; i < xmlCars.getLength(); i++) {
+                // TODO: Make this step better (other way to parse XML?).
+                carsInformation.add(fromNode(xmlCars.item(i)));
+            }
         }
 
         exchange.getIn().setBody(carsInformation);
