@@ -32,7 +32,7 @@ public class ListAction implements DocumentAction<ListRequest, FlightList> {
         List<Flight> flights = flightComponent.getFlights();
         flights = userFilter(document.filterBy, flights);
         flights = filterflights(document.departureTimeStamp,
-                document.departure, document.destination, flights);
+                document.destination, document.departure, flights);
         sort(document.orderBy, flights);
         FlightList response = new FlightList(flights);
         /**System.out.println("Request received : ");

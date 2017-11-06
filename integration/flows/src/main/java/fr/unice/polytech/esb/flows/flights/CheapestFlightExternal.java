@@ -40,14 +40,21 @@ public class CheapestFlightExternal extends RouteBuilder {
                 .log("Make a research in the EXTERNAL flights service.")
 
                 // Prepare the POST request to a RPC service.
+                .removeHeaders("*")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
-                .setHeader("Accept", constant("application/json"))
+
+                .log("Set headers to EXTERNAL flights service.")
+
                 .process(exchange -> exchange.getIn()
                         .setBody(makeRequestBody(exchange.getIn().getBody(FlightRequest.class))))
 
+                .log("Set inOut of EXTERNAL flights service.")
+
                 // Send the request to the external service.
                 .inOut(EXTERNAL_FLIGHTS_ENDPOINT)
+
+                .log("process EXTERNAL flights service.")
 
                 // Parse the SOAP response into a list of flights and
                 // put it as the body.
@@ -63,10 +70,11 @@ public class CheapestFlightExternal extends RouteBuilder {
         Document document = builder.parse(new InputSource(new StringReader(exchange.getIn().getBody(String.class))));
 
         NodeList xmlFlights = document.getElementsByTagName("booking_info");
-
-        for (int i = 0; i < xmlFlights.getLength(); i++) {
-            // TODO: Make this step better (other way to parse XML?).
-            flightsInformation.add(fromNode(xmlFlights.item(i)));
+        if (xmlFlights != null) {
+            for (int i = 0; i < xmlFlights.getLength(); i++) {
+                // TODO: Make this step better (other way to parse XML?).
+                flightsInformation.add(fromNode(xmlFlights.item(i)));
+            }
         }
 
         exchange.getIn().setBody(flightsInformation);

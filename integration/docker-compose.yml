@@ -12,6 +12,9 @@ services:
       - internal-hotels
       - business-travels
       - travel-report
+      - external-cars
+      - external-flights
+      - external-hotels
     stdin_open: true
     tty: true
 
@@ -29,4 +32,13 @@ services:
 
   travel-report:
     image: soa-team-1/travel-report
+
+  external-flights:
+    build: ../external-services/team-3/services/rpc
+
+  external-cars:
+    build: ../external-services/team-8/services/car/
+
+  external-hotels:
+    build: ../external-services/team-5/services/hotelRPC
 

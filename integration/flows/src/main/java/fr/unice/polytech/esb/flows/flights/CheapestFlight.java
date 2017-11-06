@@ -56,9 +56,9 @@ public class CheapestFlight extends RouteBuilder {
                 .process(exchange -> {
                     List<FlightInformation> flights = (List<FlightInformation>) exchange.getIn().getBody(List.class);
 
-                    if (flights.isEmpty()) {
+                    if (flights == null || flights.isEmpty()) {
                         // TODO: Do something if the list is empty.
-                        exchange.getIn().setBody("{}");
+                        exchange.getIn().setBody(new FlightInformation());
                     } else {
                         // Sort by the price.
                         flights.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));

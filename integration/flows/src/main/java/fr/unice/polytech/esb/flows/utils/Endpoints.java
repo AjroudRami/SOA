@@ -35,9 +35,9 @@ public class Endpoints {
 
     // External partners.
     public static final String INTERNAL_FLIGHTS_ENDPOINT = "http://internal-flights:8080/tcs-service-flights/flights/";
-    public static final String EXTERNAL_FLIGHTS_ENDPOINT = "http://localhost:8081/tta-service-rpc/FlightBookingService";
+    public static final String EXTERNAL_FLIGHTS_ENDPOINT = "http://external-flights:8080/tta-service-rpc/FlightBookingService";
 
-    public static final String INTERNAL_HOTELS_ENDPOINT = "http://internal-hotels:8080/hotels";
+    public static final String INTERNAL_HOTELS_ENDPOINT = "http://internal-hotels:8080/tcs-hotel-service/hotels";
     public static final String EXTERNAL_HOTELS_ENDPOINT = "http://external-hotels:8080/TODO";
 
     public static final String INTERNAL_CARS_ENDPOINT = "http://internal-cars:8080/tcs-cars-service/ExternalCarRentalService";
