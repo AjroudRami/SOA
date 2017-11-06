@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_CARS_ENDPOINT;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.INTERNAL_CARS_ENDPOINT;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_CARS_SERVICE;
 
 /**
@@ -43,7 +44,7 @@ public class CheapestCarInternal extends RouteBuilder {
                         .setBody(makeRequestBody(exchange.getIn().getBody(CarRequest.class))))
 
                 // Send the request to the external service.
-                .inOut(EXTERNAL_CARS_ENDPOINT)
+                .inOut(INTERNAL_CARS_ENDPOINT)
 
                 // Parse the SOAP response into a list of flights and
                 // put it as the body.
