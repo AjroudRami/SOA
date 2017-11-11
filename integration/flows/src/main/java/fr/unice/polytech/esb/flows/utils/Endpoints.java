@@ -25,6 +25,8 @@ public class Endpoints {
     public static final String TRAVEL_REPORT_EXPLAIN = "activemq:travel-report-explain";
     public static final String TRAVEL_REPORT_CREATION = "activemq:travel-report-create";
     public static final String TRAVEL_REPORT_END = "activemq:travel-report-end";
+    public static final String TRAVEL_REPORT_SAVE = "activemq:travel-report-save-file";
+    public static final String TRAVEL_REPORT_FOLDER = "file:camel/output/";
 
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";
@@ -48,4 +50,5 @@ public class Endpoints {
 
     public static final String TRAVEL_REPORT_ENDPOINT = "http://travel-report:8080/tcs-service-travel-report/report/";
     public static final String BUSINESS_TRAVEL_ENDPOINT = "http://business-travels:8080/tcs-service-business-travels/registry/";
+
 }

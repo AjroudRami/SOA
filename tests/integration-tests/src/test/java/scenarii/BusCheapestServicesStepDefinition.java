@@ -11,7 +11,6 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import javax.ws.rs.core.MediaType;
 import java.io.UnsupportedEncodingException;
-import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 

@@ -14,6 +14,5 @@ public class BusBusinessServiceStepDefinition {
     private String service;
     private String requestName;
     private JSONObject request;
-
     private String answer;
 }
