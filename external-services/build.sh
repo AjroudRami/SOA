@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 echo ------ Building external services ------
-
-cd external-services
 
 echo Building Team 3 Flight service
 cd team-3/services/rpc/
