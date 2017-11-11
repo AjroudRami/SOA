@@ -1,4 +1,8 @@
 #!/bin/sh
+
+echo Kindly building external services
+bash build-external-services.sh
+
 cd services
 echo Building services
 
@@ -18,3 +22,4 @@ echo Kindly building integration
 cd integration
 ./build.sh
 cd ..
+

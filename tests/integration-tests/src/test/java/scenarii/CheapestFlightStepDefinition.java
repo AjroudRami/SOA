@@ -7,6 +7,8 @@ import cucumber.api.java.en.When;
 import gherkin.deps.com.google.gson.Gson;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.junit.Assert;
 import javax.ws.rs.core.MediaType;
 import java.io.UnsupportedEncodingException;
@@ -17,40 +19,41 @@ public class CheapestFlightStepDefinition {
 
     private final Logger LOGGER = Logger.getLogger(this.getClass().getSimpleName());
     private String host = "localhost";
-    private int port = 8080;
-    private String requestName;
+    private int port = 8181;
+    private String endpointUrl = "/tars/cheapest-flights/";
+    private String requestName = "search";
     private FlightRequest request;
 
     private JSONArray answer;
 
     private class FlightRequest{
-        private String departureAirport;
-        private String arrivalAirport;
-        private Long departureDate;
+        private String from;
+        private String to;
+        private Long departure;
         public FlightRequest(){}
 
         public String getDepartureAirport() {
-            return departureAirport;
+            return from;
         }
 
         public void setDepartureAirport(String departureAirport) {
-            this.departureAirport = departureAirport;
+            this.from = departureAirport;
         }
 
         public String getArrivalAirport() {
-            return arrivalAirport;
+            return to;
         }
 
         public void setArrivalAirport(String arrivalAirport) {
-            this.arrivalAirport = arrivalAirport;
+            this.to = arrivalAirport;
         }
 
         public Long getDepartureDate() {
-            return departureDate;
+            return departure;
         }
 
         public void setDepartureDate(Long departureDate) {
-            this.departureDate = departureDate;
+            this.departure = departureDate;
         }
     }
 
@@ -62,7 +65,6 @@ public class CheapestFlightStepDefinition {
 
     @Given("^a research for a flight booking$")
     public void bookflight(){
-        this.requestName = "search/";
         this.request = new FlightRequest();
     }
 
@@ -91,7 +93,7 @@ public class CheapestFlightStepDefinition {
     }
 
     private String getUrl() {
-        String url = "http://" + host + ":" + port + "/bus-cheapest-flight/" + requestName;
+        String url = "http://" + host + ":" + port + endpointUrl + requestName;
         return url;
     }
 
@@ -112,7 +114,14 @@ public class CheapestFlightStepDefinition {
                 .post(jsonInString)
                 .readEntity(String.class);
         LOGGER.log(Level.INFO, "Received response body: \n" + body);
-        answer = new JSONArray(body);
+        try {
+            JSONObject obj = new JSONObject(body);
+            answer = new JSONArray();
+            answer.put(obj);
+        } catch(JSONException e) {
+            answer = new JSONArray(body);
+        }
+
     }
 
 }

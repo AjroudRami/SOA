@@ -9,6 +9,11 @@ echo Running acceptation tests
 mvn clean generate-sources package verify
 cd ..
 
+cd integration-tests
+echo Running integration tests
+mvn clean generate-sources package verify
+cd ..
+
 cd stress
 echo Running stress tests
 mvn clean package gatling:test
