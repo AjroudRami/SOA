@@ -41,7 +41,7 @@ public class ApproveCreateTravel  extends CamelTestSupport {
         LOG.debug("TEST");
 
         // Asserting endpoints existence
-        assertNotNull(context.hasEndpoint(Endpoints.APPROVE_BUSINESS_TRAVEL));
+        assertNotNull(context.hasEndpoint(Endpoints.BUSINESS_TRAVEL_APPROVE));
         assertNotNull(context.hasEndpoint(Endpoints.BUSINESS_TRAVEL_ENDPOINT));
         assertNotNull(context.hasEndpoint(Endpoints.TRAVEL_REPORT_ENDPOINT));
 
@@ -56,7 +56,7 @@ public class ApproveCreateTravel  extends CamelTestSupport {
         getMockEndpoint(mock_business_endpoint).expectedMessageCount(1);
         getMockEndpoint(mock_travel_endpoint).expectedMessageCount(1);
         System.out.println("SENDING REQUEST");
-        template.sendBody(Endpoints.APPROVE_BUSINESS_TRAVEL, request);
+        template.sendBody(Endpoints.BUSINESS_TRAVEL_APPROVE, request);
 
         getMockEndpoint(mock_business_endpoint).assertIsSatisfied();
         getMockEndpoint(mock_travel_endpoint).assertIsSatisfied();

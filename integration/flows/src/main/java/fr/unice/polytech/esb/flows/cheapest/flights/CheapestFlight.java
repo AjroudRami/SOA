@@ -2,13 +2,14 @@ package fr.unice.polytech.esb.flows.cheapest.flights;
 
 import fr.unice.polytech.esb.flows.cheapest.common.CheapestBuyable;
 import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightInformation;
+import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
 /**
  * @author Antoine Aubé (aube.antoine@protonmail.com)
  */
-public class CheapestFlight extends CheapestBuyable<FlightInformation> {
+public class CheapestFlight extends CheapestBuyable<FlightRequest, FlightInformation> {
 
     @Override
     protected String getFlowName() {

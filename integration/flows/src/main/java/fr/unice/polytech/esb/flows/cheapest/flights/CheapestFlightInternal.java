@@ -10,6 +10,7 @@ import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightInformation;
 import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JsonLibrary;
 
 import java.util.List;
 
@@ -40,6 +41,7 @@ public class CheapestFlightInternal extends RouteBuilder {
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/json"))
                 .setHeader("Accept", constant("application/json"))
+
                 .process(exchange -> exchange.getIn()
                         .setBody(makeBody(exchange.getIn().getBody(FlightRequest.class))))
 

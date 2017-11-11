@@ -1,7 +1,13 @@
 #!/bin/sh
 
+echo Fetching sub modules
+git submodule init
+git submodule update
+
 echo Kindly building external services
-bash build-external-services.sh
+cd external-services
+sh build.sh
+cd ..
 
 cd services
 echo Building services

@@ -9,6 +9,4 @@ mvn clean
 mvn package -DskipTests
 docker build -t soa-team-1/esb-bus-flow .
 
-echo TODO: add external services build....
-
 docker-compose build
