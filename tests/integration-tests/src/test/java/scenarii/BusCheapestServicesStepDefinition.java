@@ -16,7 +16,7 @@ import java.util.logging.Logger;
 
 import static scenarii.Endpoints.*;
 
-public class BusServicesStepDefinition {
+public class BusCheapestServicesStepDefinition {
 
     private final Logger LOGGER = Logger.getLogger(this.getClass().getSimpleName());
 
@@ -85,8 +85,8 @@ public class BusServicesStepDefinition {
         return url;
     }
 
-    @Then("^flights are suggested$")
-    public void flightsAreSuggested(){
+    @Then("^a flight is suggested$")
+    public void aFlightIsSuggested(){
         JSONArray answerArray;
         try {
             JSONObject obj = new JSONObject(answer);
@@ -98,6 +98,15 @@ public class BusServicesStepDefinition {
         Assert.assertFalse(answerArray.length() == 0);
     }
 
+    @Then("^a car is suggested$")
+    public void carIsSuggested(){
+        //TODO
+    }
+
+    @Then("^an hotel is suggested$")
+    public void hotelIsSuggested(){
+        //TODO
+    }
 
     private void sendRequest() throws JsonProcessingException, UnsupportedEncodingException {
         String url = getUrl();

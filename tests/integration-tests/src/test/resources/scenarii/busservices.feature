@@ -8,9 +8,18 @@ Feature: Bus Cheapest Services
     And an arrival airport located in New-York
     And a flight departure date 0710171030
     When the request is sent
-    Then flights are suggested
+    Then a flight is suggested
 
   Scenario: Cheapest car research
     Given a research for the cheapest car
 
     When the request is sent
+    Then a car is suggested
+
+
+
+  Scenario: Cheapest hotel research
+    Given a research for the cheapest hotel
+
+    When the request is sent
+    Then an hotel is suggested
