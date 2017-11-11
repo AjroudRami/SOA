@@ -27,4 +27,6 @@ public interface TravelReportComponent {
      * @return the most recent travel report document
      */
     Optional<TravelReport> get(TravelReport travel);
+
+    boolean validateTotalExpense(TravelReport travelReport);
 }

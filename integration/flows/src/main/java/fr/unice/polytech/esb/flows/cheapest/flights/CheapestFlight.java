@@ -28,6 +28,6 @@ public class CheapestFlight extends CheapestBuyable<FlightRequest, FlightInforma
 
     @Override
     protected String getExternalFlowName() {
-        return SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
+        return SEARCH_IN_EXTERNAL_FLIGHTS_SERVICE;
     }
 }

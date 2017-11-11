@@ -21,7 +21,7 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
             if (travel.getStatus() == TravelReportStatus.INPROGRESS) {
-                travel.setStatus(TravelReportStatus.FINISH);
+                setNewStatus(travel);
                 travel.setFinish(new Date());
                 travels.put(travel);
                 return travel;
@@ -33,5 +33,14 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
     @Override
     public Class<TravelReport> getInputType() {
         return TravelReport.class;
+    }
+
+
+    private void setNewStatus(TravelReport travelReport) {
+        if (travels.validateTotalExpense(travelReport)){
+            travelReport.setStatus(TravelReportStatus.ACCEPTED);
+        } else {
+            travelReport.setStatus(TravelReportStatus.REJECTED);
+        }
     }
 }

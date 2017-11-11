@@ -1,5 +1,6 @@
 package fr.unice.polytech.esb.flows.cheapest.cars.data;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.Date;
@@ -9,8 +10,10 @@ public class CarRequest {
     @JsonProperty("city")
     private String place;
     @JsonProperty("dateFrom")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date from;
     @JsonProperty("dateTo")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private Date to;
 
     public CarRequest() {

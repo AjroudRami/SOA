@@ -42,3 +42,5 @@ services:
   external-hotels:
     build: ../external-services/team-5/services/hotelRPC
 
+  car-database:
+    image: mongo
