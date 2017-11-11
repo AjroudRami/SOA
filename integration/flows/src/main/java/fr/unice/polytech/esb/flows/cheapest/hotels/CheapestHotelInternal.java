@@ -1,12 +1,12 @@
-package fr.unice.polytech.esb.flows.hotels;
+package fr.unice.polytech.esb.flows.cheapest.hotels;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
-import fr.unice.polytech.esb.flows.hotels.data.HotelInformation;
-import fr.unice.polytech.esb.flows.hotels.data.HotelRequest;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelInformation;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 

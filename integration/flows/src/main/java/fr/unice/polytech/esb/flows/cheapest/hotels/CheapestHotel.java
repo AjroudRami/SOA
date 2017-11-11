@@ -1,7 +1,7 @@
-package fr.unice.polytech.esb.flows.cars;
+package fr.unice.polytech.esb.flows.cheapest.hotels;
 
-import fr.unice.polytech.esb.flows.cars.data.CarInformation;
-import fr.unice.polytech.esb.flows.cars.data.CarRequest;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelInformation;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
@@ -9,65 +9,65 @@ import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.processor.aggregate.AggregationStrategy;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class CheapestCar extends RouteBuilder {
+public class CheapestHotel extends RouteBuilder {
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
     @Override
     public void configure() throws Exception {
+
         restConfiguration().component("servlet");
-        rest("/cheapest-cars/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_CAR);
+        rest("/cheapest-hotels/").post("/search").type(Object.class).to(SEARCH_CHEAPEST_HOTEL);
 
         onException(ExchangeTimedOutException.class)
                 .handled(true)
                 .to(DEAD_PARTNER)
                 // If the service does not respond, fill the body with an empty list.
-                .process(exchange -> exchange.getIn().setBody(new ArrayList<CarInformation>()));
+                .process(exchange -> exchange.getIn().setBody(new ArrayList<HotelInformation>()));
 
-        // Process to find the cheapest car.
-        from(SEARCH_CHEAPEST_CAR)
-                .routeId("search-the-cheapest-car")
-                .routeDescription("Provides the most interesting car given the user request")
+        // Process to find the cheapest flight.
+        from(SEARCH_CHEAPEST_HOTEL)
+                .routeId("search-the-cheapest-hotel")
+                .routeDescription("Provides the most interesting hotel given the user request")
 
-                .log("Generating a car research process")
+                .log("Generating a hotel booking process")
 
-                // Parse the body content from JSON string to CarRequest.
-                .unmarshal().json(JsonLibrary.Jackson, CarRequest.class)
+                // Parse the body content from JSON string to HotelRequest.
+                .unmarshal().json(JsonLibrary.Jackson, HotelRequest.class)
 
                 // Send the request to all services.
-                // With the custom aggregation strategy, the incoming cars
+                // With the custom aggregation strategy, the incoming hotels
                 // information lists will be merged.
                 // All requests are awaited thanks to "parallelProcessing".
-                .multicast(new JoinCarsAggregationStrategy())
+                .multicast(new JoinHotelInfoAggregationStrategy())
                 .parallelProcessing(true)
                 .executorService(WORKERS)
                 .timeout(1000)
-                .to(SEARCH_IN_INTERNAL_CARS_SERVICE, SEARCH_IN_EXTERNAL_CARS_SERVICE)
+                .to(SEARCH_IN_INTERNAL_HOTELS_SERVICE, SEARCH_IN_EXTERNAL_HOTELS_SERVICE)
                 .end()
 
                 // Read the whole list and keep the cheapest offer.
                 .process(exchange -> {
-                    List<CarInformation> cars = (List<CarInformation>) exchange.getIn().getBody(List.class);
+                    List<HotelInformation> hotels = (List<HotelInformation>) exchange.getIn().getBody(List.class);
 
-                    if (cars.isEmpty()) {
+                    if (hotels.isEmpty()) {
                         // TODO: Do something if the list is empty.
                         exchange.getIn().setBody("{}");
                     } else {
                         // Sort by the price.
-                        cars.sort(Comparator.comparingDouble(CarInformation::getPrice));
+                        hotels.sort((left, right) -> Float.compare(left.getPrice(), right.getPrice()));
 
-                        // Keep the cheapest car.
-                        CarInformation cheapestFlight = cars.get(0);
+                        // Keep the cheapest hotel.
+                        HotelInformation cheapestHotel = hotels.get(0);
 
-                        // Write the car into the body.
-                        exchange.getIn().setBody(cheapestFlight);
+                        // Write the hotel into the body.
+                        exchange.getIn().setBody(cheapestHotel);
                     }
                 })
 
@@ -76,7 +76,7 @@ public class CheapestCar extends RouteBuilder {
                 .marshal().json(JsonLibrary.Jackson);
     }
 
-    private class JoinCarsAggregationStrategy implements AggregationStrategy {
+    private class JoinHotelInfoAggregationStrategy implements AggregationStrategy {
 
         @Override
         public Exchange aggregate(Exchange oldExchange, Exchange newExchange) {

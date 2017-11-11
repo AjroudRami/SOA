@@ -1,8 +1,9 @@
-package fr.unice.polytech.esb.flows.hotels.data;
+package fr.unice.polytech.esb.flows.cheapest.hotels.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import fr.unice.polytech.esb.flows.cheapest.common.Buyable;
 
-public class HotelInformation {
+public class HotelInformation implements Buyable {
 
     @JsonProperty("city")
     private String place;

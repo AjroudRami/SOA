@@ -1,6 +1,6 @@
 package fr.unice.polytech.esb.flows;
 
-import fr.unice.polytech.esb.flows.flights.CheapestFlight;
+import fr.unice.polytech.esb.flows.cheapest.flights.CheapestFlight;
 import fr.unice.polytech.esb.flows.reports.business.BusinessTravelApproval;
 import fr.unice.polytech.esb.flows.utils.Endpoints;
 import org.apache.camel.builder.RouteBuilder;

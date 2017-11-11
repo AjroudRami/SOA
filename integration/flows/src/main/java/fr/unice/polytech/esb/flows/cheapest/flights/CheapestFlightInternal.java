@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows.flights;
+package fr.unice.polytech.esb.flows.cheapest.flights;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
@@ -6,8 +6,8 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
-import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
+import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightInformation;
+import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 

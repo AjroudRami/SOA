@@ -1,18 +1,23 @@
-package fr.unice.polytech.esb.flows.cars.data;
+package fr.unice.polytech.esb.flows.cheapest.cars.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import fr.unice.polytech.esb.flows.cheapest.common.Buyable;
 
-public class CarInformation {
+public class CarInformation implements Buyable {
 
-    @JsonProperty private String brand;
-    @JsonProperty private String model;
-    @JsonProperty private String place;
-    @JsonProperty private double price;
+    @JsonProperty
+    private String brand;
+    @JsonProperty
+    private String model;
+    @JsonProperty
+    private String place;
+    @JsonProperty
+    private Float price;
 
     public CarInformation() {
     }
 
-    public CarInformation(String brand, String model, String place, double price) {
+    public CarInformation(String brand, String model, String place, float price) {
         this.brand = brand;
         this.model = model;
         this.place = place;
@@ -43,11 +48,12 @@ public class CarInformation {
         this.place = place;
     }
 
-    public double getPrice() {
+    @Override
+    public float getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(float price) {
         this.price = price;
     }
 }

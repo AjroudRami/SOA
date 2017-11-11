@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows.hotels.data;
+package fr.unice.polytech.esb.flows.cheapest.hotels.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

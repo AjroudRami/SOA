@@ -1,7 +1,7 @@
-package fr.unice.polytech.esb.flows.cars;
+package fr.unice.polytech.esb.flows.cheapest.cars;
 
-import fr.unice.polytech.esb.flows.cars.data.CarInformation;
-import fr.unice.polytech.esb.flows.cars.data.CarRequest;
+import fr.unice.polytech.esb.flows.cheapest.cars.data.CarInformation;
+import fr.unice.polytech.esb.flows.cheapest.cars.data.CarRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;

@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows.cars.data;
+package fr.unice.polytech.esb.flows.cheapest.cars.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -6,9 +6,12 @@ import java.util.Date;
 
 public class CarRequest {
 
-    @JsonProperty("city") private String place;
-    @JsonProperty("dateFrom") private Date from;
-    @JsonProperty("dateTo") private Date to;
+    @JsonProperty("city")
+    private String place;
+    @JsonProperty("dateFrom")
+    private Date from;
+    @JsonProperty("dateTo")
+    private Date to;
 
     public CarRequest() {
         super();

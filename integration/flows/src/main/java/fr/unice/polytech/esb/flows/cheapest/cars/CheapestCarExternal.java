@@ -1,11 +1,11 @@
-package fr.unice.polytech.esb.flows.cars;
+package fr.unice.polytech.esb.flows.cheapest.cars;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
-import fr.unice.polytech.esb.flows.cars.data.CarInformation;
+import fr.unice.polytech.esb.flows.cheapest.cars.data.CarInformation;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;

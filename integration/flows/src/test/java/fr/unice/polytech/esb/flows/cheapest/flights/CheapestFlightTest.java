@@ -1,14 +1,8 @@
-package fr.unice.polytech.esb.flows;
+package fr.unice.polytech.esb.flows.cheapest.flights;
 
-import fr.unice.polytech.esb.flows.flights.CheapestFlight;
-import fr.unice.polytech.esb.flows.flights.CheapestFlightExternal;
-import fr.unice.polytech.esb.flows.flights.CheapestFlightInternal;
-import fr.unice.polytech.esb.flows.utils.Endpoints;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.ModelCamelContext;
 import org.apache.camel.test.junit4.CamelTestSupport;
 import org.junit.Test;
-import org.skyscreamer.jsonassert.JSONAssert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

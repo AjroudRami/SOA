@@ -1,7 +1,7 @@
-package fr.unice.polytech.esb.flows.hotels;
+package fr.unice.polytech.esb.flows.cheapest.hotels;
 
-import fr.unice.polytech.esb.flows.hotels.data.HotelInformation;
-import fr.unice.polytech.esb.flows.hotels.data.HotelRequest;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelInformation;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;

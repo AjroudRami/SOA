@@ -1,7 +1,7 @@
-package fr.unice.polytech.esb.flows.flights;
+package fr.unice.polytech.esb.flows.cheapest.flights;
 
-import fr.unice.polytech.esb.flows.flights.data.FlightInformation;
-import fr.unice.polytech.esb.flows.flights.data.FlightRequest;
+import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightInformation;
+import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;

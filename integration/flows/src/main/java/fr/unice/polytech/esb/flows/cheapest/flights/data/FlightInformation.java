@@ -1,10 +1,9 @@
-package fr.unice.polytech.esb.flows.flights.data;
+package fr.unice.polytech.esb.flows.cheapest.flights.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import fr.unice.polytech.esb.flows.cheapest.common.Buyable;
 
-import java.io.Serializable;
-
-public class FlightInformation implements Serializable {
+public class FlightInformation implements Buyable {
 
     @JsonProperty("departure") private long departureTimestamp;
     @JsonProperty private float price;

@@ -1,4 +1,4 @@
-package fr.unice.polytech.esb.flows.flights.data;
+package fr.unice.polytech.esb.flows.cheapest.flights.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
