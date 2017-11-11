@@ -20,10 +20,10 @@ public abstract class CheapestBuyable<R, T extends Buyable> extends RouteBuilder
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
-    private Class<T> requestClass; // class of the generic type
+    private Class<R> requestClass; // class of the generic type
 
     public CheapestBuyable() {
-        this.requestClass = (Class<T>) ((ParameterizedType) getClass()
+        this.requestClass = (Class<R>) ((ParameterizedType) getClass()
                 .getGenericSuperclass()).getActualTypeArguments()[0];
     }
 
