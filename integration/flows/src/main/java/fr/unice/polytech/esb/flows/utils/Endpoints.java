@@ -13,15 +13,17 @@ public class Endpoints {
     // Error channels.
     public static final String DEAD_PARTNER = "activemq:deadPartners";
 
-    // Business / Travel report
-    public static final String APPROVE_BUSINESS_TRAVEL = "activemq:approve-business-travel";
-    public static final String CREATE_BUSINESS_TRAVEL = "activemq:create-business-travel";
-    public static final String LIST_BUSINESS_TRAVEL = "activemq:list-business-travel";
-    public static final String LIST_TRAVEL_REPORT = "activemq:list-travel-report";
-    public static final String APPROVE_TRAVEL_REPORT = "activemq:approve-travel-report";
+    // Business travel
+    public static final String BUSINESS_TRAVEL_APPROVE = "activemq:business-travel-approve";
+    public static final String BUSINESS_TRAVEL_CREATE = "activemq:business-travel-create";
+    public static final String BUSINESS_TRAVEL_LIST = "activemq:business-travel-list";
+    // Travel report
+    public static final String TRAVEL_REPORT_LIST = "activemq:travel-report-list";
+    public static final String TRAVEL_REPORT_APPROVE = "activemq:travel-report-approve";
     public static final String TRAVEL_REPORT_EXPENSE = "activemq:travel-report-expense";
-
-    public static final String TRAVEL_REPORT_CREATION = "activemq:create-travel-report";
+    public static final String TRAVEL_REPORT_EXPLAIN = "activemq:travel-report-explain";
+    public static final String TRAVEL_REPORT_CREATION = "activemq:travel-report-create";
+    public static final String TRAVEL_REPORT_END = "activemq:travel-report-end";
 
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";

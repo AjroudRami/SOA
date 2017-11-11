@@ -3,10 +3,7 @@ package fr.unice.polytech.esb.flows.reports.travel;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.camel.Exchange;
-import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
-
-import java.util.ArrayList;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
@@ -18,16 +15,10 @@ public class TravelReportApproval extends RouteBuilder{
     @Override
     public void configure() throws Exception {
         restConfiguration().component("servlet");
-        rest("/travel-report/").post("/approve").type(Object.class).to(APPROVE_TRAVEL_REPORT);
-
-        onException(ExchangeTimedOutException.class)
-                .handled(true)
-                .to(DEATH_POOL)
-                // If the service does not respond, fill the body with an empty list.
-                .process(exchange -> exchange.getIn().setBody(new ArrayList<String>()));
+        rest("/travel-report/").post("/approve").type(Object.class).to(TRAVEL_REPORT_APPROVE);
 
         // Process to approve business travel.
-        from(APPROVE_TRAVEL_REPORT)
+        from(TRAVEL_REPORT_APPROVE)
                 .routeId("approve-travel-report")
                 .routeDescription("Approve travel report")
 

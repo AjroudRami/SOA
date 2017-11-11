@@ -10,27 +10,24 @@ import java.util.ArrayList;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
-public class ListTravelReports extends RouteBuilder {
+/**
+ * Add explanation to the travel report
+ */
+public class TravelReportExplain extends RouteBuilder {
 
     private static ObjectMapper mapper = new ObjectMapper();
 
     @Override
     public void configure() throws Exception {
         restConfiguration().component("servlet");
-        rest("/travel-report/").post("/list").type(Object.class).to(LIST_TRAVEL_REPORT);
+        rest("/travel-report/").post("/explain").type(Object.class).to(TRAVEL_REPORT_EXPLAIN);
 
-        onException(ExchangeTimedOutException.class)
-                .handled(true)
-                .to(DEATH_POOL)
-                // If the service does not respond, fill the body with an empty list.
-                .process(exchange -> exchange.getIn().setBody(new ArrayList<String>()));
+        // Process to add explanation travel report.
+        from(TRAVEL_REPORT_EXPLAIN)
+                .routeId("travel-report-explain")
+                .routeDescription("Add explanation to a travel report")
 
-        // Process to approve business travel.
-        from(LIST_TRAVEL_REPORT)
-                .routeId("list-travel-report")
-                .routeDescription("List travel report")
-
-                .log("Generating a travel query")
+                .log("Generating a travel report explain")
 
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
@@ -39,10 +36,9 @@ public class ListTravelReports extends RouteBuilder {
                 .setHeader("Accept", constant("application/json"))
                 .process(exchange -> {
                     ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
-                    node.put("event","list");
+                    node.put("event","explain");
                     exchange.getIn().setBody(node.toString());
                 })
-
                 // Send the request to the internal service.
                 .to(TRAVEL_REPORT_ENDPOINT);
     }

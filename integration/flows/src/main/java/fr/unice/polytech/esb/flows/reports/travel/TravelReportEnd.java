@@ -17,15 +17,10 @@ public class TravelReportEnd extends RouteBuilder{
     @Override
     public void configure() throws Exception {
             restConfiguration().component("servlet");
-            rest("/travel-report/").post("/end").type(Object.class).to(TRAVEL_REPORT_EXPENSE);
+            rest("/travel-report/").post("/end").type(Object.class).to(TRAVEL_REPORT_END);
 
-            onException(ExchangeTimedOutException.class)
-                    .handled(true)
-                    .to(DEATH_POOL)
-                    // If the service does not respond, fill the body with an empty list.
-                    .process(exchange -> exchange.getIn().setBody(new ArrayList<String>()));
         // End travel report
-        from(TRAVEL_REPORT_CREATION)
+        from(TRAVEL_REPORT_END)
                 .routeId("travel-report-end")
                 .routeDescription("End the travel")
 
