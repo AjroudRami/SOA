@@ -5,10 +5,14 @@ import fr.unice.polytech.esb.flows.cheapest.common.Buyable;
 
 public class FlightInformation implements Buyable {
 
-    @JsonProperty("departure") private long departureTimestamp;
-    @JsonProperty private float price;
-    @JsonProperty("from") private String startingAirport;
-    @JsonProperty("to") private String endingAirport;
+    @JsonProperty("departure")
+    private long departureTimestamp;
+    @JsonProperty
+    private float price;
+    @JsonProperty("from")
+    private String startingAirport;
+    @JsonProperty("to")
+    private String endingAirport;
 
     public FlightInformation(long departureTimestamp, String endingAirport,
                              float price, String startingAirport) {

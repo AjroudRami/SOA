@@ -4,8 +4,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class HotelRequest {
 
-    @JsonProperty private String destination;
-    @JsonProperty private long timestamp;
+    @JsonProperty
+    private String destination;
+    @JsonProperty
+    private long timestamp;
 
     public HotelRequest() {
     }

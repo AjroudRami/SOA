@@ -6,9 +6,12 @@ import java.io.Serializable;
 
 public class FlightRequest implements Serializable {
 
-    @JsonProperty private String from;
-    @JsonProperty private String to;
-    @JsonProperty private Long departure;
+    @JsonProperty
+    private String from;
+    @JsonProperty
+    private String to;
+    @JsonProperty
+    private Long departure;
 
     public FlightRequest(String from, String to, Long departure) {
         this.from = from;
