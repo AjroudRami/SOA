@@ -5,7 +5,7 @@ public class Endpoints {
     // Servlet endpoints.
     public static final String SEARCH_CHEAPEST_FLIGHT = "activemq:bus-cheapest-flight";
     public static final String SEARCH_CHEAPEST_CAR = "activemq:bus-cheapest-car";
-    public static final String SEARCH_CHEAPEST_HOTEL = "activemq:bu-cheapest-hotel";
+    public static final String SEARCH_CHEAPEST_HOTEL = "activemq:bus-cheapest-hotel";
 
     // Error handling.
     public static final String DEATH_POOL = "activemq:global:dead";
@@ -17,6 +17,7 @@ public class Endpoints {
     public static final String BUSINESS_TRAVEL_APPROVE = "activemq:business-travel-approve";
     public static final String BUSINESS_TRAVEL_CREATE = "activemq:business-travel-create";
     public static final String BUSINESS_TRAVEL_LIST = "activemq:business-travel-list";
+    public static final String BUSINESS_TRAVEL_REFUND = "activemq:business-travel-refund";
     // Travel report
     public static final String TRAVEL_REPORT_LIST = "activemq:travel-report-list";
     public static final String TRAVEL_REPORT_APPROVE = "activemq:travel-report-approve";
