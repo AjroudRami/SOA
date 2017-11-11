@@ -5,7 +5,6 @@ import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.model.dataformat.JsonLibrary;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -21,7 +20,7 @@ import java.util.Date;
 import java.util.List;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.EXTERNAL_FLIGHTS_ENDPOINT;
-import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHT_SERVICE;
+import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_FLIGHTS_SERVICE;
 
 /**
  * Route for getting a list of flights from the external service (Team #3).
@@ -32,7 +31,7 @@ public class CheapestFlightExternal extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from(SEARCH_IN_EXTERNAL_FLIGHT_SERVICE)
+        from(SEARCH_IN_EXTERNAL_FLIGHTS_SERVICE)
                 // Route description.
                 .routeId("call-external-flight-reservation-service")
                 .routeDescription("Call the external flight reservation service")

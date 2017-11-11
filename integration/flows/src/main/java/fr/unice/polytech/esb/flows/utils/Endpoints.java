@@ -28,7 +28,7 @@ public class Endpoints {
 
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";
-    public static final String SEARCH_IN_EXTERNAL_FLIGHT_SERVICE = "direct:external-flight-service";
+    public static final String SEARCH_IN_EXTERNAL_FLIGHTS_SERVICE = "direct:external-flight-service";
 
     public static final String SEARCH_IN_INTERNAL_HOTELS_SERVICE = "direct:internal-hotel-service";
     public static final String SEARCH_IN_EXTERNAL_HOTELS_SERVICE = "direct:external-hotel-service";
@@ -41,10 +41,10 @@ public class Endpoints {
     public static final String EXTERNAL_FLIGHTS_ENDPOINT = "http://external-flights:8080/tta-service-rpc/FlightBookingService";
 
     public static final String INTERNAL_HOTELS_ENDPOINT = "http://internal-hotels:8080/tcs-hotel-service/hotels";
-    public static final String EXTERNAL_HOTELS_ENDPOINT = "http://external-hotels:8080/TODO";
+    public static final String EXTERNAL_HOTELS_ENDPOINT = "http://external-hotels:8080/hotel-rpc/ExternalHotelFinderService";
 
     public static final String INTERNAL_CARS_ENDPOINT = "http://internal-cars:8080/tcs-cars-service/ExternalCarRentalService";
-    public static final String EXTERNAL_CARS_ENDPOINT = "http://external-hotels:8080/TODO";
+    public static final String EXTERNAL_CARS_ENDPOINT = "http://external-cars:8080/car-service-document/car";
 
     public static final String TRAVEL_REPORT_ENDPOINT = "http://travel-report:8080/tcs-service-travel-report/report/";
     public static final String BUSINESS_TRAVEL_ENDPOINT = "http://business-travels:8080/tcs-service-business-travels/registry/";
