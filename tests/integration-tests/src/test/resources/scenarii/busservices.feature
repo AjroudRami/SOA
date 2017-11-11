@@ -12,14 +12,15 @@ Feature: Bus Cheapest Services
 
   Scenario: Cheapest car research
     Given a research for the cheapest car
-
+    And a rental starting from : 2017-11-11
+    And a rental ending on : 2017-11-14
+    And with the car location in Cuba
     When the request is sent
     Then a car is suggested
 
-
-
   Scenario: Cheapest hotel research
     Given a research for the cheapest hotel
-
+    And with the hotel location in Liudu
+    And a date : 10923443534
     When the request is sent
     Then an hotel is suggested

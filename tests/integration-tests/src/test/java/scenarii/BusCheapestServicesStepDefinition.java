@@ -11,6 +11,7 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import javax.ws.rs.core.MediaType;
 import java.io.UnsupportedEncodingException;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -71,6 +72,31 @@ public class BusCheapestServicesStepDefinition {
         request.put("departure", date);
     }
 
+    @Given("^a rental starting from : (.*)$")
+    public void carRentalDateFrom(String dateFrom){
+        request.put("dateFrom", dateFrom);
+    }
+
+    @Given("^a rental ending on : (.*)$")
+    public void carRentalDateTo(String dateTo){
+        request.put("dateTo", dateTo);
+    }
+
+    @Given("^with the car location in (.*)$")
+    public void carRentalLocation(String city){
+        request.put("city", city);
+    }
+
+    @Given("^with the hotel location in (.*)$")
+    public void hotelRentalLocation(String location){
+        request.put("location", location);
+    }
+
+    @Given("^a date : (.*)$")
+    public void hotelDate(long date){
+        request.put("timestamp", date);
+    }
+
     @When("^the request is sent$")
     public void send(){
         try {
@@ -87,25 +113,26 @@ public class BusCheapestServicesStepDefinition {
 
     @Then("^a flight is suggested$")
     public void aFlightIsSuggested(){
-        JSONArray answerArray;
-        try {
-            JSONObject obj = new JSONObject(answer);
-            answerArray = new JSONArray();
-            answerArray.put(obj);
-        } catch(JSONException e) {
-            answerArray = new JSONArray(answer);
-        }
-        Assert.assertFalse(answerArray.length() == 0);
+        JSONArray response = getJsonArrayFromResponse(answer);
+        Assert.assertFalse("The service should send a response",
+                response.length() == 1);
+        //TODO test flight element
     }
 
     @Then("^a car is suggested$")
     public void carIsSuggested(){
-        //TODO
+        JSONArray response = getJsonArrayFromResponse(answer);
+        Assert.assertFalse("The service should send a response",
+                response.length() == 1);
+        //TODO test element
     }
 
     @Then("^an hotel is suggested$")
     public void hotelIsSuggested(){
-        //TODO
+        JSONArray response = getJsonArrayFromResponse(answer);
+        Assert.assertTrue("The service should send a single response element",
+                response.length() == 1);
+        //TODO test element
     }
 
     private void sendRequest() throws JsonProcessingException, UnsupportedEncodingException {
@@ -119,6 +146,19 @@ public class BusCheapestServicesStepDefinition {
                 .readEntity(String.class);
         LOGGER.log(Level.INFO, "Received response body: \n" + body);
         this.answer = body;
+    }
+
+
+    private JSONArray getJsonArrayFromResponse(String response){
+        JSONArray answerArray;
+        try {
+            JSONObject obj = new JSONObject(answer);
+            answerArray = new JSONArray();
+            answerArray.put(obj);
+        } catch(JSONException e) {
+            answerArray = new JSONArray(answer);
+        }
+        return answerArray;
     }
 
 }
