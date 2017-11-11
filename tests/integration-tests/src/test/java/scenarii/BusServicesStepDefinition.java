@@ -4,7 +4,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import gherkin.deps.com.google.gson.Gson;
 import org.apache.cxf.jaxrs.client.WebClient;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -15,75 +14,64 @@ import java.io.UnsupportedEncodingException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class CheapestFlightStepDefinition {
+import static scenarii.Endpoints.*;
+
+public class BusServicesStepDefinition {
 
     private final Logger LOGGER = Logger.getLogger(this.getClass().getSimpleName());
+
     private String host = "localhost";
     private int port = 8181;
-    private String endpointUrl = "/tars/cheapest-flights/";
-    private String requestName = "search";
-    private FlightRequest request;
+    private String group = "tars";
+    private String service;
+    private String requestName;
+    private JSONObject request;
 
-    private JSONArray answer;
+    private String answer;
 
-    private class FlightRequest{
-        private String from;
-        private String to;
-        private Long departure;
-        public FlightRequest(){}
-
-        public String getDepartureAirport() {
-            return from;
-        }
-
-        public void setDepartureAirport(String departureAirport) {
-            this.from = departureAirport;
-        }
-
-        public String getArrivalAirport() {
-            return to;
-        }
-
-        public void setArrivalAirport(String arrivalAirport) {
-            this.to = arrivalAirport;
-        }
-
-        public Long getDepartureDate() {
-            return departure;
-        }
-
-        public void setDepartureDate(Long departureDate) {
-            this.departure = departureDate;
-        }
-    }
-
-    @Given("^a cheapest flight service deployed on (.*):(\\d+)$")
+    @Given("^a bus deployed on (.*):(\\d+)$")
     public void setupAddress(String host, int port) {
         this.host = host;
         this.port = port;
     }
 
-    @Given("^a research for a flight booking$")
-    public void bookflight(){
-        this.request = new FlightRequest();
+    @Given("^a research for the cheapest flight booking$")
+    public void cheapestFlightResearch(){
+        this.service = CHEAPEST_FLIGHT_ENDPOINT;
+        this.requestName = FLIGHT_SEARCH;
+        this.request = new JSONObject();
+    }
+
+    @Given("^a research for the cheapest hotel$")
+    public void cheapestHotelResearch(){
+        this.service = CHEAPEST_HOTEL_ENDPOINT;
+        this.requestName = HOTEL_SEARCH;
+        this.request = new JSONObject();
+    }
+
+    @Given("^a research for the cheapest car$")
+    public void cheapestCarResearch(){
+        this.service = CHEAPEST_CAR_ENDPOINT;
+        this.requestName = CAR_SEARCH;
+        this.request = new JSONObject();
     }
 
     @Given("^a departure airport located in (.*)$")
     public void departureAirport(String airportName) {
-        request.setDepartureAirport(airportName);
+        request.put("from", airportName);
     }
 
     @Given("^an arrival airport located in (.*)$")
     public void arrivalAirport(String arrivalAirport) {
-        request.setArrivalAirport(arrivalAirport);
+        request.put("to", arrivalAirport);
     }
 
-    @Given("^a departure date (\\d+)$")
+    @Given("^a flight departure date (\\d+)$")
     public void departureDate(Long date) {
-        request.setDepartureDate(date);
+        request.put("departure", date);
     }
 
-    @When("^the flight research is sent$")
+    @When("^the request is sent$")
     public void send(){
         try {
             sendRequest();
@@ -93,20 +81,27 @@ public class CheapestFlightStepDefinition {
     }
 
     private String getUrl() {
-        String url = "http://" + host + ":" + port + endpointUrl + requestName;
+        String url = "http://" + host + ":" + port + "/" + group + "/" + service + "/" + requestName;
         return url;
     }
 
     @Then("^flights are suggested$")
     public void flightsAreSuggested(){
-        Assert.assertFalse(answer.length() == 0);
+        JSONArray answerArray;
+        try {
+            JSONObject obj = new JSONObject(answer);
+            answerArray = new JSONArray();
+            answerArray.put(obj);
+        } catch(JSONException e) {
+            answerArray = new JSONArray(answer);
+        }
+        Assert.assertFalse(answerArray.length() == 0);
     }
 
 
     private void sendRequest() throws JsonProcessingException, UnsupportedEncodingException {
         String url = getUrl();
-        Gson gson = new Gson();
-        String jsonInString = gson.toJson(request);
+        String jsonInString = request.toString();
         LOGGER.log(Level.INFO, "Sending request to: " + url);
         String body = WebClient.create(url)
                 .accept(MediaType.APPLICATION_JSON_TYPE)
@@ -114,14 +109,7 @@ public class CheapestFlightStepDefinition {
                 .post(jsonInString)
                 .readEntity(String.class);
         LOGGER.log(Level.INFO, "Received response body: \n" + body);
-        try {
-            JSONObject obj = new JSONObject(body);
-            answer = new JSONArray();
-            answer.put(obj);
-        } catch(JSONException e) {
-            answer = new JSONArray(body);
-        }
-
+        this.answer = body;
     }
 
 }
