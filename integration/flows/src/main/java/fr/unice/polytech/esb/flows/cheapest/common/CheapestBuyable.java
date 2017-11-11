@@ -4,6 +4,7 @@ import org.apache.camel.ExchangeTimedOutException;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.dataformat.JsonLibrary;
 
+import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -11,11 +12,20 @@ import java.util.concurrent.Executors;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.DEAD_PARTNER;
 
 /**
- * @author Antoine Aubé (aube.antoine@protonmail.com)
+ * R : request type (input)
+ * T : type of the buyable object
+ *
  */
-public abstract class CheapestBuyable<T extends Buyable> extends RouteBuilder {
+public abstract class CheapestBuyable<R, T extends Buyable> extends RouteBuilder {
 
     private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
+
+    private Class<T> requestClass; // class of the generic type
+
+    public CheapestBuyable() {
+        this.requestClass = (Class<T>) ((ParameterizedType) getClass()
+                .getGenericSuperclass()).getActualTypeArguments()[0];
+    }
 
     @Override
     public void configure() throws Exception {
@@ -36,7 +46,7 @@ public abstract class CheapestBuyable<T extends Buyable> extends RouteBuilder {
                 .log("Generating a " + getBuyableName() + " research process")
 
                 // Parse the body content from JSON string to the buyable type.
-                .unmarshal().json(JsonLibrary.Jackson)
+                .unmarshal().json(JsonLibrary.Jackson, requestClass)
 
                 // Send the request to all services.
                 // With the custom aggregation strategy, the incoming buyable

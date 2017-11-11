@@ -5,6 +5,7 @@ import fr.unice.polytech.esb.flows.cheapest.flights.data.FlightRequest;
 import org.apache.camel.Exchange;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
+import org.apache.camel.model.dataformat.JsonLibrary;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -44,7 +45,7 @@ public class CheapestFlightExternal extends RouteBuilder {
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
 
-                .log("Set headers to EXTERNAL flights service.")
+                .log("Set headers to EXTERNAL flights service for body ${body}.")
 
                 .process(exchange -> exchange.getIn()
                         .setBody(makeRequestBody(exchange.getIn().getBody(FlightRequest.class))))

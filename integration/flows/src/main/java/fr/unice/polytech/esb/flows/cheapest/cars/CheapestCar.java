@@ -1,6 +1,7 @@
 package fr.unice.polytech.esb.flows.cheapest.cars;
 
 import fr.unice.polytech.esb.flows.cheapest.cars.data.CarInformation;
+import fr.unice.polytech.esb.flows.cheapest.cars.data.CarRequest;
 import fr.unice.polytech.esb.flows.cheapest.common.CheapestBuyable;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_CHEAPEST_CAR;
@@ -10,7 +11,7 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_CAR
 /**
  * @author Antoine Aubé (aube.antoine@protonmail.com)
  */
-public class CheapestCar extends CheapestBuyable<CarInformation> {
+public class CheapestCar extends CheapestBuyable<CarRequest, CarInformation> {
 
     @Override
     protected String getFlowName() {

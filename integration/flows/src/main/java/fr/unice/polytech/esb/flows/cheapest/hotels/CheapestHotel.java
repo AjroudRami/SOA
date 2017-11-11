@@ -2,6 +2,7 @@ package fr.unice.polytech.esb.flows.cheapest.hotels;
 
 import fr.unice.polytech.esb.flows.cheapest.common.CheapestBuyable;
 import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelInformation;
+import fr.unice.polytech.esb.flows.cheapest.hotels.data.HotelRequest;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_CHEAPEST_HOTEL;
 import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_EXTERNAL_HOTELS_SERVICE;
@@ -10,7 +11,7 @@ import static fr.unice.polytech.esb.flows.utils.Endpoints.SEARCH_IN_INTERNAL_HOT
 /**
  * @author Antoine Aubé (aube.antoine@protonmail.com)
  */
-public class CheapestHotel extends CheapestBuyable<HotelInformation> {
+public class CheapestHotel extends CheapestBuyable<HotelRequest, HotelInformation> {
 
     @Override
     protected String getFlowName() {
