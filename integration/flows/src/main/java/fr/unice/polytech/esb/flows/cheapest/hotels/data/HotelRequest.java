@@ -2,7 +2,9 @@ package fr.unice.polytech.esb.flows.cheapest.hotels.data;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class HotelRequest {
+import java.io.Serializable;
+
+public class HotelRequest implements Serializable{
 
     @JsonProperty
     private String destination;
