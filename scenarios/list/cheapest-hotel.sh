@@ -7,9 +7,9 @@ result=$(curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{
-    "to": "New-York",
-    "from": "Paris",
-    "departure": 710170930
+    "to": "Florence",
+    "from": "Lishu",
+    "departure": 1723
 }' -s)
 
 price=$(echo ${result} | jq .price)
