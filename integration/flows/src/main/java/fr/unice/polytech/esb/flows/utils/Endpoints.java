@@ -17,7 +17,6 @@ public class Endpoints {
     public static final String BUSINESS_TRAVEL_APPROVE = "activemq:business-travel-approve";
     public static final String BUSINESS_TRAVEL_CREATE = "activemq:business-travel-create";
     public static final String BUSINESS_TRAVEL_LIST = "activemq:business-travel-list";
-    public static final String BUSINESS_TRAVEL_REFUND = "activemq:business-travel-refund";
     // Travel report
     public static final String TRAVEL_REPORT_LIST = "activemq:travel-report-list";
     public static final String TRAVEL_REPORT_APPROVE = "activemq:travel-report-approve";
@@ -28,6 +27,8 @@ public class Endpoints {
     public static final String TRAVEL_REPORT_SAVE = "activemq:travel-report-save-file";
     public static final String TRAVEL_REPORT_FOLDER = "file:camel/output/";
 
+    public static final String TRAVEL_REFUND = "activemq:travel-refund";
+
     // Direct inner endpoints.
     public static final String SEARCH_IN_INTERNAL_FLIGHTS_SERVICE = "direct:internal-flight-service";
     public static final String SEARCH_IN_EXTERNAL_FLIGHTS_SERVICE = "direct:external-flight-service";
@@ -37,6 +38,7 @@ public class Endpoints {
 
     public static final String SEARCH_IN_INTERNAL_CARS_SERVICE = "direct:internal-car-service";
     public static final String SEARCH_IN_EXTERNAL_CARS_SERVICE = "direct:external-car-service";
+
 
     // External partners.
     public static final String INTERNAL_FLIGHTS_ENDPOINT = "http://internal-flights:8080/tcs-service-flights/flights/";

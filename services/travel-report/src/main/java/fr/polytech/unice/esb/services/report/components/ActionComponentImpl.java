@@ -29,7 +29,6 @@ public class ActionComponentImpl implements ActionComponent {
         actions.put("expenses", AddExpensesAction.class);
         actions.put("get", GetAction.class);
         actions.put("explain",AddExplainationAction.class);
-        actions.put("autoValid", AutoValidationAction.class);
 
         mapper = new ObjectMapper();
         // Allow unknown properties

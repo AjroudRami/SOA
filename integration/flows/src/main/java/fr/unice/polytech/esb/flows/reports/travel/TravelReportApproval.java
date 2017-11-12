@@ -1,15 +1,22 @@
 package fr.unice.polytech.esb.flows.reports.travel;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fr.unice.polytech.esb.flows.reports.travel.processor.TravelReportValidationProcessor;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
 public class TravelReportApproval extends RouteBuilder{
 
 
+    private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
     private static ObjectMapper mapper = new ObjectMapper();
 
     @Override
@@ -36,7 +43,19 @@ public class TravelReportApproval extends RouteBuilder{
                 })
 
                 // Send the request to the internal service.
-                .to(TRAVEL_REPORT_ENDPOINT);
+                .to(TRAVEL_REPORT_ENDPOINT)
+
+                // Process the returned value.
+                .process(new TravelReportValidationProcessor())
+
+                .choice()
+                .when(header("status").isEqualTo("ACCEPTED"))
+                    .multicast()
+                        .parallelProcessing(true)
+                        .executorService(WORKERS)
+                        .to(TRAVEL_REPORT_SAVE, TRAVEL_REFUND)
+
+                .end();
     }
 
 }
