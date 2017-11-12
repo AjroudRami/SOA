@@ -12,5 +12,10 @@ result=$(curl -X POST \
     "dateTo": "2017-12-25"
 }' -s)
 
-price=$(echo ${result} | jq .price)
-echo Found cheapest price : ${price}
+if [[ $(echo ${result} | grep "price") ]]
+then
+    price=$(echo ${result} | jq .price)
+    echo Found cheapest price : ${price}
+else
+    echo No car found
+fi

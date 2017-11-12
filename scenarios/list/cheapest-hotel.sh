@@ -11,5 +11,12 @@ result=$(curl -X POST \
     "timestamp": 710170930
 }' -s)
 
-price=$(echo ${result} | jq .roomCost)
-echo Found cheapest price : ${price}
+
+
+if [[ $(echo ${result} | grep "roomCost") ]]
+then
+   price=$(echo ${result} | jq .roomCost)
+    echo Found cheapest price : ${price}
+else
+    echo No hotel found
+fi
