@@ -88,7 +88,7 @@ public class BusCheapestServicesStepDefinition {
 
     @Given("^with the hotel location in (.*)$")
     public void hotelRentalLocation(String location){
-        request.put("location", location);
+        request.put("destination", location);
     }
 
     @Given("^a date : (.*)$")
