@@ -11,6 +11,10 @@ import java.util.Optional;
 
 public class EndAction implements DocumentAction<TravelReport, TravelReport> {
 
+
+    // TODO apply the taux chancellerie
+    private static final int MAX_EXPENSES_PER_DAY = 300;
+
     @EJB
     private TravelReportComponent travels;
 
@@ -20,8 +24,8 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
             if (travel.getStatus() == TravelReportStatus.INPROGRESS) {
-                travel.setStatus(TravelReportStatus.FINISH);
                 travel.setFinish(new Date());
+                setNewStatus(travel);
                 travels.put(travel);
                 return travel;
             }
@@ -32,5 +36,28 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
     @Override
     public Class<TravelReport> getInputType() {
         return TravelReport.class;
+    }
+
+    private void setNewStatus(TravelReport travelReport){
+        if (validateTotalExpenses(travelReport)){
+            travelReport.setStatus(TravelReportStatus.ACCEPTED);
+        }
+        else {
+            travelReport.setStatus(TravelReportStatus.REJECTED);
+        }
+    }
+
+    private boolean validateTotalExpenses(TravelReport travelReport){
+
+        long diff = travelReport.getStart().getTime() - travelReport.getFinish().getTime();
+
+        //diff in days
+        long days = diff / (24 * 60 * 60 * 1000);
+
+        if (days == 0){
+            return MAX_EXPENSES_PER_DAY > travelReport.getTotalAmount();
+        }
+
+        return (MAX_EXPENSES_PER_DAY * days) > travelReport.getTotalAmount();
     }
 }
