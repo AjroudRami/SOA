@@ -2,7 +2,7 @@
 
 echo Fetching sub modules
 git submodule init
-git submodule update
+git submodule update --init
 
 echo Kindly building external services
 cd external-services

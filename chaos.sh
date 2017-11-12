@@ -15,15 +15,15 @@ do
     service=${services[$random]}
 
     # Kill it
-    echo KILLING $service
-    docker-compose stop $service
+    echo KILLING ${service}
+    docker-compose stop ${service}
 
     # Wait for 10 seconds
     sleep 10
 
     # Start it again
-    echo STARTING $service
-    docker-compose start $service
+    echo STARTING ${service}
+    docker-compose start ${service}
 done
 
 cd ..

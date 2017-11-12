@@ -5,14 +5,14 @@ echo Waiting for the services to be alive
 sleep 10
 
 # We will do 24x 5 seconds loop = two minutes
+cd integration
 for i in $(seq 1 24)
 do
     # Save start time
     START=$(date +%s)
-    for file in scenarios/*
-    do
-        sh ${file}
-    done
+
+    docker-compose run --no-deps client
+
     # Compute execution time
     END=$(date +%s)
     DIFF=$(( $END - $START ))
@@ -23,3 +23,4 @@ do
         sleep $((5 - DIFF))
     fi
 done
+cd ..

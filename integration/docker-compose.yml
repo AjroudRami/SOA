@@ -44,3 +44,8 @@ services:
 
   car-database:
     image: mongo
+
+  client:
+    build: ../scenarios
+    links:
+      - flow
