@@ -18,7 +18,7 @@ public class TravelReportList extends RouteBuilder {
 
         // Process to approve business travel.
         from(TRAVEL_REPORT_LIST)
-                .routeId("list-travel-report")
+                .routeId("travel-report-list")
                 .routeDescription("List travel report")
 
                 .log("Generating a travel query")

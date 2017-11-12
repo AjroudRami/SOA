@@ -4,28 +4,29 @@ import fr.polytech.unice.esb.services.report.actions.DocumentAction;
 import fr.polytech.unice.esb.services.report.components.TravelReportComponent;
 import fr.polytech.unice.esb.services.report.models.documents.TravelReport;
 import fr.polytech.unice.esb.services.report.models.documents.TravelReportStatus;
-import fr.polytech.unice.esb.services.report.models.documents.ValidateResult;
 
 import javax.ejb.EJB;
 import javax.enterprise.inject.Any;
 import java.util.Optional;
 
 @Any
-public class ValidateAction implements DocumentAction<TravelReport, ValidateResult>{
+public class ValidateAction implements DocumentAction<TravelReport, TravelReport>{
 
 
     @EJB
     private TravelReportComponent travels;
 
     @Override
-    public ValidateResult execute(TravelReport document) throws Exception {
+    public TravelReport execute(TravelReport document) throws Exception {
         Optional<TravelReport> travelOpt = travels.get(document);
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
             if (travel.getStatus() == TravelReportStatus.REJECTED) {
-                travel.setStatus(TravelReportStatus.ACCEPTED);
+                if (travel.getExplaination()!=null) {
+                    travel.setStatus(TravelReportStatus.ACCEPTED);
+                }
                 travels.put(travel);
-                return new ValidateResult(travel);
+                return travel;
             }
         }
         return null;

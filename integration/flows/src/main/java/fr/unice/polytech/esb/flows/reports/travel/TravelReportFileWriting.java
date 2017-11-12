@@ -29,11 +29,14 @@ public class TravelReportFileWriting extends RouteBuilder{
                 // Prepare the POST request to a document service.
                 .removeHeaders("*")
                 .process(exchange -> {
+                    saveId++;
                     ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
                     node.put("processingDate", new Date().toString());
+                    node.put("saveId", saveId);
                     exchange.getIn().setBody(node.toString());
                 })
                 // Send the request to the internal service.
-                .to(TRAVEL_REPORT_FOLDER + "fileName=Report_" + (saveId ++) + ".json&fileExist=Append");
+                .to(TRAVEL_REPORT_FOLDER + "Report_" + saveId + ".json")
+        .log("Saved file to : " + TRAVEL_REPORT_FOLDER + "Report_" + saveId + ".json");
     }
 }
