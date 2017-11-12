@@ -7,9 +7,15 @@ import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 import static fr.unice.polytech.esb.flows.utils.Endpoints.*;
 
 public class TravelReportEnd extends RouteBuilder{
+
+
+    private static final ExecutorService WORKERS = Executors.newFixedThreadPool(5);
 
     private static ObjectMapper mapper = new ObjectMapper();
 
@@ -61,7 +67,10 @@ public class TravelReportEnd extends RouteBuilder{
 
         .choice()
             .when(header("status").isEqualTo("ACCEPTED"))
-                .to(TRAVEL_REPORT_SAVE)
+                .multicast()
+                .parallelProcessing(true)
+                .executorService(WORKERS)
+                .to(TRAVEL_REPORT_SAVE, TRAVEL_REFUND)
 
         .end();
     }
