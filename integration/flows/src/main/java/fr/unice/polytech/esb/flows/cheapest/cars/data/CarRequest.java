@@ -3,9 +3,10 @@ package fr.unice.polytech.esb.flows.cheapest.cars.data;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CarRequest {
+public class CarRequest implements Serializable {
 
     @JsonProperty("city")
     private String place;

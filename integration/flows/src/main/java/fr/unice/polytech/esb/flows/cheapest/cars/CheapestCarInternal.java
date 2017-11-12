@@ -36,6 +36,7 @@ public class CheapestCarInternal extends RouteBuilder {
 
                 // Log the current action.
                 .log("Make a research in the INTERNAL car service.")
+                .removeHeaders("*")
 
                 // Prepare the POST request to a RPC service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
@@ -63,7 +64,10 @@ public class CheapestCarInternal extends RouteBuilder {
         if (xmlCars != null) {
             for (int i = 0; i < xmlCars.getLength(); i++) {
                 // TODO: Make this step better (other way to parse XML?).
-                carsInformation.add(fromNode(xmlCars.item(i)));
+                NodeList node = xmlCars.item(i).getChildNodes();
+                for (int j = 0; j < node.getLength(); j++) {
+                    carsInformation.add(fromNode(node.item(i)));
+                }
             }
         }
 
@@ -80,19 +84,18 @@ public class CheapestCarInternal extends RouteBuilder {
 
         for (int j = 0; j < xmlCarNode.getLength(); j++) {
             Node xmlNode = xmlCarNode.item(j);
-
             switch (xmlNode.getNodeName()) {
                 case "brand":
-                    brand = xmlNode.getNodeValue();
+                    brand = xmlNode.getTextContent();
                     break;
-                case "price":
-                    price = Float.parseFloat(xmlNode.getNodeValue());
+                case "rentPricePerDay":
+                    price = Float.parseFloat(xmlNode.getTextContent());
                     break;
                 case "model":
-                    model = xmlNode.getNodeValue();
+                    model = xmlNode.getTextContent();
                     break;
                 case "place":
-                    place = xmlNode.getNodeValue();
+                    place = xmlNode.getTextContent();
                     break;
             }
         }

@@ -3,14 +3,13 @@
 echo "Getting cheapest hotel"
 
 result=$(curl -X POST \
-  http://flow:8181/tars/flights/search \
+  http://flow:8181/tars/hotels/search \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -d '{
-    "to": "Florence",
-    "from": "Lishu",
-    "departure": 1723
+    "destination": "Lyon",
+    "timestamp": 710170930
 }' -s)
 
-price=$(echo ${result} | jq .price)
+price=$(echo ${result} | jq .roomCost)
 echo Found cheapest price : ${price}

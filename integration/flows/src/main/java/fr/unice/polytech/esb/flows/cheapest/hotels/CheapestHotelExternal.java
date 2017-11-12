@@ -35,6 +35,8 @@ public class CheapestHotelExternal extends RouteBuilder {
                 // Log the current action.
                 .log("Make a research in the EXTERNAL hotels service.")
 
+                .removeHeaders("*")
+
                 // Prepare the POST request to a RPC service.
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
@@ -80,13 +82,13 @@ public class CheapestHotelExternal extends RouteBuilder {
 
             switch (xmlNode.getNodeName()) {
                 case "lieu":
-                    place = xmlNode.getNodeValue();
+                    place = xmlNode.getTextContent();
                     break;
                 case "nom":
-                    name = xmlNode.getNodeValue();
+                    name = xmlNode.getTextContent();
                     break;
                 case "prix":
-                    price = Float.parseFloat(xmlNode.getNodeValue());
+                    price = Float.parseFloat(xmlNode.getTextContent());
                     break;
             }
         }

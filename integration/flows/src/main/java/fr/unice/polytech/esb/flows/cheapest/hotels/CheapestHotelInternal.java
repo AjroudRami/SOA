@@ -47,6 +47,8 @@ public class CheapestHotelInternal extends RouteBuilder {
                 // Log the current action.
                 .log("Make a research in the INTERNAL hotels service.")
 
+                .removeHeaders("*")
+
                 // Prepare the query parameters in the exchange properties.
                 .process(exchange -> {
                     HotelRequest request = exchange.getIn().getBody(HotelRequest.class);

@@ -17,7 +17,7 @@ public class CarInformation implements Buyable {
     public CarInformation() {
     }
 
-    public CarInformation(String brand, String model, String place, float price) {
+    public CarInformation(String brand, String model, String place, Float price) {
         this.brand = brand;
         this.model = model;
         this.place = place;
