@@ -19,7 +19,7 @@ public class TravelReportApproval extends RouteBuilder{
 
         // Process to approve business travel.
         from(TRAVEL_REPORT_APPROVE)
-                .routeId("approve-travel-report")
+                .routeId("travel-report-approval")
                 .routeDescription("Approve travel report")
 
                 .log("Generating a travel approval process")

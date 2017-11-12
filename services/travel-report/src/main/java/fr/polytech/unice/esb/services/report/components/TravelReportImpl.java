@@ -10,8 +10,6 @@ import java.util.*;
 @Singleton
 public class TravelReportImpl implements TravelReportComponent{
 
-    private static final int TOTAL_EXPENSE_LIMIT = 1000;
-
     private Map<String, TravelReport> travels;
 
     public TravelReportImpl() {
@@ -40,10 +38,5 @@ public class TravelReportImpl implements TravelReportComponent{
     @Override
     public Optional<TravelReport> get(TravelReport travel) {
         return Optional.ofNullable(travels.get(travel.getId()));
-    }
-
-    @Override
-    public boolean validateTotalExpense(TravelReport travelReport) {
-        return TOTAL_EXPENSE_LIMIT > travelReport.getTotalAmount();
     }
 }

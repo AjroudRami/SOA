@@ -4,7 +4,6 @@ import fr.polytech.unice.esb.services.report.actions.DocumentAction;
 import fr.polytech.unice.esb.services.report.components.TravelReportComponent;
 import fr.polytech.unice.esb.services.report.models.documents.TravelReport;
 import fr.polytech.unice.esb.services.report.models.documents.TravelReportStatus;
-import fr.polytech.unice.esb.services.report.models.documents.ValidateResult;
 
 import javax.ejb.EJB;
 import java.util.Date;
@@ -21,7 +20,7 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
         if (travelOpt.isPresent()) {
             TravelReport travel = travelOpt.get();
             if (travel.getStatus() == TravelReportStatus.INPROGRESS) {
-                setNewStatus(travel);
+                travel.setStatus(TravelReportStatus.FINISH);
                 travel.setFinish(new Date());
                 travels.put(travel);
                 return travel;
@@ -33,14 +32,5 @@ public class EndAction implements DocumentAction<TravelReport, TravelReport> {
     @Override
     public Class<TravelReport> getInputType() {
         return TravelReport.class;
-    }
-
-
-    private void setNewStatus(TravelReport travelReport) {
-        if (travels.validateTotalExpense(travelReport)){
-            travelReport.setStatus(TravelReportStatus.ACCEPTED);
-        } else {
-            travelReport.setStatus(TravelReportStatus.REJECTED);
-        }
     }
 }

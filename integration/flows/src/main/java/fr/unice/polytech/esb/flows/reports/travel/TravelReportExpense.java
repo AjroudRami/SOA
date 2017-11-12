@@ -26,7 +26,7 @@ public class TravelReportExpense extends RouteBuilder{
 
         // Process to approve business travel.
         from(TRAVEL_REPORT_EXPENSE)
-                .routeId("travel-report-expense")
+                .routeId("travel-report-expenses")
                 .routeDescription("Add expenses to a travel report")
 
                 .log("Generating a travel report expense")

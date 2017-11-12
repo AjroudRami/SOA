@@ -24,7 +24,7 @@ public class TravelReportExplain extends RouteBuilder {
 
         // Process to add explanation travel report.
         from(TRAVEL_REPORT_EXPLAIN)
-                .routeId("travel-report-explain")
+                .routeId("travel-report-explanation")
                 .routeDescription("Add explanation to a travel report")
 
                 .log("Generating a travel report explain")

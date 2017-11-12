@@ -28,5 +28,4 @@ public interface TravelReportComponent {
      */
     Optional<TravelReport> get(TravelReport travel);
 
-    boolean validateTotalExpense(TravelReport travelReport);
 }
