@@ -16,7 +16,7 @@ result=$(curl -X POST \
 if [[ $(echo ${result} | grep "roomCost") ]]
 then
    price=$(echo ${result} | jq .roomCost)
-    echo Found cheapest price : ${price}
+   echo Found cheapest price : ${price}
 else
-    echo No hotel found
+   echo No hotel found
 fi
