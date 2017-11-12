@@ -43,6 +43,8 @@ public class CheapestFlightExternal extends RouteBuilder {
                 .removeHeaders("*")
                 .setHeader(Exchange.HTTP_METHOD, constant("POST"))
                 .setHeader("Content-Type", constant("application/soap+xml"))
+                .setHeader("Accept", constant("application/soap+xml"))
+
 
                 .log("Set headers to EXTERNAL flights service for body ${body}.")
 

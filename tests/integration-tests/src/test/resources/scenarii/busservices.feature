@@ -20,7 +20,7 @@ Feature: Bus Cheapest Services
 
   Scenario: Cheapest hotel research
     Given a research for the cheapest hotel
-    And with the hotel location in Liudu
-    And a date : 10923443534
+    And with the hotel location in Lyon
+    And a date : 710170930
     When the request is sent
     Then an hotel is suggested
