@@ -12,9 +12,9 @@ Feature: Bus Cheapest Services
 
   Scenario: Cheapest car research
     Given a research for the cheapest car
-    And a rental starting from : 2017-11-11
-    And a rental ending on : 2017-11-14
-    And with the car location in Cuba
+    And a rental starting from : 2017-12-20
+    And a rental ending on : 2017-12-25
+    And with the car location in France
     When the request is sent
     Then a car is suggested
 
