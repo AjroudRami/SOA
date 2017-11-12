@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectReader;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import fr.unice.polytech.esb.flows.reports.travel.processor.TravelReportValidationProcessor;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 
@@ -46,24 +47,7 @@ public class TravelReportEnd extends RouteBuilder{
         .inOut(TRAVEL_REPORT_ENDPOINT)
 
         // Process the returned value.
-        .process(exchange -> {
-            ObjectNode node = mapper.readValue(exchange.getIn().getBody(String.class),ObjectNode.class);
-
-            ObjectReader reader = mapper.readerFor(
-                    new TypeReference<String>() {
-                        // Nothing to implement.
-                    });
-
-            String status = reader.readValue(node.get("status"));
-
-            if(status.equals("ACCEPTED")){
-                exchange.getIn().setHeader("status","ACCEPTED");
-            }
-            else {
-                exchange.getIn().setHeader("status", "REJECTED");
-            }
-            exchange.getIn().setBody(node.toString());
-        })
+        .process(new TravelReportValidationProcessor())
 
         .choice()
             .when(header("status").isEqualTo("ACCEPTED"))
