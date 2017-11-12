@@ -46,10 +46,16 @@ We consider here an ecosystem of services dedicated to support an employee when 
 * Service deployment
     - Deploy service using containers
     - Making a single system from the composed containers
-    
+ 
+### Phase #2: Integration services
+* Integrate the different services (cars, flights, hotels) from different team to retrieve the cheapest fare.
+* Implement the Business Travel data flow
+* Implement the Travel Report data flow (including the refund process)
+  
 # Service description
 - - - - 
 * [Flight service](https://github.com/scipio3000/polytech-soa/tree/master/services/flights)
 * [Hotel service](https://github.com/scipio3000/polytech-soa/tree/master/services/hotels)
 * [Car rental service](https://github.com/scipio3000/polytech-soa/tree/master/services/cars)
 * [Business travel service](https://github.com/scipio3000/polytech-soa/tree/master/services/business-travels)
+* [Travel report service](https://github.com/scipio3000/polytech-soa/blob/master/services/travel-report)

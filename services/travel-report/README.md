@@ -178,36 +178,6 @@ And its possible outputs if the report is not validated:
        "explaination": null
 }
 ```
-### Validate
-The `validate` action marks a travel report as accepted.
-Here is an example of a request:
-```json
-{
-	"event": "validate",
-	"id": "54ec80fe-afab-45d9-8f76-c66d46c38981"
-}
-```
-And its possible outputs:
-```json
-{
-    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
-    "businessTravelId":"john_doe", 
-    "start": 1513987200000,
-    "status": "ACCEPTED",
-   "finish": 1513987200000,
-       "expenses":[
-       	    {
-                   "date":"2017-12-25",
-                   "amount":230,
-                   "description":"2 nights at Negresco"
-       	    }],
-       "totalAmount": 230,
-       "explaination": null
-}
-```
-This requests returns an empty 200 OK response upon success.
-
-
 ## Explanation
 The `explain` action allows the addition of an explanation.
 Here is an example of a request:
@@ -241,6 +211,36 @@ And its possible outputs:
     	    }],
     "totalAmount": 230,
 	"explaination":"The meeting last longer then expected. I had to rebook another flight to get back"
+}
+```
+This requests returns an empty 200 OK response upon success.
+
+### Validate
+The `validate` action marks a travel report as accepted.
+This action will only validate reports that are rejected and that contains an explanation.
+Here is an example of a request:
+```json
+{
+	"event": "validate",
+	"id": "54ec80fe-afab-45d9-8f76-c66d46c38981"
+}
+```
+And its possible outputs:
+```json
+{
+    "id": "dcbf4280-9d2d-4535-bc3a-95e6054eabb3",
+    "businessTravelId":"john_doe", 
+    "start": 1513987200000,
+    "status": "ACCEPTED",
+   "finish": 1513987200000,
+       "expenses":[
+       	    {
+                   "date":"2017-12-25",
+                   "amount":230,
+                   "description":"2 nights at Negresco"
+       	    }],
+       "totalAmount": 230,
+       "explaination": null
 }
 ```
 This requests returns an empty 200 OK response upon success.

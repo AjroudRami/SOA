@@ -54,6 +54,9 @@ Exemples de nouvelles manipulations des trajets : fournir une explication du ref
 
 Nous avons choisis ce paradigme car la notion de “préférence du voyageur” n’est pas suffisamment définie et est vouée à évoluer. On identifie un vol comme étant une ressource. Cependant, la grande variabilité dans les actions possibles et leurs parametres nous empeche de choisir le paradigme "Resouces". "Resource" ne nous permettrait pas une évolution complexe car toute récupération doit être transcrite dans les paramètres de l’URL. RPC n’est pas raisonnable car cela bloquerait notre définition d’une préférence.
 
+### Travel Report (Document
+
+[Interface](https://github.com/scipio3000/polytech-soa/blob/master/services/travel-report)
 
 ## Services integration
 
