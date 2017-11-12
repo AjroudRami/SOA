@@ -4,7 +4,7 @@ echo Press ^C to stop the script
 cd integration
 
 # Our different services
-services=(internal-flights internal-cars internal-hotels business-travels travel-report external-cars external-flights external-hotels)
+services=(internal-flights internal-cars internal-hotels external-cars external-flights external-hotels)
 length=${#services[@]}
 
 # We kill a random service every 10 seconds (and start it again 10 seconds later)
