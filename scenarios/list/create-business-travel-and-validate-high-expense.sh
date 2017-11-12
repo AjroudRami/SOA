@@ -74,7 +74,7 @@ result=$(curl -X POST \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'postman-token: 08af9196-3167-d643-8213-89526fc2136c' \
-  -d '{"id": '${trId}', "explaination":"There was a strike, I had to book another flight back home"}')
+  -d '{"id": '${trId}', "explaination":"There was a strike, I had to book another flight back home"}' -s)
 
 status=$(echo ${result} | jq .explaination)
 
