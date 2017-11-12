@@ -70,7 +70,7 @@ echo Our business travel now has the status : ${status}
 
 echo We will now add some explaination to our travel report
 result=$(curl -X POST \
-  http://localhost:8181/tars/travel-report/explain/ \
+  http://flow:8181/tars/travel-report/explain/ \
   -H 'cache-control: no-cache' \
   -H 'content-type: application/json' \
   -H 'postman-token: 08af9196-3167-d643-8213-89526fc2136c' \
